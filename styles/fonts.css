@@ -1,26 +1,26 @@
 /*
   fonts.css — Font definitions for EPUB
-  File paths are relative to /OEBPS/styles/  → fonts are in ../fonts/
+  File paths are relative to styles/ directory → fonts are in ../
 */
 
 /* Libre Baskerville — body */
 @font-face {
   font-family: 'Libre Baskerville';
-  src: url('../fonts/librebaskerville-regular.woff2') format('woff2');
+  src: url('../librebaskerville-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Libre Baskerville';
-  src: url('../fonts/librebaskerville-italic.woff2') format('woff2');
+  src: url('../librebaskerville-italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Libre Baskerville';
-  src: url('../fonts/librebaskerville-bold.woff2') format('woff2');
+  src: url('../librebaskerville-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@
 /* Cinzel Decorative — chapter/part titles */
 @font-face {
   font-family: 'Cinzel Decorative';
-  src: url('../fonts/CinzelDecorative.woff2') format('woff2');
+  src: url('../CinzelDecorative.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -38,14 +38,14 @@
 /* Montserrat — supporting labels */
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+  src: url('../Montserrat-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+  src: url('../Montserrat-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

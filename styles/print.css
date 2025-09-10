@@ -620,34 +620,135 @@
     padding: 1em 0;
   }
   
+  /* Title page specific print styles */
   .title-page {
     text-align: center;
     padding: 3in 1in 2in 1in;
+    background: white !important;
+    min-height: auto;
+    display: block;
   }
   
-  .title-page h1 {
+  .title-page::before,
+  .title-page::after,
+  .decorative-border-tr,
+  .decorative-border-bl {
+    display: none;
+  }
+  
+  .title {
     font-size: 32pt;
     margin-bottom: 0.5em;
+    color: var(--print-primary) !important;
+    font-family: 'Times New Roman', Times, serif;
   }
   
-  .title-page .subtitle {
+  .subtitle {
     font-size: 18pt;
     margin-bottom: 2em;
+    color: var(--print-secondary) !important;
+    font-style: italic;
   }
   
   .title-page .author {
     font-size: 16pt;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, sans-serif;
+    color: var(--print-primary) !important;
   }
   
-  .copyright {
+  .divider {
+    background: var(--print-border) !important;
+    height: 2pt;
+    width: 4rem;
+  }
+  
+  .publisher-info {
+    color: var(--print-secondary) !important;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+  }
+  
+  /* Copyright page print styles */
+  .copyright-page {
     page-break-before: always;
+    background: white !important;
+    padding: 2em 1em;
+    min-height: auto;
     font-size: 9pt;
     line-height: 1.3;
+    max-width: none;
   }
   
-  .table-of-contents {
+  .copyright-content {
+    gap: 1em;
+  }
+  
+  .copyright-notice {
+    background: var(--print-worksheet-bg) !important;
+    border: 1pt solid var(--print-border) !important;
+    border-left: 4pt solid var(--print-accent) !important;
+    padding: 1em;
+    font-size: 9pt;
+  }
+  
+  .elegant-divider,
+  .decorative-line,
+  .section-separator {
+    background: var(--print-border) !important;
+    height: 1pt;
+  }
+  
+  .isbn-info {
+    background: var(--print-worksheet-bg) !important;
+    border: 1pt solid var(--print-border);
+    padding: 0.5em;
+    font-size: 9pt;
+  }
+  
+  .isbn-label,
+  .publisher-label {
+    color: var(--print-primary) !important;
+    font-weight: bold;
+  }
+  
+  .rights-text {
+    color: var(--print-secondary) !important;
+    font-size: 9pt;
+  }
+  
+  /* Table of Contents print styles */
+  .contents-page {
     page-break-before: always;
+    background: white !important;
+    padding: 2em 1em;
+    min-height: auto;
+    max-width: none;
+  }
+  
+  .contents-title {
+    font-size: 24pt;
+    color: var(--print-primary) !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 2em;
+  }
+  
+  .toc-container {
+    gap: 1em;
+  }
+  
+  .part-title {
+    font-size: 12pt;
+    color: var(--print-primary) !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+  }
+  
+  .part-title::before {
+    display: none;
   }
   
   .toc-entry {
@@ -655,6 +756,33 @@
     justify-content: space-between;
     margin-bottom: 0.5em;
     border-bottom: 1pt dotted var(--print-border);
+    page-break-inside: avoid;
+  }
+  
+  .entry-title {
+    padding: 0.2em 0;
+    background: none !important;
+    transform: none !important;
+  }
+  
+  .entry-title a {
+    color: var(--print-primary) !important;
+    text-decoration: none;
+    font-size: 10pt;
+    font-weight: normal;
+  }
+  
+  .entry-title a:hover {
+    color: var(--print-primary) !important;
+    background: none !important;
+  }
+  
+  .chapter-entry {
+    margin-left: 1em;
+  }
+  
+  .chapter-entry .entry-title a::before {
+    display: none;
   }
   
   .toc-title {
@@ -663,7 +791,59 @@
   
   .toc-page-number {
     margin-left: 1em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, sans-serif;
+    color: var(--print-secondary) !important;
+  }
+  
+  .section-divider {
+    margin: 1em 0;
+  }
+  
+  .divider-line {
+    background: var(--print-border) !important;
+    height: 1pt;
+    width: 2rem;
+  }
+  
+  /* Dedication and other frontmatter pages */
+  .dedication-page,
+  .preface-page,
+  .acknowledgments-page {
+    page-break-before: always;
+    background: white !important;
+    padding: 2em 1em;
+  }
+  
+  /* Self-assessment and interactive frontmatter */
+  .self-assessment-page,
+  .affirmation-page {
+    page-break-before: always;
+    background: white !important;
+    padding: 1em;
+  }
+  
+  .assessment-question,
+  .affirmation-item {
+    background: var(--print-worksheet-bg) !important;
+    border: 1pt solid var(--print-border);
+    padding: 1em;
+    margin: 0.5em 0;
+    page-break-inside: avoid;
+  }
+  
+  .assessment-options,
+  .affirmation-response {
+    margin-top: 0.5em;
+    padding-left: 1em;
+  }
+  
+  /* Remove any gradients and fancy styling for print */
+  .bg-gradient-to-r,
+  .bg-gradient-to-br,
+  .bg-gradient-to-l,
+  .from-blue-50,
+  .to-purple-50 {
+    background: var(--print-background) !important;
   }
 }
 
