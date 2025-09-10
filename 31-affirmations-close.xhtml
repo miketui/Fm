@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>Affirmations Close - Curls &amp; Contemplation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="styles/style.css" type="text/css" />
+  <link rel="stylesheet" href="styles/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
+</head>
+<body>
+    <div class="min-h-screen backmatter-affirmations p-6 md:p-8">
+      <div class="max-w-4xl mx-auto">
+        
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <div class="inline-block bg-white rounded-3xl p-8 shadow-2xl border border-white/50 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-rose-500/10 via-orange-500/10 to-amber-500/10"></div>
+            <div class="relative">
+              <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-rose-600 via-orange-600 to-amber-600 bg-clip-text text-transparent mb-4">
+                FINAL AFFIRMATION WORKSHEET
+              </h1>
+              <div class="w-32 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mx-auto rounded-full mt-6"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="bg-white rounded-2xl p-6 mb-8 shadow-lg border border-orange-100">
+          <div class="space-y-4 text-slate-700 leading-relaxed">
+            <p>
+              As you stand at this significant milestone in your creative journey, it's time to weave the essence of your discoveries into a unique, powerful affirmation. This is more than just a collection of words—it's a personal manifesto that captures the core of your inner wisdom and professional identity.
+            </p>
+            <p>
+              The power of affirmations lies in their ability to rewire our thought patterns and beliefs. When crafted with intention and repeated regularly, they can transform how we see ourselves and our creative potential. This final affirmation will serve as both a celebration of your journey and a compass for your continued growth.
+            </p>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="bg-white rounded-2xl shadow-xl border border-white/50 overflow-hidden">
+          
+          <!-- Decorative header -->
+          <div class="bg-gradient-to-r from-rose-500 via-orange-500 to-amber-500 text-white p-8 text-center">
+            <div class="inline-block w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl">✨</span>
+            </div>
+            <h2 class="text-2xl font-semibold">Craft Your Personal Affirmation</h2>
+          </div>
+
+          <!-- Sample Affirmations -->
+          <div class="p-8 md:p-12">
+            <div class="mb-8">
+              <div class="text-center mb-6">
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Sample Affirmations for Inspiration</h3>
+                <div class="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mx-auto rounded-full"></div>
+              </div>
+              
+              <div class="space-y-3">
+                {sampleAffirmations.map((affirmation, index) => (
+                  <div key={index} class="flex items-start p-4 bg-gradient-to-r from-rose-50 to-amber-50 rounded-xl border border-orange-100">
+                    <div class="w-6 h-6 bg-gradient-to-r from-rose-400 to-orange-400 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <span class="text-white text-xs font-bold">•</span>
+                    </div>
+                    <p class="text-slate-700 leading-relaxed">
+                      {affirmation}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <!-- Reflection Prompt -->
+            <div class="mb-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200">
+              <p class="text-slate-700 leading-relaxed">
+                Reflect on your journey through this book, the insights you've gained, and the self-awareness you've cultivated. Consider the transformations you've experienced and the vision you hold for your future as a creative professional. Now, craft your personal 12-line affirmation below, making each line a powerful declaration of who you are becoming.
+              </p>
+            </div>
+
+            <!-- 12-Line Affirmation Section -->
+            <div class="mb-8">
+              <div class="text-center mb-6">
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Your Complete 12-Line Affirmation</h3>
+                <div class="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mx-auto rounded-full"></div>
+              </div>
+              
+              <div class="space-y-4">
+                {Array.from({ length: 12 }, (_, index) => (
+                  <div key={index} class="flex items-center space-x-4">
+                    <div class="w-8 h-8 bg-gradient-to-r from-rose-500 to-amber-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                      {index + 1}
+                    </div>
+                    <div class="flex-1 h-12 border-2 border-orange-200 rounded-lg bg-orange-50/30 p-3">
+                      <div class="text-orange-400 text-sm italic">
+                        Write your powerful affirmation line here...
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <!-- Practice Guidelines -->
+            <div class="bg-gradient-to-r from-green-50 to-teal-50 rounded-xl p-6 border border-green-200">
+              <div class="text-center mb-6">
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Making Your Affirmation a Practice</h3>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-500 to-teal-500 mx-auto rounded-full"></div>
+              </div>
+              
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <span class="text-white text-xs font-bold">•</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-green-800 mb-1">Morning ritual:</h4>
+                    <p class="text-green-700 text-sm">Read your affirmation aloud each morning as you begin your day, allowing the words to set your intention.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <span class="text-white text-xs font-bold">•</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-green-800 mb-1">Visual reminder:</h4>
+                    <p class="text-green-700 text-sm">Consider writing your affirmation on beautiful paper and placing it in your workspace where you'll see it regularly.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <span class="text-white text-xs font-bold">•</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-green-800 mb-1">Embodiment:</h4>
+                    <p class="text-green-700 text-sm">As you recite each line, visualize yourself already embodying these qualities and living these truths.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <span class="text-white text-xs font-bold">•</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-green-800 mb-1">Evolution:</h4>
+                    <p class="text-green-700 text-sm">Revisit your affirmation every few months and refine it as you continue to grow and evolve in your creative practice.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <span class="text-white text-xs font-bold">•</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-green-800 mb-1">Voice recording:</h4>
+                    <p class="text-green-700 text-sm">Record yourself speaking your affirmation with conviction and listen to it during moments when you need inspiration or confidence.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Closing Message -->
+        <div class="mt-8 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-200">
+          <p class="text-slate-700 leading-relaxed text-center italic text-lg">
+            This affirmation is more than words; it's a crafted symbol of your path, a guiding light for your future. As you articulate each line, let the vibration of the words resonate deeply, affirming your capabilities, dreams, and the evolving artist you are becoming. Your words have power—use them to create the reality you envision.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+</body>
+</html>

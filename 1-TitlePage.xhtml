@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Curls &amp; Contemplation - Title Page</title>
+<link rel="stylesheet" type="text/css" href="../styles/fonts.css" />
+<link rel="stylesheet" type="text/css" href="../styles/style.css" />
+<style>
+.title-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  font-family: Georgia, serif;
+  position: relative;
+  page-break-inside: avoid;
+}
+
+.title-page::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-left: 2px solid #cbd5e1;
+  border-top: 2px solid #cbd5e1;
+  opacity: 0.6;
+}
+
+.title-page::after {
+  content: '';
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-right: 2px solid #cbd5e1;
+  border-bottom: 2px solid #cbd5e1;
+  opacity: 0.6;
+}
+
+.decorative-border-tr {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-right: 2px solid #cbd5e1;
+  border-top: 2px solid #cbd5e1;
+  opacity: 0.6;
+}
+
+.decorative-border-bl {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-left: 2px solid #cbd5e1;
+  border-bottom: 2px solid #cbd5e1;
+  opacity: 0.6;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #1e293b;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 32rem;
+}
+
+.divider {
+  width: 8rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #64748b, transparent);
+  margin: 2rem 0;
+}
+
+.author {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #475569;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 4rem;
+}
+
+.publisher-info {
+  color: #64748b;
+  font-family: system-ui, sans-serif;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 0.25rem;
+}
+
+@media print {
+  .title-page {
+    background: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .author {
+    font-size: 1.5rem;
+  }
+}
+</style>
+</head>
+<body class="fm-title">
+<main epub:type="frontmatter titlepage" role="main">
+<div class="title-page" role="region" aria-label="Title Page">
+<div class="decorative-border-tr"></div>
+<div class="decorative-border-bl"></div>
+
+<!-- Book Title and Subtitle -->
+<h1 class="title" epub:type="title">CURLS &amp; CONTEMPLATION</h1>
+<h2 class="subtitle" epub:type="subtitle">A Stylist's Interactive Journey Journal</h2>
+
+<!-- Decorative Divider -->
+<div class="divider" aria-hidden="true"></div>
+
+<!-- Author Name -->
+<div class="author" epub:type="creator">Michael David</div>
+
+<!-- Publisher Information -->
+<div class="publisher-info" epub:type="publisher">Michael David Publishing</div>
+<div class="publisher-info">Los Angeles, California</div>
+<div class="publisher-info">2025</div>
+</div>
+</main>
+</body>
+</html>

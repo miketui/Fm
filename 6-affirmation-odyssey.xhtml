@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Curls &amp; Contemplation - Affirmation Odyssey Worksheet</title>
+<link rel="stylesheet" type="text/css" href="../styles/fonts.css" />
+<link rel="stylesheet" type="text/css" href="../styles/style.css" />
+<style>
+.affirmation-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #f3e8ff 50%, #fef3c7 100%);
+  padding: 1.5rem;
+  font-family: system-ui, sans-serif;
+  page-break-inside: avoid;
+}
+
+.affirmation-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #4f46e5, #8b5cf6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-family: Georgia, serif;
+}
+
+.affirmation-subtitle {
+  color: #64748b;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.decorative-line {
+  width: 8rem;
+  height: 2px;
+  background: linear-gradient(to right, #4f46e5, #8b5cf6);
+  margin: 0 auto 2rem auto;
+  border-radius: 1px;
+}
+
+.introduction {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #c084fc;
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 0.875rem;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header {
+  background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.affirmation-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2rem;
+}
+
+.affirmation-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.line-number {
+  width: 2rem;
+  height: 2rem;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.line-container {
+  flex: 1;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  min-height: 3rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  transition: border-color 0.2s ease;
+  position: relative;
+}
+
+.line-container:hover {
+  border-color: #4f46e5;
+}
+
+.line-container::after {
+  content: 'I am...';
+  color: #94a3b8;
+  font-size: 1rem;
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  pointer-events: none;
+  font-style: italic;
+}
+
+.inspiration-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  padding: 2rem;
+}
+
+.inspiration-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.875rem;
+  background: linear-gradient(135deg, #fef3c7, #fed7aa);
+  border-radius: 0.5rem;
+  border: 1px solid #fbbf24;
+  transition: all 0.2s ease;
+}
+
+.inspiration-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.inspiration-bullet {
+  color: #d97706;
+  font-weight: bold;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.inspiration-text {
+  color: #92400e;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+.closing-text {
+  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+  border: 1px solid #86efac;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: #166534;
+  font-weight: 500;
+  margin: 2rem auto;
+  max-width: 50rem;
+}
+
+.section-separator {
+  width: 16rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #cbd5e1, transparent);
+  margin: 3rem auto;
+}
+
+@media (max-width: 768px) {
+  .inspiration-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .affirmation-title {
+    font-size: 2.5rem;
+  }
+  
+  .affirmation-page {
+    padding: 1rem;
+  }
+}
+
+@media print {
+  .affirmation-page {
+    background: white;
+  }
+  
+  .inspiration-item:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+</style>
+</head>
+<body class="fm-static">
+<main role="main" epub:type="bodymatter">
+<div class="affirmation-page single-page" role="region" aria-label="Affirmation Odyssey Worksheet">
+
+<!-- Title and subtitle -->
+<h1 class="affirmation-title" epub:type="title">AFFIRMATION ODYSSEY</h1>
+<h2 class="affirmation-subtitle" epub:type="subtitle">Building Your Creative Confidence</h2>
+<div class="decorative-line" aria-hidden="true"></div>
+
+<!-- Introduction paragraph -->
+<p class="introduction">This is more than an activity; it's a step toward personal growth. As you dive into this eBook, you'll gradually build your own affirmation, reflecting and finding your inner voice along the way. By the end, you'll have crafted a 12-line testament to your creativity and self-awareness. Start with your first three lines now and watch your affirmation take shape.</p>
+
+<!-- Your Affirmation section -->
+<div class="section" role="region" aria-label="Your Affirmation">
+<div class="section-header">
+<div class="section-line" aria-hidden="true"></div>
+<div class="section-title">Your Affirmation</div>
+<div class="section-line" aria-hidden="true"></div>
+</div>
+<div class="affirmation-lines">
+<div class="affirmation-line">
+<div class="line-number">1</div>
+<div class="line-container" aria-label="Affirmation line 1"></div>
+</div>
+<div class="affirmation-line">
+<div class="line-number">2</div>
+<div class="line-container" aria-label="Affirmation line 2"></div>
+</div>
+<div class="affirmation-line">
+<div class="line-number">3</div>
+<div class="line-container" aria-label="Affirmation line 3"></div>
+</div>
+</div>
+</div>
+
+<!-- Inspiration section -->
+<div class="section" role="region" aria-label="Inspiration">
+<div class="section-header">
+<div class="section-line" aria-hidden="true"></div>
+<div class="section-title">Inspiration</div>
+<div class="section-line" aria-hidden="true"></div>
+</div>
+<div class="inspiration-container">
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">I am capable and strong, with endless potential.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">Today, I move closer to my dreams.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">My mind is focused; my heart and spirit are ready.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">Challenges are opportunities for growth.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">I deserve success, happiness, and fulfillment.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">I learn, evolve, and improve daily.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">My actions spread positivity.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">I am thankful for every experience.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">I believe in my vision and trust my journey.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">I radiate positivity and resilience.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">Every step is toward my true potential.</div>
+</div>
+<div class="inspiration-item">
+<div class="inspiration-bullet" aria-hidden="true">•</div>
+<div class="inspiration-text">Daily, I grow stronger in my purpose.</div>
+</div>
+</div>
+</div>
+
+<!-- Closing text -->
+<p class="closing-text">Repeat these affirmations daily to remind yourself of your strength and potential.</p>
+
+<!-- Decorative closing -->
+<div class="section-separator" aria-hidden="true"></div>
+
+</div>
+</main>
+</body>
+</html>
