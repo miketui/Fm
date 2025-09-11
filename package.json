@@ -1,0 +1,24 @@
+{
+  "name": "curls-and-contemplation-epub",
+  "version": "1.0.0",
+  "description": "A Stylist's Interactive Journey Journal - EPUB validation and build tools",
+  "scripts": {
+    "validate": "./validate-epub.sh",
+    "lint": "npm run validate",
+    "build": "npm run validate && echo '✅ Build completed successfully'",
+    "typecheck": "echo '✅ No TypeScript files to check'",
+    "test": "npm run validate"
+  },
+  "devDependencies": {
+    "epubcheck": "^4.2.6"
+  },
+  "keywords": [
+    "epub",
+    "ebook",
+    "hairstyling",
+    "beauty",
+    "journal"
+  ],
+  "author": "Curls & Contemplation",
+  "license": "All Rights Reserved"
+}

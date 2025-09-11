@@ -1,0 +1,64 @@
+name: EPUB Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Install epubcheck
+      run: npm install -g epubcheck
+      
+    - name: Validate EPUB structure
+      run: npm run validate
+      
+    - name: Check file organization
+      run: |
+        echo "Checking file organization..."
+        ls -la
+        echo "Images directory:"
+        ls -la images/ || echo "No images directory found"
+        echo "Styles directory:"
+        ls -la styles/ || echo "No styles directory found"
+        
+    - name: Lint XHTML files
+      run: |
+        echo "Checking for common issues..."
+        echo "Files with missing alt attributes:"
+        grep -r 'img.*src=' *.xhtml | grep -v 'alt=' || echo "None found"
+        echo "Files missing EPUB namespace:"
+        grep -L 'xmlns:epub="http://www.idpf.org/2007/ops"' *.xhtml || echo "None found"
+        
+    - name: Generate validation report
+      run: |
+        echo "# EPUB Validation Report" > validation-report.md
+        echo "Generated on: $(date)" >> validation-report.md
+        echo "" >> validation-report.md
+        echo "## File Structure" >> validation-report.md
+        echo "\`\`\`" >> validation-report.md
+        find . -name "*.xhtml" -o -name "*.css" -o -name "*.png" -o -name "*.JPEG" | sort >> validation-report.md
+        echo "\`\`\`" >> validation-report.md
+        
+    - name: Upload validation report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: validation-report
+        path: validation-report.md
