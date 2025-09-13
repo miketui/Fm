@@ -2,308 +2,154 @@
 
 [![EPUB Validation](https://github.com/miketui/terragon/actions/workflows/validate-epub.yml/badge.svg)](https://github.com/miketui/terragon/actions/workflows/validate-epub.yml)
 
-An interactive EPUB journal for professional hairstylists featuring comprehensive chapters, quizzes, worksheets, and practical strategies for building a successful, conscious hairstyling practice.
+Publication‑ready EPUB with automated XHTML formatting, full validation, clickable TOC verification, and one‑command compilation to an error‑free epubcheck‑validated file.
 
-## 📚 EPUB Structure
+## Quick Start
 
-This project follows the standard EPUB 3.0 Open eBook Publication Structure (OEBPS):
+- Requirements: Node.js 18+, npm
+- Install: `npm install`
+- One‑command build: `npm run build:epub`
+
+This will:
+- Format all XHTML files
+- Validate EPUB structure and assets
+- Validate TOC clickability (nav.xhtml targets)
+- Run integration and regression tests
+- Run lightweight device compatibility checks
+- Compile a distributable EPUB at `dist/curls-and-contemplation.epub`
+- Validate the final file with `epubcheck`
+
+## Project Structure
 
 ```
 ├── META-INF/
-│   └── container.xml          # EPUB container metadata
+│   └── container.xml
 ├── OEBPS/
-│   ├── content.opf            # Package document
-│   ├── text/                  # XHTML content files
-│   │   ├── nav.xhtml          # Navigation document
-│   │   ├── 1-TitlePage.xhtml  # Title page
-│   │   ├── 2-Copyright.xhtml  # Copyright page
-│   │   └── ...               # Chapters and content
-│   ├── styles/               # CSS stylesheets
-│   │   ├── style.css        # Main styles
-│   │   ├── fonts.css        # Font definitions
-│   │   └── print.css        # Print media styles
-│   ├── images/              # Image assets
-│   │   └── ...              # JPEG/PNG images
-│   └── fonts/               # Font files
-│       └── ...              # WOFF2 font files
-└── mimetype                 # EPUB mimetype declaration
+│   ├── content.opf
+│   ├── text/
+│   │   ├── nav.xhtml
+│   │   └── *.xhtml (45+ content files)
+│   ├── styles/*.css
+│   ├── images/*
+│   └── fonts/*
+└── mimetype
 ```
 
-## 🚀 Quick Start
+## Commands
 
-### Prerequisites
+- `npm run build:epub` – Full validation → clickable TOC check → compilation → epubcheck
+- `npm run build:full` – Above + multi‑format validation + optimization preview
+- `npm run validate` – Package in temp and run epubcheck (+ XHTML sanity checks)
+- `npm run validate:assets` – Validate all referenced assets exist and resolve
+- `npm run validate:toc` – Verify TOC links target valid files and IDs
+- `npm run validate:multi-format` – Validate against EPUB 3.0/3.2/3.3 (and more)
+- `npm run device:test` – Heuristic device compatibility checks (viewport/media queries)
+- `npm run format` – Batch format XHTML files consistently
+- `npm test` – Integration + regression tests
+- `npm run metrics` – Generate performance metrics report
 
-- Node.js (v18 or later)
-- npm
-
-### Installation
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd curls-and-contemplation-epub
-
-# Install dependencies
-npm install
-```
-
-### Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run validate` | Run EPUB validation with epubcheck |
-| `npm run validate:assets` | Validate asset references |
-| `npm run validate:multi-format` | Validate against multiple EPUB versions |
-| `npm run optimize` | Optimize images, fonts, and CSS |
-| `npm run optimize:dry-run` | Analyze optimization opportunities (no changes) |
-| `npm test` | Run integration and regression tests |
-| `npm run test:integration` | Run EPUB reader compatibility tests |
-| `npm run test:regression` | Run path reference regression tests |
-| `npm run format` | Format XHTML files |
-| `npm run metrics` | Generate performance metrics |
-| `npm run build` | Full build with validation and testing |
-| `npm run build:full` | Full build including multi-format validation and optimization |
-| `npm run ci` | CI pipeline (build + metrics) |
-| `npm run ci:full` | Full CI pipeline with all validations |
-
-### Development Workflow
+## End‑to‑End Workflow
 
 ```bash
-# Format and validate your changes
+# 1) Auto‑format and lint
 npm run pre-commit
 
-# Run full build
+# 2) Full validation (structure + assets + tests)
 npm run build
 
-# Generate performance metrics
-npm run metrics
+# 3) Validate TOC
+npm run validate:toc
+
+# 4) Compile to EPUB and validate output
+npm run build:epub
 ```
 
-## 🧪 Testing & Validation
+Output is created at `dist/curls-and-contemplation.epub`.
 
-### Validation Pipeline
+## XHTML Validation & Formatting
 
-The project includes comprehensive validation at multiple levels:
+- Batch processed for all files under `OEBPS/text/*.xhtml`
+- Enforced structure checks (XML declaration, DOCTYPE, namespaces)
+- Common issues flagged: missing alt on images, inconsistent DOCTYPE, namespaces
+- Run: `npm run format` then `npm run validate`
 
-1. **EPUB Structure Validation** - Validates against EPUB 3.0 specification
-2. **Asset Reference Validation** - Ensures all assets exist and are referenced correctly
-3. **Integration Testing** - Tests EPUB compatibility with readers
-4. **Regression Testing** - Prevents path reference issues
-5. **Performance Metrics** - Tracks build performance and optimization
+## Clickable TOC Validation
 
-### Running Tests
+- `scripts/validate-toc.js` parses `OEBPS/text/nav.xhtml`, collects TOC links, and verifies:
+  - Each target XHTML exists
+  - Each `#id` fragment exists in the target file
+  - `content.opf` declares a nav item (`properties="nav"`)
+- Run: `npm run validate:toc`
 
-```bash
-# Run all tests
-npm test
+## Device Compatibility
 
-# Individual test suites
-npm run test:integration      # EPUB reader compatibility
-npm run test:regression       # Path reference validation
-npm run validate:assets       # Asset validation
-```
+- Heuristic checks to improve mobile and e‑reader rendering:
+  - Viewport meta presence in XHTML
+  - CSS image scaling (`img { max-width: 100%; height: auto; }`)
+  - Presence of media queries
+- Non‑blocking by default; use `npm run device:test -- --strict` to fail on issues
 
-### Performance Monitoring
+## Building the EPUB
 
-```bash
-# Generate performance report
-npm run metrics
+- `scripts/build-epub.sh` packages files with correct order:
+  - `mimetype` (stored, uncompressed)
+  - `META-INF/` then `OEBPS/`
+- Validates the resulting file with `epubcheck` when available
+- Output: `dist/curls-and-contemplation.epub`
 
-# View reports
-cat performance-metrics-report.md
-cat asset-validation-report.md
-```
+## Testing & CI
 
-## 🔧 Development Tools
+- Integration tests check reader compatibility and structure
+- Regression tests guard path resolution/links
+- Multi‑format validation covers EPUB 2.x/3.x features (optional)
+- CI runs validation on push/PR and publishes reports
 
-### Pre-commit Hooks
-
-The project uses pre-commit hooks to ensure code quality:
-
-```bash
-# Install pre-commit (if not already installed)
-pip install pre-commit
-
-# Install hooks
-pre-commit install
-
-# Run manually
-pre-commit run --all-files
-```
-
-### Automated Formatting
-
-XHTML files are automatically formatted for consistency:
+Run suites individually:
 
 ```bash
-# Format all XHTML files
-npm run format
-
-# Format specific files
-scripts/format-xhtml.sh OEBPS/text/1-TitlePage.xhtml
-```
-
-## 📊 Quality Assurance
-
-### Continuous Integration
-
-GitHub Actions automatically runs validation on every push and pull request:
-
-- EPUB structure validation
-- Asset reference checking  
-- Integration tests
-- Performance metrics collection
-- Report generation
-
-### Quality Metrics
-
-The project tracks several quality metrics:
-
-- **Performance Score** - Overall quality rating (0-100)
-- **Validation Status** - All validation tests pass
-- **Asset Optimization** - Image sizes and unused assets
-- **Build Performance** - Validation and test execution times
-
-### Accessibility
-
-The EPUB includes comprehensive accessibility features:
-
-- Alternative text for all images
-- Proper heading structure
-- Semantic markup
-- Screen reader compatibility
-- Keyboard navigation support
-
-## 🛠️ Troubleshooting
-
-### Common Issues
-
-**epubcheck not found**
-```bash
-# Install globally
-npm install -g epubcheck
-
-# Or use npx (recommended in CI)
-npx epubcheck
-```
-
-**Asset validation failures**
-```bash
-# Check asset references
+npm run test:integration
+npm run test:regression
 npm run validate:assets
-
-# View detailed report
-cat asset-validation-report.md
-```
-
-**Path reference issues**
-```bash
-# Update regression baseline after structural changes
-npm run test:regression:update
-```
-
-### Getting Help
-
-1. Check the validation reports in the project root
-2. Review CI logs for detailed error information
-3. Run individual validation steps to isolate issues
-
-## 📈 Performance Optimization
-
-### Asset Optimization
-
-The project includes comprehensive asset optimization capabilities:
-
-**Image Optimization:**
-- Automatic detection of oversized images (>500KB)
-- JPEG quality optimization with jpegoptim
-- PNG compression with pngcrush  
-- WebP conversion recommendations for better compression
-- Dimension analysis and resize suggestions
-
-**Font Optimization:**
-- Font file size analysis (flags fonts >200KB)
-- WOFF2 conversion for better compression
-- Font subsetting to reduce file size
-- Format upgrade recommendations (TTF/OTF → WOFF2)
-
-**CSS Optimization:**
-- Large CSS file detection
-- Comment removal for size reduction
-- Duplicate rule identification
-- Minification recommendations
-
-**Usage:**
-```bash
-# Analyze optimization opportunities
-npm run optimize:dry-run
-
-# Execute optimizations
-npm run optimize
-
-# Custom optimization settings  
-node scripts/optimize-assets.js --max-image-size=300000 --jpeg-quality=80
-```
-
-### Multi-Format EPUB Validation
-
-Validates EPUB files against multiple versions and specifications:
-
-**Version Support:**
-- EPUB 2.0.1 (legacy compatibility)
-- EPUB 3.0, 3.1, 3.2, 3.3 (modern standards)
-- Automatic version detection from OPF
-- Feature compatibility analysis
-
-**Advanced Features:**
-- Fixed-layout EPUB support
-- Accessibility metadata validation
-- Media overlay detection
-- Scripting and interactivity analysis
-
-**Usage:**
-```bash
-# Validate against default versions (3.0, 3.2, 3.3)
 npm run validate:multi-format
-
-# Validate against all supported versions
-node scripts/multi-format-validator.js --all-versions
-
-# Validate specific versions
-node scripts/multi-format-validator.js --versions=3.0,3.3
 ```
 
-### Build Performance
+## Pre‑Compilation Checklist
 
-Performance metrics track:
+- [ ] All XHTML files pass formatting and structure checks
+- [ ] `nav.xhtml` points to valid files and anchors
+- [ ] All images have `alt` text and scale within viewport
+- [ ] `content.opf` includes a `properties="nav"` manifest item
+- [ ] No broken internal links or missing assets
+- [ ] `epubcheck` reports 0 errors
 
-- Validation execution time
-- Test suite performance
-- Asset loading efficiency
-- Overall build time
-- Optimization effectiveness
+## Troubleshooting
 
-## 🤝 Contributing
+- epubcheck not found
+  - Install: `npm i -g epubcheck` or use `npx epubcheck`
+- TOC target missing
+  - Ensure target file exists and `id="..."` matches the fragment in `nav.xhtml`
+- Broken links or assets
+  - Run `npm run validate:assets` and inspect `asset-validation-report.md`
+- Regression baseline updates
+  - After structural changes: `npm run test:regression:update`
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run the full validation suite: `npm run build`
-5. Commit with descriptive messages
-6. Submit a pull request
+## Accessibility
 
-### Commit Guidelines
+- Alt text for all images, semantic structure, screen‑reader friendly markup, keyboard navigation
+- Consider WCAG 2.1 techniques for color contrast and focus order
 
-- Use conventional commit format
-- Include performance impact in commit messages
-- Run `npm run pre-commit` before committing
+## Optimization
 
-## 📄 License
+- Analyze and preview optimizations: `npm run optimize:dry-run`
+- Full validation across versions: `npm run validate:multi-format`
+- Performance metrics: `npm run metrics`
+
+## License
 
 All Rights Reserved - MD Warren
 
-## 🔗 Links
+## References
 
-- [EPUB 3.0 Specification](https://www.w3.org/publishing/epub3/)
-- [epubcheck Documentation](https://github.com/w3c/epubcheck)
-- [EPUB Accessibility Guidelines](https://www.w3.org/publishing/epub3/a11y/)
+- EPUB 3.0 Specification: https://www.w3.org/publishing/epub3/
+- epubcheck: https://github.com/w3c/epubcheck
+- EPUB Accessibility: https://www.w3.org/publishing/epub3/a11y/

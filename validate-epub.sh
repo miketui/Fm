@@ -132,17 +132,35 @@ log_info "Creating EPUB package with proper structure..."
 # Remove any existing epub.epub
 rm -f epub.epub
 
-# First, add mimetype (uncompressed, first in archive)
-cd epub
-zip -0 -X ../epub.epub mimetype
-
-# Then add META-INF
-zip -r ../epub.epub META-INF/
-
-# Then add OEBPS
-zip -r ../epub.epub OEBPS/
-
-cd ..
+if command -v zip &>/dev/null; then
+    # First, add mimetype (uncompressed, first in archive)
+    (cd epub && zip -0 -X ../epub.epub mimetype && zip -r ../epub.epub META-INF/ && zip -r ../epub.epub OEBPS/)
+else
+    if command -v python3 &>/dev/null; then
+        log_info "zip not found; using python3 zipfile fallback"
+        python3 - << 'PY'
+import os, zipfile
+base = 'epub'
+out = 'epub.epub'
+with zipfile.ZipFile(out, 'w') as z:
+    # mimetype first, stored
+    z.write(os.path.join(base, 'mimetype'), arcname='mimetype', compress_type=zipfile.ZIP_STORED)
+    # add META-INF and OEBPS recursively
+    for top in ('META-INF', 'OEBPS'):
+        for root, _, files in os.walk(os.path.join(base, top)):
+            for f in files:
+                p = os.path.join(root, f)
+                arc = os.path.relpath(p, base)
+                if arc == 'mimetype':
+                    continue
+                z.write(p, arcname=arc, compress_type=zipfile.ZIP_DEFLATED)
+PY
+    else
+        log_error "Neither 'zip' nor 'python3' available to create EPUB archive"
+        cleanup_temp
+        exit 1
+    fi
+fi
 
 # Validate the EPUB
 run_epubcheck_validation() {
