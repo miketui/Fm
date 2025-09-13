@@ -52,24 +52,19 @@ log_info "Starting EPUB validation..."
 
 # Check if epubcheck is available
 check_epubcheck() {
-    if command -v epubcheck &> /dev/null; then
-        log_success "epubcheck found"
+    # Store the original directory
+    ORIGINAL_DIR="$(pwd)"
+    
+    # Check for our local JAR file first
+    if [ -f "$ORIGINAL_DIR/epubcheck/epubcheck.jar" ] && command -v java &> /dev/null; then
+        log_success "epubcheck JAR found and Java available"
+        EPUBCHECK_JAR="$ORIGINAL_DIR/epubcheck/epubcheck.jar"
         return 0
-    elif command -v npx &> /dev/null && npx epubcheck --version &> /dev/null; then
-        log_success "epubcheck available via npx"
+    elif command -v epubcheck &> /dev/null; then
+        log_success "epubcheck found in PATH"
         return 0
-    elif command -v npm &> /dev/null; then
-        log_warning "epubcheck not found. Installing via npm..."
-        if npm install -g epubcheck; then
-            log_success "epubcheck installed successfully"
-            return 0
-        else
-            log_error "Failed to install epubcheck via npm"
-            return 1
-        fi
     else
-        log_error "Neither epubcheck nor npm found. Please install Node.js and npm first."
-        log_error "Then run: npm install -g epubcheck"
+        log_error "EPUBCheck not found. Please ensure Java is installed and epubcheck/epubcheck.jar exists."
         return 1
     fi
 }
@@ -167,10 +162,13 @@ run_epubcheck_validation() {
     log_info "Running epubcheck validation..."
     
     local epub_cmd
-    if command -v epubcheck &> /dev/null; then
+    if [ -n "${EPUBCHECK_JAR:-}" ] && command -v java &> /dev/null; then
+        epub_cmd="java -jar $EPUBCHECK_JAR"
+    elif command -v epubcheck &> /dev/null; then
         epub_cmd="epubcheck"
     else
-        epub_cmd="npx epubcheck"
+        log_error "No working EPUBCheck found"
+        return 1
     fi
     
     local validation_output

@@ -7,6 +7,8 @@
     "validate:assets": "node scripts/validate-assets.js",
     "validate:toc": "node scripts/validate-toc.js",
     "validate:multi-format": "node scripts/multi-format-validator.js",
+    "validate:xhtml": "node scripts/validate-xhtml.js",
+    "fix:xhtml-critical": "node scripts/fix-critical-xhtml-issues.js",
     "optimize": "node scripts/optimize-assets.js",
     "optimize:dry-run": "node scripts/optimize-assets.js --dry-run",
     "test:integration": "node tests/integration/epub-reader-test.js",
@@ -16,14 +18,16 @@
     "metrics": "node scripts/performance-metrics.js",
     "device:test": "node scripts/device-compat.js",
     "lint": "npm run validate && npm run validate:assets",
+    "lint:all": "npm run validate:xhtml && npm run validate:assets && npm run validate:toc && npm run validate",
     "build": "npm run lint && npm run test && echo '✅ Build completed successfully'",
     "build:epub": "npm run format && npm run validate && npm run validate:toc && npm run test && npm run device:test && scripts/build-epub.sh",
-    "build:full": "npm run format && npm run lint && npm run test && npm run validate:toc && npm run validate:multi-format && npm run optimize:dry-run && npm run device:test && scripts/build-epub.sh dist/curls-and-contemplation.full.epub && echo '✅ Full build completed successfully'",
+    "build:full": "npm run format && npm run lint:all && npm run test && npm run validate:toc && npm run validate:multi-format && npm run optimize:dry-run && npm run device:test && scripts/build-epub.sh dist/curls-and-contemplation.full.epub && echo '✅ Full build completed successfully'",
     "test": "npm run test:integration && npm run test:regression",
+    "test:all": "npm run validate:xhtml && npm run test:integration && npm run test:regression",
     "typecheck": "echo '✅ No TypeScript files to check'",
     "ci": "npm run build && npm run metrics",
     "ci:full": "npm run build:full && npm run metrics",
-    "pre-commit": "npm run format && npm run lint"
+    "pre-commit": "npm run format && npm run lint:all && npm run fix:xhtml-critical"
   },
   "devDependencies": {
     "xml2js": "^0.6.2"

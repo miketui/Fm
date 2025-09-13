@@ -1,0 +1,2344 @@
+{
+  "timestamp": "2025-09-13T23:17:39.501Z",
+  "stats": {
+    "filesProcessed": 45,
+    "errorsFound": 273,
+    "warningsFound": 0,
+    "fixesApplied": 144
+  },
+  "errors": [
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 7,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/1-TitlePage.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 141,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/1-TitlePage.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 43,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 361,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 362,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 362,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 363,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 365,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 366,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 367,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 32,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 32,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 119,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 215,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 257,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 44,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 250,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 251,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 251,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 252,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 254,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 255,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 256,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 32,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 32,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 87,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 103,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 104,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 125,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 155,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 233,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 49,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 409,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 410,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 410,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 411,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 413,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 414,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 415,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 35,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 35,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 310,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 45,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 425,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 426,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 426,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 427,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 429,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 430,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 431,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 33,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 33,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 192,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 414,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 44,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 376,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 377,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 377,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 378,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 380,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 381,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 382,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 33,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 33,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 264,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 43,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 297,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 298,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 298,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 299,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 301,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 302,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 303,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 32,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 32,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 126,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 132,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 178,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 44,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 536,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 537,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 537,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 538,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 540,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 541,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 542,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 33,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 33,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 57,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 59,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 64,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 73,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 85,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 124,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 141,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 191,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 365,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 42,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 458,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 459,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 459,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 460,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 462,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 463,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 464,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 31,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 31,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 332,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 403,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 7,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/2-Copyright.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &#169",
+      "line": 120,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&#169",
+      "file": "OEBPS/text/2-Copyright.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 41,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 454,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 455,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 455,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 456,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 458,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 459,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 460,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 31,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 31,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 180,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 242,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 48,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 419,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 420,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 420,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 421,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 423,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 424,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 425,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &#8212",
+      "line": 36,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&#8212",
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 134,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 138,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 257,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 282,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 46,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 439,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 440,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 440,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 441,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 443,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 444,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 445,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &#8212",
+      "line": 35,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&#8212",
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 309,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 47,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 517,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 518,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 518,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 519,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 521,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 522,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 523,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &apos",
+      "line": 34,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&apos",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &#8212",
+      "line": 36,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&#8212",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 43,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 74,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 273,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 336,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 337,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 337,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 337,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 337,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 337,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 337,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 343,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 344,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 344,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 344,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 344,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 344,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 344,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 350,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 351,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 351,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 351,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 351,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 351,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 351,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 357,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 358,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 358,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 358,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 358,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &lt",
+      "line": 358,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&lt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &gt",
+      "line": 358,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&gt",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 443,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 48,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 396,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 397,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 397,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 398,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 400,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 401,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 402,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &#8212",
+      "line": 38,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&#8212",
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 142,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 302,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 46,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 381,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 382,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 382,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 383,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 385,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 386,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 387,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 265,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 47,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 432,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 433,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 433,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 434,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 436,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 437,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 438,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 272,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 279,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 292,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 7,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/28-Conclusion.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/29QuizKey.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 29,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/29QuizKey.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 7,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/3-TableOfContents.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/30-SelfAssessment.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 33,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/30-SelfAssessment.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/31-affirmations-close.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/32-continued-learning-commitment.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/33-Acknowledgments.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/34-AbouttheAuthor.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 25,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/34-AbouttheAuthor.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 110,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/34-AbouttheAuthor.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/35-CurlsContempCollective.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/35-CurlsContempCollective.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 22,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/35-CurlsContempCollective.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 57,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/35-CurlsContempCollective.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 73,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/35-CurlsContempCollective.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 162,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/35-CurlsContempCollective.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/36-JournalingStart.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/37-ManifestingJournal.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/38-journal-page.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/39-professional-development.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 7,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/4-Dedication.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/40-SMARTGoals.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 210,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/40-SMARTGoals.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/41-self-care-journal.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/42-VisionJournal.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/43-DoodlePage.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 5,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/44-bibliography.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 40,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/44-bibliography.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 48,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/44-bibliography.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 7,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/5-SelfAssessment.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 7,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/6-affirmation-odyssey.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 7,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/7-Preface.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 192,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/7-Preface.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 199,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/7-Preface.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 215,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/7-Preface.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 223,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/7-Preface.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </section>",
+      "line": 43,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </main>",
+      "line": 290,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 291,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 291,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </div>",
+      "line": 292,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 294,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </body>",
+      "line": 295,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 296,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 32,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &#x27",
+      "line": 32,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&#x27",
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &quot",
+      "line": 32,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&quot",
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 56,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 194,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 230,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    },
+    {
+      "type": "unclosed_tag",
+      "message": "Unexpected closing tag </html>",
+      "line": 82,
+      "severity": "fatal",
+      "fixable": false,
+      "file": "OEBPS/text/nav.xhtml"
+    },
+    {
+      "type": "invalid_entity",
+      "message": "Invalid entity reference: &amp",
+      "line": 64,
+      "severity": "fatal",
+      "fixable": true,
+      "entity": "&amp",
+      "file": "OEBPS/text/nav.xhtml"
+    }
+  ],
+  "warnings": [],
+  "summary": {
+    "passed": false,
+    "totalIssues": 273
+  }
+}
