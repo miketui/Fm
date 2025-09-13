@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-09-13T22:15:05.732Z",
+  "timestamp": "2025-09-13T23:15:04.258Z",
   "summary": {
     "totalPaths": 83,
-    "brokenLinks": 7,
+    "brokenLinks": 0,
     "hasBaseline": true,
     "hasRegressions": false
   },
@@ -362,7 +362,7 @@
           "path": "text/nav.xhtml",
           "resolvedPath": "OEBPS/text/nav.xhtml",
           "type": "manifest_item",
-          "exists": false
+          "exists": true
         },
         {
           "path": "styles/style.css",
@@ -386,37 +386,37 @@
           "path": "fonts/Montserrat-Regular.woff2",
           "resolvedPath": "OEBPS/fonts/Montserrat-Regular.woff2",
           "type": "manifest_item",
-          "exists": false
+          "exists": true
         },
         {
           "path": "fonts/Montserrat-Bold.woff2",
           "resolvedPath": "OEBPS/fonts/Montserrat-Bold.woff2",
           "type": "manifest_item",
-          "exists": false
+          "exists": true
         },
         {
           "path": "fonts/librebaskerville-regular.woff2",
           "resolvedPath": "OEBPS/fonts/librebaskerville-regular.woff2",
           "type": "manifest_item",
-          "exists": false
+          "exists": true
         },
         {
           "path": "fonts/librebaskerville-italic.woff2",
           "resolvedPath": "OEBPS/fonts/librebaskerville-italic.woff2",
           "type": "manifest_item",
-          "exists": false
+          "exists": true
         },
         {
           "path": "fonts/librebaskerville-bold.woff2",
           "resolvedPath": "OEBPS/fonts/librebaskerville-bold.woff2",
           "type": "manifest_item",
-          "exists": false
+          "exists": true
         },
         {
           "path": "fonts/CinzelDecorative.woff2",
           "resolvedPath": "OEBPS/fonts/CinzelDecorative.woff2",
           "type": "manifest_item",
-          "exists": false
+          "exists": true
         },
         {
           "path": "images/decorative-line.JPEG",
@@ -594,7 +594,13 @@
         }
       ]
     },
-    "brokenLinks": [
+    "brokenLinks": []
+  },
+  "comparison": {
+    "newPaths": [],
+    "removedPaths": [],
+    "newBrokenLinks": [],
+    "fixedLinks": [
       {
         "source": "OEBPS/content.opf",
         "reference": "text/nav.xhtml",
@@ -637,19 +643,13 @@
         "resolved": "OEBPS/fonts/CinzelDecorative.woff2",
         "type": "manifest_item"
       }
-    ]
-  },
-  "comparison": {
-    "newPaths": [],
-    "removedPaths": [],
-    "newBrokenLinks": [],
-    "fixedLinks": [],
+    ],
     "changesSummary": {
       "pathsAdded": 0,
       "pathsRemoved": 0,
-      "linksFixed": 0,
+      "linksFixed": 7,
       "newBrokenLinks": 0,
-      "hasChanges": false
+      "hasChanges": true
     }
   },
   "pathPatternViolations": []

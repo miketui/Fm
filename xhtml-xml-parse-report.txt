@@ -1,0 +1,270 @@
+OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml:43: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml:361: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml:362: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml:363: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml:364: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml:44: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml:250: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml:251: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml:252: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml:253: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml:49: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml:409: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml:410: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml:411: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml:412: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml:45: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml:425: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml:426: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml:427: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml:428: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml:44: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml:376: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml:377: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml:378: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml:379: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml:43: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml:297: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml:298: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml:299: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml:300: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml:44: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml:536: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml:537: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml:538: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml:539: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml:42: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml:458: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml:459: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml:460: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml:461: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml:41: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml:454: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml:455: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml:456: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml:457: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml:48: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml:419: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml:420: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml:421: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml:422: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml:46: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml:439: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml:440: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml:441: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml:442: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml:47: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml:517: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml:518: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml:519: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml:520: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml:48: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml:396: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml:397: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml:398: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml:399: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml:46: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml:381: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml:382: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml:383: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml:384: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml:47: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml:432: parser error : Opening and ending tag mismatch: div line 15 and main
+      </main>
+             ^
+OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml:433: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml:434: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml:435: parser error : Premature end of data in tag body line 12
+
+^
+OEBPS/text/31-affirmations-close.xhtml:61: parser error : AttValue: " or ' expected
+                  <div key={index} class="flex items-start p-4 bg-gradient-to-r 
+                           ^
+OEBPS/text/31-affirmations-close.xhtml:61: parser error : attributes construct error
+                  <div key={index} class="flex items-start p-4 bg-gradient-to-r 
+                           ^
+OEBPS/text/31-affirmations-close.xhtml:61: parser error : Couldn't find end of Start Tag div line 61
+                  <div key={index} class="flex items-start p-4 bg-gradient-to-r 
+                           ^
+OEBPS/text/31-affirmations-close.xhtml:89: parser error : AttValue: " or ' expected
+                  <div key={index} class="flex items-center space-x-4">
+                           ^
+OEBPS/text/31-affirmations-close.xhtml:89: parser error : attributes construct error
+                  <div key={index} class="flex items-center space-x-4">
+                           ^
+OEBPS/text/31-affirmations-close.xhtml:89: parser error : Couldn't find end of Start Tag div line 89
+                  <div key={index} class="flex items-center space-x-4">
+                           ^
+OEBPS/text/31-affirmations-close.xhtml:173: parser error : Opening and ending tag mismatch: body line 11 and div
+      </div>
+            ^
+OEBPS/text/31-affirmations-close.xhtml:174: parser error : Opening and ending tag mismatch: html line 2 and div
+    </div>
+          ^
+OEBPS/text/31-affirmations-close.xhtml:175: parser error : Extra content at the end of the document
+</body>
+^
+OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml:43: parser error : Opening and ending tag mismatch: div line 20 and section
+    </section>
+              ^
+OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml:290: parser error : Opening and ending tag mismatch: div line 15 and main
+    </main>
+           ^
+OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml:291: parser error : Opening and ending tag mismatch: section line 14 and body
+  </body>
+         ^
+OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml:292: parser error : Opening and ending tag mismatch: main line 13 and html
+</html>
+       ^
+OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml:292: parser error : Premature end of data in tag body line 12
+</html>
+       ^
+OEBPS/text/nav.xhtml:64: parser error : xmlParseEntityRef: no name
+            <li><a href="35-CurlsContempCollective.xhtml">Curls & Contemplation 
+                                                                 ^

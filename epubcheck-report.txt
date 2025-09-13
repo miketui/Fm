@@ -1,0 +1,27 @@
+Validating using EPUB version 3.3 rules.
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml(43,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml(43,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml(44,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml(49,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml(45,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml(44,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml(43,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml(44,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml(42,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml(41,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml(48,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml(46,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml(47,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml(48,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml(46,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml(47,7): Fatal Error while parsing file: The element type "div" must be terminated by the matching end-tag "</div>".
+ERROR(OPF-015): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/28-Conclusion.xhtml(-1,-1): The property "svg" should not be declared in the OPF file.
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/31-affirmations-close.xhtml(61,28): Fatal Error while parsing file: Open quote is expected for attribute "key" associated with an element type "div".
+FATAL(RSC-016): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/nav.xhtml(64,66): Fatal Error while parsing file: The entity name must immediately follow the '&' in the entity reference.
+ERROR(RSC-012): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml(38,222): Fragment identifier is not defined.
+ERROR(RSC-012): /tmp/tmp.OLz3fggRmU/book.epub/OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml(39,173): Fragment identifier is not defined.
+
+Check finished with errors
+Messages: 18 fatals / 3 errors / 0 warnings / 0 infos
+
+EPUBCheck completed
