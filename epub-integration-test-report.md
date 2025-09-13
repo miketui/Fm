@@ -1,6 +1,6 @@
 # EPUB Reader Integration Test Report
 
-Generated: 2025-09-13T23:11:04.262Z
+Generated: 2025-09-13T23:21:41.934Z
 
 ## Summary
 
@@ -12,9 +12,11 @@ Generated: 2025-09-13T23:11:04.262Z
 ## Test Results
 
 ### EPUB Structure Validation
+
 **Status**: ✅ PASSED
 
 **Results**:
+
 ```json
 {
   "requiredFiles": "all present",
@@ -23,9 +25,11 @@ Generated: 2025-09-13T23:11:04.262Z
 ```
 
 ### OPF Manifest Completeness
+
 **Status**: ✅ PASSED
 
 **Results**:
+
 ```json
 {
   "manifestItems": 83,
@@ -35,9 +39,11 @@ Generated: 2025-09-13T23:11:04.262Z
 ```
 
 ### Navigation Document Validation
+
 **Status**: ✅ PASSED
 
 **Results**:
+
 ```json
 {
   "navigationDocument": "found and valid"
@@ -45,9 +51,11 @@ Generated: 2025-09-13T23:11:04.262Z
 ```
 
 ### XHTML Validity
+
 **Status**: ✅ PASSED
 
 **Results**:
+
 ```json
 {
   "xhtmlFiles": 0,
@@ -56,9 +64,11 @@ Generated: 2025-09-13T23:11:04.262Z
 ```
 
 ### CSS and Asset Loading
+
 **Status**: ✅ PASSED
 
 **Results**:
+
 ```json
 {
   "stylesheets": 0,
@@ -68,9 +78,11 @@ Generated: 2025-09-13T23:11:04.262Z
 ```
 
 ### Accessibility Features
+
 **Status**: ✅ PASSED
 
 **Results**:
+
 ```json
 {
   "accessibilityMetadata": 3,
@@ -80,16 +92,17 @@ Generated: 2025-09-13T23:11:04.262Z
 ```
 
 ### Performance Metrics
+
 **Status**: ✅ PASSED
 
 **Results**:
+
 ```json
 {
-  "totalSize": "2.85 MB",
-  "totalSizeBytes": 2991484,
+  "totalSize": "2.88 MB",
+  "totalSizeBytes": 3018771,
   "fileCount": 84,
   "averageFileSize": "35 KB",
   "validationTime": "6ms"
 }
 ```
-

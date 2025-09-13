@@ -1,6 +1,6 @@
 # Path Reference Regression Test Report
 
-Generated: 2025-09-13T23:18:22.896Z
+Generated: 2025-09-13T23:23:30.179Z
 
 ## Summary
 
@@ -25,4 +25,3 @@ Generated: 2025-09-13T23:18:22.896Z
 - **manifest_item**: `fonts/librebaskerville-italic.woff2` in `OEBPS/content.opf`
 - **manifest_item**: `fonts/librebaskerville-bold.woff2` in `OEBPS/content.opf`
 - **manifest_item**: `fonts/CinzelDecorative.woff2` in `OEBPS/content.opf`
-

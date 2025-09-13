@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-13T23:11:04.262Z",
+  "timestamp": "2025-09-13T23:21:41.934Z",
   "summary": {
     "totalTests": 7,
     "passed": 7,
@@ -14,7 +14,7 @@
         "requiredFiles": "all present",
         "mimetype": "correct"
       },
-      "timestamp": "2025-09-13T23:11:04.238Z"
+      "timestamp": "2025-09-13T23:21:41.910Z"
     },
     {
       "name": "OPF Manifest Completeness",
@@ -24,7 +24,7 @@
         "spineItems": 44,
         "allFilesExist": true
       },
-      "timestamp": "2025-09-13T23:11:04.239Z"
+      "timestamp": "2025-09-13T23:21:41.911Z"
     },
     {
       "name": "Navigation Document Validation",
@@ -32,7 +32,7 @@
       "result": {
         "navigationDocument": "found and valid"
       },
-      "timestamp": "2025-09-13T23:11:04.240Z"
+      "timestamp": "2025-09-13T23:21:41.912Z"
     },
     {
       "name": "XHTML Validity",
@@ -41,7 +41,7 @@
         "xhtmlFiles": 0,
         "allValid": true
       },
-      "timestamp": "2025-09-13T23:11:04.244Z"
+      "timestamp": "2025-09-13T23:21:41.916Z"
     },
     {
       "name": "CSS and Asset Loading",
@@ -51,7 +51,7 @@
         "images": 0,
         "fonts": 0
       },
-      "timestamp": "2025-09-13T23:11:04.253Z"
+      "timestamp": "2025-09-13T23:21:41.925Z"
     },
     {
       "name": "Accessibility Features",
@@ -61,19 +61,19 @@
         "missingA11yFeatures": [],
         "imageAltTextCoverage": 100
       },
-      "timestamp": "2025-09-13T23:11:04.256Z"
+      "timestamp": "2025-09-13T23:21:41.928Z"
     },
     {
       "name": "Performance Metrics",
       "status": "passed",
       "result": {
-        "totalSize": "2.85 MB",
-        "totalSizeBytes": 2991484,
+        "totalSize": "2.88 MB",
+        "totalSizeBytes": 3018771,
         "fileCount": 84,
         "averageFileSize": "35 KB",
         "validationTime": "6ms"
       },
-      "timestamp": "2025-09-13T23:11:04.262Z"
+      "timestamp": "2025-09-13T23:21:41.934Z"
     }
   ],
   "errors": []
