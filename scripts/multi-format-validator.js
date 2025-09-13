@@ -145,11 +145,14 @@ class MultiFormatEPUBValidator {
         };
 
         try {
-            // Run epubcheck with version-specific flags
-            let command = `epubcheck "${tempEpubPath}"`;
+            // Choose epubcheck invocation (prefer bundled JAR if available)
+            const useJar = fs.existsSync(path.resolve('epubcheck/epubcheck.jar'));
+            let command = useJar
+                ? `java -jar epubcheck/epubcheck.jar "${tempEpubPath}"`
+                : `epubcheck "${tempEpubPath}"`;
             
-            // Add version-specific validation flags
-            if (version === '2.0.1') {
+            // Add version-specific validation flags for CLI only
+            if (!useJar && version === '2.0.1') {
                 command += ' --mode exp';
             }
             
@@ -160,12 +163,12 @@ class MultiFormatEPUBValidator {
             let checkPassed = false;
             
             for (const line of lines) {
-                if (line.includes('Check finished with no errors or warnings')) {
+                if (line.includes('Check finished with no errors or warnings') || line.includes('No errors or warnings detected.')) {
                     checkPassed = true;
                     validation.passed = true;
-                } else if (line.startsWith('ERROR')) {
+                } else if (line.startsWith('ERROR') || line.includes('ERROR(') || line.includes('FATAL(')) {
                     validation.errors.push(line);
-                } else if (line.startsWith('WARNING')) {
+                } else if (line.startsWith('WARNING') || line.includes('WARNING(')) {
                     validation.warnings.push(line);
                 } else if (line.startsWith('INFO')) {
                     validation.infos.push(line);
@@ -176,8 +179,8 @@ class MultiFormatEPUBValidator {
             validation.compatible = this.checkVersionCompatibility(version, this.detectedVersion, this.detectedFeatures);
             
         } catch (error) {
-            const errorOutput = error.stdout || error.stderr || error.message;
-            validation.errors.push(`Validation failed: ${errorOutput}`);
+            const errorOutput = (error.stdout || error.stderr || error.message || '').toString();
+            validation.errors.push(`Validation failed: ${errorOutput.trim()}`);
         }
 
         return validation;

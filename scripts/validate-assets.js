@@ -207,7 +207,18 @@ class EPUBAssetValidator {
 
     globFiles(pattern) {
         try {
-            const result = execSync(`find ${pattern.replace('*', '\\*')} -type f 2>/dev/null || true`, { encoding: 'utf8' });
+            // Support patterns like "OEBPS/text/*.xhtml" or "OEBPS/styles/*.css"
+            const m = pattern.match(/^(.*)\/(\*\.[^\/]+)$/);
+            let cmd;
+            if (m) {
+                const dir = m[1];
+                const name = m[2]; // e.g., *.xhtml
+                cmd = `find "${dir}" -type f -name "${name}" 2>/dev/null || true`;
+            } else {
+                // Fallback: treat as a directory
+                cmd = `find "${pattern}" -type f 2>/dev/null || true`;
+            }
+            const result = execSync(cmd, { encoding: 'utf8' });
             return result.trim().split('\n').filter(f => f.length > 0);
         } catch (error) {
             return [];

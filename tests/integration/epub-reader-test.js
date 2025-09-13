@@ -162,30 +162,29 @@ class EPUBReaderTest {
             const xhtmlFiles = this.globFiles('OEBPS/text/*.xhtml');
             const invalidFiles = [];
 
-            for (const file of xhtmlFiles) {
-                const content = fs.readFileSync(file, 'utf8');
-                
-                // Basic XHTML validation checks
-                if (!content.includes('<?xml version="1.0"')) {
-                    invalidFiles.push({ file, issue: 'Missing XML declaration' });
-                }
-                
-                if (!content.includes('<!DOCTYPE html>')) {
-                    invalidFiles.push({ file, issue: 'Missing DOCTYPE' });
-                }
-                
-                if (!content.includes('xmlns="http://www.w3.org/1999/xhtml"')) {
-                    invalidFiles.push({ file, issue: 'Missing XHTML namespace' });
-                }
+            // Prefer xmllint for true XML well-formedness validation
+            let hasXmlLint = false;
+            try {
+                execSync('xmllint --version', { stdio: 'ignore' });
+                hasXmlLint = true;
+            } catch (_) {}
 
-                // Check for unclosed tags (basic check)
-                const openTags = (content.match(/<[^/][^>]*[^/]>/g) || []).length;
-                const closeTags = (content.match(/<\/[^>]*>/g) || []).length;
-                const selfClosing = (content.match(/<[^>]*\/>/g) || []).length;
-                
-                // This is a simplified check - real validation would be more complex
-                if (Math.abs(openTags - closeTags - selfClosing) > 2) {
-                    invalidFiles.push({ file, issue: 'Possible unclosed tags' });
+            for (const file of xhtmlFiles) {
+                if (hasXmlLint) {
+                    try {
+                        execSync(`xmllint --noout "${file}"`, { stdio: 'pipe' });
+                    } catch (e) {
+                        invalidFiles.push({ file, issue: 'XML not well-formed', detail: e.stdout?.toString?.() || e.message });
+                    }
+                } else {
+                    // Fallback: light checks
+                    const content = fs.readFileSync(file, 'utf8');
+                    if (!content.includes('<!DOCTYPE html>')) {
+                        invalidFiles.push({ file, issue: 'Missing DOCTYPE' });
+                    }
+                    if (!content.includes('xmlns="http://www.w3.org/1999/xhtml"')) {
+                        invalidFiles.push({ file, issue: 'Missing XHTML namespace' });
+                    }
                 }
             }
 
@@ -193,7 +192,7 @@ class EPUBReaderTest {
                 throw new Error(`Invalid XHTML files found: ${JSON.stringify(invalidFiles)}`);
             }
 
-            return { xhtmlFiles: xhtmlFiles.length, allValid: true };
+            return { xhtmlFiles: xhtmlFiles.length, allValid: true, validator: hasXmlLint ? 'xmllint' : 'fallback' };
         });
     }
 
@@ -347,7 +346,16 @@ class EPUBReaderTest {
 
     globFiles(pattern) {
         try {
-            const result = execSync(`find ${pattern.replace('*', '\\*')} -type f 2>/dev/null || true`, { encoding: 'utf8' });
+            const m = pattern.match(/^(.*)\/(\*\.[^\/]+)$/);
+            let cmd;
+            if (m) {
+                const dir = m[1];
+                const name = m[2];
+                cmd = `find "${dir}" -type f -name "${name}" 2>/dev/null || true`;
+            } else {
+                cmd = `find "${pattern}" -type f 2>/dev/null || true`;
+            }
+            const result = execSync(cmd, { encoding: 'utf8' });
             return result.trim().split('\n').filter(f => f.length > 0);
         } catch (error) {
             return [];

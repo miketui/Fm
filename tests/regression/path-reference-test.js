@@ -349,7 +349,16 @@ class PathReferenceRegressionTest {
 
     globFiles(pattern) {
         try {
-            const result = execSync(`find ${pattern.replace('*', '\\*')} -type f 2>/dev/null || true`, { encoding: 'utf8' });
+            const m = pattern.match(/^(.*)\/(\*\.[^\/]+)$/);
+            let cmd;
+            if (m) {
+                const dir = m[1];
+                const name = m[2];
+                cmd = `find "${dir}" -type f -name "${name}" 2>/dev/null || true`;
+            } else {
+                cmd = `find "${pattern}" -type f 2>/dev/null || true`;
+            }
+            const result = execSync(cmd, { encoding: 'utf8' });
             return result.trim().split('\n').filter(f => f.length > 0);
         } catch (error) {
             return [];

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2025-09-13T23:15:04.094Z",
+  "timestamp": "2025-09-13T23:42:36.939Z",
   "stats": {
-    "filesChecked": 0,
-    "imagesFound": 0,
-    "stylesheetsFound": 0,
-    "fontsFound": 0,
+    "filesChecked": 48,
+    "imagesFound": 32,
+    "stylesheetsFound": 133,
+    "fontsFound": 6,
     "brokenReferences": 0
   },
   "errors": [],

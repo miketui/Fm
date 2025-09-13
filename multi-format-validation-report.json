@@ -1,72 +1,51 @@
 {
-  "timestamp": "2025-09-13T23:14:54.538Z",
+  "timestamp": "2025-09-13T23:40:30.514Z",
   "detectedVersion": "3.0",
   "detectedFeatures": [
     "EPUB3_Navigation",
-    "SVG",
     "Accessibility_Metadata",
     "Embedded_Fonts"
   ],
   "validationResults": {
     "3.0": {
       "version": "3.0",
-      "passed": false,
-      "errors": [
-        "Validation failed: /bin/sh: 1: epubcheck: not found\n"
-      ],
+      "passed": true,
+      "errors": [],
       "warnings": [],
       "infos": [],
       "compatible": false
     },
     "3.2": {
       "version": "3.2",
-      "passed": false,
-      "errors": [
-        "Validation failed: /bin/sh: 1: epubcheck: not found\n"
-      ],
+      "passed": true,
+      "errors": [],
       "warnings": [],
       "infos": [],
       "compatible": false
     },
     "3.3": {
       "version": "3.3",
-      "passed": false,
-      "errors": [
-        "Validation failed: /bin/sh: 1: epubcheck: not found\n"
-      ],
+      "passed": true,
+      "errors": [],
       "warnings": [],
       "infos": [],
-      "compatible": false
+      "compatible": true
     }
   },
   "summary": {
     "totalVersions": 3,
-    "passedVersions": 0,
-    "compatibleVersions": 0,
-    "totalErrors": 3,
+    "passedVersions": 3,
+    "compatibleVersions": 1,
+    "totalErrors": 0,
     "totalWarnings": 0
   },
   "recommendations": [
     {
-      "type": "validation_error",
-      "severity": "high",
-      "message": "Fix other errors for EPUB 3.0 compatibility",
-      "count": 1,
-      "version": "3.0"
-    },
-    {
-      "type": "validation_error",
-      "severity": "high",
-      "message": "Fix other errors for EPUB 3.2 compatibility",
-      "count": 1,
-      "version": "3.2"
-    },
-    {
-      "type": "validation_error",
-      "severity": "high",
-      "message": "Fix other errors for EPUB 3.3 compatibility",
-      "count": 1,
-      "version": "3.3"
+      "type": "version_upgrade",
+      "severity": "medium",
+      "message": "Consider upgrading to EPUB 3.3 for better compatibility",
+      "currentVersion": "3.0",
+      "recommendedVersion": "3.3"
     }
   ]
 }

@@ -1,26 +1,25 @@
 {
-  "timestamp": "2025-09-13T23:15:01.971Z",
+  "timestamp": "2025-09-13T23:42:27.730Z",
   "validation": {
     "epubcheck": {
-      "duration": -1,
-      "status": "failed",
-      "error": "Command failed: ./validate-epub.sh",
-      "timestamp": "2025-09-13T23:15:04.031Z"
+      "duration": 9131,
+      "status": "passed",
+      "timestamp": "2025-09-13T23:42:36.864Z"
     },
     "assetValidation": {
-      "duration": 69,
+      "duration": 78,
       "status": "passed",
-      "timestamp": "2025-09-13T23:15:04.101Z"
+      "timestamp": "2025-09-13T23:42:36.943Z"
     },
     "integrationTests": {
-      "duration": 97,
+      "duration": 425,
       "status": "passed",
-      "timestamp": "2025-09-13T23:15:04.198Z"
+      "timestamp": "2025-09-13T23:42:37.369Z"
     },
     "regressionTests": {
-      "duration": 68,
+      "duration": 87,
       "status": "passed",
-      "timestamp": "2025-09-13T23:15:04.266Z"
+      "timestamp": "2025-09-13T23:42:37.456Z"
     }
   },
   "structure": {
@@ -49,8 +48,8 @@
   "assets": {
     "sizes": {
       "text": {
-        "bytes": 902631,
-        "mb": 0.86,
+        "bytes": 910547,
+        "mb": 0.87,
         "files": 0
       },
       "styles": {
@@ -70,9 +69,9 @@
       }
     },
     "totals": {
-      "size": 2976202,
+      "size": 2984118,
       "files": 0,
-      "mb": 2.84
+      "mb": 2.85
     },
     "optimization": {
       "largeImages": [],
@@ -96,14 +95,14 @@
       "platform": "linux",
       "arch": "x64",
       "memory": {
-        "used": 4.48,
-        "total": 6.35
+        "used": 4.5,
+        "total": 5.35
       }
     },
     "git": {
       "branch": "terragon/test-validate-xhtml-epub-ready",
-      "commit": "8e64e84c",
-      "status": 10
+      "commit": "2df6a03c",
+      "status": 38
     },
     "npm": {
       "version": "1.0.0",
@@ -115,9 +114,9 @@
   "trends": [
     {
       "metric": "total_size",
-      "change": 5616,
-      "percentage": 0.19,
-      "direction": "increased"
+      "change": 0,
+      "percentage": 0,
+      "direction": "stable"
     },
     {
       "metric": "file_count",
@@ -127,16 +126,16 @@
     },
     {
       "metric": "validation_time",
-      "change": 0,
+      "change": 9132,
       "percentage": 0,
-      "direction": "stable"
+      "direction": "slower"
     }
   ],
   "summary": {
-    "totalSize": 2.84,
+    "totalSize": 2.85,
     "totalFiles": 0,
-    "validationPassed": false,
+    "validationPassed": true,
     "optimizationIssues": 0,
-    "performanceScore": 75
+    "performanceScore": 100
   }
 }

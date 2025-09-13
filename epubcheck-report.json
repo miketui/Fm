@@ -1,238 +1,14 @@
 {
-  "messages" : [ {
-    "ID" : "OPF-015",
-    "severity" : "ERROR",
-    "message" : "The property \"svg\" should not be declared in the OPF file.",
-    "additionalLocations" : 0,
-    "locations" : [ {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/28-Conclusion.xhtml",
-      "line" : -1,
-      "column" : -1,
-      "context" : null
-    } ],
-    "suggestion" : null
-  }, {
-    "ID" : "RSC-012",
-    "severity" : "ERROR",
-    "message" : "Fragment identifier is not defined.",
-    "additionalLocations" : 0,
-    "locations" : [ {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml",
-      "line" : 38,
-      "column" : 222,
-      "context" : "https://46a7bcd8-053a-4df4-945d-731ad56fe3f6.epubcheck.w3c.org/OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-1"
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml",
-      "line" : 39,
-      "column" : 173,
-      "context" : "https://46a7bcd8-053a-4df4-945d-731ad56fe3f6.epubcheck.w3c.org/OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-2"
-    } ],
-    "suggestion" : null
-  }, {
-    "ID" : "RSC-016",
-    "severity" : "FATAL",
-    "message" : "Fatal Error while parsing file: Open quote is expected for attribute \"key\" associated with an  element type  \"div\".",
-    "additionalLocations" : 0,
-    "locations" : [ {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/31-affirmations-close.xhtml",
-      "line" : 61,
-      "column" : 28,
-      "context" : null
-    } ],
-    "suggestion" : null
-  }, {
-    "ID" : "RSC-016",
-    "severity" : "FATAL",
-    "message" : "Fatal Error while parsing file: The element type \"div\" must be terminated by the matching end-tag \"</div>\".",
-    "additionalLocations" : 0,
-    "locations" : [ {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml",
-      "line" : 43,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml",
-      "line" : 44,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml",
-      "line" : 49,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml",
-      "line" : 45,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml",
-      "line" : 44,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml",
-      "line" : 43,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml",
-      "line" : 44,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml",
-      "line" : 42,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml",
-      "line" : 41,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml",
-      "line" : 48,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml",
-      "line" : 46,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml",
-      "line" : 47,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml",
-      "line" : 48,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml",
-      "line" : 46,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml",
-      "line" : 47,
-      "column" : 7,
-      "context" : null
-    }, {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml",
-      "line" : 43,
-      "column" : 7,
-      "context" : null
-    } ],
-    "suggestion" : null
-  }, {
-    "ID" : "RSC-016",
-    "severity" : "FATAL",
-    "message" : "Fatal Error while parsing file: The entity name must immediately follow the '&' in the entity reference.",
-    "additionalLocations" : 0,
-    "locations" : [ {
-      "url" : {
-        "opaque" : false,
-        "hierarchical" : true
-      },
-      "path" : "OEBPS/text/nav.xhtml",
-      "line" : 64,
-      "column" : 66,
-      "context" : null
-    } ],
-    "suggestion" : null
-  } ],
+  "messages" : [ ],
   "customMessageFileName" : null,
   "checker" : {
-    "path" : "/tmp/tmp.OLz3fggRmU/book.epub",
+    "path" : "/tmp/tmp.d383gCYOXT/book.epub",
     "filename" : "book.epub",
     "checkerVersion" : "5.1.0",
-    "checkDate" : "09-13-2025 23:13:20",
-    "elapsedTime" : 9021,
-    "nFatal" : 3,
-    "nError" : 2,
+    "checkDate" : "09-13-2025 23:37:18",
+    "elapsedTime" : 9684,
+    "nFatal" : 0,
+    "nError" : 0,
     "nWarning" : 0,
     "nUsage" : 0
   },
@@ -257,7 +33,7 @@
     "isBackwardCompatible" : false,
     "hasAudio" : false,
     "hasVideo" : false,
-    "charsCount" : 113259,
+    "charsCount" : 665253,
     "embeddedFonts" : [ "Libre Baskerville,400", "Libre Baskerville,italic,400", "Libre Baskerville,700", "Cinzel Decorative,400", "Montserrat,400", "Montserrat,700" ],
     "refFonts" : [ ],
     "hasEncryption" : false,
@@ -336,10 +112,10 @@
     "id" : "ePubCheck.NoManifestRef:OEBPS/content.opf",
     "fileName" : "OEBPS/content.opf",
     "media_type" : null,
-    "compressedSize" : 3299,
-    "uncompressedSize" : 15282,
+    "compressedSize" : 3294,
+    "uncompressedSize" : 15265,
     "compressionMethod" : "Deflated",
-    "checkSum" : "31f37458f8322bf38ffb357d8f1a398e778860e7446a3222617f13afc83a437",
+    "checkSum" : "35c5ae06b93f35b831cb6a2ce44f3fbbe8833c634a8dd364621f15c54512099",
     "isSpineItem" : false,
     "spineIndex" : null,
     "isLinear" : false,
@@ -965,10 +741,10 @@
     "id" : "nav",
     "fileName" : "OEBPS/text/nav.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 1498,
-    "uncompressedSize" : 5404,
+    "compressedSize" : 1501,
+    "uncompressedSize" : 5409,
     "compressionMethod" : "Deflated",
-    "checkSum" : "fb2b39b2647915c619992c4983443783cd49c77b97c1f43d1744fa388a13357",
+    "checkSum" : "cb2e6793ad5dce3c1449e84ebf9dd41ef9a4a95d20721b27ceec372334dd3",
     "isSpineItem" : false,
     "spineIndex" : null,
     "isLinear" : false,
@@ -977,7 +753,7 @@
     "renditionLayout" : null,
     "renditionOrientation" : null,
     "renditionSpread" : null,
-    "referencedItems" : [ "OEBPS/styles/style.css", "OEBPS/text/1-TitlePage.xhtml", "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml", "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml", "OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml", "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml", "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml", "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml", "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml", "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml", "OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml", "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml", "OEBPS/text/2-Copyright.xhtml", "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml", "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml", "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml", "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml", "OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml", "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml", "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml", "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml", "OEBPS/text/28-Conclusion.xhtml", "OEBPS/text/29QuizKey.xhtml", "OEBPS/text/3-TableOfContents.xhtml", "OEBPS/text/30-SelfAssessment.xhtml", "OEBPS/text/31-affirmations-close.xhtml", "OEBPS/text/32-continued-learning-commitment.xhtml", "OEBPS/text/33-Acknowledgments.xhtml", "OEBPS/text/34-AbouttheAuthor.xhtml", "OEBPS/text/35-CurlsContempCollective.xhtml", "OEBPS/text/4-Dedication.xhtml", "OEBPS/text/5-SelfAssessment.xhtml", "OEBPS/text/6-affirmation-odyssey.xhtml", "OEBPS/text/7-Preface.xhtml", "OEBPS/text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml" ]
+    "referencedItems" : [ "OEBPS/styles/style.css", "OEBPS/text/1-TitlePage.xhtml", "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml", "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml", "OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml", "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml", "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml", "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml", "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml", "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml", "OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml", "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml", "OEBPS/text/2-Copyright.xhtml", "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml", "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml", "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml", "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml", "OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml", "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml", "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml", "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml", "OEBPS/text/28-Conclusion.xhtml", "OEBPS/text/29QuizKey.xhtml", "OEBPS/text/3-TableOfContents.xhtml", "OEBPS/text/30-SelfAssessment.xhtml", "OEBPS/text/31-affirmations-close.xhtml", "OEBPS/text/32-continued-learning-commitment.xhtml", "OEBPS/text/33-Acknowledgments.xhtml", "OEBPS/text/34-AbouttheAuthor.xhtml", "OEBPS/text/35-CurlsContempCollective.xhtml", "OEBPS/text/36-JournalingStart.xhtml", "OEBPS/text/37-ManifestingJournal.xhtml", "OEBPS/text/38-journal-page.xhtml", "OEBPS/text/39-professional-development.xhtml", "OEBPS/text/4-Dedication.xhtml", "OEBPS/text/40-SMARTGoals.xhtml", "OEBPS/text/41-self-care-journal.xhtml", "OEBPS/text/42-VisionJournal.xhtml", "OEBPS/text/43-DoodlePage.xhtml", "OEBPS/text/44-bibliography.xhtml", "OEBPS/text/5-SelfAssessment.xhtml", "OEBPS/text/6-affirmation-odyssey.xhtml", "OEBPS/text/7-Preface.xhtml", "OEBPS/text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml" ]
   }, {
     "id" : "text001",
     "fileName" : "OEBPS/text/1-TitlePage.xhtml",
@@ -1118,10 +894,10 @@
     "id" : "text009",
     "fileName" : "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 13176,
-    "uncompressedSize" : 37042,
+    "compressedSize" : 13178,
+    "uncompressedSize" : 37069,
     "compressionMethod" : "Deflated",
-    "checkSum" : "b63cfce328ceb9ad669664f614a2b26a53e36144d2b853f4d98c8b6e127afd5",
+    "checkSum" : "8bcd2fbf133b7a9dcf188264a167ef69da1a570888fb1ebdbd7c6fb42525",
     "isSpineItem" : true,
     "spineIndex" : 8,
     "isLinear" : true,
@@ -1130,15 +906,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-1", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-2" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-i-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-1", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-10", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-2", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-3", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-4", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-5", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-6", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-7", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-8", "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml#fn-9" ]
   }, {
     "id" : "text010",
     "fileName" : "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml",
     "media_type" : "application/xhtml+xml",
     "compressedSize" : 11114,
-    "uncompressedSize" : 29922,
+    "uncompressedSize" : 29948,
     "compressionMethod" : "Deflated",
-    "checkSum" : "f1b11deb9a46be642b9b8325358602de3637f973e25d90b331c1160d445d",
+    "checkSum" : "1f7f34d4eab8938ab4aa2bf4091edacc38cb0fcbce69296994eec1851dc5779",
     "isSpineItem" : true,
     "spineIndex" : 9,
     "isLinear" : true,
@@ -1147,15 +923,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-ii-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text011",
     "fileName" : "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 8677,
-    "uncompressedSize" : 23286,
+    "compressedSize" : 8678,
+    "uncompressedSize" : 23312,
     "compressionMethod" : "Deflated",
-    "checkSum" : "48f493d131363c6ac4e0352e64e5e1e233bda1f5e757b1a72e56ec57fd4",
+    "checkSum" : "c93aee665d348ef924da693aceae48ee0ca7ca387b6cd82e726c6d7ca0b7",
     "isSpineItem" : true,
     "spineIndex" : 10,
     "isLinear" : true,
@@ -1164,7 +940,7 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-iii-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text012",
     "fileName" : "OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml",
@@ -1186,10 +962,10 @@
     "id" : "text013",
     "fileName" : "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 13830,
-    "uncompressedSize" : 40682,
+    "compressedSize" : 13831,
+    "uncompressedSize" : 40708,
     "compressionMethod" : "Deflated",
-    "checkSum" : "25cbc7b0493411b64a60b7a797a5bdc8ac21c6e12318711ee2b639a5ed737f",
+    "checkSum" : "1443e9bf4217c6c35adc4aa933cb925d3684ed3593d9f82b4a0bf245f59dd",
     "isSpineItem" : true,
     "spineIndex" : 12,
     "isLinear" : true,
@@ -1198,15 +974,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-iv-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text014",
     "fileName" : "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml",
     "media_type" : "application/xhtml+xml",
     "compressedSize" : 14736,
-    "uncompressedSize" : 44881,
+    "uncompressedSize" : 44907,
     "compressionMethod" : "Deflated",
-    "checkSum" : "cd4362c222a07c5f4cc52c6d38e233f4e54ca3d54334583ad9dd8c4bdd2bc",
+    "checkSum" : "c8107d2f3c68b1f25d57d84516ef5ad6429ad23156472183967d8c41029f6",
     "isSpineItem" : true,
     "spineIndex" : 13,
     "isLinear" : true,
@@ -1215,15 +991,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-v-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text015",
     "fileName" : "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 13474,
-    "uncompressedSize" : 39749,
+    "compressedSize" : 13475,
+    "uncompressedSize" : 39775,
     "compressionMethod" : "Deflated",
-    "checkSum" : "bd50a64a34975e643cdd354f228b7e4c0b62116a9a0f3fc69e6c6b163bf5779",
+    "checkSum" : "ee5f50f1b21b87a85c22b2ecde9964d23730160792e829f58e683ae16e0ce",
     "isSpineItem" : true,
     "spineIndex" : 14,
     "isLinear" : true,
@@ -1232,15 +1008,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-vi-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text016",
     "fileName" : "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 9152,
-    "uncompressedSize" : 25420,
+    "compressedSize" : 9154,
+    "uncompressedSize" : 25446,
     "compressionMethod" : "Deflated",
-    "checkSum" : "397440bf70668c7b774e54f9b687816d9cda11dae91d1320f482f5311e102a",
+    "checkSum" : "8e578c3534b8dbc6b1ef5c67eb3d7a35b11975e7cc59b065fc15f1fcb37b2e32",
     "isSpineItem" : true,
     "spineIndex" : 15,
     "isLinear" : true,
@@ -1249,15 +1025,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-vii-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text017",
     "fileName" : "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 18439,
-    "uncompressedSize" : 55925,
+    "compressedSize" : 18440,
+    "uncompressedSize" : 55951,
     "compressionMethod" : "Deflated",
-    "checkSum" : "945950e0d5c6cc2fc8a878b582f881f16cb84842b97d595f013d75733481f",
+    "checkSum" : "9d8e1fa2d3298728fb42563da8bbc6f501db949589cd17e8d79539fe35739d",
     "isSpineItem" : true,
     "spineIndex" : 16,
     "isLinear" : true,
@@ -1266,7 +1042,7 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-viii-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text018",
     "fileName" : "OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml",
@@ -1288,10 +1064,10 @@
     "id" : "text019",
     "fileName" : "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 16040,
-    "uncompressedSize" : 47436,
+    "compressedSize" : 16041,
+    "uncompressedSize" : 47462,
     "compressionMethod" : "Deflated",
-    "checkSum" : "531a9c75df3a47fb8ab0b8648df315be3e5505f5faa35544d954a8e9c577f",
+    "checkSum" : "54b9909ce2ad577acaea91c47e215887ac2bb716ffa41255a16dc6181f426af",
     "isSpineItem" : true,
     "spineIndex" : 18,
     "isLinear" : true,
@@ -1300,15 +1076,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-ix-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text020",
     "fileName" : "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 16792,
-    "uncompressedSize" : 47639,
+    "compressedSize" : 16793,
+    "uncompressedSize" : 47665,
     "compressionMethod" : "Deflated",
-    "checkSum" : "24309b3e154a8ea7a0d863f27592eb9a45f6ca63a51015e112567714baa7e",
+    "checkSum" : "d4b34b9dfd22b2fdba198488f375b0b292164c2472881e4fefb8cd25e66e0",
     "isSpineItem" : true,
     "spineIndex" : 19,
     "isLinear" : true,
@@ -1317,15 +1093,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-x-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text021",
     "fileName" : "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 14693,
-    "uncompressedSize" : 43078,
+    "compressedSize" : 14694,
+    "uncompressedSize" : 43104,
     "compressionMethod" : "Deflated",
-    "checkSum" : "ca1c427ab242c04e2285143d7c7a74f1eac0c1243f8a23f585c51fd4922daac",
+    "checkSum" : "5958d616ba88ab8fd574f020ded442590a189eb25bc97d2cb208cafa8dfd516",
     "isSpineItem" : true,
     "spineIndex" : 20,
     "isLinear" : true,
@@ -1334,15 +1110,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-xi-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text022",
     "fileName" : "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 15792,
-    "uncompressedSize" : 46490,
+    "compressedSize" : 15793,
+    "uncompressedSize" : 46516,
     "compressionMethod" : "Deflated",
-    "checkSum" : "c1fda661781e3ddb11302e5517ca8d5565eb605fea73fdbdb049e3589d414319",
+    "checkSum" : "f960dc356f23aaaef85e1bae7885b70965d81ec1893e1c62d66dc01495c29e",
     "isSpineItem" : true,
     "spineIndex" : 21,
     "isLinear" : true,
@@ -1351,15 +1127,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-xii-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text023",
     "fileName" : "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 17599,
-    "uncompressedSize" : 56314,
+    "compressedSize" : 17600,
+    "uncompressedSize" : 56340,
     "compressionMethod" : "Deflated",
-    "checkSum" : "4b1f153036ae2023f7799473794ccb7407e3f14bb7816a99cd490b7155a7cf",
+    "checkSum" : "f4e0d38b055456dd29231fe89df7de0146afbdc9ce8aecbe08548c9d48f5fd",
     "isSpineItem" : true,
     "spineIndex" : 22,
     "isLinear" : true,
@@ -1368,7 +1144,7 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-xiii-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text024",
     "fileName" : "OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml",
@@ -1390,10 +1166,10 @@
     "id" : "text025",
     "fileName" : "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 15322,
-    "uncompressedSize" : 48163,
+    "compressedSize" : 15323,
+    "uncompressedSize" : 48189,
     "compressionMethod" : "Deflated",
-    "checkSum" : "4031c53cb05a5dfe9ea6792ec4586dc298dd7afa7783ebdf80bd8d5ae3f314a8",
+    "checkSum" : "ba23bf4284a7c17c8972cd27789bdc9af1f2833192816c6a94febe51c5824",
     "isSpineItem" : true,
     "spineIndex" : 24,
     "isLinear" : true,
@@ -1402,15 +1178,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-xiv-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text026",
     "fileName" : "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 13200,
-    "uncompressedSize" : 36486,
+    "compressedSize" : 13201,
+    "uncompressedSize" : 36512,
     "compressionMethod" : "Deflated",
-    "checkSum" : "8314afdb97868166ad90f9e9fc1240c622e9eb89e684796524e3011a965fac5",
+    "checkSum" : "9ced8ad67ab572158d57d16211db37a7fe646d729c72ec8aedf5b1668ec3",
     "isSpineItem" : true,
     "spineIndex" : 25,
     "isLinear" : true,
@@ -1419,15 +1195,15 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-xv-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text027",
     "fileName" : "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 13206,
-    "uncompressedSize" : 38833,
+    "compressedSize" : 13207,
+    "uncompressedSize" : 38859,
     "compressionMethod" : "Deflated",
-    "checkSum" : "d3e84e3358f98334abbb27be33d868a5d0af8ccfb817a43a5fd56f181a26",
+    "checkSum" : "b13b9012e3d945a328c88942fa07725abc57656ef8a369d7a5d2e582a55",
     "isSpineItem" : true,
     "spineIndex" : 26,
     "isLinear" : true,
@@ -1436,7 +1212,7 @@
     "renditionLayout" : "reflowable",
     "renditionOrientation" : "auto",
     "renditionSpread" : "auto",
-    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
+    "referencedItems" : [ "OEBPS/images/brushstroke.JPEG", "OEBPS/images/chapter-xvi-quote.JPEG", "OEBPS/styles/fonts.css", "OEBPS/styles/print.css", "OEBPS/styles/style.css" ]
   }, {
     "id" : "text028",
     "fileName" : "OEBPS/text/28-Conclusion.xhtml",
@@ -1492,10 +1268,10 @@
     "id" : "text031",
     "fileName" : "OEBPS/text/31-affirmations-close.xhtml",
     "media_type" : "application/xhtml+xml",
-    "compressedSize" : 2494,
-    "uncompressedSize" : 10011,
+    "compressedSize" : 2660,
+    "uncompressedSize" : 17505,
     "compressionMethod" : "Deflated",
-    "checkSum" : "42ab8dc8c1ecbab8f19fb01d5722dcb68512aa51ef8c822b0c917dbb788e243",
+    "checkSum" : "90e243c2445fabcbe4fc930a12f61626bb46a1d29594141da2ddf345342d21",
     "isSpineItem" : true,
     "spineIndex" : 30,
     "isLinear" : true,

@@ -1,6 +1,6 @@
 # EPUB Reader Integration Test Report
 
-Generated: 2025-09-13T23:15:04.193Z
+Generated: 2025-09-13T23:42:37.364Z
 
 ## Summary
 
@@ -50,8 +50,9 @@ Generated: 2025-09-13T23:15:04.193Z
 **Results**:
 ```json
 {
-  "xhtmlFiles": 0,
-  "allValid": true
+  "xhtmlFiles": 45,
+  "allValid": true,
+  "validator": "xmllint"
 }
 ```
 
@@ -61,7 +62,7 @@ Generated: 2025-09-13T23:15:04.193Z
 **Results**:
 ```json
 {
-  "stylesheets": 0,
+  "stylesheets": 3,
   "images": 0,
   "fonts": 0
 }
@@ -85,11 +86,11 @@ Generated: 2025-09-13T23:15:04.193Z
 **Results**:
 ```json
 {
-  "totalSize": "2.85 MB",
-  "totalSizeBytes": 2991484,
+  "totalSize": "2.86 MB",
+  "totalSizeBytes": 2999383,
   "fileCount": 84,
   "averageFileSize": "35 KB",
-  "validationTime": "12ms"
+  "validationTime": "9ms"
 }
 ```
 

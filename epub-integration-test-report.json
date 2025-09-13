@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-13T23:15:04.193Z",
+  "timestamp": "2025-09-13T23:42:37.364Z",
   "summary": {
     "totalTests": 7,
     "passed": 7,
@@ -14,7 +14,7 @@
         "requiredFiles": "all present",
         "mimetype": "correct"
       },
-      "timestamp": "2025-09-13T23:15:04.146Z"
+      "timestamp": "2025-09-13T23:42:36.986Z"
     },
     {
       "name": "OPF Manifest Completeness",
@@ -24,7 +24,7 @@
         "spineItems": 44,
         "allFilesExist": true
       },
-      "timestamp": "2025-09-13T23:15:04.149Z"
+      "timestamp": "2025-09-13T23:42:36.988Z"
     },
     {
       "name": "Navigation Document Validation",
@@ -32,26 +32,27 @@
       "result": {
         "navigationDocument": "found and valid"
       },
-      "timestamp": "2025-09-13T23:15:04.149Z"
+      "timestamp": "2025-09-13T23:42:36.989Z"
     },
     {
       "name": "XHTML Validity",
       "status": "passed",
       "result": {
-        "xhtmlFiles": 0,
-        "allValid": true
+        "xhtmlFiles": 45,
+        "allValid": true,
+        "validator": "xmllint"
       },
-      "timestamp": "2025-09-13T23:15:04.156Z"
+      "timestamp": "2025-09-13T23:42:37.332Z"
     },
     {
       "name": "CSS and Asset Loading",
       "status": "passed",
       "result": {
-        "stylesheets": 0,
+        "stylesheets": 3,
         "images": 0,
         "fonts": 0
       },
-      "timestamp": "2025-09-13T23:15:04.174Z"
+      "timestamp": "2025-09-13T23:42:37.348Z"
     },
     {
       "name": "Accessibility Features",
@@ -61,19 +62,19 @@
         "missingA11yFeatures": [],
         "imageAltTextCoverage": 100
       },
-      "timestamp": "2025-09-13T23:15:04.180Z"
+      "timestamp": "2025-09-13T23:42:37.355Z"
     },
     {
       "name": "Performance Metrics",
       "status": "passed",
       "result": {
-        "totalSize": "2.85 MB",
-        "totalSizeBytes": 2991484,
+        "totalSize": "2.86 MB",
+        "totalSizeBytes": 2999383,
         "fileCount": 84,
         "averageFileSize": "35 KB",
-        "validationTime": "12ms"
+        "validationTime": "9ms"
       },
-      "timestamp": "2025-09-13T23:15:04.193Z"
+      "timestamp": "2025-09-13T23:42:37.364Z"
     }
   ],
   "errors": []

@@ -49,11 +49,15 @@ cleanup_temp() {
 }
 
 log_info "Starting EPUB validation..."
+readonly ORIG_DIR="$PWD"
 
 # Check if epubcheck is available
 check_epubcheck() {
     if command -v epubcheck &> /dev/null; then
-        log_success "epubcheck found"
+        log_success "epubcheck CLI found"
+        return 0
+    elif [ -f "epubcheck/epubcheck.jar" ] && command -v java &> /dev/null; then
+        log_success "Using bundled epubcheck.jar"
         return 0
     elif command -v npx &> /dev/null && npx epubcheck --version &> /dev/null; then
         log_success "epubcheck available via npx"
@@ -68,8 +72,7 @@ check_epubcheck() {
             return 1
         fi
     else
-        log_error "Neither epubcheck nor npm found. Please install Node.js and npm first."
-        log_error "Then run: npm install -g epubcheck"
+        log_error "No epubcheck available and npm not installed. Please install Java or Node."
         return 1
     fi
 }
@@ -111,7 +114,7 @@ if ! create_epub_structure; then
 fi
 
 # Create mimetype file
-echo "application/epub+zip" > "$EPUB_DIR/mimetype"
+printf 'application/epub+zip' > "$EPUB_DIR/mimetype"
 
 # Create container.xml if it doesn't exist
 if [ ! -f "$EPUB_DIR/META-INF/container.xml" ]; then
@@ -167,21 +170,45 @@ run_epubcheck_validation() {
     log_info "Running epubcheck validation..."
     
     local epub_cmd
-    if command -v epubcheck &> /dev/null; then
+    if [ -f "epubcheck/epubcheck.jar" ] && command -v java &> /dev/null; then
+        epub_cmd="java -jar \"$PWD/epubcheck/epubcheck.jar\""
+    elif command -v epubcheck &> /dev/null; then
         epub_cmd="epubcheck"
     else
         epub_cmd="npx epubcheck"
     fi
     
     local validation_output
-    if validation_output=$($epub_cmd epub.epub 2>&1); then
-        log_success "EPUB validation passed!"
-        echo "$validation_output" | grep -E "(INFO|HINT|USAGE)" || true
-        return 0
+    if [ -f "$ORIG_DIR/epubcheck/epubcheck.jar" ] && command -v java &> /dev/null; then
+        if validation_output=$(java -jar "$ORIG_DIR/epubcheck/epubcheck.jar" epub.epub 2>&1); then
+            log_success "EPUB validation passed!"
+            echo "$validation_output" | grep -E "(INFO|HINT|USAGE)" || true
+            return 0
+        else
+            log_error "EPUB validation failed!"
+            echo "$validation_output"
+            return 1
+        fi
+    elif command -v epubcheck &> /dev/null; then
+        if validation_output=$(epubcheck epub.epub 2>&1); then
+            log_success "EPUB validation passed!"
+            echo "$validation_output" | grep -E "(INFO|HINT|USAGE)" || true
+            return 0
+        else
+            log_error "EPUB validation failed!"
+            echo "$validation_output"
+            return 1
+        fi
     else
-        log_error "EPUB validation failed!"
-        echo "$validation_output"
-        return 1
+        if validation_output=$(npx epubcheck epub.epub 2>&1); then
+            log_success "EPUB validation passed!"
+            echo "$validation_output" | grep -E "(INFO|HINT|USAGE)" || true
+            return 0
+        else
+            log_error "EPUB validation failed!"
+            echo "$validation_output"
+            return 1
+        fi
     fi
 }
 
