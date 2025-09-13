@@ -1,6 +1,6 @@
 # Multi-Format EPUB Validation Report
 
-Generated: 2025-09-13T22:25:06.994Z
+Generated: 2025-09-13T23:11:27.606Z
 
 ## EPUB Information
 
@@ -44,29 +44,20 @@ Count: 1 errors in EPUB 3.3
 
 ### Errors
 
-- Validation failed: Validating using EPUB version 3.3 rules.
-Messages: 18 fatals / 3 errors / 0 warnings / 0 infos
-
-EPUBCheck completed
+- Validation failed: /bin/sh: 1: epubcheck: not found
 
 
 ## EPUB 3.2 Details
 
 ### Errors
 
-- Validation failed: Validating using EPUB version 3.3 rules.
-Messages: 18 fatals / 3 errors / 0 warnings / 0 infos
-
-EPUBCheck completed
+- Validation failed: /bin/sh: 1: epubcheck: not found
 
 
 ## EPUB 3.3 Details
 
 ### Errors
 
-- Validation failed: Validating using EPUB version 3.3 rules.
-Messages: 18 fatals / 3 errors / 0 warnings / 0 infos
-
-EPUBCheck completed
+- Validation failed: /bin/sh: 1: epubcheck: not found
 
 

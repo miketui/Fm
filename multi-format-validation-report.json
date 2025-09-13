@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-13T22:25:06.994Z",
+  "timestamp": "2025-09-13T23:11:27.606Z",
   "detectedVersion": "3.0",
   "detectedFeatures": [
     "EPUB3_Navigation",
@@ -12,7 +12,7 @@
       "version": "3.0",
       "passed": false,
       "errors": [
-        "Validation failed: Validating using EPUB version 3.3 rules.\nMessages: 18 fatals / 3 errors / 0 warnings / 0 infos\n\nEPUBCheck completed\n"
+        "Validation failed: /bin/sh: 1: epubcheck: not found\n"
       ],
       "warnings": [],
       "infos": [],
@@ -22,7 +22,7 @@
       "version": "3.2",
       "passed": false,
       "errors": [
-        "Validation failed: Validating using EPUB version 3.3 rules.\nMessages: 18 fatals / 3 errors / 0 warnings / 0 infos\n\nEPUBCheck completed\n"
+        "Validation failed: /bin/sh: 1: epubcheck: not found\n"
       ],
       "warnings": [],
       "infos": [],
@@ -32,7 +32,7 @@
       "version": "3.3",
       "passed": false,
       "errors": [
-        "Validation failed: Validating using EPUB version 3.3 rules.\nMessages: 18 fatals / 3 errors / 0 warnings / 0 infos\n\nEPUBCheck completed\n"
+        "Validation failed: /bin/sh: 1: epubcheck: not found\n"
       ],
       "warnings": [],
       "infos": [],
