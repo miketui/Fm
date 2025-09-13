@@ -1,0 +1,564 @@
+{
+  "timestamp": "2025-09-13T22:23:33.474Z",
+  "options": {
+    "dryRun": true,
+    "maxImageSize": 512000,
+    "maxFontSize": 204800,
+    "jpegQuality": 85,
+    "pngQuality": 90,
+    "webpQuality": 85
+  },
+  "stats": {
+    "imagesAnalyzed": 29,
+    "fontsAnalyzed": 6,
+    "totalSavings": 0,
+    "filesOptimized": 0
+  },
+  "images": [
+    {
+      "file": "OEBPS/images/Michael.JPEG",
+      "size": 172925,
+      "sizeKB": 169,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/Michael.JPEG\""
+        },
+        {
+          "type": "webp_conversion",
+          "message": "Consider converting to WebP format for better compression",
+          "severity": "low",
+          "tool": "cwebp",
+          "estimatedSavings": 51877.5,
+          "command": "cwebp -q 85 \"OEBPS/images/Michael.JPEG\" -o \"OEBPS/images/Michael.webp\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/brushstroke.JPEG",
+      "size": 11735,
+      "sizeKB": 11,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/brushstroke.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-frame.PNG",
+      "size": 2001,
+      "sizeKB": 2,
+      "type": ".png",
+      "recommendations": [
+        {
+          "type": "png_optimization",
+          "message": "PNG can be compressed without quality loss",
+          "severity": "low",
+          "tool": "pngcrush",
+          "command": "pngcrush -reduce -brute \"OEBPS/images/chapter-frame.PNG\" \"OEBPS/images/chapter-frame.PNG.tmp\" && mv \"OEBPS/images/chapter-frame.PNG.tmp\" \"OEBPS/images/chapter-frame.PNG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-i-quote.JPEG",
+      "size": 50513,
+      "sizeKB": 49,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-i-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-ii-quote.JPEG",
+      "size": 73528,
+      "sizeKB": 72,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-ii-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-iii-quote.JPEG",
+      "size": 43923,
+      "sizeKB": 43,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-iii-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-iv-quote.JPEG",
+      "size": 56641,
+      "sizeKB": 55,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-iv-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-ix-quote.JPEG",
+      "size": 70664,
+      "sizeKB": 69,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-ix-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-v-quote.JPEG",
+      "size": 76527,
+      "sizeKB": 75,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-v-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-vi-quote.JPEG",
+      "size": 57083,
+      "sizeKB": 56,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-vi-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-vii-quote.JPEG",
+      "size": 71433,
+      "sizeKB": 70,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-vii-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-viii-quote.JPEG",
+      "size": 55796,
+      "sizeKB": 54,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-viii-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-x-quote.JPEG",
+      "size": 70809,
+      "sizeKB": 69,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-x-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-xi-quote.JPEG",
+      "size": 70872,
+      "sizeKB": 69,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xi-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-xii-quote.JPEG",
+      "size": 69417,
+      "sizeKB": 68,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xii-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-xiii-quote.JPEG",
+      "size": 70013,
+      "sizeKB": 68,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xiii-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-xiv-quote.JPEG",
+      "size": 70704,
+      "sizeKB": 69,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xiv-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-xv-quote.JPEG",
+      "size": 67624,
+      "sizeKB": 66,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xv-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/chapter-xvi-quote.JPEG",
+      "size": 72006,
+      "sizeKB": 70,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xvi-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/conclusion-quote.JPEG",
+      "size": 55511,
+      "sizeKB": 54,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/conclusion-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/crown-ornament.PNG",
+      "size": 32955,
+      "sizeKB": 32,
+      "type": ".png",
+      "recommendations": [
+        {
+          "type": "png_optimization",
+          "message": "PNG can be compressed without quality loss",
+          "severity": "low",
+          "tool": "pngcrush",
+          "command": "pngcrush -reduce -brute \"OEBPS/images/crown-ornament.PNG\" \"OEBPS/images/crown-ornament.PNG.tmp\" && mv \"OEBPS/images/crown-ornament.PNG.tmp\" \"OEBPS/images/crown-ornament.PNG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/decorative-line.JPEG",
+      "size": 2356,
+      "sizeKB": 2,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/decorative-line.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/endnote-marker.PNG",
+      "size": 395,
+      "sizeKB": 0,
+      "type": ".png",
+      "recommendations": [
+        {
+          "type": "png_optimization",
+          "message": "PNG can be compressed without quality loss",
+          "severity": "low",
+          "tool": "pngcrush",
+          "command": "pngcrush -reduce -brute \"OEBPS/images/endnote-marker.PNG\" \"OEBPS/images/endnote-marker.PNG.tmp\" && mv \"OEBPS/images/endnote-marker.PNG.tmp\" \"OEBPS/images/endnote-marker.PNG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/part-border.JPEG",
+      "size": 103617,
+      "sizeKB": 101,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/part-border.JPEG\""
+        },
+        {
+          "type": "webp_conversion",
+          "message": "Consider converting to WebP format for better compression",
+          "severity": "low",
+          "tool": "cwebp",
+          "estimatedSavings": 31085.1,
+          "command": "cwebp -q 85 \"OEBPS/images/part-border.JPEG\" -o \"OEBPS/images/part-border.webp\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/preface-quote.JPEG",
+      "size": 54756,
+      "sizeKB": 53,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/preface-quote.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/quiz-checkbox.PNG",
+      "size": 9618,
+      "sizeKB": 9,
+      "type": ".png",
+      "recommendations": [
+        {
+          "type": "png_optimization",
+          "message": "PNG can be compressed without quality loss",
+          "severity": "low",
+          "tool": "pngcrush",
+          "command": "pngcrush -reduce -brute \"OEBPS/images/quiz-checkbox.PNG\" \"OEBPS/images/quiz-checkbox.PNG.tmp\" && mv \"OEBPS/images/quiz-checkbox.PNG.tmp\" \"OEBPS/images/quiz-checkbox.PNG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/quote-marks.PNG",
+      "size": 54213,
+      "sizeKB": 53,
+      "type": ".png",
+      "recommendations": [
+        {
+          "type": "png_optimization",
+          "message": "PNG can be compressed without quality loss",
+          "severity": "low",
+          "tool": "pngcrush",
+          "command": "pngcrush -reduce -brute \"OEBPS/images/quote-marks.PNG\" \"OEBPS/images/quote-marks.PNG.tmp\" && mv \"OEBPS/images/quote-marks.PNG.tmp\" \"OEBPS/images/quote-marks.PNG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/ruled-paper.JPEG",
+      "size": 92352,
+      "sizeKB": 90,
+      "type": ".jpeg",
+      "recommendations": [
+        {
+          "type": "jpeg_optimization",
+          "message": "JPEG can be optimized with quality adjustment",
+          "severity": "low",
+          "tool": "jpegoptim",
+          "command": "jpegoptim --max=85 \"OEBPS/images/ruled-paper.JPEG\""
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/images/toc-divider.PNG",
+      "size": 2035,
+      "sizeKB": 2,
+      "type": ".png",
+      "recommendations": [
+        {
+          "type": "png_optimization",
+          "message": "PNG can be compressed without quality loss",
+          "severity": "low",
+          "tool": "pngcrush",
+          "command": "pngcrush -reduce -brute \"OEBPS/images/toc-divider.PNG\" \"OEBPS/images/toc-divider.PNG.tmp\" && mv \"OEBPS/images/toc-divider.PNG.tmp\" \"OEBPS/images/toc-divider.PNG\""
+        }
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "file": "OEBPS/fonts/Montserrat-Bold.woff2",
+      "size": 130012,
+      "sizeKB": 127,
+      "type": ".woff2",
+      "recommendations": [
+        {
+          "type": "font_subsetting",
+          "message": "Consider subsetting font to include only required characters",
+          "severity": "medium",
+          "tool": "fonttools",
+          "suggestion": "Subset to Latin characters and common punctuation",
+          "command": "fonttools subset \"OEBPS/fonts/Montserrat-Bold.woff2\" --unicodes=U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/fonts/Montserrat-Regular.woff2",
+      "size": 126576,
+      "sizeKB": 124,
+      "type": ".woff2",
+      "recommendations": [
+        {
+          "type": "font_subsetting",
+          "message": "Consider subsetting font to include only required characters",
+          "severity": "medium",
+          "tool": "fonttools",
+          "suggestion": "Subset to Latin characters and common punctuation",
+          "command": "fonttools subset \"OEBPS/fonts/Montserrat-Regular.woff2\" --unicodes=U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        }
+      ]
+    }
+  ],
+  "css": [
+    {
+      "file": "OEBPS/styles/style.css",
+      "size": 28692,
+      "sizeKB": 28,
+      "recommendations": [
+        {
+          "type": "css_duplication",
+          "message": "Found duplicate CSS rules that could be consolidated",
+          "severity": "low",
+          "count": 187
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/styles/fonts.css",
+      "size": 2652,
+      "sizeKB": 3,
+      "recommendations": [
+        {
+          "type": "css_comments",
+          "message": "Remove comments to reduce file size",
+          "severity": "low",
+          "estimatedSavings": 530
+        },
+        {
+          "type": "css_duplication",
+          "message": "Found duplicate CSS rules that could be consolidated",
+          "severity": "low",
+          "count": 33
+        }
+      ]
+    },
+    {
+      "file": "OEBPS/styles/print.css",
+      "size": 20469,
+      "sizeKB": 20,
+      "recommendations": [
+        {
+          "type": "css_comments",
+          "message": "Remove comments to reduce file size",
+          "severity": "low",
+          "estimatedSavings": 3436
+        },
+        {
+          "type": "css_duplication",
+          "message": "Found duplicate CSS rules that could be consolidated",
+          "severity": "low",
+          "count": 385
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "totalFiles": 35,
+    "totalRecommendations": 38,
+    "estimatedSavings": 86928.6,
+    "actualSavings": 0
+  }
+}

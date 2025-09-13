@@ -3,38 +3,112 @@
 # EPUB Validation Script
 # This script validates the EPUB structure and content
 
-set -e
+set -euo pipefail  # Enhanced error handling
 
-echo "🔍 Starting EPUB validation..."
+# Color codes for better output
+readonly RED='\033[0;31m'
+readonly GREEN='\033[0;32m'
+readonly YELLOW='\033[1;33m'
+readonly BLUE='\033[0;34m'
+readonly NC='\033[0m' # No Color
+
+# Logging functions
+log_info() {
+    echo -e "${BLUE}ℹ️  $1${NC}"
+}
+
+log_success() {
+    echo -e "${GREEN}✅ $1${NC}"
+}
+
+log_warning() {
+    echo -e "${YELLOW}⚠️  $1${NC}"
+}
+
+log_error() {
+    echo -e "${RED}❌ $1${NC}"
+}
+
+# Error handler
+error_handler() {
+    local exit_code=$?
+    local line_number=$1
+    log_error "Script failed at line $line_number with exit code $exit_code"
+    cleanup_temp
+    exit $exit_code
+}
+
+trap 'error_handler $LINENO' ERR
+
+# Cleanup function
+cleanup_temp() {
+    if [ -n "${TEMP_DIR:-}" ] && [ -d "$TEMP_DIR" ]; then
+        log_info "Cleaning up temporary directory: $TEMP_DIR"
+        rm -rf "$TEMP_DIR"
+    fi
+}
+
+log_info "Starting EPUB validation..."
 
 # Check if epubcheck is available
-if ! command -v epubcheck &> /dev/null; then
-    echo "⚠️  epubcheck not found. Installing via npm..."
-    if command -v npm &> /dev/null; then
-        npm install -g epubcheck
+check_epubcheck() {
+    if command -v epubcheck &> /dev/null; then
+        log_success "epubcheck found"
+        return 0
+    elif command -v npx &> /dev/null && npx epubcheck --version &> /dev/null; then
+        log_success "epubcheck available via npx"
+        return 0
+    elif command -v npm &> /dev/null; then
+        log_warning "epubcheck not found. Installing via npm..."
+        if npm install -g epubcheck; then
+            log_success "epubcheck installed successfully"
+            return 0
+        else
+            log_error "Failed to install epubcheck via npm"
+            return 1
+        fi
     else
-        echo "❌ npm not found. Please install Node.js and npm first."
-        echo "   Then run: npm install -g epubcheck"
-        exit 1
+        log_error "Neither epubcheck nor npm found. Please install Node.js and npm first."
+        log_error "Then run: npm install -g epubcheck"
+        return 1
     fi
+}
+
+if ! check_epubcheck; then
+    exit 1
 fi
 
 # Create temporary EPUB structure for validation
 TEMP_DIR=$(mktemp -d)
-EPUB_DIR="$TEMP_DIR/epub"
-mkdir -p "$EPUB_DIR"
+readonly EPUB_DIR="$TEMP_DIR/epub"
 
-echo "📂 Creating EPUB structure in $EPUB_DIR..."
+create_epub_structure() {
+    log_info "Creating EPUB structure in $EPUB_DIR..."
+    
+    mkdir -p "$EPUB_DIR/OEBPS"
+    mkdir -p "$EPUB_DIR/META-INF"
 
-# Copy EPUB files to temp directory
-mkdir -p "$EPUB_DIR/OEBPS"
-mkdir -p "$EPUB_DIR/META-INF"
+    # Copy content files with proper error handling
+    if [ -d "OEBPS" ]; then
+        log_info "Copying OEBPS directory structure..."
+        cp -r OEBPS/* "$EPUB_DIR/OEBPS/" || {
+            log_error "Failed to copy OEBPS content"
+            return 1
+        }
+    else
+        log_warning "OEBPS directory not found, checking for legacy structure..."
+        # Fallback for legacy structure
+        cp *.xhtml "$EPUB_DIR/OEBPS/" 2>/dev/null || log_warning "No XHTML files found in root"
+        [ -d "styles" ] && cp -r styles "$EPUB_DIR/OEBPS/" || log_warning "No styles directory found"
+        [ -d "images" ] && cp -r images "$EPUB_DIR/OEBPS/" || log_warning "No images directory found"
+        [ -f "content.opf" ] && cp content.opf "$EPUB_DIR/OEBPS/" || log_warning "No content.opf found in root"
+    fi
+}
 
-# Copy content files
-cp *.xhtml "$EPUB_DIR/OEBPS/" 2>/dev/null || true
-cp -r styles "$EPUB_DIR/OEBPS/" 2>/dev/null || true
-cp -r images "$EPUB_DIR/OEBPS/" 2>/dev/null || true
-cp content.opf "$EPUB_DIR/OEBPS/" 2>/dev/null || true
+if ! create_epub_structure; then
+    cleanup_temp
+    exit 1
+fi
 
 # Create mimetype file
 echo "application/epub+zip" > "$EPUB_DIR/mimetype"
@@ -53,49 +127,104 @@ fi
 
 # Create ZIP package for validation
 cd "$TEMP_DIR"
-echo "📦 Creating EPUB package..."
-zip -r0 epub.epub epub/mimetype
-zip -r epub.epub epub/ -x epub/mimetype
+log_info "Creating EPUB package with proper structure..."
+
+# Remove any existing epub.epub
+rm -f epub.epub
+
+# First, add mimetype (uncompressed, first in archive)
+cd epub
+zip -0 -X ../epub.epub mimetype
+
+# Then add META-INF
+zip -r ../epub.epub META-INF/
+
+# Then add OEBPS
+zip -r ../epub.epub OEBPS/
+
+cd ..
 
 # Validate the EPUB
-echo "✅ Running epubcheck validation..."
-if epubcheck epub.epub; then
-    echo "🎉 EPUB validation passed!"
+run_epubcheck_validation() {
+    log_info "Running epubcheck validation..."
+    
+    local epub_cmd
+    if command -v epubcheck &> /dev/null; then
+        epub_cmd="epubcheck"
+    else
+        epub_cmd="npx epubcheck"
+    fi
+    
+    local validation_output
+    if validation_output=$($epub_cmd epub.epub 2>&1); then
+        log_success "EPUB validation passed!"
+        echo "$validation_output" | grep -E "(INFO|HINT|USAGE)" || true
+        return 0
+    else
+        log_error "EPUB validation failed!"
+        echo "$validation_output"
+        return 1
+    fi
+}
+
+if run_epubcheck_validation; then
     VALIDATION_RESULT=0
 else
-    echo "❌ EPUB validation failed!"
     VALIDATION_RESULT=1
 fi
 
-# Cleanup
-cd -
-rm -rf "$TEMP_DIR"
+# Return to original directory and cleanup
+cd - > /dev/null
+cleanup_temp
 
-# Additional HTML validation
-echo "🔍 Running additional HTML validation..."
+# Additional HTML validation with better error handling
+run_additional_validation() {
+    log_info "Running additional HTML validation..."
+    
+    local xhtml_files
+    if [ -d "OEBPS/text" ]; then
+        xhtml_files="OEBPS/text/*.xhtml"
+    else
+        xhtml_files="*.xhtml"
+    fi
+    
+    # Check for common EPUB issues
+    log_info "Checking for missing alt attributes..."
+    local missing_alt
+    if missing_alt=$(find $xhtml_files -type f 2>/dev/null | xargs grep -l 'img.*src=' 2>/dev/null | xargs grep 'img.*src=' 2>/dev/null | grep -v 'alt=' || true); then
+        if [ -n "$missing_alt" ]; then
+            log_warning "Found images without alt attributes:"
+            echo "$missing_alt"
+        else
+            log_success "All images have alt attributes"
+        fi
+    fi
+    
+    log_info "Checking for proper EPUB namespaces..."
+    local missing_epub_ns
+    if missing_epub_ns=$(find $xhtml_files -type f 2>/dev/null | xargs grep -L 'xmlns:epub="http://www.idpf.org/2007/ops"' 2>/dev/null || true); then
+        if [ -n "$missing_epub_ns" ]; then
+            log_warning "Files missing EPUB namespace:"
+            echo "$missing_epub_ns"
+        else
+            log_success "All files have proper EPUB namespace"
+        fi
+    fi
+    
+    log_info "Checking for consistent DOCTYPE declarations..."
+    local inconsistent_doctype
+    if inconsistent_doctype=$(find $xhtml_files -type f 2>/dev/null | xargs grep -L '<!DOCTYPE html>' 2>/dev/null || true); then
+        if [ -n "$inconsistent_doctype" ]; then
+            log_warning "Files with inconsistent DOCTYPE:"
+            echo "$inconsistent_doctype"
+        else
+            log_success "All files have consistent DOCTYPE"
+        fi
+    fi
+    
+    log_success "Additional validation checks completed"
+}
 
-# Check for common EPUB issues
-echo "  • Checking for missing alt attributes..."
-MISSING_ALT=$(grep -r 'img.*src=' *.xhtml | grep -v 'alt=' || true)
-if [ -n "$MISSING_ALT" ]; then
-    echo "⚠️  Found images without alt attributes:"
-    echo "$MISSING_ALT"
-fi
-
-echo "  • Checking for proper EPUB namespaces..."
-MISSING_EPUB_NS=$(grep -L 'xmlns:epub="http://www.idpf.org/2007/ops"' *.xhtml || true)
-if [ -n "$MISSING_EPUB_NS" ]; then
-    echo "⚠️  Files missing EPUB namespace:"
-    echo "$MISSING_EPUB_NS"
-fi
-
-echo "  • Checking for consistent DOCTYPE declarations..."
-INCONSISTENT_DOCTYPE=$(grep -L '<!DOCTYPE html>' *.xhtml || true)
-if [ -n "$INCONSISTENT_DOCTYPE" ]; then
-    echo "⚠️  Files with inconsistent DOCTYPE:"
-    echo "$INCONSISTENT_DOCTYPE"
-fi
-
-echo "✅ Additional validation checks completed."
+run_additional_validation
 
 exit $VALIDATION_RESULT

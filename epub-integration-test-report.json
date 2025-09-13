@@ -1,0 +1,80 @@
+{
+  "timestamp": "2025-09-13T22:15:05.667Z",
+  "summary": {
+    "totalTests": 7,
+    "passed": 7,
+    "failed": 0,
+    "success": true
+  },
+  "results": [
+    {
+      "name": "EPUB Structure Validation",
+      "status": "passed",
+      "result": {
+        "requiredFiles": "all present",
+        "mimetype": "correct"
+      },
+      "timestamp": "2025-09-13T22:15:05.625Z"
+    },
+    {
+      "name": "OPF Manifest Completeness",
+      "status": "passed",
+      "result": {
+        "manifestItems": 83,
+        "spineItems": 44,
+        "allFilesExist": true
+      },
+      "timestamp": "2025-09-13T22:15:05.626Z"
+    },
+    {
+      "name": "Navigation Document Validation",
+      "status": "passed",
+      "result": {
+        "navigationDocument": "found and valid"
+      },
+      "timestamp": "2025-09-13T22:15:05.627Z"
+    },
+    {
+      "name": "XHTML Validity",
+      "status": "passed",
+      "result": {
+        "xhtmlFiles": 0,
+        "allValid": true
+      },
+      "timestamp": "2025-09-13T22:15:05.634Z"
+    },
+    {
+      "name": "CSS and Asset Loading",
+      "status": "passed",
+      "result": {
+        "stylesheets": 0,
+        "images": 0,
+        "fonts": 0
+      },
+      "timestamp": "2025-09-13T22:15:05.651Z"
+    },
+    {
+      "name": "Accessibility Features",
+      "status": "passed",
+      "result": {
+        "accessibilityMetadata": 3,
+        "missingA11yFeatures": [],
+        "imageAltTextCoverage": 100
+      },
+      "timestamp": "2025-09-13T22:15:05.657Z"
+    },
+    {
+      "name": "Performance Metrics",
+      "status": "passed",
+      "result": {
+        "totalSize": "2.85 MB",
+        "totalSizeBytes": 2985868,
+        "fileCount": 83,
+        "averageFileSize": "35 KB",
+        "validationTime": "9ms"
+      },
+      "timestamp": "2025-09-13T22:15:05.666Z"
+    }
+  ],
+  "errors": []
+}

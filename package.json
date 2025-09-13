@@ -4,13 +4,26 @@
   "description": "A Stylist's Interactive Journey Journal - EPUB validation and build tools",
   "scripts": {
     "validate": "./validate-epub.sh",
-    "lint": "npm run validate",
-    "build": "npm run validate && echo '✅ Build completed successfully'",
+    "validate:assets": "node scripts/validate-assets.js",
+    "validate:multi-format": "node scripts/multi-format-validator.js",
+    "optimize": "node scripts/optimize-assets.js",
+    "optimize:dry-run": "node scripts/optimize-assets.js --dry-run",
+    "test:integration": "node tests/integration/epub-reader-test.js",
+    "test:regression": "node tests/regression/path-reference-test.js",
+    "test:regression:update": "node tests/regression/path-reference-test.js --update-baseline",
+    "format": "scripts/format-xhtml.sh",
+    "metrics": "node scripts/performance-metrics.js",
+    "lint": "npm run validate && npm run validate:assets",
+    "build": "npm run lint && npm run test && echo '✅ Build completed successfully'",
+    "build:full": "npm run lint && npm run test && npm run validate:multi-format && npm run optimize:dry-run && echo '✅ Full build completed successfully'",
+    "test": "npm run test:integration && npm run test:regression",
     "typecheck": "echo '✅ No TypeScript files to check'",
-    "test": "npm run validate"
+    "ci": "npm run build && npm run metrics",
+    "ci:full": "npm run build:full && npm run metrics",
+    "pre-commit": "npm run format && npm run lint"
   },
   "devDependencies": {
-    "epubcheck": "^4.2.6"
+    "xml2js": "^0.6.2"
   },
   "keywords": [
     "epub",

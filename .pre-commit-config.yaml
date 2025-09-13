@@ -1,0 +1,51 @@
+# Pre-commit hooks for EPUB project
+repos:
+  - repo: local
+    hooks:
+      - id: epub-asset-validation
+        name: EPUB Asset Validation
+        entry: node scripts/validate-assets.js
+        language: node
+        files: '\.(xhtml|css|opf)$'
+        pass_filenames: false
+        
+      - id: epub-path-regression-test
+        name: EPUB Path Reference Regression Test
+        entry: node tests/regression/path-reference-test.js --allow-regressions
+        language: node
+        files: '\.(xhtml|css|opf)$'
+        pass_filenames: false
+        
+      - id: xhtml-formatting
+        name: XHTML Formatting Check
+        entry: scripts/format-xhtml.sh
+        language: script
+        files: '\.xhtml$'
+        
+      - id: epub-structure-validation
+        name: EPUB Structure Validation
+        entry: ./validate-epub.sh
+        language: script
+        files: '\.(xhtml|css|opf|xml)$'
+        pass_filenames: false
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=1000']  # Limit files to 1MB
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-xml
+        files: '\.(xml|opf|ncx)$'
+      - id: trailing-whitespace
+        files: '\.(xhtml|css|js|md)$'
+      - id: end-of-file-fixer
+        files: '\.(xhtml|css|js|md|txt)$'
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.35.0
+    hooks:
+      - id: markdownlint
+        args: ['--fix']
+        files: '\.md$'

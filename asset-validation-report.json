@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-09-13T22:16:20.399Z",
+  "stats": {
+    "filesChecked": 0,
+    "imagesFound": 0,
+    "stylesheetsFound": 0,
+    "fontsFound": 0,
+    "brokenReferences": 0
+  },
+  "errors": [],
+  "warnings": [],
+  "summary": {
+    "passed": true,
+    "totalIssues": 0
+  }
+}

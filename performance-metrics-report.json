@@ -1,0 +1,115 @@
+{
+  "timestamp": "2025-09-13T22:14:59.615Z",
+  "validation": {
+    "epubcheck": {
+      "duration": -1,
+      "status": "failed",
+      "error": "Command failed: ./validate-epub.sh\n./validate-epub.sh: line 131: zip: command not found\n",
+      "timestamp": "2025-09-13T22:15:05.516Z"
+    },
+    "assetValidation": {
+      "duration": -1,
+      "status": "failed",
+      "error": "Command failed: node scripts/validate-assets.js",
+      "timestamp": "2025-09-13T22:15:05.580Z"
+    },
+    "integrationTests": {
+      "duration": 91,
+      "status": "passed",
+      "timestamp": "2025-09-13T22:15:05.671Z"
+    },
+    "regressionTests": {
+      "duration": 67,
+      "status": "passed",
+      "timestamp": "2025-09-13T22:15:05.738Z"
+    }
+  },
+  "structure": {
+    "files": {
+      "xhtml": 0,
+      "css": 0,
+      "images": 0,
+      "fonts": 0,
+      "total": 0
+    },
+    "directories": {
+      "oebps": true,
+      "text": true,
+      "styles": true,
+      "images": true,
+      "fonts": false,
+      "metaInf": true
+    },
+    "content": {
+      "manifestItems": 127,
+      "spineItems": 44,
+      "hasNavigation": true,
+      "hasAccessibilityMetadata": true
+    }
+  },
+  "assets": {
+    "sizes": {
+      "text": {
+        "bytes": 897059,
+        "mb": 0.86,
+        "files": 0
+      },
+      "styles": {
+        "bytes": 431505,
+        "mb": 0.41,
+        "files": 0
+      },
+      "images": {
+        "bytes": 1642022,
+        "mb": 1.57,
+        "files": 0
+      },
+      "fonts": {
+        "bytes": 0,
+        "mb": 0,
+        "files": 0
+      }
+    },
+    "totals": {
+      "size": 2970586,
+      "files": 0,
+      "mb": 2.83
+    },
+    "optimization": {
+      "largeImages": [],
+      "largeFonts": [],
+      "duplicateFiles": [],
+      "unusedAssets": []
+    }
+  },
+  "performance": {
+    "system": {
+      "node": "v22.19.0",
+      "platform": "linux",
+      "arch": "x64",
+      "memory": {
+        "used": 4.85,
+        "total": 5.35
+      }
+    },
+    "git": {
+      "branch": "main",
+      "commit": "8e3773aa",
+      "status": 13
+    },
+    "npm": {
+      "version": "1.0.0",
+      "scripts": 13,
+      "dependencies": 0,
+      "devDependencies": 1
+    }
+  },
+  "trends": [],
+  "summary": {
+    "totalSize": 2.83,
+    "totalFiles": 0,
+    "validationPassed": false,
+    "optimizationIssues": 0,
+    "performanceScore": 60
+  }
+}
