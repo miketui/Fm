@@ -130,35 +130,35 @@
     <item id="font4" href="fonts/librebaskerville-italic.woff2" media-type="font/woff2"/>
     <item id="font5" href="fonts/librebaskerville-bold.woff2" media-type="font/woff2"/>
     <item id="font6" href="fonts/CinzelDecorative.woff2" media-type="font/woff2"/>
-    <item id="img1" href="images/decorative-line.JPEG" media-type="image/jpeg"/>
-    <item id="img2" href="images/endnote-marker.PNG" media-type="image/png"/>
-    <item id="img3" href="images/chapter-iv-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img4" href="images/toc-divider.PNG" media-type="image/png"/>
-    <item id="img5" href="images/Michael.JPEG" media-type="image/jpeg"/>
-    <item id="img6" href="images/brushstroke.JPEG" media-type="image/jpeg"/>
-    <item id="img7" href="images/part-border.JPEG" media-type="image/jpeg"/>
-    <item id="img8" href="images/chapter-xiv-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img9" href="images/chapter-iii-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img10" href="images/quote-marks.PNG" media-type="image/png"/>
-    <item id="img11" href="images/chapter-xi-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img12" href="images/chapter-v-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img13" href="images/chapter-vii-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img14" href="images/chapter-x-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img15" href="images/preface-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img16" href="images/chapter-xiii-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img17" href="images/chapter-vi-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img18" href="images/chapter-frame.PNG" media-type="image/png"/>
-    <item id="img19" href="images/chapter-ii-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img20" href="images/quiz-checkbox.PNG" media-type="image/png"/>
-    <item id="img21" href="images/chapter-viii-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img22" href="images/conclusion-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img23" href="images/chapter-xvi-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img24" href="images/crown-ornament.PNG" media-type="image/png"/>
-    <item id="img25" href="images/chapter-xii-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img26" href="images/chapter-ix-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img27" href="images/chapter-i-quote.JPEG" media-type="image/jpeg"/>
-    <item id="img28" href="images/ruled-paper.JPEG" media-type="image/jpeg"/>
-    <item id="img29" href="images/chapter-xv-quote.JPEG" media-type="image/jpeg"/>
+    <item id="img1" href="images/decorative-line.jpeg" media-type="image/jpeg"/>
+    <item id="img2" href="images/endnote-marker.png" media-type="image/png"/>
+    <item id="img3" href="images/chapter-iv-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img4" href="images/toc-divider.png" media-type="image/png"/>
+    <item id="img5" href="images/Michael.jpeg" media-type="image/jpeg"/>
+    <item id="img6" href="images/brushstroke.jpeg" media-type="image/jpeg"/>
+    <item id="img7" href="images/part-border.jpeg" media-type="image/jpeg"/>
+    <item id="img8" href="images/chapter-xiv-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img9" href="images/chapter-iii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img10" href="images/quote-marks.png" media-type="image/png"/>
+    <item id="img11" href="images/chapter-xi-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img12" href="images/chapter-v-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img13" href="images/chapter-vii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img14" href="images/chapter-x-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img15" href="images/preface-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img16" href="images/chapter-xiii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img17" href="images/chapter-vi-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img18" href="images/chapter-frame.png" media-type="image/png"/>
+    <item id="img19" href="images/chapter-ii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img20" href="images/quiz-checkbox.png" media-type="image/png"/>
+    <item id="img21" href="images/chapter-viii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img22" href="images/conclusion-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img23" href="images/chapter-xvi-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img24" href="images/crown-ornament.png" media-type="image/png"/>
+    <item id="img25" href="images/chapter-xii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img26" href="images/chapter-ix-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img27" href="images/chapter-i-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img28" href="images/ruled-paper.jpeg" media-type="image/jpeg"/>
+    <item id="img29" href="images/chapter-xv-quote.jpeg" media-type="image/jpeg"/>
   </manifest>
   
   <spine>

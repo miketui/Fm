@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-13T23:42:37.449Z",
+  "timestamp": "2025-09-14T00:18:49.511Z",
   "summary": {
     "totalPaths": 83,
     "brokenLinks": 0,
@@ -11,22 +11,22 @@
       "OEBPS/styles/fonts.css",
       "OEBPS/styles/style.css",
       "OEBPS/styles/print.css",
-      "OEBPS/images/brushstroke.JPEG",
-      "OEBPS/images/chapter-ii-quote.JPEG",
-      "OEBPS/images/chapter-iii-quote.JPEG",
-      "OEBPS/images/chapter-iv-quote.JPEG",
-      "OEBPS/images/chapter-v-quote.JPEG",
-      "OEBPS/images/chapter-vi-quote.JPEG",
-      "OEBPS/images/chapter-vii-quote.JPEG",
-      "OEBPS/images/chapter-viii-quote.JPEG",
-      "OEBPS/images/chapter-ix-quote.JPEG",
-      "OEBPS/images/chapter-x-quote.JPEG",
-      "OEBPS/images/chapter-xi-quote.JPEG",
-      "OEBPS/images/chapter-xii-quote.JPEG",
-      "OEBPS/images/chapter-xiii-quote.JPEG",
-      "OEBPS/images/chapter-xiv-quote.JPEG",
-      "OEBPS/images/chapter-xv-quote.JPEG",
-      "OEBPS/images/chapter-xvi-quote.JPEG",
+      "OEBPS/images/brushstroke.jpeg",
+      "OEBPS/images/chapter-ii-quote.jpeg",
+      "OEBPS/images/chapter-iii-quote.jpeg",
+      "OEBPS/images/chapter-iv-quote.jpeg",
+      "OEBPS/images/chapter-v-quote.jpeg",
+      "OEBPS/images/chapter-vi-quote.jpeg",
+      "OEBPS/images/chapter-vii-quote.jpeg",
+      "OEBPS/images/chapter-viii-quote.jpeg",
+      "OEBPS/images/chapter-ix-quote.jpeg",
+      "OEBPS/images/chapter-x-quote.jpeg",
+      "OEBPS/images/chapter-xi-quote.jpeg",
+      "OEBPS/images/chapter-xii-quote.jpeg",
+      "OEBPS/images/chapter-xiii-quote.jpeg",
+      "OEBPS/images/chapter-xiv-quote.jpeg",
+      "OEBPS/images/chapter-xv-quote.jpeg",
+      "OEBPS/images/chapter-xvi-quote.jpeg",
       "OEBPS/text/1-TitlePage.xhtml",
       "OEBPS/text/2-Copyright.xhtml",
       "OEBPS/text/3-TableOfContents.xhtml",
@@ -70,7 +70,7 @@
       "OEBPS/text/41-self-care-journal.xhtml",
       "OEBPS/text/42-VisionJournal.xhtml",
       "OEBPS/text/43-DoodlePage.xhtml",
-      "OEBPS/images/chapter-i-quote.JPEG",
+      "OEBPS/images/chapter-i-quote.jpeg",
       "OEBPS/text/44-bibliography.xhtml",
       "OEBPS/text/nav.xhtml",
       "OEBPS/fonts/Montserrat-Regular.woff2",
@@ -79,18 +79,18 @@
       "OEBPS/fonts/librebaskerville-italic.woff2",
       "OEBPS/fonts/librebaskerville-bold.woff2",
       "OEBPS/fonts/CinzelDecorative.woff2",
-      "OEBPS/images/decorative-line.JPEG",
-      "OEBPS/images/endnote-marker.PNG",
-      "OEBPS/images/toc-divider.PNG",
-      "OEBPS/images/Michael.JPEG",
-      "OEBPS/images/part-border.JPEG",
-      "OEBPS/images/quote-marks.PNG",
-      "OEBPS/images/preface-quote.JPEG",
-      "OEBPS/images/chapter-frame.PNG",
-      "OEBPS/images/quiz-checkbox.PNG",
-      "OEBPS/images/conclusion-quote.JPEG",
-      "OEBPS/images/crown-ornament.PNG",
-      "OEBPS/images/ruled-paper.JPEG"
+      "OEBPS/images/decorative-line.jpeg",
+      "OEBPS/images/endnote-marker.png",
+      "OEBPS/images/toc-divider.png",
+      "OEBPS/images/Michael.jpeg",
+      "OEBPS/images/part-border.jpeg",
+      "OEBPS/images/quote-marks.png",
+      "OEBPS/images/preface-quote.jpeg",
+      "OEBPS/images/chapter-frame.png",
+      "OEBPS/images/quiz-checkbox.png",
+      "OEBPS/images/conclusion-quote.jpeg",
+      "OEBPS/images/crown-ornament.png",
+      "OEBPS/images/ruled-paper.jpeg"
     ],
     "references": {
       "OEBPS/text/1-TitlePage.xhtml": [
@@ -115,14 +115,14 @@
       ],
       "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-ii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-ii-quote.JPEG",
+          "path": "../images/chapter-ii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-ii-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -147,14 +147,14 @@
       ],
       "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-iii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-iii-quote.JPEG",
+          "path": "../images/chapter-iii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-iii-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -199,14 +199,14 @@
       ],
       "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-iv-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-iv-quote.JPEG",
+          "path": "../images/chapter-iv-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-iv-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -231,14 +231,14 @@
       ],
       "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-v-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-v-quote.JPEG",
+          "path": "../images/chapter-v-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-v-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -263,14 +263,14 @@
       ],
       "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-vi-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-vi-quote.JPEG",
+          "path": "../images/chapter-vi-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-vi-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -295,14 +295,14 @@
       ],
       "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-vii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-vii-quote.JPEG",
+          "path": "../images/chapter-vii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-vii-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -327,14 +327,14 @@
       ],
       "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-viii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-viii-quote.JPEG",
+          "path": "../images/chapter-viii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-viii-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -379,14 +379,14 @@
       ],
       "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-ix-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-ix-quote.JPEG",
+          "path": "../images/chapter-ix-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-ix-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -431,14 +431,14 @@
       ],
       "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-x-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-x-quote.JPEG",
+          "path": "../images/chapter-x-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-x-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -463,14 +463,14 @@
       ],
       "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-xi-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xi-quote.JPEG",
+          "path": "../images/chapter-xi-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xi-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -495,14 +495,14 @@
       ],
       "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-xii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xii-quote.JPEG",
+          "path": "../images/chapter-xii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xii-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -527,14 +527,14 @@
       ],
       "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-xiii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xiii-quote.JPEG",
+          "path": "../images/chapter-xiii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xiii-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -579,14 +579,14 @@
       ],
       "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-xiv-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xiv-quote.JPEG",
+          "path": "../images/chapter-xiv-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xiv-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -611,14 +611,14 @@
       ],
       "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-xv-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xv-quote.JPEG",
+          "path": "../images/chapter-xv-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xv-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -643,14 +643,14 @@
       ],
       "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-xvi-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xvi-quote.JPEG",
+          "path": "../images/chapter-xvi-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xvi-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -1393,14 +1393,14 @@
       ],
       "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml": [
         {
-          "path": "../images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "../images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "image",
           "exists": true
         },
         {
-          "path": "../images/chapter-i-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-i-quote.JPEG",
+          "path": "../images/chapter-i-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-i-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -2021,176 +2021,176 @@
           "exists": true
         },
         {
-          "path": "images/decorative-line.JPEG",
-          "resolvedPath": "OEBPS/images/decorative-line.JPEG",
+          "path": "images/decorative-line.jpeg",
+          "resolvedPath": "OEBPS/images/decorative-line.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/endnote-marker.PNG",
-          "resolvedPath": "OEBPS/images/endnote-marker.PNG",
+          "path": "images/endnote-marker.png",
+          "resolvedPath": "OEBPS/images/endnote-marker.png",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-iv-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-iv-quote.JPEG",
+          "path": "images/chapter-iv-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-iv-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/toc-divider.PNG",
-          "resolvedPath": "OEBPS/images/toc-divider.PNG",
+          "path": "images/toc-divider.png",
+          "resolvedPath": "OEBPS/images/toc-divider.png",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/Michael.JPEG",
-          "resolvedPath": "OEBPS/images/Michael.JPEG",
+          "path": "images/Michael.jpeg",
+          "resolvedPath": "OEBPS/images/Michael.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/brushstroke.JPEG",
-          "resolvedPath": "OEBPS/images/brushstroke.JPEG",
+          "path": "images/brushstroke.jpeg",
+          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/part-border.JPEG",
-          "resolvedPath": "OEBPS/images/part-border.JPEG",
+          "path": "images/part-border.jpeg",
+          "resolvedPath": "OEBPS/images/part-border.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-xiv-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xiv-quote.JPEG",
+          "path": "images/chapter-xiv-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xiv-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-iii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-iii-quote.JPEG",
+          "path": "images/chapter-iii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-iii-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/quote-marks.PNG",
-          "resolvedPath": "OEBPS/images/quote-marks.PNG",
+          "path": "images/quote-marks.png",
+          "resolvedPath": "OEBPS/images/quote-marks.png",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-xi-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xi-quote.JPEG",
+          "path": "images/chapter-xi-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xi-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-v-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-v-quote.JPEG",
+          "path": "images/chapter-v-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-v-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-vii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-vii-quote.JPEG",
+          "path": "images/chapter-vii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-vii-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-x-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-x-quote.JPEG",
+          "path": "images/chapter-x-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-x-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/preface-quote.JPEG",
-          "resolvedPath": "OEBPS/images/preface-quote.JPEG",
+          "path": "images/preface-quote.jpeg",
+          "resolvedPath": "OEBPS/images/preface-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-xiii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xiii-quote.JPEG",
+          "path": "images/chapter-xiii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xiii-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-vi-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-vi-quote.JPEG",
+          "path": "images/chapter-vi-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-vi-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-frame.PNG",
-          "resolvedPath": "OEBPS/images/chapter-frame.PNG",
+          "path": "images/chapter-frame.png",
+          "resolvedPath": "OEBPS/images/chapter-frame.png",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-ii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-ii-quote.JPEG",
+          "path": "images/chapter-ii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-ii-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/quiz-checkbox.PNG",
-          "resolvedPath": "OEBPS/images/quiz-checkbox.PNG",
+          "path": "images/quiz-checkbox.png",
+          "resolvedPath": "OEBPS/images/quiz-checkbox.png",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-viii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-viii-quote.JPEG",
+          "path": "images/chapter-viii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-viii-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/conclusion-quote.JPEG",
-          "resolvedPath": "OEBPS/images/conclusion-quote.JPEG",
+          "path": "images/conclusion-quote.jpeg",
+          "resolvedPath": "OEBPS/images/conclusion-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-xvi-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xvi-quote.JPEG",
+          "path": "images/chapter-xvi-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xvi-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/crown-ornament.PNG",
-          "resolvedPath": "OEBPS/images/crown-ornament.PNG",
+          "path": "images/crown-ornament.png",
+          "resolvedPath": "OEBPS/images/crown-ornament.png",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-xii-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xii-quote.JPEG",
+          "path": "images/chapter-xii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xii-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-ix-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-ix-quote.JPEG",
+          "path": "images/chapter-ix-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-ix-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-i-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-i-quote.JPEG",
+          "path": "images/chapter-i-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-i-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/ruled-paper.JPEG",
-          "resolvedPath": "OEBPS/images/ruled-paper.JPEG",
+          "path": "images/ruled-paper.jpeg",
+          "resolvedPath": "OEBPS/images/ruled-paper.jpeg",
           "type": "manifest_item",
           "exists": true
         },
         {
-          "path": "images/chapter-xv-quote.JPEG",
-          "resolvedPath": "OEBPS/images/chapter-xv-quote.JPEG",
+          "path": "images/chapter-xv-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xv-quote.jpeg",
           "type": "manifest_item",
           "exists": true
         }
@@ -2199,8 +2199,68 @@
     "brokenLinks": []
   },
   "comparison": {
-    "newPaths": [],
-    "removedPaths": [],
+    "newPaths": [
+      "OEBPS/images/brushstroke.jpeg",
+      "OEBPS/images/chapter-ii-quote.jpeg",
+      "OEBPS/images/chapter-iii-quote.jpeg",
+      "OEBPS/images/chapter-iv-quote.jpeg",
+      "OEBPS/images/chapter-v-quote.jpeg",
+      "OEBPS/images/chapter-vi-quote.jpeg",
+      "OEBPS/images/chapter-vii-quote.jpeg",
+      "OEBPS/images/chapter-viii-quote.jpeg",
+      "OEBPS/images/chapter-ix-quote.jpeg",
+      "OEBPS/images/chapter-x-quote.jpeg",
+      "OEBPS/images/chapter-xi-quote.jpeg",
+      "OEBPS/images/chapter-xii-quote.jpeg",
+      "OEBPS/images/chapter-xiii-quote.jpeg",
+      "OEBPS/images/chapter-xiv-quote.jpeg",
+      "OEBPS/images/chapter-xv-quote.jpeg",
+      "OEBPS/images/chapter-xvi-quote.jpeg",
+      "OEBPS/images/chapter-i-quote.jpeg",
+      "OEBPS/images/decorative-line.jpeg",
+      "OEBPS/images/endnote-marker.png",
+      "OEBPS/images/toc-divider.png",
+      "OEBPS/images/Michael.jpeg",
+      "OEBPS/images/part-border.jpeg",
+      "OEBPS/images/quote-marks.png",
+      "OEBPS/images/preface-quote.jpeg",
+      "OEBPS/images/chapter-frame.png",
+      "OEBPS/images/quiz-checkbox.png",
+      "OEBPS/images/conclusion-quote.jpeg",
+      "OEBPS/images/crown-ornament.png",
+      "OEBPS/images/ruled-paper.jpeg"
+    ],
+    "removedPaths": [
+      "OEBPS/images/decorative-line.JPEG",
+      "OEBPS/images/endnote-marker.PNG",
+      "OEBPS/images/chapter-iv-quote.JPEG",
+      "OEBPS/images/toc-divider.PNG",
+      "OEBPS/images/Michael.JPEG",
+      "OEBPS/images/brushstroke.JPEG",
+      "OEBPS/images/part-border.JPEG",
+      "OEBPS/images/chapter-xiv-quote.JPEG",
+      "OEBPS/images/chapter-iii-quote.JPEG",
+      "OEBPS/images/quote-marks.PNG",
+      "OEBPS/images/chapter-xi-quote.JPEG",
+      "OEBPS/images/chapter-v-quote.JPEG",
+      "OEBPS/images/chapter-vii-quote.JPEG",
+      "OEBPS/images/chapter-x-quote.JPEG",
+      "OEBPS/images/preface-quote.JPEG",
+      "OEBPS/images/chapter-xiii-quote.JPEG",
+      "OEBPS/images/chapter-vi-quote.JPEG",
+      "OEBPS/images/chapter-frame.PNG",
+      "OEBPS/images/chapter-ii-quote.JPEG",
+      "OEBPS/images/quiz-checkbox.PNG",
+      "OEBPS/images/chapter-viii-quote.JPEG",
+      "OEBPS/images/conclusion-quote.JPEG",
+      "OEBPS/images/chapter-xvi-quote.JPEG",
+      "OEBPS/images/crown-ornament.PNG",
+      "OEBPS/images/chapter-xii-quote.JPEG",
+      "OEBPS/images/chapter-ix-quote.JPEG",
+      "OEBPS/images/chapter-i-quote.JPEG",
+      "OEBPS/images/ruled-paper.JPEG",
+      "OEBPS/images/chapter-xv-quote.JPEG"
+    ],
     "newBrokenLinks": [],
     "fixedLinks": [
       {
@@ -2247,8 +2307,8 @@
       }
     ],
     "changesSummary": {
-      "pathsAdded": 0,
-      "pathsRemoved": 0,
+      "pathsAdded": 29,
+      "pathsRemoved": 29,
       "linksFixed": 7,
       "newBrokenLinks": 0,
       "hasChanges": true

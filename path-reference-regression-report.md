@@ -1,6 +1,6 @@
 # Path Reference Regression Test Report
 
-Generated: 2025-09-13T23:42:37.449Z
+Generated: 2025-09-14T00:18:49.511Z
 
 ## Summary
 
@@ -11,8 +11,8 @@ Generated: 2025-09-13T23:42:37.449Z
 
 ## Changes Since Baseline
 
-- **Paths Added**: 0
-- **Paths Removed**: 0
+- **Paths Added**: 29
+- **Paths Removed**: 29
 - **Links Fixed**: 7
 - **New Broken Links**: 0
 
