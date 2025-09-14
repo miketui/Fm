@@ -1,0 +1,231 @@
+{
+  "repo": "/root/repo",
+  "commit": "f87b041",
+  "totals": {
+    "files": 44,
+    "errors": 0,
+    "warnings": 0
+  },
+  "files": [
+    {
+      "path": "OEBPS/text/1-TitlePage.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/2-Copyright.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/3-TableOfContents.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/4-Dedication.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/5-SelfAssessment.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/6-affirmation-odyssey.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/7-Preface.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/28-Conclusion.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/29QuizKey.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/30-SelfAssessment.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/31-affirmations-close.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/32-continued-learning-commitment.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/33-Acknowledgments.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/34-AbouttheAuthor.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/35-CurlsContempCollective.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/36-JournalingStart.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/37-ManifestingJournal.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/38-journal-page.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/39-professional-development.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/40-SMARTGoals.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/41-self-care-journal.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/42-VisionJournal.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/43-DoodlePage.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/44-bibliography.xhtml",
+      "status": "ok",
+      "issues": []
+    }
+  ]
+}
