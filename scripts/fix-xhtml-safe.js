@@ -43,12 +43,18 @@ class SafeXHTMLFixer {
   }
 
   fixXMLDeclaration(content) {
-    // Only fix if clearly malformed, don't add if missing
+    // Fix malformed XML declaration
     if (content.startsWith('<?xml') && !content.startsWith('<?xml version="1.0"')) {
-      // Fix malformed XML declaration
       content = content.replace(/^<\?xml[^>]*\?>/, '<?xml version="1.0" encoding="UTF-8"?>');
       return { content, fixed: true, message: 'Fixed malformed XML declaration' };
     }
+    
+    // Add missing XML declaration if starting with DOCTYPE
+    if (content.startsWith('<!DOCTYPE html>')) {
+      content = '<?xml version="1.0" encoding="UTF-8"?>\n' + content;
+      return { content, fixed: true, message: 'Added missing XML declaration' };
+    }
+    
     return { content, fixed: false };
   }
 
