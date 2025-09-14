@@ -1,196 +1,197 @@
 # EPUB Asset Optimization Report
 
-Generated: 2025-09-13T22:23:33.474Z
+Generated: 2025-09-14T00:21:48.300Z
 
 ## Summary
 
-- **Mode**: Dry Run (Analysis Only)
+- **Mode**: Optimization Executed
 - **Images Analyzed**: 29
 - **Fonts Analyzed**: 6
 - **Total Recommendations**: 38
-- **Estimated Savings**: 85KB
+- **Files Optimized**: 0
+- **Actual Savings**: 0KB
 
 ## Image Optimization
 
-### Michael.JPEG
+### Michael.jpeg
 - **Size**: 169KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/Michael.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/Michael.jpeg"`
   - **webp_conversion**: Consider converting to WebP format for better compression
     - Estimated savings: 51KB
-    - Command: `cwebp -q 85 "OEBPS/images/Michael.JPEG" -o "OEBPS/images/Michael.webp"`
+    - Command: `cwebp -q 85 "OEBPS/images/Michael.jpeg" -o "OEBPS/images/Michael.webp"`
 
-### brushstroke.JPEG
+### brushstroke.jpeg
 - **Size**: 11KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/brushstroke.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/brushstroke.jpeg"`
 
-### chapter-frame.PNG
+### chapter-frame.png
 - **Size**: 2KB
 - **Recommendations**:
   - **png_optimization**: PNG can be compressed without quality loss
-    - Command: `pngcrush -reduce -brute "OEBPS/images/chapter-frame.PNG" "OEBPS/images/chapter-frame.PNG.tmp" && mv "OEBPS/images/chapter-frame.PNG.tmp" "OEBPS/images/chapter-frame.PNG"`
+    - Command: `pngcrush -reduce -brute "OEBPS/images/chapter-frame.png" "OEBPS/images/chapter-frame.png.tmp" && mv "OEBPS/images/chapter-frame.png.tmp" "OEBPS/images/chapter-frame.png"`
 
-### chapter-i-quote.JPEG
+### chapter-i-quote.jpeg
 - **Size**: 49KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-i-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-i-quote.jpeg"`
 
-### chapter-ii-quote.JPEG
+### chapter-ii-quote.jpeg
 - **Size**: 72KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-ii-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-ii-quote.jpeg"`
 
-### chapter-iii-quote.JPEG
+### chapter-iii-quote.jpeg
 - **Size**: 43KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-iii-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-iii-quote.jpeg"`
 
-### chapter-iv-quote.JPEG
+### chapter-iv-quote.jpeg
 - **Size**: 55KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-iv-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-iv-quote.jpeg"`
 
-### chapter-ix-quote.JPEG
+### chapter-ix-quote.jpeg
 - **Size**: 69KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-ix-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-ix-quote.jpeg"`
 
-### chapter-v-quote.JPEG
+### chapter-v-quote.jpeg
 - **Size**: 75KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-v-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-v-quote.jpeg"`
 
-### chapter-vi-quote.JPEG
+### chapter-vi-quote.jpeg
 - **Size**: 56KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-vi-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-vi-quote.jpeg"`
 
-### chapter-vii-quote.JPEG
+### chapter-vii-quote.jpeg
 - **Size**: 70KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-vii-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-vii-quote.jpeg"`
 
-### chapter-viii-quote.JPEG
+### chapter-viii-quote.jpeg
 - **Size**: 54KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-viii-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-viii-quote.jpeg"`
 
-### chapter-x-quote.JPEG
+### chapter-x-quote.jpeg
 - **Size**: 69KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-x-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-x-quote.jpeg"`
 
-### chapter-xi-quote.JPEG
+### chapter-xi-quote.jpeg
 - **Size**: 69KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xi-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xi-quote.jpeg"`
 
-### chapter-xii-quote.JPEG
+### chapter-xii-quote.jpeg
 - **Size**: 68KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xii-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xii-quote.jpeg"`
 
-### chapter-xiii-quote.JPEG
+### chapter-xiii-quote.jpeg
 - **Size**: 68KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xiii-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xiii-quote.jpeg"`
 
-### chapter-xiv-quote.JPEG
+### chapter-xiv-quote.jpeg
 - **Size**: 69KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xiv-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xiv-quote.jpeg"`
 
-### chapter-xv-quote.JPEG
+### chapter-xv-quote.jpeg
 - **Size**: 66KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xv-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xv-quote.jpeg"`
 
-### chapter-xvi-quote.JPEG
+### chapter-xvi-quote.jpeg
 - **Size**: 70KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xvi-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/chapter-xvi-quote.jpeg"`
 
-### conclusion-quote.JPEG
+### conclusion-quote.jpeg
 - **Size**: 54KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/conclusion-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/conclusion-quote.jpeg"`
 
-### crown-ornament.PNG
+### crown-ornament.png
 - **Size**: 32KB
 - **Recommendations**:
   - **png_optimization**: PNG can be compressed without quality loss
-    - Command: `pngcrush -reduce -brute "OEBPS/images/crown-ornament.PNG" "OEBPS/images/crown-ornament.PNG.tmp" && mv "OEBPS/images/crown-ornament.PNG.tmp" "OEBPS/images/crown-ornament.PNG"`
+    - Command: `pngcrush -reduce -brute "OEBPS/images/crown-ornament.png" "OEBPS/images/crown-ornament.png.tmp" && mv "OEBPS/images/crown-ornament.png.tmp" "OEBPS/images/crown-ornament.png"`
 
-### decorative-line.JPEG
+### decorative-line.jpeg
 - **Size**: 2KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/decorative-line.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/decorative-line.jpeg"`
 
-### endnote-marker.PNG
+### endnote-marker.png
 - **Size**: 0KB
 - **Recommendations**:
   - **png_optimization**: PNG can be compressed without quality loss
-    - Command: `pngcrush -reduce -brute "OEBPS/images/endnote-marker.PNG" "OEBPS/images/endnote-marker.PNG.tmp" && mv "OEBPS/images/endnote-marker.PNG.tmp" "OEBPS/images/endnote-marker.PNG"`
+    - Command: `pngcrush -reduce -brute "OEBPS/images/endnote-marker.png" "OEBPS/images/endnote-marker.png.tmp" && mv "OEBPS/images/endnote-marker.png.tmp" "OEBPS/images/endnote-marker.png"`
 
-### part-border.JPEG
+### part-border.jpeg
 - **Size**: 101KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/part-border.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/part-border.jpeg"`
   - **webp_conversion**: Consider converting to WebP format for better compression
     - Estimated savings: 30KB
-    - Command: `cwebp -q 85 "OEBPS/images/part-border.JPEG" -o "OEBPS/images/part-border.webp"`
+    - Command: `cwebp -q 85 "OEBPS/images/part-border.jpeg" -o "OEBPS/images/part-border.webp"`
 
-### preface-quote.JPEG
+### preface-quote.jpeg
 - **Size**: 53KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/preface-quote.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/preface-quote.jpeg"`
 
-### quiz-checkbox.PNG
+### quiz-checkbox.png
 - **Size**: 9KB
 - **Recommendations**:
   - **png_optimization**: PNG can be compressed without quality loss
-    - Command: `pngcrush -reduce -brute "OEBPS/images/quiz-checkbox.PNG" "OEBPS/images/quiz-checkbox.PNG.tmp" && mv "OEBPS/images/quiz-checkbox.PNG.tmp" "OEBPS/images/quiz-checkbox.PNG"`
+    - Command: `pngcrush -reduce -brute "OEBPS/images/quiz-checkbox.png" "OEBPS/images/quiz-checkbox.png.tmp" && mv "OEBPS/images/quiz-checkbox.png.tmp" "OEBPS/images/quiz-checkbox.png"`
 
-### quote-marks.PNG
+### quote-marks.png
 - **Size**: 53KB
 - **Recommendations**:
   - **png_optimization**: PNG can be compressed without quality loss
-    - Command: `pngcrush -reduce -brute "OEBPS/images/quote-marks.PNG" "OEBPS/images/quote-marks.PNG.tmp" && mv "OEBPS/images/quote-marks.PNG.tmp" "OEBPS/images/quote-marks.PNG"`
+    - Command: `pngcrush -reduce -brute "OEBPS/images/quote-marks.png" "OEBPS/images/quote-marks.png.tmp" && mv "OEBPS/images/quote-marks.png.tmp" "OEBPS/images/quote-marks.png"`
 
-### ruled-paper.JPEG
+### ruled-paper.jpeg
 - **Size**: 90KB
 - **Recommendations**:
   - **jpeg_optimization**: JPEG can be optimized with quality adjustment
-    - Command: `jpegoptim --max=85 "OEBPS/images/ruled-paper.JPEG"`
+    - Command: `jpegoptim --max=85 "OEBPS/images/ruled-paper.jpeg"`
 
-### toc-divider.PNG
+### toc-divider.png
 - **Size**: 2KB
 - **Recommendations**:
   - **png_optimization**: PNG can be compressed without quality loss
-    - Command: `pngcrush -reduce -brute "OEBPS/images/toc-divider.PNG" "OEBPS/images/toc-divider.PNG.tmp" && mv "OEBPS/images/toc-divider.PNG.tmp" "OEBPS/images/toc-divider.PNG"`
+    - Command: `pngcrush -reduce -brute "OEBPS/images/toc-divider.png" "OEBPS/images/toc-divider.png.tmp" && mv "OEBPS/images/toc-divider.png.tmp" "OEBPS/images/toc-divider.png"`
 
 ## Font Optimization
 
