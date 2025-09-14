@@ -1,6 +1,6 @@
 # EPUB Reader Integration Test Report
 
-Generated: 2025-09-14T18:27:44.711Z
+Generated: 2025-09-14T18:30:58.702Z
 
 ## Summary
 
@@ -90,7 +90,7 @@ Generated: 2025-09-14T18:27:44.711Z
   "totalSizeBytes": 2999960,
   "fileCount": 84,
   "averageFileSize": "35 KB",
-  "validationTime": "5ms"
+  "validationTime": "6ms"
 }
 ```
 

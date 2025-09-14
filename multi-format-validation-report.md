@@ -1,6 +1,6 @@
 # Multi-Format EPUB Validation Report
 
-Generated: 2025-09-14T18:28:01.065Z
+Generated: 2025-09-14T18:31:14.483Z
 
 ## EPUB Information
 
