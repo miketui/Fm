@@ -1,25 +1,27 @@
 {
-  "timestamp": "2025-09-13T23:42:27.730Z",
+  "timestamp": "2025-09-14T02:04:04.053Z",
   "validation": {
     "epubcheck": {
-      "duration": 9131,
-      "status": "passed",
-      "timestamp": "2025-09-13T23:42:36.864Z"
+      "duration": -1,
+      "status": "failed",
+      "error": "Command failed: ./validate-epub.sh",
+      "timestamp": "2025-09-14T02:04:12.982Z"
     },
     "assetValidation": {
-      "duration": 78,
+      "duration": 74,
       "status": "passed",
-      "timestamp": "2025-09-13T23:42:36.943Z"
+      "timestamp": "2025-09-14T02:04:13.056Z"
     },
     "integrationTests": {
-      "duration": 425,
-      "status": "passed",
-      "timestamp": "2025-09-13T23:42:37.369Z"
+      "duration": -1,
+      "status": "failed",
+      "error": "Command failed: node tests/integration/epub-reader-test.js",
+      "timestamp": "2025-09-14T02:04:13.157Z"
     },
     "regressionTests": {
-      "duration": 87,
+      "duration": 78,
       "status": "passed",
-      "timestamp": "2025-09-13T23:42:37.456Z"
+      "timestamp": "2025-09-14T02:04:13.236Z"
     }
   },
   "structure": {
@@ -48,8 +50,8 @@
   "assets": {
     "sizes": {
       "text": {
-        "bytes": 910547,
-        "mb": 0.87,
+        "bytes": 945546,
+        "mb": 0.9,
         "files": 0
       },
       "styles": {
@@ -58,7 +60,7 @@
         "files": 0
       },
       "images": {
-        "bytes": 1642022,
+        "bytes": 1642019,
         "mb": 1.57,
         "files": 0
       },
@@ -69,9 +71,9 @@
       }
     },
     "totals": {
-      "size": 2984118,
+      "size": 3019114,
       "files": 0,
-      "mb": 2.85
+      "mb": 2.88
     },
     "optimization": {
       "largeImages": [],
@@ -95,14 +97,14 @@
       "platform": "linux",
       "arch": "x64",
       "memory": {
-        "used": 4.5,
+        "used": 4.57,
         "total": 5.35
       }
     },
     "git": {
-      "branch": "terragon/test-validate-xhtml-epub-ready",
-      "commit": "2df6a03c",
-      "status": 38
+      "branch": "main",
+      "commit": "bddcbe08",
+      "status": 32
     },
     "npm": {
       "version": "1.0.0",
@@ -114,9 +116,9 @@
   "trends": [
     {
       "metric": "total_size",
-      "change": 0,
-      "percentage": 0,
-      "direction": "stable"
+      "change": 34996,
+      "percentage": 1.17,
+      "direction": "increased"
     },
     {
       "metric": "file_count",
@@ -126,16 +128,16 @@
     },
     {
       "metric": "validation_time",
-      "change": 9132,
-      "percentage": 0,
-      "direction": "slower"
+      "change": -9132,
+      "percentage": -100.01,
+      "direction": "faster"
     }
   ],
   "summary": {
-    "totalSize": 2.85,
+    "totalSize": 2.88,
     "totalFiles": 0,
-    "validationPassed": true,
+    "validationPassed": false,
     "optimizationIssues": 0,
-    "performanceScore": 100
+    "performanceScore": 60
   }
 }

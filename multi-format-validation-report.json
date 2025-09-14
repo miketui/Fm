@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-13T23:40:30.514Z",
+  "timestamp": "2025-09-14T02:04:02.695Z",
   "detectedVersion": "3.0",
   "detectedFeatures": [
     "EPUB3_Navigation",
@@ -9,43 +9,63 @@
   "validationResults": {
     "3.0": {
       "version": "3.0",
-      "passed": true,
-      "errors": [],
+      "passed": false,
+      "errors": [
+        "Validation failed: Validating using EPUB version 3.3 rules.\nMessages: 23 fatals / 15 errors / 0 warnings / 0 infos\n\nEPUBCheck completed"
+      ],
       "warnings": [],
       "infos": [],
       "compatible": false
     },
     "3.2": {
       "version": "3.2",
-      "passed": true,
-      "errors": [],
+      "passed": false,
+      "errors": [
+        "Validation failed: Validating using EPUB version 3.3 rules.\nMessages: 23 fatals / 15 errors / 0 warnings / 0 infos\n\nEPUBCheck completed"
+      ],
       "warnings": [],
       "infos": [],
       "compatible": false
     },
     "3.3": {
       "version": "3.3",
-      "passed": true,
-      "errors": [],
+      "passed": false,
+      "errors": [
+        "Validation failed: Validating using EPUB version 3.3 rules.\nMessages: 23 fatals / 15 errors / 0 warnings / 0 infos\n\nEPUBCheck completed"
+      ],
       "warnings": [],
       "infos": [],
-      "compatible": true
+      "compatible": false
     }
   },
   "summary": {
     "totalVersions": 3,
-    "passedVersions": 3,
-    "compatibleVersions": 1,
-    "totalErrors": 0,
+    "passedVersions": 0,
+    "compatibleVersions": 0,
+    "totalErrors": 3,
     "totalWarnings": 0
   },
   "recommendations": [
     {
-      "type": "version_upgrade",
-      "severity": "medium",
-      "message": "Consider upgrading to EPUB 3.3 for better compatibility",
-      "currentVersion": "3.0",
-      "recommendedVersion": "3.3"
+      "type": "validation_error",
+      "severity": "high",
+      "message": "Fix other errors for EPUB 3.0 compatibility",
+      "count": 1,
+      "version": "3.0"
+    },
+    {
+      "type": "validation_error",
+      "severity": "high",
+      "message": "Fix other errors for EPUB 3.2 compatibility",
+      "count": 1,
+      "version": "3.2"
+    },
+    {
+      "type": "validation_error",
+      "severity": "high",
+      "message": "Fix other errors for EPUB 3.3 compatibility",
+      "count": 1,
+      "version": "3.3"
     }
   ]
 }
