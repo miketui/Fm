@@ -511,6 +511,142 @@
           "direction": "slower"
         }
       ]
+    },
+    {
+      "timestamp": "2025-09-14T02:04:04.053Z",
+      "validation": {
+        "epubcheck": {
+          "duration": -1,
+          "status": "failed",
+          "error": "Command failed: ./validate-epub.sh",
+          "timestamp": "2025-09-14T02:04:12.982Z"
+        },
+        "assetValidation": {
+          "duration": 74,
+          "status": "passed",
+          "timestamp": "2025-09-14T02:04:13.056Z"
+        },
+        "integrationTests": {
+          "duration": -1,
+          "status": "failed",
+          "error": "Command failed: node tests/integration/epub-reader-test.js",
+          "timestamp": "2025-09-14T02:04:13.157Z"
+        },
+        "regressionTests": {
+          "duration": 78,
+          "status": "passed",
+          "timestamp": "2025-09-14T02:04:13.236Z"
+        }
+      },
+      "structure": {
+        "files": {
+          "xhtml": 0,
+          "css": 0,
+          "images": 0,
+          "fonts": 0,
+          "total": 0
+        },
+        "directories": {
+          "oebps": true,
+          "text": true,
+          "styles": true,
+          "images": true,
+          "fonts": true,
+          "metaInf": true
+        },
+        "content": {
+          "manifestItems": 127,
+          "spineItems": 44,
+          "hasNavigation": true,
+          "hasAccessibilityMetadata": true
+        }
+      },
+      "assets": {
+        "sizes": {
+          "text": {
+            "bytes": 945546,
+            "mb": 0.9,
+            "files": 0
+          },
+          "styles": {
+            "bytes": 51845,
+            "mb": 0.05,
+            "files": 0
+          },
+          "images": {
+            "bytes": 1642019,
+            "mb": 1.57,
+            "files": 0
+          },
+          "fonts": {
+            "bytes": 379704,
+            "mb": 0.36,
+            "files": 0
+          }
+        },
+        "totals": {
+          "size": 3019114,
+          "files": 0,
+          "mb": 2.88
+        },
+        "optimization": {
+          "largeImages": [],
+          "largeFonts": [
+            {
+              "file": "OEBPS/fonts/Montserrat-Bold.woff2",
+              "size": 130012
+            },
+            {
+              "file": "OEBPS/fonts/Montserrat-Regular.woff2",
+              "size": 126576
+            }
+          ],
+          "duplicateFiles": [],
+          "unusedAssets": []
+        }
+      },
+      "performance": {
+        "system": {
+          "node": "v22.19.0",
+          "platform": "linux",
+          "arch": "x64",
+          "memory": {
+            "used": 4.57,
+            "total": 5.35
+          }
+        },
+        "git": {
+          "branch": "main",
+          "commit": "bddcbe08",
+          "status": 32
+        },
+        "npm": {
+          "version": "1.0.0",
+          "scripts": 21,
+          "dependencies": 0,
+          "devDependencies": 1
+        }
+      },
+      "trends": [
+        {
+          "metric": "total_size",
+          "change": 34996,
+          "percentage": 1.17,
+          "direction": "increased"
+        },
+        {
+          "metric": "file_count",
+          "change": 0,
+          "percentage": 0,
+          "direction": "stable"
+        },
+        {
+          "metric": "validation_time",
+          "change": -9132,
+          "percentage": -100.01,
+          "direction": "faster"
+        }
+      ]
     }
   ]
 }

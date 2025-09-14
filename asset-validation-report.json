@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-09-13T23:42:36.939Z",
+  "timestamp": "2025-09-14T02:09:10.435Z",
   "stats": {
     "filesChecked": 48,
-    "imagesFound": 32,
-    "stylesheetsFound": 133,
+    "imagesFound": 2,
+    "stylesheetsFound": 64,
     "fontsFound": 6,
     "brokenReferences": 0
   },
