@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-09-14T00:28:38.328Z",
+  "timestamp": "2025-09-14T18:28:01.417Z",
   "options": {
-    "dryRun": false,
+    "dryRun": true,
     "maxImageSize": 512000,
     "maxFontSize": 204800,
     "jpegQuality": 85,
@@ -36,9 +36,7 @@
           "estimatedSavings": 51877.5,
           "command": "cwebp -q 85 \"OEBPS/images/Michael.jpeg\" -o \"OEBPS/images/Michael.webp\""
         }
-      ],
-      "width": 1200,
-      "height": 1552
+      ]
     },
     {
       "file": "OEBPS/images/brushstroke.jpeg",
@@ -53,9 +51,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/brushstroke.jpeg\""
         }
-      ],
-      "width": 1000,
-      "height": 500
+      ]
     },
     {
       "file": "OEBPS/images/chapter-frame.png",
@@ -70,9 +66,7 @@
           "tool": "pngcrush",
           "command": "pngcrush -reduce -brute \"OEBPS/images/chapter-frame.png\" \"OEBPS/images/chapter-frame.png.tmp\" && mv \"OEBPS/images/chapter-frame.png.tmp\" \"OEBPS/images/chapter-frame.png\""
         }
-      ],
-      "width": 670,
-      "height": 223
+      ]
     },
     {
       "file": "OEBPS/images/chapter-i-quote.jpeg",
@@ -87,9 +81,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-i-quote.jpeg\""
         }
-      ],
-      "width": 800,
-      "height": 600
+      ]
     },
     {
       "file": "OEBPS/images/chapter-ii-quote.jpeg",
@@ -104,9 +96,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-ii-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-iii-quote.jpeg",
@@ -121,9 +111,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-iii-quote.jpeg\""
         }
-      ],
-      "width": 800,
-      "height": 600
+      ]
     },
     {
       "file": "OEBPS/images/chapter-iv-quote.jpeg",
@@ -138,9 +126,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-iv-quote.jpeg\""
         }
-      ],
-      "width": 1000,
-      "height": 750
+      ]
     },
     {
       "file": "OEBPS/images/chapter-ix-quote.jpeg",
@@ -155,9 +141,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-ix-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-v-quote.jpeg",
@@ -172,9 +156,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-v-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-vi-quote.jpeg",
@@ -189,9 +171,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-vi-quote.jpeg\""
         }
-      ],
-      "width": 1000,
-      "height": 750
+      ]
     },
     {
       "file": "OEBPS/images/chapter-vii-quote.jpeg",
@@ -206,9 +186,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-vii-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-viii-quote.jpeg",
@@ -223,9 +201,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-viii-quote.jpeg\""
         }
-      ],
-      "width": 1024,
-      "height": 768
+      ]
     },
     {
       "file": "OEBPS/images/chapter-x-quote.jpeg",
@@ -240,9 +216,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-x-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-xi-quote.jpeg",
@@ -257,9 +231,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xi-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-xii-quote.jpeg",
@@ -274,9 +246,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xii-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-xiii-quote.jpeg",
@@ -291,9 +261,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xiii-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-xiv-quote.jpeg",
@@ -308,9 +276,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xiv-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-xv-quote.jpeg",
@@ -325,9 +291,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xv-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/chapter-xvi-quote.jpeg",
@@ -342,9 +306,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/chapter-xvi-quote.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 900
+      ]
     },
     {
       "file": "OEBPS/images/conclusion-quote.jpeg",
@@ -359,9 +321,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/conclusion-quote.jpeg\""
         }
-      ],
-      "width": 1000,
-      "height": 750
+      ]
     },
     {
       "file": "OEBPS/images/crown-ornament.png",
@@ -376,9 +336,7 @@
           "tool": "pngcrush",
           "command": "pngcrush -reduce -brute \"OEBPS/images/crown-ornament.png\" \"OEBPS/images/crown-ornament.png.tmp\" && mv \"OEBPS/images/crown-ornament.png.tmp\" \"OEBPS/images/crown-ornament.png\""
         }
-      ],
-      "width": 256,
-      "height": 192
+      ]
     },
     {
       "file": "OEBPS/images/decorative-line.jpeg",
@@ -393,9 +351,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/decorative-line.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 120
+      ]
     },
     {
       "file": "OEBPS/images/endnote-marker.png",
@@ -410,9 +366,7 @@
           "tool": "pngcrush",
           "command": "pngcrush -reduce -brute \"OEBPS/images/endnote-marker.png\" \"OEBPS/images/endnote-marker.png.tmp\" && mv \"OEBPS/images/endnote-marker.png.tmp\" \"OEBPS/images/endnote-marker.png\""
         }
-      ],
-      "width": 256,
-      "height": 256
+      ]
     },
     {
       "file": "OEBPS/images/part-border.jpeg",
@@ -435,9 +389,7 @@
           "estimatedSavings": 31085.1,
           "command": "cwebp -q 85 \"OEBPS/images/part-border.jpeg\" -o \"OEBPS/images/part-border.webp\""
         }
-      ],
-      "width": 1200,
-      "height": 1800
+      ]
     },
     {
       "file": "OEBPS/images/preface-quote.jpeg",
@@ -452,9 +404,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/preface-quote.jpeg\""
         }
-      ],
-      "width": 1000,
-      "height": 750
+      ]
     },
     {
       "file": "OEBPS/images/quiz-checkbox.png",
@@ -469,9 +419,7 @@
           "tool": "pngcrush",
           "command": "pngcrush -reduce -brute \"OEBPS/images/quiz-checkbox.png\" \"OEBPS/images/quiz-checkbox.png.tmp\" && mv \"OEBPS/images/quiz-checkbox.png.tmp\" \"OEBPS/images/quiz-checkbox.png\""
         }
-      ],
-      "width": 500,
-      "height": 500
+      ]
     },
     {
       "file": "OEBPS/images/quote-marks.png",
@@ -486,9 +434,7 @@
           "tool": "pngcrush",
           "command": "pngcrush -reduce -brute \"OEBPS/images/quote-marks.png\" \"OEBPS/images/quote-marks.png.tmp\" && mv \"OEBPS/images/quote-marks.png.tmp\" \"OEBPS/images/quote-marks.png\""
         }
-      ],
-      "width": 1200,
-      "height": 1200
+      ]
     },
     {
       "file": "OEBPS/images/ruled-paper.jpeg",
@@ -503,9 +449,7 @@
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/ruled-paper.jpeg\""
         }
-      ],
-      "width": 1200,
-      "height": 1800
+      ]
     },
     {
       "file": "OEBPS/images/toc-divider.png",
@@ -520,9 +464,7 @@
           "tool": "pngcrush",
           "command": "pngcrush -reduce -brute \"OEBPS/images/toc-divider.png\" \"OEBPS/images/toc-divider.png.tmp\" && mv \"OEBPS/images/toc-divider.png.tmp\" \"OEBPS/images/toc-divider.png\""
         }
-      ],
-      "width": 1200,
-      "height": 1200
+      ]
     }
   ],
   "fonts": [
