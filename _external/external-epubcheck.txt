@@ -1,0 +1,5 @@
+
+Check finished with errors
+Messages: 0 fatals / 132 errors / 1 warning / 0 infos
+
+EPUBCheck completed
