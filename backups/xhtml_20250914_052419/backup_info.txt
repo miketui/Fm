@@ -1,0 +1,12 @@
+XHTML Backup Information
+========================
+Created: Sun Sep 14 05:24:19 UTC 2025
+Files backed up: 45
+Original location: /root/repo/OEBPS/text/
+Backup location: /root/repo/backups/xhtml_20250914_052419/
+
+To restore all files:
+cp backups/xhtml_20250914_052419/*.xhtml OEBPS/text/
+
+To restore individual file:
+cp backups/xhtml_20250914_052419/filename.xhtml OEBPS/text/filename.xhtml

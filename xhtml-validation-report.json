@@ -1,0 +1,395 @@
+[
+  {
+    "file": "OEBPS/text/1-TitlePage.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/2-Copyright.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/28-Conclusion.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/29QuizKey.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/3-TableOfContents.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/30-SelfAssessment.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/31-affirmations-close.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/32-continued-learning-commitment.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/33-Acknowledgments.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/34-AbouttheAuthor.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/35-CurlsContempCollective.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/36-JournalingStart.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/37-ManifestingJournal.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/38-journal-page.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/39-professional-development.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/4-Dedication.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/40-SMARTGoals.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/41-self-care-journal.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/42-VisionJournal.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/43-DoodlePage.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/44-bibliography.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/5-SelfAssessment.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/6-affirmation-odyssey.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/7-Preface.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml",
+    "valid": false,
+    "issues": [
+      {
+        "type": "warning",
+        "line": 1,
+        "message": "Missing XML declaration (recommended for XHTML)"
+      }
+    ]
+  },
+  {
+    "file": "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml",
+    "valid": true,
+    "issues": []
+  },
+  {
+    "file": "OEBPS/text/nav.xhtml",
+    "valid": true,
+    "issues": []
+  }
+]
