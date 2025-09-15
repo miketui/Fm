@@ -9,6 +9,14 @@
 /* Always import fonts FIRST for best odds on older readers */
 @import url('fonts.css');
 
+/* === ACISS v2: Chapter number with brushstroke behind the Roman === */
+:root{
+  --aciss-accent:#1797a6;
+  --aciss-ink:#1a1a1a;
+  --aciss-border:#b2dfdb;
+  --aciss-quote-bg:#e0f2f1;
+}
+
 /* =============================
    CSS CUSTOM PROPERTIES
    ============================= */
@@ -111,6 +119,95 @@
 .backmatter-professionaldevelopment { --page-bg: var(--smart-goals-gradient); }
 .backmatter-journalingstart { --page-bg: var(--journal-gradient); }
 .backmatter-manifestingjournal { --page-bg: var(--manifesting-gradient); }
+
+/* =============================
+   ACISS v2: CHAPTER TITLE PAGE STYLING
+   ============================= */
+
+/* container sits at the top, centered */
+.chapter-number-figure{
+  position: relative;
+  margin: 1.25rem auto 2rem;
+  width: min(520px, 80vw);
+  aspect-ratio: 16 / 6;           /* wide brushstroke canvas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* decorative brushstroke image */
+.chapter-number-brush{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.18));
+}
+
+/* Roman numeral on top of the brush */
+.chapter-number-roman{
+  position: relative;
+  display: inline-block;
+  font-family: "Cinzel Decorative", Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4.5vw, 2.4rem);
+  letter-spacing: .06em;
+  line-height: 1;
+  color: #0c2d31;                        /* dark teal ink like screenshot */
+  padding: .35rem 1.25rem;
+  border-radius: 999px;                  /* soft capsule if background shows */
+  background: rgba(255,255,255,.55);     /* subtle glass to read on images */
+  backdrop-filter: blur(1.5px);
+}
+
+/* Title stack (left column) – keep your look, dark vertical rule */
+.title-stack{ display:flex; align-items:flex-start; gap:1rem; margin: .75rem 0 2rem; }
+.title-bar{ width:.25rem; min-height:14rem; background:#222; }
+.title-lines{ display:flex; flex-direction:column; gap:.15rem; }
+.title-line{
+  font-family:"Cinzel Decorative", Georgia, serif;
+  font-size: clamp(1.35rem, 3.6vw, 2rem);
+  text-transform: uppercase;
+  letter-spacing:.05em;
+  color: var(--aciss-accent);
+  text-align:left;
+}
+
+/* Bible quote "pill" */
+.bible-quote-container{
+  background: var(--aciss-quote-bg);
+  border: 2px solid var(--aciss-accent);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem auto;
+  max-width: 85%;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(23,151,166,.15);
+}
+.bible-quote-text { font-style: italic; }
+
+/* Intro heading + drop cap */
+.introduction-heading{
+  font-family:"Montserrat", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color:#555;
+  text-align:center;
+  margin: 1.25rem 0 .5rem;
+}
+.dropcap-first-letter::first-letter{
+  float:left; font-weight:700; font-size:3.2rem; line-height:.9;
+  margin:.1em .35em 0 0; color:var(--aciss-accent);
+  background: rgba(23,151,166,.10); padding:.12em .28em; border-radius:.3em;
+}
+
+/* Print guards (optional) */
+@media print{
+  .chap-title{ break-after: page; }
+  .chapter-number-figure{ margin-top: .5in; }
+}
 
 /* =============================
    GLOBAL RESET & BASE
