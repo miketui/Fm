@@ -1,25 +1,25 @@
 {
-  "timestamp": "2025-09-24T01:48:48.674Z",
+  "timestamp": "2025-09-24T01:50:31.622Z",
   "validation": {
     "epubcheck": {
-      "duration": 5403,
+      "duration": 5330,
       "status": "passed",
-      "timestamp": "2025-09-24T01:48:54.080Z"
+      "timestamp": "2025-09-24T01:50:36.955Z"
     },
     "assetValidation": {
-      "duration": 68,
+      "duration": 66,
       "status": "passed",
-      "timestamp": "2025-09-24T01:48:54.148Z"
+      "timestamp": "2025-09-24T01:50:37.021Z"
     },
     "integrationTests": {
-      "duration": 78,
+      "duration": 76,
       "status": "passed",
-      "timestamp": "2025-09-24T01:48:54.226Z"
+      "timestamp": "2025-09-24T01:50:37.098Z"
     },
     "regressionTests": {
-      "duration": 75,
+      "duration": 73,
       "status": "passed",
-      "timestamp": "2025-09-24T01:48:54.301Z"
+      "timestamp": "2025-09-24T01:50:37.171Z"
     }
   },
   "structure": {
@@ -95,14 +95,14 @@
       "platform": "linux",
       "arch": "x64",
       "memory": {
-        "used": 3.88,
+        "used": 3.9,
         "total": 5.98
       }
     },
     "git": {
       "branch": "copilot/fix-13",
-      "commit": "23710e8e",
-      "status": 59
+      "commit": "13862f23",
+      "status": 6
     },
     "npm": {
       "version": "1.0.0",
@@ -114,9 +114,9 @@
   "trends": [
     {
       "metric": "total_size",
-      "change": -31092,
-      "percentage": -1.03,
-      "direction": "decreased"
+      "change": 0,
+      "percentage": 0,
+      "direction": "stable"
     },
     {
       "metric": "file_count",
@@ -126,9 +126,9 @@
     },
     {
       "metric": "validation_time",
-      "change": 5404,
-      "percentage": 0,
-      "direction": "slower"
+      "change": -73,
+      "percentage": -1.35,
+      "direction": "faster"
     }
   ],
   "summary": {

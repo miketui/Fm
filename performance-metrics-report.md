@@ -1,6 +1,6 @@
 # EPUB Performance Metrics Report
 
-Generated: 2025-09-24T01:48:48.674Z
+Generated: 2025-09-24T01:50:31.622Z
 
 ## Summary
 
@@ -14,10 +14,10 @@ Generated: 2025-09-24T01:48:48.674Z
 
 | Test | Duration | Status |
 |------|----------|--------|
-| epubcheck | 5403ms | passed |
-| Asset Validation | 68ms | passed |
-| Integration Tests | 78ms | passed |
-| Regression Tests | 75ms | passed |
+| epubcheck | 5330ms | passed |
+| Asset Validation | 66ms | passed |
+| Integration Tests | 76ms | passed |
+| Regression Tests | 73ms | passed |
 
 ## Asset Breakdown
 
@@ -28,7 +28,7 @@ Generated: 2025-09-24T01:48:48.674Z
 
 ## Trends
 
-- **total_size**: 📉 decreased by 31092 (1.03%)
+- **total_size**: 📊 stable by 0 (0%)
 - **file_count**: 📊 stable by 0 (0%)
-- **validation_time**: 📈 slower by 5404 (0%)
+- **validation_time**: 📉 faster by 73 (1.35%)
 
