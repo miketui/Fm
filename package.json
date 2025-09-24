@@ -30,7 +30,10 @@
     "typecheck": "echo '✅ No TypeScript files to check'",
     "ci": "npm run build && npm run metrics",
     "ci:full": "npm run build:full && npm run metrics",
-    "pre-commit": "npm run format && npm run lint"
+    "pre-commit": "npm run format && npm run lint",
+    "canvas:generate": "node generate-canvas-visualization.js",
+    "canvas:serve": "python3 -m http.server 8000",
+    "canvas:view": "open canvas-viewer.html"
   },
   "devDependencies": {
     "jsdom": "^27.0.0",
@@ -45,5 +48,13 @@
     "journal"
   ],
   "author": "Curls & Contemplation",
-  "license": "All Rights Reserved"
+  "license": "All Rights Reserved",
+  "dependencies": {
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "canvas": "^3.2.0",
+    "html2canvas": "^1.4.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
 }
