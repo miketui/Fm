@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="BookId">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:title>Curls &amp; Contemplation: A Stylist's Interactive Journey Journal</dc:title>
-    <dc:creator>MD Warren</dc:creator>
     <dc:identifier id="BookId">urn:uuid:9fa5e2ef-5fd8-4f5b-9077-0b9e856cda3d</dc:identifier>
-    <dc:language>en-US</dc:language>
-    <dc:date>2025-05-27</dc:date>
-    <dc:rights>&#169; 2025 MD Warren. All rights reserved.</dc:rights>
-    <dc:publisher>MD Warren</dc:publisher>
-    <dc:subject>Beauty</dc:subject>
-    <dc:subject>Business</dc:subject>
-    <dc:subject>Personal Development</dc:subject>
+    <dc:title>Unveiling Your Creative Odyssey: A Christian Journey Through Hairstyling Excellence</dc:title>
+    <dc:creator>MD Warren</dc:creator>
+    <dc:description>A comprehensive guide for Christian hairstylists combining faith, creativity, and business excellence in the beauty industry. Learn to transform your passion into a thriving career while maintaining your Christian values.</dc:description>
     <dc:subject>Hairstyling</dc:subject>
-    <dc:description>An interactive journey journal for professional hairstylists featuring 16 comprehensive chapters, quizzes, worksheets, and practical strategies for building a successful, conscious hairstyling practice. Includes business development, networking, sustainability, and personal growth content with embedded fonts and professional design elements.</dc:description>
-    <meta property="dcterms:modified">2025-08-30T12:00:00Z</meta>
+    <dc:subject>Christian Living</dc:subject>
+    <dc:subject>Beauty Industry</dc:subject>
+    <dc:subject>Entrepreneurship</dc:subject>
+    <dc:subject>Creative Arts</dc:subject>
+    <dc:subject>Business Development</dc:subject>
+    <dc:subject>Professional Development</dc:subject>
+    <dc:subject>Faith and Work</dc:subject>
+    <dc:language>en</dc:language>
+    <dc:date>2025</dc:date>
+    <dc:rights>All rights reserved</dc:rights>
+    <dc:publisher>Terragon Labs Publishing</dc:publisher>
+    <meta property="dcterms:modified">2025-09-16T12:00:00Z</meta>
+    <meta name="cover" content="cover-image"/>
     
     <!-- EPUB Accessibility 1.1 Metadata (EU Accessibility Act Compliance) -->
     <meta property="schema:accessMode">textual</meta>
@@ -135,7 +140,8 @@
     <item id="img3" href="images/chapter-iv-quote.jpeg" media-type="image/jpeg"/>
     <item id="img4" href="images/toc-divider.png" media-type="image/png"/>
     <item id="img5" href="images/Michael.jpeg" media-type="image/jpeg"/>
-    <item id="img6" href="images/brushstroke.jpeg" media-type="image/jpeg"/>
+    <item id="cover-image" href="images/brushstroke.jpeg" media-type="image/jpeg"/>
+    <item id="img30" href="images/brushstroke.svg" media-type="image/svg+xml"/>
     <item id="img7" href="images/part-border.jpeg" media-type="image/jpeg"/>
     <item id="img8" href="images/chapter-xiv-quote.jpeg" media-type="image/jpeg"/>
     <item id="img9" href="images/chapter-iii-quote.jpeg" media-type="image/jpeg"/>
