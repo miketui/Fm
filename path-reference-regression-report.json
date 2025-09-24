@@ -1,14 +1,14 @@
 {
-  "timestamp": "2025-09-14T18:30:58.906Z",
+  "timestamp": "2025-09-24T01:54:55.174Z",
   "summary": {
-    "totalPaths": 83,
+    "totalPaths": 84,
     "brokenLinks": 0,
     "hasBaseline": true,
     "hasRegressions": false
   },
   "currentState": {
     "paths": [
-      "OEBPS/images/brushstroke.jpeg",
+      "OEBPS/images/brushstroke.svg",
       "OEBPS/images/chapter-x-quote.jpeg",
       "OEBPS/styles/fonts.css",
       "OEBPS/styles/style.css",
@@ -83,6 +83,7 @@
       "OEBPS/images/endnote-marker.png",
       "OEBPS/images/toc-divider.png",
       "OEBPS/images/Michael.jpeg",
+      "OEBPS/images/brushstroke.jpeg",
       "OEBPS/images/part-border.jpeg",
       "OEBPS/images/quote-marks.png",
       "OEBPS/images/preface-quote.jpeg",
@@ -95,8 +96,8 @@
     "references": {
       "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -539,8 +540,8 @@
       ],
       "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -611,8 +612,8 @@
       ],
       "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -663,8 +664,8 @@
       ],
       "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -755,8 +756,8 @@
       ],
       "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -787,8 +788,8 @@
       ],
       "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -839,8 +840,8 @@
       ],
       "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -891,8 +892,8 @@
       ],
       "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -923,8 +924,8 @@
       ],
       "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -975,8 +976,8 @@
       ],
       "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -1007,8 +1008,8 @@
       ],
       "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -1039,8 +1040,8 @@
       ],
       "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -1071,8 +1072,8 @@
       ],
       "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -1203,8 +1204,8 @@
       ],
       "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -1633,8 +1634,8 @@
       ],
       "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -1665,8 +1666,8 @@
       ],
       "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml": [
         {
-          "path": "../images/brushstroke.jpeg",
-          "resolvedPath": "OEBPS/images/brushstroke.jpeg",
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
           "type": "image",
           "exists": true
         },
@@ -2193,6 +2194,12 @@
           "resolvedPath": "OEBPS/images/chapter-xv-quote.jpeg",
           "type": "manifest_item",
           "exists": true
+        },
+        {
+          "path": "images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "manifest_item",
+          "exists": true
         }
       ]
     },
@@ -2200,7 +2207,7 @@
   },
   "comparison": {
     "newPaths": [
-      "OEBPS/images/brushstroke.jpeg",
+      "OEBPS/images/brushstroke.svg",
       "OEBPS/images/chapter-x-quote.jpeg",
       "OEBPS/images/chapter-xiii-quote.jpeg",
       "OEBPS/images/chapter-xiv-quote.jpeg",
@@ -2221,6 +2228,7 @@
       "OEBPS/images/endnote-marker.png",
       "OEBPS/images/toc-divider.png",
       "OEBPS/images/Michael.jpeg",
+      "OEBPS/images/brushstroke.jpeg",
       "OEBPS/images/part-border.jpeg",
       "OEBPS/images/quote-marks.png",
       "OEBPS/images/preface-quote.jpeg",
@@ -2307,7 +2315,7 @@
       }
     ],
     "changesSummary": {
-      "pathsAdded": 29,
+      "pathsAdded": 30,
       "pathsRemoved": 29,
       "linksFixed": 7,
       "newBrokenLinks": 0,
