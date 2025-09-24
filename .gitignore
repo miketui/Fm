@@ -1,1 +1,8 @@
 _external/
+node_modules/
+*.log
+*.tmp
+/tmp/
+/reports/temp/
+.DS_Store
+current-validation-output.txt

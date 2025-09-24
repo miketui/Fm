@@ -1,11 +1,11 @@
 # Multi-Format EPUB Validation Report
 
-Generated: 2025-09-14T18:31:14.483Z
+Generated: 2025-09-24T01:48:48.142Z
 
 ## EPUB Information
 
 - **Detected Version**: 3.0
-- **Features**: EPUB3_Navigation, Accessibility_Metadata, Embedded_Fonts
+- **Features**: EPUB3_Navigation, SVG, Accessibility_Metadata, Embedded_Fonts
 
 ## Validation Summary
 

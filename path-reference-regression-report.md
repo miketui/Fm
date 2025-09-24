@@ -1,17 +1,17 @@
 # Path Reference Regression Test Report
 
-Generated: 2025-09-14T18:30:58.906Z
+Generated: 2025-09-24T01:50:37.165Z
 
 ## Summary
 
-- **Total Paths**: 83
+- **Total Paths**: 84
 - **Broken Links**: 0
 - **Has Baseline**: ✅ Yes
 - **Regressions**: ✅ None
 
 ## Changes Since Baseline
 
-- **Paths Added**: 29
+- **Paths Added**: 30
 - **Paths Removed**: 29
 - **Links Fixed**: 7
 - **New Broken Links**: 0
