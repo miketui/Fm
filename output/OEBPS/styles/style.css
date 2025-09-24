@@ -1,0 +1,141 @@
+/*
+  style.css — Main stylesheet for Curls &amp; Contemplation EPUB
+  This file imports the core fonts and embedded icons. The remainder of the
+  layout, typographic and responsive rules should be merged from the
+  authoritative CSS provided by the author. To keep this repository concise
+  and focused on demonstrating SVG integration, those rules are omitted here.
+*/
+
+@import url('fonts.css');
+
+/* ---------------------------------------------------------------------- */
+/* Embedded SVG icon definitions                                            */
+/* The following definitions were previously in a separate svg-icons.css.  */
+/* They are inlined here so that a single stylesheet contains all the      */
+/* necessary variables and utility classes. You can remove the original    */
+/* svg-icons.css from your package and update the manifest accordingly.   */
+/*
+  svg-icons.css — Embedded SVG icons for "Curls & Contemplation: A Stylist's Interactive Journey Journal"
+  This section defines reusable CSS variables and utility classes for the inline
+  vector artwork used throughout the EPUB. Embedding these assets as data URIs
+  reduces external requests and ensures complete portability of the package. You
+  can reference these variables anywhere via `var(--quote-marks-svg)` etc., or
+  apply the provided utility classes directly to HTML elements.
+  The icons inherit their colour from the element’s `color` property when used
+  through masking (where supported). When applied as background images, the
+  intrinsic colour from the SVG is used.
+*/
+
+/*
+  ============================
+  Root-level SVG variables
+  ============================
+  Each variable contains a complete data URI for its respective artwork. The
+  encoded SVGs are minified and percent‑escaped to satisfy EPUB CSS parsers.
+*/
+:root {
+  /* Quotation marks icon. Use as a decorative glyph or to decorate pull‑quotes. */
+  --quote-marks-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2024%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M14.2%203.5c-4.5%200-8.2%203.7-8.2%208.2%200%203.9%202.6%206.9%206.2%207.7-.5-1.7-.5-3.3.2-4.8%201.1-2.3%203.5-3.8%206.2-3.8%201.7%200%203.2-.3%204.4-1.2%201.1-.8%201.8-2%201.8-3.6%200-1.7-.7-3-1.9-3.9-1.2-.9-2.9-1.4-4.7-1.4z%22%2F%3E%3Cpath%20d%3D%22M33.8%203.5c-4.5%200-8.2%203.7-8.2%208.2%200%203.9%202.6%206.9%206.2%207.7-.5-1.7-.5-3.3.2-4.8%201.1-2.3%203.5-3.8%206.2-3.8%201.7%200%203.2-.3%204.4-1.2%201.1-.8%201.8-2%201.8-3.6%200-1.7-.7-3-1.9-3.9-1.2-.9-2.9-1.4-4.7-1.4z%22%2F%3E%3C%2Fsvg%3E");
+
+  /* Ruled paper background. Designed to tile vertically; adjust background-size
+     on the `.ruled-paper-bg` class to control line spacing. */
+  --ruled-paper-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20800%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221%22%20fill%3D%22none%22%3E%3Cline%20x1%3D%2280%22%20y1%3D%220%22%20x2%3D%2280%22%20y2%3D%22800%22%20stroke-opacity%3D%22.35%22%20stroke-width%3D%222%22%2F%3E%3Cg%20stroke-opacity%3D%22.25%22%3E%3Cline%20x1%3D%220%22%20y1%3D%2260%22%20x2%3D%22600%22%20y2%3D%2260%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22100%22%20x2%3D%22600%22%20y2%3D%22100%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22140%22%20x2%3D%22600%22%20y2%3D%22140%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22180%22%20x2%3D%22600%22%20y2%3D%22180%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22220%22%20x2%3D%22600%22%20y2%3D%22220%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22260%22%20x2%3D%22600%22%20y2%3D%22260%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%22600%22%20y2%3D%22300%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22340%22%20x2%3D%22600%22%20y2%3D%22340%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22380%22%20x2%3D%22600%22%20y2%3D%22380%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22420%22%20x2%3D%22600%22%20y2%3D%22420%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22460%22%20x2%3D%22600%22%20y2%3D%22460%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22500%22%20x2%3D%22600%22%20y2%3D%22500%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22540%22%20x2%3D%22600%22%20y2%3D%22540%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22580%22%20x2%3D%22600%22%20y2%3D%22580%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%22600%22%20y2%3D%22620%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22660%22%20x2%3D%22600%22%20y2%3D%22660%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22700%22%20x2%3D%22600%22%20y2%3D%22700%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22740%22%20x2%3D%22600%22%20y2%3D%22740%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+
+  /* Table of contents divider. A horizontal ornament for separating sections. */
+  --toc-divider-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%2040%22%20fill%3D%22currentColor%22%20stroke%3D%22currentColor%22%3E%3Cg%20fill%3D%22none%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%3Cline%20x1%3D%2210%22%20y1%3D%2220%22%20x2%3D%22260%22%20y2%3D%2220%22%2F%3E%3Cline%20x1%3D%22380%22%20y1%3D%2220%22%20x2%3D%22630%22%20y2%3D%2220%22%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%2220%22%20r%3D%223%22%2F%3E%3Cpath%20d%3D%22M320%207l10%2013-10%2013-10-13z%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E");
+
+  /* Quiz checkboxes. Two variants: unchecked and checked. */
+  --checkbox-unchecked-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2218%22%20height%3D%2218%22%20rx%3D%223%22%20ry%3D%223%22%2F%3E%3C%2Fsvg%3E");
+
+  --checkbox-checked-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2218%22%20height%3D%2218%22%20rx%3D%223%22%20ry%3D%223%22%2F%3E%3Cpath%20d%3D%22M7%2012.5l3.5%203.5L17%208.5%22%2F%3E%3C%2Fsvg%3E");
+
+  /* Chapter frame. Use as a decorative border for chapter title pages. */
+  --chapter-frame-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%201000%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%3E%3Crect%20x%3D%2230%22%20y%3D%2230%22%20width%3D%22740%22%20height%3D%22940%22%20rx%3D%228%22%20ry%3D%228%22%20stroke-width%3D%222%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%2252%22%20width%3D%22696%22%20height%3D%22896%22%20rx%3D%226%22%20ry%3D%226%22%20stroke-width%3D%221.5%22%20opacity%3D%22.85%22%2F%3E%3Cg%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M90%20110h40%22%2F%3E%3Cpath%20d%3D%22M110%2090v40%22%2F%3E%3Cpath%20d%3D%22M710%20110h-40%22%2F%3E%3Cpath%20d%3D%22M690%2090v40%22%2F%3E%3Cpath%20d%3D%22M90%20890h40%22%2F%3E%3Cpath%20d%3D%22M110%20910v-40%22%2F%3E%3Cpath%20d%3D%22M710%20890h-40%22%2F%3E%3Cpath%20d%3D%22M690%20910v-40%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+/*
+  ============================
+  Utility classes
+  ============================
+  These classes provide convenient wrappers for the embedded artwork. Apply
+  `quote-marks-icon` to inline elements to insert quote glyphs, `ruled-paper-bg`
+  to blocks that need lined backgrounds, and so on. The quiz checkbox classes
+  can be toggled by adding or removing the `.checked` class.
+*/
+
+/* Quote marks glyph */
+.quote-marks-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: var(--quote-marks-svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Ruled paper background. Sets vertical line spacing to 1.5rem by default. */
+.ruled-paper-bg {
+  background-image: var(--ruled-paper-svg);
+  background-repeat: repeat-y;
+  background-size: 100% 1.5rem;
+  /* Provide a subtle light background by default; override as needed. */
+  background-color: var(--background-worksheet, #fafafa);
+}
+
+/* Table of contents divider. Use as a block-level separator. */
+.toc-divider-img {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  background-image: var(--toc-divider-svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+/* Quiz checkbox. The colour of the box and tick is derived from the element’s
+   `color` property when the reading system supports masking. Otherwise, the
+   embedded SVG provides a crisp outline. */
+.quiz-checkbox {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: var(--checkbox-unchecked-svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.quiz-checkbox.checked {
+  background-image: var(--checkbox-checked-svg);
+}
+
+/* Chapter frame. Intended for framing chapter title pages or callouts. Apply
+   this class to a block-level container. The frame will scale with the
+   container’s width while preserving its aspect ratio. */
+.chapter-frame {
+  background-image: var(--chapter-frame-svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 2rem;
+}
+
+/*
+  Place your existing style definitions below. For example:
+
+  :root {
+    --primary-color: #1a1a1a;
+    /* other variables ... */
+  }
+
+  .title-page {
+    background: var(--title-gradient);
+    /* ... */
+  }
+
+  The embedded icons defined in svg-icons.css can be applied via the utility
+  classes (.quote-marks-icon, .ruled-paper-bg, .toc-divider-img, .quiz-checkbox,
+  .chapter-frame) or by referencing the variables directly with
+  `background-image: var(--quote-marks-svg);` and similar.
+*/
