@@ -14,9 +14,40 @@
     <!-- METADATA -->
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
         <dc:identifier id="BookId">urn:uuid:9fa5e2ef-5fd8-4f5b-9077-0b9e856cda3d</dc:identifier>
-        <dc:title>Unveiling Your Creative Odyssey: A Christian Journey Through Hairstyling Excellence</dc:title>
-        <dc:creator>Your Author Name</dc:creator>
-        <dc:description>A comprehensive guide for Christian hairstylists combining faith, creativity, and business excellence in the beauty industry. Learn to transform your passion into a thriving career while maintaining your Christian values.</dc:description>
+        <!-- Title and subtitle -->
+        <dc:title id="title">Unveiling Your Creative Odyssey: A Christian Journey Through Hairstyling Excellence</dc:title>
+        <meta refines="#title" property="title-type">main</meta>
+        <meta refines="#title" property="display-seq">1</meta>
+
+        <!-- Author information -->
+        <dc:creator id="author">MD&nbsp;Warren</dc:creator>
+        <meta refines="#author" property="role" scheme="marc:relators">aut</meta>
+        <meta refines="#author" property="file-as">Warren, MD</meta>
+
+        <!-- Publisher details -->
+        <dc:publisher>Terragon Labs Publishing</dc:publisher>
+
+        <!-- Description: an SEO‑optimised summary that speaks to reader pain points and
+             highlights the transformative nature of conscious hairstyling.  The description
+             draws on themes from the book such as spiritual calling, creative mastery,
+             professional excellence, business development, mentorship, and lasting legacy
+             in the beauty industry with Christian values at its core.  -->
+        <dc:description>
+            <![CDATA[
+            "Unveiling Your Creative Odyssey" is a comprehensive guide for Christian hairstylists
+            combining faith, creativity, and business excellence in the beauty industry. Through
+            sixteen transformative chapters, readers learn to transform their passion into a
+            thriving career while maintaining their Christian values. This book covers conscious
+            hairstyling principles, advanced techniques for diverse hair textures, building
+            meaningful client relationships, mastering freelance business strategies, developing
+            financial wisdom, embracing wellness and self-care, and creating an enduring legacy.
+            Drawing upon biblical wisdom, real-world case studies, and actionable strategies,
+            this guide empowers stylists to excel professionally while honoring their faith and
+            serving their communities with excellence and integrity.
+            ]]>
+        </dc:description>
+
+        <!-- Subject categories and keywords for discoverability across retail platforms -->
         <dc:subject>Hairstyling</dc:subject>
         <dc:subject>Christian Living</dc:subject>
         <dc:subject>Beauty Industry</dc:subject>
@@ -25,10 +56,25 @@
         <dc:subject>Business Development</dc:subject>
         <dc:subject>Professional Development</dc:subject>
         <dc:subject>Faith and Work</dc:subject>
-        <dc:language>en</dc:language>
-        <dc:date>2025</dc:date>
-        <dc:rights>All rights reserved</dc:rights>
-        <dc:publisher>Your Publisher Name</dc:publisher>
+        <dc:subject>Freelance Business</dc:subject>
+        <dc:subject>Hair Care</dc:subject>
+        <dc:subject>Beauty Professionals</dc:subject>
+        <dc:subject>Salon Management</dc:subject>
+        <dc:subject>Christian Entrepreneurship</dc:subject>
+        <dc:subject>Diversity &amp; Inclusion</dc:subject>
+        <dc:subject>Wellness &amp; Self-Care</dc:subject>
+        <dc:subject>Mentorship</dc:subject>
+        <dc:subject>Leadership Development</dc:subject>
+        <dc:subject>Career Transformation</dc:subject>
+
+        <!-- Language and locale -->
+        <dc:language>en-US</dc:language>
+
+        <!-- Publication and rights information -->
+        <dc:date>2025-05-27</dc:date>
+        <dc:rights>© 2025 MD&nbsp;Warren. All rights reserved.</dc:rights>
+
+        <!-- EPUB 3 required metadata: date of last modification -->
         <meta property="dcterms:modified">2025-09-16T12:00:00Z</meta>
         <meta name="cover" content="cover-image"/>
     </metadata>
