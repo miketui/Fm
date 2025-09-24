@@ -17,7 +17,7 @@
         <dc:identifier id="BookId">urn:uuid:9fa5e2ef-5fd8-4f5b-9077-0b9e856cda3d</dc:identifier>
 
         <!-- Title and subtitle -->
-        <dc:title id="title">Curls &amp; Contemplation: A Stylist's Interactive Journey Journal</dc:title>
+        <dc:title id="title">Unveiling Your Creative Odyssey: A Christian Journey Through Hairstyling Excellence</dc:title>
         <meta refines="#title" property="title-type">main</meta>
         <meta refines="#title" property="display-seq">1</meta>
 
@@ -27,41 +27,47 @@
         <meta refines="#author" property="file-as">Warren, MD</meta>
 
         <!-- Publisher details -->
-        <dc:publisher>Michael David Publishing</dc:publisher>
+        <dc:publisher>Terragon Labs Publishing</dc:publisher>
 
         <!-- Description: an SEO‑optimised summary that speaks to reader pain points and
-             highlights the interactive nature of the journal.  The description
-             draws on themes from the book such as rediscovering creativity,
-             overcoming burnout, building a freelance business, finding mentors,
-             practising self‑care and embracing emerging technologies and
-             sustainable practices.  -->
+             highlights the transformative nature of conscious hairstyling.  The description
+             draws on themes from the book such as spiritual calling, creative mastery,
+             professional excellence, business development, mentorship, and lasting legacy
+             in the beauty industry with Christian values at its core.  -->
         <dc:description>
             <![CDATA[
-            "Curls &amp; Contemplation" invites hairstylists, beauty professionals and
-            creative entrepreneurs on a transformative journey.  Through sixteen
-            in‑depth chapters and a series of engaging worksheets, quizzes and
-            journal prompts, readers learn how to reignite their creative spark,
-            conquer burnout and isolation, build robust networks and mentorships,
-            master business fundamentals and marketing, develop financial
-            stability, embrace wellness and self‑care, harness digital tools
-            ethically and sustainably, and celebrate diversity in hair textures
-            and cultures.  Drawing upon personal stories and real‑world case
-            studies from the files, this journal acts as both a roadmap and
-            companion – empowering stylists to cultivate a thriving, values‑driven
-            career while leaving an enduring legacy in the beauty industry【580743054002325†L37-L49】【933055834177503†L38-L50】.
+            "Unveiling Your Creative Odyssey" is a comprehensive guide for Christian hairstylists
+            combining faith, creativity, and business excellence in the beauty industry. Through
+            sixteen transformative chapters, readers learn to transform their passion into a
+            thriving career while maintaining their Christian values. This book covers conscious
+            hairstyling principles, advanced techniques for diverse hair textures, building
+            meaningful client relationships, mastering freelance business strategies, developing
+            financial wisdom, embracing wellness and self-care, and creating an enduring legacy.
+            Drawing upon biblical wisdom, real-world case studies, and actionable strategies,
+            this guide empowers stylists to excel professionally while honoring their faith and
+            serving their communities with excellence and integrity.
             ]]>
         </dc:description>
 
         <!-- Subject categories and keywords for discoverability across retail platforms -->
-        <dc:subject>Beauty &amp; Grooming / Hair</dc:subject>
-        <dc:subject>Self‑Help / Personal Growth</dc:subject>
-        <dc:subject>Business &amp; Entrepreneurship</dc:subject>
+        <dc:subject>Hairstyling</dc:subject>
+        <dc:subject>Christian Living</dc:subject>
+        <dc:subject>Beauty Industry</dc:subject>
+        <dc:subject>Entrepreneurship</dc:subject>
+        <dc:subject>Creative Arts</dc:subject>
+        <dc:subject>Business Development</dc:subject>
         <dc:subject>Professional Development</dc:subject>
+        <dc:subject>Faith and Work</dc:subject>
         <dc:subject>Freelance Business</dc:subject>
-        <dc:subject>Sustainability &amp; Ethics</dc:subject>
+        <dc:subject>Hair Care</dc:subject>
+        <dc:subject>Beauty Professionals</dc:subject>
+        <dc:subject>Salon Management</dc:subject>
+        <dc:subject>Christian Entrepreneurship</dc:subject>
         <dc:subject>Diversity &amp; Inclusion</dc:subject>
-        <dc:subject>Digital Strategy</dc:subject>
-        <dc:subject>Creativity &amp; Well‑being</dc:subject>
+        <dc:subject>Wellness &amp; Self-Care</dc:subject>
+        <dc:subject>Mentorship</dc:subject>
+        <dc:subject>Leadership Development</dc:subject>
+        <dc:subject>Career Transformation</dc:subject>
 
         <!-- Language and locale -->
         <dc:language>en-US</dc:language>
