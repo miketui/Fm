@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHTML Canvas Visualization - Chapter I</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            color: #1797a6;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header h2 {
+            color: #333;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: #1797a6;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #137a87;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: #f0f9ff;
+            color: #1797a6;
+            border: 2px solid #1797a6;
+        }
+        
+        .btn-secondary:hover {
+            background: #1797a6;
+            color: white;
+        }
+        
+        .visualization-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px 0;
+        }
+        
+        .visualization-frame {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border: 3px solid #1797a6;
+            margin-bottom: 20px;
+        }
+        
+        .visualization-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .info-card {
+            background: #f8fcff;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #1797a6;
+        }
+        
+        .info-card h3 {
+            color: #1797a6;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-card li {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .info-card li:before {
+            content: "•";
+            color: #1797a6;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .tech-details {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .tech-details h4 {
+            color: #1797a6;
+            margin-bottom: 10px;
+        }
+        
+        .tech-details p {
+            color: #555;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header h2 {
+                font-size: 1.2rem;
+            }
+            
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📖 XHTML Canvas Visualization</h1>
+            <h2>Chapter I – Unveiling Your Creative Odyssey</h2>
+            <p>
+                This interactive canvas visualization transforms the EPUB XHTML content into a beautiful 
+                visual representation, showcasing the chapter's structure, design elements, and content 
+                organization in a single artistic composition.
+            </p>
+            <div class="buttons">
+                <a href="chapter-i-canvas-visualization.png" download class="btn btn-primary">
+                    📥 Download Full Size (1000×800)
+                </a>
+                <a href="chapter-i-canvas-preview.png" download class="btn btn-secondary">
+                    🖼️ Download Preview (500×400)
+                </a>
+            </div>
+        </div>
+        
+        <div class="visualization-container">
+            <div class="visualization-frame">
+                <img src="chapter-i-canvas-visualization.png" 
+                     alt="Canvas visualization of Chapter I - Unveiling Your Creative Odyssey" 
+                     class="visualization-img">
+            </div>
+            <p style="color: #888; font-style: italic; text-align: center;">
+                Click the image to view full size • Generated from XHTML source: 
+                <code>9-chapter-i-unveiling-your-creative-odyssey.xhtml</code>
+            </p>
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>🎨 Visual Elements</h3>
+                <ul>
+                    <li>Roman numeral "I" with decorative brushstroke background</li>
+                    <li>Stacked title design: "Unveiling Your Creative Odyssey"</li>
+                    <li>Featured biblical quotation in highlighted container</li>
+                    <li>Professional typography with shadow effects</li>
+                    <li>Teal accent color scheme (#1797a6)</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3>📋 Content Structure</h3>
+                <ul>
+                    <li>Introduction section with opening narrative</li>
+                    <li>8 main content sections extracted from XHTML</li>
+                    <li>Alternating background colors for readability</li>
+                    <li>Section numbering and hierarchical organization</li>
+                    <li>Decorative footer elements and border frame</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3>⚙️ Technical Features</h3>
+                <ul>
+                    <li>Generated using Node.js Canvas API</li>
+                    <li>XHTML content parsed with JSDOM</li>
+                    <li>High-quality antialiased rendering</li>
+                    <li>Responsive design elements</li>
+                    <li>PNG format with transparency support</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3>📖 Source Content</h3>
+                <ul>
+                    <li>EPUB chapter: 9-chapter-i-unveiling-your-creative-odyssey.xhtml</li>
+                    <li>Chapter theme: Conscious hairstyling and creativity</li>
+                    <li>Biblical inspiration: Ephesians 2:10</li>
+                    <li>Professional development focus</li>
+                    <li>Interactive journal format</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="tech-details">
+            <h4>🔍 About This Visualization</h4>
+            <p>
+                This canvas visualization was generated programmatically by parsing the XHTML structure 
+                and extracting key content elements, then rendering them as an artistic composition 
+                that captures the essence of the chapter's design and message.
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Add click handler to view full size
+        document.querySelector('.visualization-img').addEventListener('click', function() {
+            window.open(this.src, '_blank');
+        });
+        
+        // Add some interactive feedback
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseover', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            btn.addEventListener('mouseout', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
