@@ -1,6 +1,6 @@
 # EPUB Asset Optimization Report
 
-Generated: 2025-09-14T18:31:14.830Z
+Generated: 2025-09-24T01:48:48.489Z
 
 ## Summary
 
@@ -211,10 +211,10 @@ Generated: 2025-09-14T18:31:14.830Z
 ## CSS Optimization
 
 ### style.css
-- **Size**: 28KB
+- **Size**: 31KB
 - **Recommendations**:
   - **css_duplication**: Found duplicate CSS rules that could be consolidated
-    - Count: 187
+    - Count: 213
 
 ### fonts.css
 - **Size**: 3KB

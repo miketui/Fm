@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-14T18:31:14.830Z",
+  "timestamp": "2025-09-24T01:48:48.489Z",
   "options": {
     "dryRun": true,
     "maxImageSize": 512000,
@@ -504,14 +504,14 @@
   "css": [
     {
       "file": "OEBPS/styles/style.css",
-      "size": 28692,
-      "sizeKB": 28,
+      "size": 31477,
+      "sizeKB": 31,
       "recommendations": [
         {
           "type": "css_duplication",
           "message": "Found duplicate CSS rules that could be consolidated",
           "severity": "low",
-          "count": 187
+          "count": 213
         }
       ]
     },

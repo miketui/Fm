@@ -1,0 +1,100 @@
+
+> curls-and-contemplation-epub@1.0.0 validate:xhtml
+> node scripts/validate-xhtml-safe.js
+
+[34mℹ️ 🔍 Starting Safe XHTML Validation[0m
+[34mℹ️ Found 45 XHTML files to validate[0m
+[34mℹ️ Validating OEBPS/text/1-TitlePage.xhtml...[0m
+[32m✅ OEBPS/text/1-TitlePage.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml...[0m
+[32m✅ OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml...[0m
+[32m✅ OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml...[0m
+[32m✅ OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml...[0m
+[32m✅ OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml...[0m
+[32m✅ OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml...[0m
+[32m✅ OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml...[0m
+[32m✅ OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml...[0m
+[32m✅ OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml...[0m
+[32m✅ OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml...[0m
+[32m✅ OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/2-Copyright.xhtml...[0m
+[32m✅ OEBPS/text/2-Copyright.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml...[0m
+[32m✅ OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml...[0m
+[32m✅ OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml...[0m
+[32m✅ OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml...[0m
+[32m✅ OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml...[0m
+[32m✅ OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml...[0m
+[32m✅ OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml...[0m
+[32m✅ OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml...[0m
+[32m✅ OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/28-Conclusion.xhtml...[0m
+[32m✅ OEBPS/text/28-Conclusion.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/29QuizKey.xhtml...[0m
+[32m✅ OEBPS/text/29QuizKey.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/3-TableOfContents.xhtml...[0m
+[32m✅ OEBPS/text/3-TableOfContents.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/30-SelfAssessment.xhtml...[0m
+[32m✅ OEBPS/text/30-SelfAssessment.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/31-affirmations-close.xhtml...[0m
+[32m✅ OEBPS/text/31-affirmations-close.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/32-continued-learning-commitment.xhtml...[0m
+[32m✅ OEBPS/text/32-continued-learning-commitment.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/33-Acknowledgments.xhtml...[0m
+[32m✅ OEBPS/text/33-Acknowledgments.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/34-AbouttheAuthor.xhtml...[0m
+[32m✅ OEBPS/text/34-AbouttheAuthor.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/35-CurlsContempCollective.xhtml...[0m
+[32m✅ OEBPS/text/35-CurlsContempCollective.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/36-JournalingStart.xhtml...[0m
+[32m✅ OEBPS/text/36-JournalingStart.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/37-ManifestingJournal.xhtml...[0m
+[32m✅ OEBPS/text/37-ManifestingJournal.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/38-journal-page.xhtml...[0m
+[32m✅ OEBPS/text/38-journal-page.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/39-professional-development.xhtml...[0m
+[32m✅ OEBPS/text/39-professional-development.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/4-Dedication.xhtml...[0m
+[32m✅ OEBPS/text/4-Dedication.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/40-SMARTGoals.xhtml...[0m
+[32m✅ OEBPS/text/40-SMARTGoals.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/41-self-care-journal.xhtml...[0m
+[32m✅ OEBPS/text/41-self-care-journal.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/42-VisionJournal.xhtml...[0m
+[32m✅ OEBPS/text/42-VisionJournal.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/43-DoodlePage.xhtml...[0m
+[32m✅ OEBPS/text/43-DoodlePage.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/44-bibliography.xhtml...[0m
+[32m✅ OEBPS/text/44-bibliography.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/5-SelfAssessment.xhtml...[0m
+[32m✅ OEBPS/text/5-SelfAssessment.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/6-affirmation-odyssey.xhtml...[0m
+[32m✅ OEBPS/text/6-affirmation-odyssey.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/7-Preface.xhtml...[0m
+[32m✅ OEBPS/text/7-Preface.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml...[0m
+[32m✅ OEBPS/text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml...[0m
+[32m✅ OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml - No issues found[0m
+[34mℹ️ Validating OEBPS/text/nav.xhtml...[0m
+[32m✅ OEBPS/text/nav.xhtml - No issues found[0m
+
+==================================================
+[34mℹ️ Validation complete: 45/45 files valid[0m
+[32m✅ 🎉 All XHTML files are valid![0m

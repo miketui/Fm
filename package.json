@@ -33,6 +33,8 @@
     "pre-commit": "npm run format && npm run lint"
   },
   "devDependencies": {
+    "jsdom": "^27.0.0",
+    "playwright": "^1.55.1",
     "xml2js": "^0.6.2"
   },
   "keywords": [
