@@ -2,21 +2,21 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="BookId">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="BookId">urn:uuid:9fa5e2ef-5fd8-4f5b-9077-0b9e856cda3d</dc:identifier>
-    <dc:title>Unveiling Your Creative Odyssey: A Christian Journey Through Hairstyling Excellence</dc:title>
-    <dc:creator>MD Warren</dc:creator>
-    <dc:description>A comprehensive guide for Christian hairstylists combining faith, creativity, and business excellence in the beauty industry. Learn to transform your passion into a thriving career while maintaining your Christian values.</dc:description>
+    <dc:title>Curls &amp; Contemplation: A Stylist's Interactive Journey Journal</dc:title>
+    <dc:creator>Michael David</dc:creator>
+    <dc:description>An interactive journey of creative mastery, business growth, and self-reflection for stylists, blending artistry, entrepreneurship and personal development. This comprehensive guide combines practical business acumen with creative inspiration, featuring worksheets, self-assessments and professional development tools.</dc:description>
     <dc:subject>Hairstyling</dc:subject>
-    <dc:subject>Christian Living</dc:subject>
+    <dc:subject>Self-Help</dc:subject>
     <dc:subject>Beauty Industry</dc:subject>
     <dc:subject>Entrepreneurship</dc:subject>
     <dc:subject>Creative Arts</dc:subject>
     <dc:subject>Business Development</dc:subject>
     <dc:subject>Professional Development</dc:subject>
-    <dc:subject>Faith and Work</dc:subject>
+    <dc:subject>Personal Development</dc:subject>
     <dc:language>en</dc:language>
     <dc:date>2025</dc:date>
     <dc:rights>All rights reserved</dc:rights>
-    <dc:publisher>Terragon Labs Publishing</dc:publisher>
+    <dc:publisher>Self</dc:publisher>
     <meta property="dcterms:modified">2025-09-16T12:00:00Z</meta>
     <meta name="cover" content="cover-image"/>
     
