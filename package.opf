@@ -12,85 +12,25 @@
     -->
 
     <!-- METADATA -->
-    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-        <!-- Primary identification using a UUID -->
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
         <dc:identifier id="BookId">urn:uuid:9fa5e2ef-5fd8-4f5b-9077-0b9e856cda3d</dc:identifier>
-
-        <!-- Title and subtitle -->
-        <dc:title id="title">Curls &amp; Contemplation: A Stylist's Interactive Journey Journal</dc:title>
-        <meta refines="#title" property="title-type">main</meta>
-        <meta refines="#title" property="display-seq">1</meta>
-
-        <!-- Author information -->
-        <dc:creator id="author">MD&nbsp;Warren</dc:creator>
-        <meta refines="#author" property="role" scheme="marc:relators">aut</meta>
-        <meta refines="#author" property="file-as">Warren, MD</meta>
-
-        <!-- Publisher details -->
-        <dc:publisher>Michael David Publishing</dc:publisher>
-
-        <!-- Description: an SEO‑optimised summary that speaks to reader pain points and
-             highlights the interactive nature of the journal.  The description
-             draws on themes from the book such as rediscovering creativity,
-             overcoming burnout, building a freelance business, finding mentors,
-             practising self‑care and embracing emerging technologies and
-             sustainable practices.  -->
-        <dc:description>
-            <![CDATA[
-            "Curls &amp; Contemplation" invites hairstylists, beauty professionals and
-            creative entrepreneurs on a transformative journey.  Through sixteen
-            in‑depth chapters and a series of engaging worksheets, quizzes and
-            journal prompts, readers learn how to reignite their creative spark,
-            conquer burnout and isolation, build robust networks and mentorships,
-            master business fundamentals and marketing, develop financial
-            stability, embrace wellness and self‑care, harness digital tools
-            ethically and sustainably, and celebrate diversity in hair textures
-            and cultures.  Drawing upon personal stories and real‑world case
-            studies from the files, this journal acts as both a roadmap and
-            companion – empowering stylists to cultivate a thriving, values‑driven
-            career while leaving an enduring legacy in the beauty industry【580743054002325†L37-L49】【933055834177503†L38-L50】.
-            ]]>
-        </dc:description>
-
-        <!-- Subject categories and keywords for discoverability across retail platforms -->
-        <dc:subject>Beauty &amp; Grooming / Hair</dc:subject>
-        <dc:subject>Self‑Help / Personal Growth</dc:subject>
-        <dc:subject>Business &amp; Entrepreneurship</dc:subject>
+        <dc:title>Unveiling Your Creative Odyssey: A Christian Journey Through Hairstyling Excellence</dc:title>
+        <dc:creator>Your Author Name</dc:creator>
+        <dc:description>A comprehensive guide for Christian hairstylists combining faith, creativity, and business excellence in the beauty industry. Learn to transform your passion into a thriving career while maintaining your Christian values.</dc:description>
+        <dc:subject>Hairstyling</dc:subject>
+        <dc:subject>Christian Living</dc:subject>
+        <dc:subject>Beauty Industry</dc:subject>
+        <dc:subject>Entrepreneurship</dc:subject>
+        <dc:subject>Creative Arts</dc:subject>
+        <dc:subject>Business Development</dc:subject>
         <dc:subject>Professional Development</dc:subject>
-        <dc:subject>Freelance Business</dc:subject>
-        <dc:subject>Sustainability &amp; Ethics</dc:subject>
-        <dc:subject>Diversity &amp; Inclusion</dc:subject>
-        <dc:subject>Digital Strategy</dc:subject>
-        <dc:subject>Creativity &amp; Well‑being</dc:subject>
-
-        <!-- Language and locale -->
-        <dc:language>en-US</dc:language>
-
-        <!-- Publication and rights information -->
-        <dc:date>2025-05-27</dc:date>
-        <dc:rights>© 2025 MD&nbsp;Warren. All rights reserved.</dc:rights>
-
-        <!-- EPUB 3 required metadata: date of last modification -->
+        <dc:subject>Faith and Work</dc:subject>
+        <dc:language>en</dc:language>
+        <dc:date>2025</dc:date>
+        <dc:rights>All rights reserved</dc:rights>
+        <dc:publisher>Your Publisher Name</dc:publisher>
         <meta property="dcterms:modified">2025-09-16T12:00:00Z</meta>
-
-        <!-- Associate cover image id with cover property -->
-        <meta name="cover" content="img6"/>
-
-        <!-- Accessibility metadata indicating compliance with WCAG and use of semantic markup -->
-        <meta property="schema:accessibilityFeature">structuralNavigation</meta>
-        <meta property="schema:accessibilityFeature">readingOrder</meta>
-        <meta property="schema:accessibilityFeature">alternativeText</meta>
-        <meta property="schema:accessibilityHazard">none</meta>
-        <meta property="schema:accessibilitySummary">
-            This publication includes semantic markup, headings, alt text and
-            structured navigation to support screen readers and meets WCAG 2.1
-            Level AA guidelines.
-        </meta>
-
-        <!-- Collection / series metadata -->
-        <meta property="belongs-to-collection" id="series">Curls &amp; Contemplation Professional Development Series</meta>
-        <meta refines="#series" property="collection-type">series</meta>
-        <meta refines="#series" property="group-position">1</meta>
+        <meta name="cover" content="cover-image"/>
     </metadata>
 
     <!-- MANIFEST: list of all resources included in the EPUB -->
@@ -117,7 +57,7 @@
         <item id="img3" href="images/chapter-iv-quote.jpeg" media-type="image/jpeg"/>
         <item id="img4" href="images/toc-divider.png" media-type="image/png"/>
         <item id="img5" href="images/Michael.jpeg" media-type="image/jpeg"/>
-        <item id="img6" href="images/brushstroke.jpeg" media-type="image/jpeg" properties="cover-image"/>
+        <item id="cover-image" href="images/brushstroke.jpeg" media-type="image/jpeg" properties="cover-image"/>
         <item id="img7" href="images/part-border.jpeg" media-type="image/jpeg"/>
         <item id="img8" href="images/chapter-xiv-quote.jpeg" media-type="image/jpeg"/>
         <item id="img9" href="images/chapter-iii-quote.jpeg" media-type="image/jpeg"/>
@@ -141,6 +81,7 @@
         <item id="img27" href="images/chapter-i-quote.jpeg" media-type="image/jpeg"/>
         <item id="img28" href="images/ruled-paper.jpeg" media-type="image/jpeg"/>
         <item id="img29" href="images/chapter-xv-quote.jpeg" media-type="image/jpeg"/>
+        <item id="img30" href="images/brushstroke.svg" media-type="image/svg+xml"/>
 
         <!-- XHTML content files (44 files) -->
         <item id="text001" href="text/1-TitlePage.xhtml" media-type="application/xhtml+xml"/>
