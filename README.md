@@ -48,6 +48,36 @@ This will:
 - `npm test` – Integration + regression tests
 - `npm run metrics` – Generate performance metrics report
 
+### Unified production pipeline (Python)
+
+When you need a single command that inspects the final `output/OEBPS` XHTML,
+packages an updated EPUB, and creates a print-ready PDF, use the
+`scripts/production_pipeline.py` helper:
+
+```bash
+# 1) Validate XHTML, CSS references, and accessibility requirements
+python3 scripts/production_pipeline.py validate
+
+# 2) Build a distributable EPUB (fails fast if validation reports issues)
+python3 scripts/production_pipeline.py epub
+
+# 3) Generate a PDF that mirrors the OPF spine order (requires wkhtmltopdf)
+python3 scripts/production_pipeline.py pdf
+
+# Do everything in a single step
+python3 scripts/production_pipeline.py all
+```
+
+Additional flags:
+
+- `--force` – Continue packaging even if validation finds missing assets
+- `--page-size` – Override the PDF paper size (default `Letter`)
+- `--pdf-command …` – Supply a custom renderer when `wkhtmltopdf` is unavailable
+
+All artifacts land in `dist/` (`unveiling-your-creative-odyssey.epub` and
+`unveiling-your-creative-odyssey.pdf`), ready for distribution alongside the
+existing build outputs.
+
 ## End‑to‑End Workflow
 
 ```bash
