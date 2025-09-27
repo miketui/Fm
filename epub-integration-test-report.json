@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-24T01:50:37.095Z",
+  "timestamp": "2025-09-27T20:07:43.731Z",
   "summary": {
     "totalTests": 7,
     "passed": 7,
@@ -14,17 +14,17 @@
         "requiredFiles": "all present",
         "mimetype": "correct"
       },
-      "timestamp": "2025-09-24T01:50:37.067Z"
+      "timestamp": "2025-09-27T20:07:43.700Z"
     },
     {
       "name": "OPF Manifest Completeness",
       "status": "passed",
       "result": {
-        "manifestItems": 84,
+        "manifestItems": 83,
         "spineItems": 44,
         "allFilesExist": true
       },
-      "timestamp": "2025-09-24T01:50:37.068Z"
+      "timestamp": "2025-09-27T20:07:43.702Z"
     },
     {
       "name": "Navigation Document Validation",
@@ -32,7 +32,7 @@
       "result": {
         "navigationDocument": "found and valid"
       },
-      "timestamp": "2025-09-24T01:50:37.068Z"
+      "timestamp": "2025-09-27T20:07:43.702Z"
     },
     {
       "name": "XHTML Validity",
@@ -42,7 +42,7 @@
         "allValid": true,
         "validator": "fallback"
       },
-      "timestamp": "2025-09-24T01:50:37.077Z"
+      "timestamp": "2025-09-27T20:07:43.712Z"
     },
     {
       "name": "CSS and Asset Loading",
@@ -52,7 +52,7 @@
         "images": 0,
         "fonts": 0
       },
-      "timestamp": "2025-09-24T01:50:37.086Z"
+      "timestamp": "2025-09-27T20:07:43.721Z"
     },
     {
       "name": "Accessibility Features",
@@ -62,19 +62,19 @@
         "missingA11yFeatures": [],
         "imageAltTextCoverage": 100
       },
-      "timestamp": "2025-09-24T01:50:37.090Z"
+      "timestamp": "2025-09-27T20:07:43.724Z"
     },
     {
       "name": "Performance Metrics",
       "status": "passed",
       "result": {
-        "totalSize": "2.86 MB",
-        "totalSizeBytes": 3003502,
-        "fileCount": 85,
-        "averageFileSize": "35 KB",
+        "totalSize": "2.55 MB",
+        "totalSizeBytes": 2670129,
+        "fileCount": 86,
+        "averageFileSize": "30 KB",
         "validationTime": "5ms"
       },
-      "timestamp": "2025-09-24T01:50:37.095Z"
+      "timestamp": "2025-09-27T20:07:43.730Z"
     }
   ],
   "errors": []
