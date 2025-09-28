@@ -1,0 +1,20 @@
+# CodeRabbit configuration to prevent auto-generated issues
+reviews:
+  # Disable review status messages to prevent bot-generated issues
+  review_status: false
+  
+  # Configure review settings
+  auto_review:
+    enabled: true
+    
+  # Exclude certain files from review
+  exclude_patterns:
+    - "*.md"
+    - "dist/**"
+    - "node_modules/**"
+    
+  # Configure comment settings
+  comments:
+    # Limit auto-generated comments
+    auto_reply: false
+    skip_review_comments: true
