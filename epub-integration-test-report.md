@@ -1,6 +1,6 @@
 # EPUB Reader Integration Test Report
 
-Generated: 2025-09-24T01:50:37.095Z
+Generated: 2025-09-27T20:08:51.592Z
 
 ## Summary
 
@@ -28,7 +28,7 @@ Generated: 2025-09-24T01:50:37.095Z
 **Results**:
 ```json
 {
-  "manifestItems": 84,
+  "manifestItems": 83,
   "spineItems": 44,
   "allFilesExist": true
 }
@@ -86,10 +86,10 @@ Generated: 2025-09-24T01:50:37.095Z
 **Results**:
 ```json
 {
-  "totalSize": "2.86 MB",
-  "totalSizeBytes": 3003502,
-  "fileCount": 85,
-  "averageFileSize": "35 KB",
+  "totalSize": "2.55 MB",
+  "totalSizeBytes": 2670129,
+  "fileCount": 86,
+  "averageFileSize": "30 KB",
   "validationTime": "5ms"
 }
 ```

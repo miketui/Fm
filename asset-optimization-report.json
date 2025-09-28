@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-24T01:48:48.489Z",
+  "timestamp": "2025-09-27T20:09:07.821Z",
   "options": {
     "dryRun": true,
     "maxImageSize": 512000,
@@ -9,7 +9,7 @@
     "webpQuality": 85
   },
   "stats": {
-    "imagesAnalyzed": 29,
+    "imagesAnalyzed": 20,
     "fontsAnalyzed": 6,
     "totalSavings": 0,
     "filesOptimized": 0
@@ -35,36 +35,6 @@
           "tool": "cwebp",
           "estimatedSavings": 51877.5,
           "command": "cwebp -q 85 \"OEBPS/images/Michael.jpeg\" -o \"OEBPS/images/Michael.webp\""
-        }
-      ]
-    },
-    {
-      "file": "OEBPS/images/brushstroke.jpeg",
-      "size": 11735,
-      "sizeKB": 11,
-      "type": ".jpeg",
-      "recommendations": [
-        {
-          "type": "jpeg_optimization",
-          "message": "JPEG can be optimized with quality adjustment",
-          "severity": "low",
-          "tool": "jpegoptim",
-          "command": "jpegoptim --max=85 \"OEBPS/images/brushstroke.jpeg\""
-        }
-      ]
-    },
-    {
-      "file": "OEBPS/images/chapter-frame.png",
-      "size": 1998,
-      "sizeKB": 2,
-      "type": ".png",
-      "recommendations": [
-        {
-          "type": "png_optimization",
-          "message": "PNG can be compressed without quality loss",
-          "severity": "low",
-          "tool": "pngcrush",
-          "command": "pngcrush -reduce -brute \"OEBPS/images/chapter-frame.png\" \"OEBPS/images/chapter-frame.png.tmp\" && mv \"OEBPS/images/chapter-frame.png.tmp\" \"OEBPS/images/chapter-frame.png\""
         }
       ]
     },
@@ -324,36 +294,6 @@
       ]
     },
     {
-      "file": "OEBPS/images/crown-ornament.png",
-      "size": 32955,
-      "sizeKB": 32,
-      "type": ".png",
-      "recommendations": [
-        {
-          "type": "png_optimization",
-          "message": "PNG can be compressed without quality loss",
-          "severity": "low",
-          "tool": "pngcrush",
-          "command": "pngcrush -reduce -brute \"OEBPS/images/crown-ornament.png\" \"OEBPS/images/crown-ornament.png.tmp\" && mv \"OEBPS/images/crown-ornament.png.tmp\" \"OEBPS/images/crown-ornament.png\""
-        }
-      ]
-    },
-    {
-      "file": "OEBPS/images/decorative-line.jpeg",
-      "size": 2356,
-      "sizeKB": 2,
-      "type": ".jpeg",
-      "recommendations": [
-        {
-          "type": "jpeg_optimization",
-          "message": "JPEG can be optimized with quality adjustment",
-          "severity": "low",
-          "tool": "jpegoptim",
-          "command": "jpegoptim --max=85 \"OEBPS/images/decorative-line.jpeg\""
-        }
-      ]
-    },
-    {
       "file": "OEBPS/images/endnote-marker.png",
       "size": 395,
       "sizeKB": 0,
@@ -369,29 +309,6 @@
       ]
     },
     {
-      "file": "OEBPS/images/part-border.jpeg",
-      "size": 103617,
-      "sizeKB": 101,
-      "type": ".jpeg",
-      "recommendations": [
-        {
-          "type": "jpeg_optimization",
-          "message": "JPEG can be optimized with quality adjustment",
-          "severity": "low",
-          "tool": "jpegoptim",
-          "command": "jpegoptim --max=85 \"OEBPS/images/part-border.jpeg\""
-        },
-        {
-          "type": "webp_conversion",
-          "message": "Consider converting to WebP format for better compression",
-          "severity": "low",
-          "tool": "cwebp",
-          "estimatedSavings": 31085.1,
-          "command": "cwebp -q 85 \"OEBPS/images/part-border.jpeg\" -o \"OEBPS/images/part-border.webp\""
-        }
-      ]
-    },
-    {
       "file": "OEBPS/images/preface-quote.jpeg",
       "size": 54756,
       "sizeKB": 53,
@@ -403,66 +320,6 @@
           "severity": "low",
           "tool": "jpegoptim",
           "command": "jpegoptim --max=85 \"OEBPS/images/preface-quote.jpeg\""
-        }
-      ]
-    },
-    {
-      "file": "OEBPS/images/quiz-checkbox.png",
-      "size": 9618,
-      "sizeKB": 9,
-      "type": ".png",
-      "recommendations": [
-        {
-          "type": "png_optimization",
-          "message": "PNG can be compressed without quality loss",
-          "severity": "low",
-          "tool": "pngcrush",
-          "command": "pngcrush -reduce -brute \"OEBPS/images/quiz-checkbox.png\" \"OEBPS/images/quiz-checkbox.png.tmp\" && mv \"OEBPS/images/quiz-checkbox.png.tmp\" \"OEBPS/images/quiz-checkbox.png\""
-        }
-      ]
-    },
-    {
-      "file": "OEBPS/images/quote-marks.png",
-      "size": 54213,
-      "sizeKB": 53,
-      "type": ".png",
-      "recommendations": [
-        {
-          "type": "png_optimization",
-          "message": "PNG can be compressed without quality loss",
-          "severity": "low",
-          "tool": "pngcrush",
-          "command": "pngcrush -reduce -brute \"OEBPS/images/quote-marks.png\" \"OEBPS/images/quote-marks.png.tmp\" && mv \"OEBPS/images/quote-marks.png.tmp\" \"OEBPS/images/quote-marks.png\""
-        }
-      ]
-    },
-    {
-      "file": "OEBPS/images/ruled-paper.jpeg",
-      "size": 92352,
-      "sizeKB": 90,
-      "type": ".jpeg",
-      "recommendations": [
-        {
-          "type": "jpeg_optimization",
-          "message": "JPEG can be optimized with quality adjustment",
-          "severity": "low",
-          "tool": "jpegoptim",
-          "command": "jpegoptim --max=85 \"OEBPS/images/ruled-paper.jpeg\""
-        }
-      ]
-    },
-    {
-      "file": "OEBPS/images/toc-divider.png",
-      "size": 2035,
-      "sizeKB": 2,
-      "type": ".png",
-      "recommendations": [
-        {
-          "type": "png_optimization",
-          "message": "PNG can be compressed without quality loss",
-          "severity": "low",
-          "tool": "pngcrush",
-          "command": "pngcrush -reduce -brute \"OEBPS/images/toc-divider.png\" \"OEBPS/images/toc-divider.png.tmp\" && mv \"OEBPS/images/toc-divider.png.tmp\" \"OEBPS/images/toc-divider.png\""
         }
       ]
     }
@@ -504,61 +361,61 @@
   "css": [
     {
       "file": "OEBPS/styles/style.css",
-      "size": 31477,
-      "sizeKB": 31,
+      "size": 9635,
+      "sizeKB": 9,
       "recommendations": [
+        {
+          "type": "css_comments",
+          "message": "Remove comments to reduce file size",
+          "severity": "low",
+          "estimatedSavings": 3661
+        },
         {
           "type": "css_duplication",
           "message": "Found duplicate CSS rules that could be consolidated",
           "severity": "low",
-          "count": 213
+          "count": 25
         }
       ]
     },
     {
       "file": "OEBPS/styles/fonts.css",
-      "size": 2652,
-      "sizeKB": 3,
+      "size": 2388,
+      "sizeKB": 2,
       "recommendations": [
         {
           "type": "css_comments",
           "message": "Remove comments to reduce file size",
           "severity": "low",
-          "estimatedSavings": 530
+          "estimatedSavings": 260
         },
         {
           "type": "css_duplication",
           "message": "Found duplicate CSS rules that could be consolidated",
           "severity": "low",
-          "count": 33
+          "count": 42
         }
       ]
     },
     {
       "file": "OEBPS/styles/print.css",
-      "size": 20469,
-      "sizeKB": 20,
+      "size": 679,
+      "sizeKB": 1,
       "recommendations": [
         {
           "type": "css_comments",
           "message": "Remove comments to reduce file size",
           "severity": "low",
-          "estimatedSavings": 3436
-        },
-        {
-          "type": "css_duplication",
-          "message": "Found duplicate CSS rules that could be consolidated",
-          "severity": "low",
-          "count": 385
+          "estimatedSavings": 175
         }
       ]
     }
   ],
   "errors": [],
   "summary": {
-    "totalFiles": 35,
-    "totalRecommendations": 38,
-    "estimatedSavings": 86928.6,
+    "totalFiles": 26,
+    "totalRecommendations": 28,
+    "estimatedSavings": 55973.5,
     "actualSavings": 0
   }
 }

@@ -1,3 +1,4 @@
+copilot/fix-62ef9b9b-95f9-4b7e-8247-238b988d0d9f
 # CodeRabbitAI Configuration
 # This configuration disables the review status messages that appear when bot users are detected
 
@@ -44,3 +45,25 @@ language_settings:
     enable_enhanced_analysis: true
   html:
     enable_enhanced_analysis: true
+
+# CodeRabbit configuration to prevent auto-generated issues
+reviews:
+  # Disable review status messages to prevent bot-generated issues
+  review_status: false
+  
+  # Configure review settings
+  auto_review:
+    enabled: true
+    
+  # Exclude certain files from review
+  exclude_patterns:
+    - "*.md"
+    - "dist/**"
+    - "node_modules/**"
+    
+  # Configure comment settings
+  comments:
+    # Limit auto-generated comments
+    auto_reply: false
+    skip_review_comments: true
+main
