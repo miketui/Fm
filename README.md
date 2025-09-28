@@ -133,6 +133,7 @@ Output is created at `dist/curls-and-contemplation.epub`.
 - Regression tests guard path resolution/links
 - Multi‑format validation covers EPUB 2.x/3.x features (optional)
 - CI runs validation on push/PR and publishes reports
+- CodeRabbitAI automated code reviews (configured via `.coderabbit.yaml`)
 
 Run suites individually:
 

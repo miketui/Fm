@@ -1,0 +1,46 @@
+# CodeRabbitAI Configuration
+# This configuration disables the review status messages that appear when bot users are detected
+
+reviews:
+  # Disable review status messages to prevent "Review skipped - Bot user detected" notifications
+  review_status: false
+  
+  # Optional: Configure other review settings
+  auto_review: true
+  
+  # Optional: Specify file patterns to include/exclude
+  path_filters:
+    # Include all standard EPUB and web files
+    include:
+      - "**/*.xhtml"
+      - "**/*.html"
+      - "**/*.css"
+      - "**/*.js"
+      - "**/*.mjs"
+      - "**/*.json"
+      - "**/*.yaml"
+      - "**/*.yml"
+      - "**/*.md"
+      - "**/*.py"
+      - "**/*.sh"
+    # Exclude generated files and dependencies
+    exclude:
+      - "**/node_modules/**"
+      - "**/dist/**"
+      - "**/build/**"
+      - "**/reports/**"
+      - "**/artifacts/**"
+      - "**/backups/**"
+      - "**/*.min.js"
+      - "**/*.min.css"
+
+# Optional: Configure language-specific settings
+language_settings:
+  javascript:
+    enable_enhanced_analysis: true
+  python:
+    enable_enhanced_analysis: true
+  css:
+    enable_enhanced_analysis: true
+  html:
+    enable_enhanced_analysis: true
