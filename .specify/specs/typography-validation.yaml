@@ -1,0 +1,174 @@
+specification_id: "typography-validation"
+version: "1.0.0"
+intent: "Ensure all 6 required fonts load correctly and critical CSS classes are properly defined for commercial distribution"
+constitutional_basis: "Article V: Typography and Styling Standards + Article IV: Commercial Distribution Readiness"
+
+scope:
+  font_files:
+    libre_baskerville:
+      regular: "librebaskerville-regular.woff2"
+      bold: "librebaskerville-bold.woff2"
+      italic: "librebaskerville-italic.woff2"
+      usage: "primary_body_text"
+      fallback: "Georgia, serif"
+    cinzel_decorative:
+      regular: "CinzelDecorative.woff2"
+      usage: "chapter_titles_decorative_elements"
+      fallback: "serif"
+    montserrat:
+      regular: "Montserrat-Regular.woff2"
+      bold: "Montserrat-Bold.woff2"
+      usage: "headings_ui_elements"
+      fallback: "Arial, sans-serif"
+
+  css_files:
+    fonts_css: "fonts.css"
+    style_css: "style.css"
+    print_css: "print.css"
+
+  font_directory: "output/OEBPS/fonts/"
+  css_directory: "output/OEBPS/styles/"
+
+requirements:
+  font_loading_validation:
+    file_existence:
+      - "verify_all_6_font_files_present"
+      - "check_file_integrity_and_size"
+      - "validate_woff2_format_compliance"
+
+    font_declarations:
+      - "font_face_declarations_in_fonts_css"
+      - "proper_font_family_names"
+      - "correct_font_weight_specifications"
+      - "valid_src_url_paths"
+
+    cross_platform_compatibility:
+      - "fallback_font_stacks_defined"
+      - "web_font_loading_strategies"
+      - "ereader_font_support_verification"
+
+  critical_css_classes:
+    chapter_layout:
+      - ".chap-title": "chapter_title_pages"
+      - ".chapter-number-container": "roman_numeral_containers"
+      - ".chapter-title-stack": "vertical_title_layout"
+      - ".bible-quote-container": "quote_pill_design"
+      - ".introduction-heading": "section_headings"
+      - ".dropcap-first-letter": "paragraph_first_letters"
+
+    page_control:
+      - ".page-break-before": "forced_page_breaks"
+      - ".page-break-after": "forced_page_breaks"
+      - ".avoid-break": "keep_content_together"
+
+    interactive_elements:
+      - ".quiz-container": "quiz_page_layout"
+      - ".quiz-questions": "question_list_styling"
+      - ".worksheet": "worksheet_page_layout"
+      - ".ruled-paper-bg": "journal_background"
+
+    responsive_design:
+      - ".responsive-image": "image_scaling"
+      - ".mobile-hidden": "mobile_optimizations"
+      - ".print-only": "print_specific_styling"
+
+validation_rules:
+  font_validation_tests:
+    - "font_files_exist_and_accessible"
+    - "font_declarations_syntactically_correct"
+    - "font_loading_successful_in_context"
+    - "fallback_fonts_properly_defined"
+    - "cross_ereader_compatibility_verified"
+
+  css_validation_tests:
+    - "all_critical_classes_defined"
+    - "css_syntax_validation"
+    - "responsive_breakpoints_functional"
+    - "print_styles_optimized"
+
+  commercial_readiness_tests:
+    - "kindle_font_compatibility"
+    - "apple_books_typography_support"
+    - "google_play_font_rendering"
+    - "kobo_styling_compatibility"
+
+  tdd_requirements:
+    red_phase: "write_failing_tests_for_font_loading"
+    green_phase: "implement_typography_to_pass_tests"
+    refactor_phase: "optimize_font_performance_and_fallbacks"
+
+success_criteria:
+  font_loading_success: "all_6_fonts_load_correctly"
+  css_class_coverage: "all_critical_classes_properly_defined"
+  cross_platform_compatibility: "fonts_render_correctly_on_all_target_platforms"
+  performance_optimization: "font_loading_time_under_2_seconds"
+
+acceptance_tests:
+  - name: "font_file_existence_test"
+    description: "Verify all 6 required font files are present and accessible"
+    criteria: "librebaskerville (3) + CinzelDecorative (1) + Montserrat (2) = 6 files"
+
+  - name: "font_declaration_test"
+    description: "Verify @font-face declarations are present and correct"
+    criteria: "valid CSS syntax with proper font-family and src declarations"
+
+  - name: "font_loading_test"
+    description: "Verify fonts load successfully in EPUB context"
+    criteria: "no font loading errors in any target platform"
+
+  - name: "css_class_validation_test"
+    description: "Verify all critical CSS classes are defined and functional"
+    criteria: "47 critical classes properly defined with correct styling"
+
+  - name: "fallback_font_test"
+    description: "Verify fallback fonts work when primary fonts unavailable"
+    criteria: "graceful degradation to system fonts maintains readability"
+
+  - name: "cross_platform_typography_test"
+    description: "Verify typography renders correctly across all platforms"
+    criteria: "Amazon Kindle + Apple Books + Google Play + Kobo compatibility"
+
+implementation_commands:
+  font_validation: "npm run validate:fonts"
+  css_validation: "npm run validate:css"
+  comprehensive_validation: "npm run validate:typography"
+
+error_handling:
+  missing_font_files: "require_font_file_addition"
+  invalid_font_declarations: "require_css_correction"
+  font_loading_failure: "require_path_or_format_fix"
+  missing_css_classes: "require_class_definition"
+  cross_platform_failure: "require_compatibility_adjustment"
+
+metrics:
+  font_loading_performance: "under_2_seconds_total_load_time"
+  css_validation_accuracy: "zero_syntax_errors"
+  platform_compatibility: "100%_target_platform_success"
+  visual_consistency: "uniform_typography_across_all_files"
+
+commercial_distribution_requirements:
+  amazon_kindle:
+    - "font_embedding_compatible"
+    - "css_subset_supported"
+    - "file_size_optimized"
+
+  apple_books:
+    - "advanced_typography_features"
+    - "responsive_font_scaling"
+    - "accessibility_compliant"
+
+  google_play_books:
+    - "web_font_compatibility"
+    - "reading_flow_optimization"
+    - "multi_device_consistency"
+
+  kobo:
+    - "epub3_typography_support"
+    - "custom_font_rendering"
+    - "night_mode_compatibility"
+
+dependencies:
+  constitutional_compliance: "Article V: Typography and Styling Standards"
+  commercial_readiness: "Article IV: Commercial Distribution Readiness"
+  tdd_methodology: "Article III: Test-First Imperative"
+  layout_consistency: "frontmatter-single-page-validation + chapter-template-validation"

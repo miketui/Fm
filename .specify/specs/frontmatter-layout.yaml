@@ -1,0 +1,115 @@
+specification_id: "frontmatter-single-page-validation"
+version: "1.0.0"
+intent: "Ensure all frontmatter files (1-7) display within single-page viewport constraints with no content overflow"
+constitutional_basis: "Article I: Layout-First Principle (NON-NEGOTIABLE)"
+
+scope:
+  files:
+    - "1-TitlePage.xhtml"
+    - "2-Copyright.xhtml"
+    - "3-TableOfContents.xhtml"
+    - "4-Dedication.xhtml"
+    - "5-SelfAssessment.xhtml"
+    - "6-affirmation-odyssey.xhtml"
+    - "7-Preface.xhtml"
+  file_count: 7
+  directory: "output/OEBPS/text/"
+
+requirements:
+  layout_constraints:
+    viewport_height: "min-height: 100vh"
+    page_break_control: "page-break-inside: avoid"
+    overflow_prevention: "no_content_overflow_allowed"
+    consistency: "uniform_styling_across_all_files"
+
+  file_specific_requirements:
+    title_page:
+      layout: "centered_vertical_horizontal"
+      elements: ["title", "subtitle", "author", "decorative_elements"]
+      constraint: "single_page_only"
+    copyright:
+      layout: "legal_text_centered"
+      elements: ["copyright_notice", "legal_disclaimers"]
+      constraint: "single_page_only"
+    table_of_contents:
+      layout: "navigation_list"
+      elements: ["chapter_links", "page_numbers", "decorative_dividers"]
+      constraint: "single_page_compact_layout"
+    dedication:
+      layout: "centered_text"
+      elements: ["dedication_text", "optional_decorative_elements"]
+      constraint: "single_page_only"
+    self_assessment:
+      layout: "worksheet_form"
+      elements: ["assessment_questions", "input_areas", "instructions"]
+      constraint: "single_page_interactive_layout"
+    affirmation_odyssey:
+      layout: "worksheet_form"
+      elements: ["affirmation_sections", "writing_areas", "guided_prompts"]
+      constraint: "single_page_interactive_layout"
+    preface:
+      layout: "text_content"
+      elements: ["introduction_text", "author_note", "book_overview"]
+      constraint: "single_page_text_only"
+
+validation_rules:
+  pre_implementation:
+    - "css_constraint_verification"
+    - "content_height_calculation"
+    - "viewport_compatibility_check"
+
+  automated_testing:
+    - "min_height_100vh_present"
+    - "page_break_inside_avoid_present"
+    - "content_fits_viewport"
+    - "font_loading_verification"
+    - "css_class_validation"
+
+  tdd_requirements:
+    red_phase: "write_failing_tests_for_single_page_constraints"
+    green_phase: "implement_layout_to_pass_tests"
+    refactor_phase: "optimize_layout_performance"
+
+success_criteria:
+  layout_compliance: "100%_of_files_single_page_compliant"
+  viewport_fit: "all_content_within_100vh_height"
+  css_consistency: "consistent_styling_across_7_files"
+  validation_coverage: "automated_tests_for_all_constraints"
+
+acceptance_tests:
+  - name: "single_page_constraint_test"
+    description: "Verify all frontmatter files display within single viewport"
+    criteria: "content_height <= viewport_height"
+
+  - name: "css_constraint_test"
+    description: "Verify required CSS constraints are present"
+    criteria: "min-height: 100vh AND page-break-inside: avoid"
+
+  - name: "content_overflow_test"
+    description: "Verify no content extends beyond viewport boundaries"
+    criteria: "no_horizontal_or_vertical_scroll_required"
+
+  - name: "typography_consistency_test"
+    description: "Verify consistent font loading and styling"
+    criteria: "all_fonts_load_correctly_across_files"
+
+implementation_commands:
+  validation: "npm run validate:layout:frontmatter"
+  testing: "npm run test:frontmatter:layout"
+  build_integration: "npm run build:sdd-validate"
+
+error_handling:
+  validation_failure: "block_development_progress"
+  overflow_detected: "require_layout_adjustment"
+  css_missing: "require_constraint_addition"
+  font_loading_failure: "require_typography_fix"
+
+metrics:
+  performance: "validation_time_under_5_seconds"
+  accuracy: "zero_false_positives_or_negatives"
+  coverage: "100%_of_layout_constraints_tested"
+
+dependencies:
+  constitutional_compliance: "Article I: Layout-First Principle"
+  tdd_methodology: "Article III: Test-First Imperative"
+  commercial_readiness: "Article IV: Commercial Distribution Readiness"
