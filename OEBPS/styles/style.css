@@ -122,20 +122,14 @@
 }
 
 /*
-  Place your existing style definitions below. For example:
-
-  :root {
-    --primary-color: #1a1a1a;
-    /* other variables ... */
-  }
-
-  .title-page {
-    background: var(--title-gradient);
-    /* ... */
-  }
-
+  This space reserved for additional style definitions.
+  
+  You can add custom styles here such as:
+  - Custom color variables in :root
+  - Additional component styles
+  - Theme variations
+  
   The embedded icons defined in svg-icons.css can be applied via the utility
-  classes (.quote-marks-icon, .ruled-paper-bg, .toc-divider-img, .quiz-checkbox,
-  .chapter-frame) or by referencing the variables directly with
-  `background-image: var(--quote-marks-svg);` and similar.
+  classes: .quote-marks-icon, .ruled-paper-bg, .toc-divider-img, .quiz-checkbox,
+  .chapter-frame or by referencing the variables directly with CSS variables.
 */

@@ -1,6 +1,6 @@
 # EPUB Asset Validation Report
 
-Generated: 2025-09-24T01:50:37.018Z
+Generated: 2025-09-27T20:08:51.248Z
 
 ## Summary
 
