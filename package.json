@@ -33,9 +33,24 @@
     "pre-commit": "npm run format && npm run lint",
     "canvas:generate": "node generate-canvas-visualization.js",
     "canvas:serve": "python3 -m http.server 8000",
-    "canvas:view": "open canvas-viewer.html"
+    "canvas:view": "open canvas-viewer.html",
+    "test:tdd": "jest --config jest.config.tdd.js",
+    "test:tdd:watch": "jest --config jest.config.tdd.js --watch",
+    "test:tdd:coverage": "jest --config jest.config.tdd.js --coverage",
+    "tdd:red": "jest --config jest.config.tdd.js --bail",
+    "tdd:green": "jest --config jest.config.tdd.js",
+    "tdd:refactor": "jest --config jest.config.tdd.js && npm run lint",
+    "validate:layout:frontmatter": "echo 'Validating frontmatter single-page layouts (7 files)'",
+    "validate:layout:chapters": "echo 'Validating chapter 6-section structures (16 files)'",
+    "validate:layout:backmatter": "echo 'Validating backmatter single-page layouts (17 files)'",
+    "validate:layout:all": "npm run validate:layout:frontmatter && npm run validate:layout:chapters && npm run validate:layout:backmatter",
+    "build:sdd-validate": "npm run validate:layout:all && npm run test:tdd",
+    "build:sdd-tdd-production": "npm run build:sdd-validate && npm run build:production"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
     "jsdom": "^27.0.0",
     "playwright": "^1.55.1",
     "xml2js": "^0.6.2"

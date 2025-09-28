@@ -1,0 +1,188 @@
+specification_id: "backmatter-single-page-validation"
+version: "1.0.0"
+intent: "Ensure all backmatter files (28-44, nav.xhtml) display within single-page viewport constraints with specialized layouts for journals, worksheets, and reference materials"
+constitutional_basis: "Article I: Layout-First Principle (NON-NEGOTIABLE)"
+
+scope:
+  backmatter_files:
+    conclusion: "28-Conclusion.xhtml"
+    quiz_key: "29QuizKey.xhtml"
+    self_assessment: "30-SelfAssessment.xhtml"
+    affirmations_close: "31-affirmations-close.xhtml"
+    continued_learning: "32-continued-learning-commitment.xhtml"
+    acknowledgments: "33-Acknowledgments.xhtml"
+    about_author: "34-AbouttheAuthor.xhtml"
+    collective: "35-CurlsContempCollective.xhtml"
+    journaling_start: "36-JournalingStart.xhtml"
+    manifesting_journal: "37-ManifestingJournal.xhtml"
+    journal_page: "38-journal-page.xhtml"
+    professional_development: "39-professional-development.xhtml"
+    smart_goals: "40-SMARTGoals.xhtml"
+    self_care_journal: "41-self-care-journal.xhtml"
+    vision_journal: "42-VisionJournal.xhtml"
+    doodle_page: "43-DoodlePage.xhtml"
+    bibliography: "44-bibliography.xhtml"
+    navigation: "nav.xhtml"
+  total_files: 17
+  directory: "output/OEBPS/text/"
+
+requirements:
+  universal_layout_constraints:
+    viewport_height: "min-height: 100vh"
+    page_break_control: "page-break-inside: avoid"
+    overflow_prevention: "no_content_overflow_allowed"
+    consistency: "uniform_styling_across_all_backmatter_files"
+
+  file_type_specific_requirements:
+    conclusion_reference_files:
+      files: ["28-Conclusion.xhtml", "33-Acknowledgments.xhtml", "34-AbouttheAuthor.xhtml", "44-bibliography.xhtml"]
+      layout: "clean_text_layout"
+      elements: ["formatted_text", "proper_typography", "readable_presentation"]
+      constraint: "single_page_text_content"
+      css_classes: [".conclusion", ".acknowledgments", ".author-bio", ".bibliography"]
+
+    quiz_assessment_files:
+      files: ["29QuizKey.xhtml", "30-SelfAssessment.xhtml"]
+      layout: "structured_reference_layout"
+      elements: ["answer_keys", "assessment_questions", "scoring_guidelines"]
+      constraint: "single_page_reference_format"
+      css_classes: [".quiz-key", ".assessment", ".answer-reference"]
+
+    affirmation_commitment_files:
+      files: ["31-affirmations-close.xhtml", "32-continued-learning-commitment.xhtml", "35-CurlsContempCollective.xhtml"]
+      layout: "inspirational_content_layout"
+      elements: ["affirmation_text", "commitment_statements", "collective_information"]
+      constraint: "single_page_centered_content"
+      css_classes: [".affirmations", ".commitment", ".collective-info"]
+
+    journal_files:
+      files: ["36-JournalingStart.xhtml", "37-ManifestingJournal.xhtml", "38-journal-page.xhtml", "41-self-care-journal.xhtml", "42-VisionJournal.xhtml"]
+      layout: "interactive_journal_design"
+      elements: ["ruled_paper_background", "writing_areas", "prompts", "guided_questions"]
+      constraint: "single_page_interactive_layout"
+      css_classes: [".journal", ".ruled-paper-bg", ".writing-area", ".journal-prompt"]
+
+    worksheet_files:
+      files: ["39-professional-development.xhtml", "40-SMARTGoals.xhtml", "43-DoodlePage.xhtml"]
+      layout: "activity_worksheet_design"
+      elements: ["form_fields", "instructions", "completion_areas", "activity_sections"]
+      constraint: "single_page_worksheet_layout"
+      css_classes: [".worksheet", ".activity-section", ".form-field", ".doodle-area"]
+
+    navigation_file:
+      files: ["nav.xhtml"]
+      layout: "epub_navigation_structure"
+      elements: ["navigation_list", "chapter_links", "accessibility_labels"]
+      constraint: "single_page_navigation_layout"
+      css_classes: [".nav", ".toc-nav", ".navigation-list"]
+
+validation_rules:
+  pre_implementation:
+    - "css_constraint_verification"
+    - "content_height_calculation"
+    - "viewport_compatibility_check"
+    - "interactive_element_validation"
+
+  automated_testing:
+    - "min_height_100vh_present"
+    - "page_break_inside_avoid_present"
+    - "content_fits_viewport"
+    - "font_loading_verification"
+    - "css_class_validation"
+    - "interactive_element_functionality"
+
+  file_type_specific_validation:
+    journal_validation:
+      - "ruled_paper_background_present"
+      - "writing_areas_properly_sized"
+      - "journal_prompts_readable"
+      - "interactive_elements_functional"
+
+    worksheet_validation:
+      - "form_fields_properly_styled"
+      - "instructions_clear_and_visible"
+      - "activity_sections_well_organized"
+      - "completion_areas_accessible"
+
+    reference_validation:
+      - "text_formatting_consistent"
+      - "typography_readable"
+      - "content_properly_structured"
+      - "links_functional_where_applicable"
+
+  tdd_requirements:
+    red_phase: "write_failing_tests_for_single_page_constraints"
+    green_phase: "implement_layout_to_pass_tests"
+    refactor_phase: "optimize_layout_performance_and_accessibility"
+
+success_criteria:
+  layout_compliance: "100%_of_backmatter_files_single_page_compliant"
+  viewport_fit: "all_content_within_100vh_height"
+  css_consistency: "consistent_styling_across_17_files"
+  interactive_functionality: "all_journal_and_worksheet_elements_functional"
+  validation_coverage: "automated_tests_for_all_constraints"
+
+acceptance_tests:
+  - name: "backmatter_single_page_constraint_test"
+    description: "Verify all 17 backmatter files display within single viewport"
+    criteria: "content_height <= viewport_height"
+
+  - name: "backmatter_css_constraint_test"
+    description: "Verify required CSS constraints are present in all files"
+    criteria: "min-height: 100vh AND page-break-inside: avoid"
+
+  - name: "journal_layout_test"
+    description: "Verify journal files have proper interactive layout"
+    criteria: "ruled paper background + writing areas + prompts"
+
+  - name: "worksheet_layout_test"
+    description: "Verify worksheet files have proper activity layout"
+    criteria: "form fields + instructions + completion areas"
+
+  - name: "reference_layout_test"
+    description: "Verify reference files have clean text layout"
+    criteria: "proper typography + readable formatting + structured content"
+
+  - name: "navigation_functionality_test"
+    description: "Verify nav.xhtml provides proper EPUB navigation"
+    criteria: "navigation list + chapter links + accessibility compliance"
+
+implementation_commands:
+  validation: "npm run validate:layout:backmatter"
+  testing: "npm run test:backmatter:layout"
+  build_integration: "npm run build:sdd-validate"
+
+error_handling:
+  validation_failure: "block_development_progress"
+  overflow_detected: "require_layout_adjustment"
+  css_missing: "require_constraint_addition"
+  interactive_element_failure: "require_functionality_fix"
+  font_loading_failure: "require_typography_fix"
+
+metrics:
+  performance: "validation_time_under_10_seconds_for_17_files"
+  accuracy: "zero_false_positives_or_negatives"
+  coverage: "100%_of_layout_constraints_tested"
+  functionality: "all_interactive_elements_working"
+
+special_considerations:
+  journal_interactivity:
+    - "writing_areas_must_be_print_friendly"
+    - "ruled_paper_background_must_scale_properly"
+    - "prompts_must_remain_visible_and_readable"
+
+  worksheet_functionality:
+    - "form_fields_must_be_accessible"
+    - "instructions_must_be_clear_and_concise"
+    - "completion_areas_must_be_properly_sized"
+
+  reference_accessibility:
+    - "text_must_meet_wcag_contrast_requirements"
+    - "links_must_be_keyboard_accessible"
+    - "content_must_be_screen_reader_friendly"
+
+dependencies:
+  constitutional_compliance: "Article I: Layout-First Principle"
+  tdd_methodology: "Article III: Test-First Imperative"
+  commercial_readiness: "Article IV: Commercial Distribution Readiness"
+  typography_standards: "Article V: Typography and Styling Standards"

@@ -1,0 +1,181 @@
+specification_id: "chapter-template-validation"
+version: "1.0.0"
+intent: "Ensure all chapter files maintain exact 6-section structure with forced page breaks and template compliance"
+constitutional_basis: "Article I: Layout-First Principle + Article III: Test-First Imperative"
+
+scope:
+  chapter_files:
+    - "9-chapter-i-unveiling-your-creative-odyssey.xhtml"
+    - "10-chapter-ii-refining-your-creative-toolkit.xhtml"
+    - "11-chapter-iii-mastering-advanced-techniques.xhtml"
+    - "13-chapter-iv-building-your-signature-style.xhtml"
+    - "14-chapter-v-client-communication-mastery.xhtml"
+    - "15-chapter-vi-building-a-loyal-clientele.xhtml"
+    - "16-chapter-vii-pricing-strategies-that-work.xhtml"
+    - "17-chapter-viii-marketing-your-expertise.xhtml"
+    - "19-chapter-ix-digital-presence-mastery.xhtml"
+    - "20-chapter-x-advanced-color-theory.xhtml"
+    - "21-chapter-xi-texture-and-volume-techniques.xhtml"
+    - "22-chapter-xii-special-occasion-styling.xhtml"
+    - "23-chapter-xiii-trend-forecasting-skills.xhtml"
+    - "25-chapter-xiv-business-expansion-strategies.xhtml"
+    - "26-chapter-xv-mentoring-and-leadership.xhtml"
+    - "27-chapter-xvi-sustainable-success-planning.xhtml"
+  total_chapters: 16
+  directory: "output/OEBPS/text/"
+
+requirements:
+  six_section_structure:
+    section_1_title_page:
+      required_elements:
+        - "chapter-number-container"
+        - "chapter-title-stack"
+        - "bible-quote-container"
+        - "introduction-heading"
+        - "dropcap-first-letter"
+      layout_constraints:
+        - "min-height: 100vh"
+        - "page-break-inside: avoid"
+      css_classes:
+        - ".chap-title"
+        - ".chapter-number-container"
+        - ".chapter-title-stack"
+        - ".bible-quote-container"
+
+    section_2_content_body:
+      required_elements:
+        - "chapter_headings"
+        - "body_paragraphs"
+        - "blockquotes"
+      layout_constraints:
+        - "natural_pagination_flow"
+        - "consistent_typography"
+      css_classes:
+        - ".chap-body"
+        - ".content-area"
+
+    section_3_endnotes:
+      required_elements:
+        - "endnotes_title"
+        - "numbered_references"
+      layout_constraints:
+        - "reference_format_layout"
+        - "optional_page_break_before"
+      css_classes:
+        - ".endnotes"
+        - ".endnotes-title"
+
+    section_4_quiz:
+      required_elements:
+        - "quiz_title"
+        - "exactly_four_questions"
+        - "multiple_choice_options"
+        - "answer_key_reference"
+      layout_constraints:
+        - "page-break-before: always"
+        - "page-break-after: always"
+        - "max-height: 90vh"
+        - "single_page_only"
+      css_classes:
+        - ".quiz-container"
+        - ".chap-quiz"
+        - ".avoid-break"
+        - ".page-break-before"
+
+    section_5_worksheet:
+      required_elements:
+        - "worksheet_title"
+        - "activity_sections"
+        - "writing_prompts"
+      layout_constraints:
+        - "page-break-before: always"
+        - "page-break-after: always"
+        - "max-height: 90vh"
+        - "single_page_only"
+      css_classes:
+        - ".worksheet"
+        - ".avoid-break"
+        - ".page-break-before"
+
+    section_6_closing_image:
+      required_elements:
+        - "chapter_quote_image"
+        - "image_caption"
+      layout_constraints:
+        - "page-break-before: always"
+        - "min-height: 90vh"
+        - "centered_image_layout"
+        - "max-width: 80%, max-height: 70vh"
+      css_classes:
+        - ".image-quote"
+        - ".page-break-before"
+
+validation_rules:
+  template_compliance:
+    - "exact_section_count_validation"
+    - "required_css_classes_present"
+    - "forced_page_breaks_implemented"
+    - "single_page_constraints_enforced"
+
+  content_validation:
+    - "roman_numeral_badge_present"
+    - "title_stack_vertical_alignment"
+    - "bible_quote_pill_container"
+    - "four_quiz_questions_exactly"
+    - "worksheet_interactive_elements"
+    - "closing_image_responsive"
+
+  tdd_test_requirements:
+    red_phase: "write_failing_tests_for_6_section_structure"
+    green_phase: "implement_template_to_pass_structure_tests"
+    refactor_phase: "optimize_chapter_layout_performance"
+
+success_criteria:
+  structural_compliance: "100%_chapters_have_6_sections"
+  page_break_compliance: "forced_breaks_in_quiz_worksheet_closing"
+  template_compliance: "exact_match_provided_template_structure"
+  single_page_sections: "quiz_and_worksheet_fit_single_pages"
+
+acceptance_tests:
+  - name: "six_section_structure_test"
+    description: "Verify each chapter has exactly 6 required sections"
+    criteria: "chap-title + chap-body + endnotes + quiz + worksheet + image-quote"
+
+  - name: "forced_page_break_test"
+    description: "Verify page breaks before quiz, worksheet, and closing image"
+    criteria: "page-break-before: always present in 3 sections"
+
+  - name: "quiz_single_page_test"
+    description: "Verify quiz section fits within single page constraint"
+    criteria: "max-height: 90vh AND exactly 4 questions"
+
+  - name: "worksheet_single_page_test"
+    description: "Verify worksheet section fits within single page constraint"
+    criteria: "max-height: 90vh AND avoid-break class present"
+
+  - name: "template_element_test"
+    description: "Verify all required template elements are present"
+    criteria: "roman numeral + title stack + bible quote + dropcap"
+
+implementation_commands:
+  validation: "npm run validate:layout:chapters"
+  testing: "npm run test:chapter:structure"
+  template_validation: "npm run validate:template"
+
+error_handling:
+  missing_sections: "require_section_addition"
+  missing_page_breaks: "require_page_break_addition"
+  overflow_in_quiz: "require_content_reduction"
+  overflow_in_worksheet: "require_layout_adjustment"
+  template_deviation: "require_template_compliance"
+
+metrics:
+  structural_accuracy: "100%_section_compliance"
+  page_break_effectiveness: "proper_pagination_flow"
+  content_fit: "quiz_and_worksheet_single_page_success"
+  template_fidelity: "exact_template_element_match"
+
+dependencies:
+  constitutional_compliance: "Article I: Layout-First Principle"
+  tdd_methodology: "Article III: Test-First Imperative"
+  typography_standards: "Article V: Typography and Styling Standards"
