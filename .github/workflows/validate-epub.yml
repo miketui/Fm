@@ -9,23 +9,32 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
         cache: 'npm'
-        
+
     - name: Install dependencies
       run: npm ci
-      
-    - name: Run comprehensive validation
-      run: npm run ci:full
-      
+
+    - name: Validate XHTML structure
+      run: npm run validate:xhtml
+
+    - name: Validate assets
+      run: npm run validate:assets
+
+    - name: Build production package
+      run: npm run build:production
+
+    - name: Build SDD/TDD production package
+      run: npm run build:sdd-tdd-production
+
     - name: Check file organization and assets
       run: |
         echo "Checking EPUB file organization..."
@@ -36,15 +45,15 @@ jobs:
         ls -la OEBPS/images/ || echo "No images directory found"
         echo "Styles directory:"
         ls -la OEBPS/styles/ || echo "No styles directory found"
-        
+
     - name: Lint XHTML files
       run: |
         echo "Checking for common issues in OEBPS/text..."
         echo "Files with missing alt attributes:"
         grep -r 'img.*src=' OEBPS/text/*.xhtml | grep -v 'alt=' || echo "None found"
         echo "Files missing EPUB namespace:"
-        grep -L 'xmlns:epub="http://www.idpf.org/2007/ops"' OEBPS/text/*.xhtml || echo "None found"
-        
+        grep -L 'xmlns:epub=\"http://www.idpf.org/2007/ops\"' OEBPS/text/*.xhtml || echo "None found"
+
     - name: Generate validation report
       run: |
         echo "# EPUB Validation Report" > validation-report.md
@@ -59,7 +68,7 @@ jobs:
           cat performance-metrics-report.md >> validation-report.md
         fi
         echo "\`\`\`" >> validation-report.md
-        
+
     - name: Upload reports
       uses: actions/upload-artifact@v4
       if: always()
@@ -73,3 +82,16 @@ jobs:
           multi-format-validation-report.md
           epub-integration-test-report.md
           path-reference-regression-report.md
+
+    - name: Summarize verification phases
+      if: always()
+      run: |
+        cat <<'TABLE' >> "$GITHUB_STEP_SUMMARY"
+        ### Validation & Build Phases
+        | Phase | Script |
+        | --- | --- |
+        | XHTML validation | `npm run validate:xhtml` |
+        | Asset validation | `npm run validate:assets` |
+        | Production build | `npm run build:production` |
+        | SDD/TDD production build | `npm run build:sdd-tdd-production` |
+        TABLE
