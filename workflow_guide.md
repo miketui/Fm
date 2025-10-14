@@ -52,6 +52,12 @@ For each file type, document:
 - Bible quotes and references
 - Case studies and examples
 
+#### Step 5A: Non-Destructive Editing Protocol
+- Always open the **existing XHTML file** from `input/OEBPS/text/` and work from a backed-up copy in `output/OEBPS/text/`. Do **not** regenerate chapters, summaries, or prose from prompts.
+- Restrict changes to **markup, styling hooks, accessibility attributes, and structural wrappers**. If text needs layout adjustments, manipulate the surrounding HTML/CSS only.
+- Preserve whitespace-sensitive elements (poetry, scripture, worksheets) by editing within their current nodes instead of replacing the block.
+- Before saving, run a quick plain-text extraction (see Step 8) to confirm that no narrative wording, punctuation, or numbering shifted during the edit.
+
 ### Phase 3: Codex Processing
 
 #### Step 6: Prepare Codex Environment
@@ -75,7 +81,7 @@ For each file type, document:
 ```
 @agents Process frontmatter files (1-* through 7-*):
 - Apply basic ACISS styling
-- Preserve all content word-for-word
+- Preserve all content word-for-word by editing existing nodes only
 - Handle 2 activity worksheets as static HTML
 - Ensure proper XHTML structure
 ```
@@ -97,7 +103,7 @@ For each file type, document:
 - Extract and convert chapter numbers to Roman numerals
 - Break titles into vertical stacks
 - Preserve Bible quotes with proper styling
-- Maintain 100% content fidelity
+- Maintain 100% content fidelity by refining existing markup instead of rewriting prose
 - Apply all required CSS classes
 ```
 
@@ -120,7 +126,26 @@ For each file type, document:
 - Check all case studies and examples included
 - Validate all implementation steps maintained
 - Ensure no content truncated or generated
+- Confirm edits were applied in-place by reviewing diffs against the baseline file
 ```
+
+#### Step 8A: Structured Content Fidelity Check
+1. **Generate baseline and working copies** (already stored in `input/` and `output/`).
+2. **Run automated comparison**:
+   ```bash
+   python scripts/check-content-fidelity.py \
+     --baseline input/OEBPS/text \
+     --modified output/OEBPS/text \
+     --report reports/content-fidelity-report.txt
+   ```
+   - The script compares word counts, flags any prose drift, and writes a summary report.
+   - Review highlighted diffs (`reports/content-fidelity-report.txt`) before committing structural changes.
+3. **Manual spot check**:
+   ```bash
+   diff -u input/OEBPS/text/12-part-divider.xhtml output/OEBPS/text/12-part-divider.xhtml
+   ```
+   - Confirm that differences are limited to markup, class names, or accessibility attributes.
+4. **Update `word_count_final.txt`** if and only if the counts match. A mismatch signals text movement that must be corrected before moving forward.
 
 **Technical Validation**:
 ```
