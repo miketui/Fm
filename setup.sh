@@ -5,11 +5,18 @@
 
 echo "🚀 Setting up Codex environment for EPUB project..."
 
+PROJECT_ROOT="/workspace/Fm"
+CANONICAL_INPUT_DIR="$PROJECT_ROOT/OEBPS/text"
+CANONICAL_OUTPUT_DIR="$PROJECT_ROOT/output/OEBPS/text"
+CANONICAL_OUTPUT_IMAGES_DIR="$PROJECT_ROOT/output/OEBPS/images"
+CANONICAL_OUTPUT_ROOT="$PROJECT_ROOT/output"
+
 # Create project directory structure
 echo "📁 Creating project structure..."
 mkdir -p epub-project/{input,output,backups,validation,tools}
 mkdir -p epub-project/input/{OEBPS/text,OEBPS/styles,OEBPS/images,META-INF}
 mkdir -p epub-project/output/{OEBPS/text,OEBPS/styles,OEBPS/images,META-INF}
+mkdir -p "$CANONICAL_INPUT_DIR" "$CANONICAL_OUTPUT_DIR" "$CANONICAL_OUTPUT_IMAGES_DIR" "$CANONICAL_OUTPUT_ROOT"
 
 # Install required tools for BESTSELLER QUALITY
 echo "🛠️  Installing dependencies for professional publishing..."
@@ -48,7 +55,7 @@ cat > epub-project/tools/optimize-images.sh << 'EOF'
 echo "🖼️  Optimizing images for EPUB..."
 
 # Navigate to images directory
-cd output/OEBPS/images/
+cd /workspace/Fm/output/OEBPS/images/
 
 # Optimize JPEG files
 echo "Optimizing JPEG files..."
@@ -91,7 +98,7 @@ ERRORS=0
 WARNINGS=0
 
 echo "Checking for alt text on images..."
-find output/OEBPS/text -name "*.xhtml" -exec grep -l '<img' {} \; | while read file; do
+find /workspace/Fm/output/OEBPS/text -name "*.xhtml" -exec grep -l '<img' {} \; | while read file; do
     # Check for images without alt text
     if grep -q '<img[^>]*src[^>]*>' "$file" && ! grep -q 'alt=' "$file"; then
         echo "❌ Missing alt text in: $file"
@@ -106,17 +113,17 @@ find output/OEBPS/text -name "*.xhtml" -exec grep -l '<img' {} \; | while read f
 done
 
 echo "Checking heading hierarchy..."
-find output/OEBPS/text -name "*.xhtml" -exec grep -l '<h[1-6]' {} \; | while read file; do
+find /workspace/Fm/output/OEBPS/text -name "*.xhtml" -exec grep -l '<h[1-6]' {} \; | while read file; do
     # Extract heading levels and check sequence
     grep -o '<h[1-6]' "$file" | sed 's/<h//' | sort -n | uniq -c
 done
 
 echo "Checking for ARIA labels..."
-ARIA_COUNT=$(find output/OEBPS/text -name "*.xhtml" -exec grep -c 'aria-\|role=' {} \; | awk '{sum+=$1} END {print sum}')
+ARIA_COUNT=$(find /workspace/Fm/output/OEBPS/text -name "*.xhtml" -exec grep -c 'aria-\|role=' {} \; | awk '{sum+=$1} END {print sum}')
 echo "Found $ARIA_COUNT ARIA attributes across all files"
 
 echo "Checking for semantic markup..."
-SEMANTIC_COUNT=$(find output/OEBPS/text -name "*.xhtml" -exec grep -c '<nav\|<main\|<section\|<article\|<aside\|<figure' {} \; | awk '{sum+=$1} END {print sum}')
+SEMANTIC_COUNT=$(find /workspace/Fm/output/OEBPS/text -name "*.xhtml" -exec grep -c '<nav\|<main\|<section\|<article\|<aside\|<figure' {} \; | awk '{sum+=$1} END {print sum}')
 echo "Found $SEMANTIC_COUNT semantic HTML elements"
 
 echo "✅ Accessibility validation complete!"
@@ -130,7 +137,7 @@ cat > epub-project/tools/validate-seo.sh << 'EOF'
 #!/bin/bash
 echo "🔍 Validating SEO metadata..."
 
-PACKAGE_FILE="output/OEBPS/package.opf"
+PACKAGE_FILE="/workspace/Fm/output/OEBPS/package.opf"
 
 if [ ! -f "$PACKAGE_FILE" ]; then
     echo "❌ package.opf not found!"
@@ -195,7 +202,7 @@ echo "3️⃣ SEO Validation..."
 # Run image optimization check
 echo "4️⃣ Image Optimization Check..."
 echo "Checking image file sizes..."
-find output/OEBPS/images -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.svg" \) -exec ls -lh {} \; | while read line; do
+find /workspace/Fm/output/OEBPS/images -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.svg" \) -exec ls -lh {} \; | while read line; do
     size=$(echo $line | awk '{print $5}')
     file=$(echo $line | awk '{print $9}')
     
@@ -210,8 +217,8 @@ done
 
 # Run final EPUBCheck
 echo "5️⃣ Final EPUB Validation..."
-if [ -f "../book.epub" ]; then
-    java -jar epubcheck/epubcheck.jar ../book.epub
+if [ -f "/workspace/Fm/book.epub" ]; then
+    java -jar epubcheck/epubcheck.jar /workspace/Fm/book.epub
 else
     echo "⚠️  EPUB file not found. Run ./compile.sh first."
 fi
@@ -229,14 +236,14 @@ echo "🔍 Validating EPUB structure..."
 
 # Validate XHTML files
 echo "Validating XHTML files..."
-for file in output/OEBPS/text/*.xhtml; do
+for file in /workspace/Fm/output/OEBPS/text/*.xhtml; do
     echo "Checking: $file"
     java -jar ../tools/vnu.jar "$file"
 done
 
 # Validate EPUB package
 echo "Validating complete EPUB..."
-java -jar tools/epubcheck/epubcheck.jar output/book.epub
+java -jar tools/epubcheck/epubcheck.jar /workspace/Fm/output/book.epub
 
 echo "✅ Validation complete!"
 EOF
@@ -248,7 +255,7 @@ cat > epub-project/tools/compile.sh << 'EOF'
 #!/bin/bash
 echo "📦 Compiling EPUB..."
 
-cd output
+cd /workspace/Fm/output
 
 # Create mimetype file
 echo -n "application/epub+zip" > mimetype
@@ -290,8 +297,8 @@ cat > epub-project/tools/check-files.sh << 'EOF'
 #!/bin/bash
 echo "📋 Checking EPUB file structure..."
 
-INPUT_DIR="input/OEBPS/text"
-EXPECTED_FILES=44
+INPUT_DIR="/workspace/Fm/OEBPS/text"
+EXPECTED_FILES=45
 
 if [ ! -d "$INPUT_DIR" ]; then
     echo "❌ Input directory not found: $INPUT_DIR"

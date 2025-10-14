@@ -11,10 +11,10 @@ codex --project epub-project/
 @agents Read and understand the AGENTS.md file completely. Confirm you understand the mission to maintain 100% content fidelity while implementing ACISS design.
 
 # 3. Analyze the project structure
-@agents Analyze the input/OEBPS/text/ directory. List all 44 files and categorize them into frontmatter (7), main content (20), and backmatter (17).
+@agents Analyze the /workspace/Fm/OEBPS/text directory. List all 45 files, categorize frontmatter (7), main content (20), backmatter (17), and identify the navigation file (nav.xhtml).
 
 # 4. Create processing plan
-@agents Create a detailed processing plan for all 44 files, starting with frontmatter, then part dividers, then chapters, then backmatter.
+@agents Create a detailed processing plan for all 45 files, starting with frontmatter, then part dividers, then chapters, then backmatter.
 ```
 
 ### Phase 1: Frontmatter Processing (Files 1-7)
@@ -26,7 +26,7 @@ codex --project epub-project/
 - For the 2 activity worksheet files, convert interactive elements to static HTML
 - Ensure dedication page is properly formatted
 - Use consistent CSS classes and maintain proper file structure
-- Output processed files to output/OEBPS/text/
+- Output processed files to /workspace/Fm/output/OEBPS/text/
 
 Files to process:
 1-[filename].xhtml
@@ -152,7 +152,7 @@ Show me the specific problems and how they will be corrected.
 ```bash
 # Final quality check
 @agents Perform comprehensive quality assurance:
-1. Validate all 44 processed files for XHTML compliance
+1. Validate all 45 files (including nav.xhtml) for XHTML compliance
 2. Verify 100% content preservation across all files
 3. Check consistent ACISS design implementation
 4. Confirm proper page break placement
@@ -173,7 +173,7 @@ Show me the specific problems and how they will be corrected.
 ```bash
 # Prepare for EPUB compilation
 @agents Final preparation checklist:
-1. All 44 files processed and validated ✓
+1. All 45 files processed and validated ✓
 2. Content fidelity maintained at 100% ✓
 3. ACISS design implemented consistently ✓
 4. All CSS references correct ✓
@@ -208,7 +208,7 @@ List any final items that need attention before running ./tools/compile.sh
 ```bash
 # Final success check
 @agents SUCCESS VERIFICATION:
-1. Confirm all 44 files processed ✓
+1. Confirm all 45 files processed ✓
 2. Content preservation: 100% maintained ✓
 3. ACISS design: Fully implemented ✓
 4. XHTML validation: All files pass ✓
