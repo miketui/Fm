@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
-"""
-Script to fix chapter formatting:
-1. Add page breaks after endnotes
-2. Format quizzes with exactly 4 multiple choice questions (A-D) on single page
-3. Format worksheets to fit on one page after quiz
-4. Add centered quote images as final page of each chapter
-5. Add forced page breaks between sections
-"""
+"""Safely align chapter XHTML structure without altering prose."""
+
+from __future__ import annotations
 
 import re
-import os
+from html.parser import HTMLParser
 from pathlib import Path
+from typing import Dict, Iterable, List
 
-# Chapter files and their corresponding quote images
 CHAPTERS = [
     ("9-chapter-i-unveiling-your-creative-odyssey.xhtml", "chapter-i-quote.jpeg"),
     ("10-chapter-ii-refining-your-creative-toolkit.xhtml", "chapter-ii-quote.jpeg"),
@@ -32,9 +27,7 @@ CHAPTERS = [
     ("27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml", "chapter-xvi-quote.jpeg"),
 ]
 
-def add_page_break_styles(content):
-    """Add CSS for page breaks"""
-    style_section = """
+STYLE_BLOCK = """
     <style>
     .page-break-before {
         page-break-before: always;
@@ -74,192 +67,158 @@ def add_page_break_styles(content):
         object-fit: contain;
     }
     </style>
-    """
+"""
 
-    # Insert styles before closing head tag
-    return content.replace('</head>', f'{style_section}</head>')
 
-def fix_quiz_section(content):
-    """Ensure quiz has exactly 4 multiple choice questions A-D on one page"""
-    # Pattern to find quiz section
-    quiz_pattern = r'(<section class="quiz-container[^"]*"[^>]*>.*?</section>)'
+class TextExtractor(HTMLParser):
+    """Collect word tokens from XHTML content for fidelity checks."""
 
-    def replace_quiz(match):
-        quiz_section = match.group(1)
+    def __init__(self) -> None:
+        super().__init__()
+        self.tokens: List[str] = []
 
-        # Extract quiz questions - look for question patterns
-        questions = re.findall(r'<p[^>]*class="quiz-question"[^>]*>(.*?)</p>', quiz_section, re.DOTALL)
+    def handle_data(self, data: str) -> None:  # noqa: D401 - HTMLParser hook
+        words = data.split()
+        if words:
+            self.tokens.extend(words)
 
-        if not questions:
-            # Fallback - look for numbered questions
-            questions = re.findall(r'<p[^>]*>(\d+\.\s*.*?)</p>', quiz_section, re.DOTALL)
+    def get_tokens(self) -> List[str]:
+        return self.tokens
 
-        # Create standardized 4-question quiz
-        if len(questions) >= 4:
-            # Use existing questions
-            quiz_questions = questions[:4]
-        else:
-            # Create default questions if not enough exist
-            quiz_questions = [
-                "1. What is the primary focus of this chapter's main concept?",
-                "2. Which technique or approach was highlighted as most effective?",
-                "3. What should be prioritized when applying these principles?",
-                "4. How does this chapter's content connect to professional development?"
-            ]
 
-        # Build new quiz section
-        new_quiz = f'''<section class="quiz-container chap-quiz avoid-break page-break-before" role="region" aria-labelledby="quiz-title">
-<h2 id="quiz-title" class="quiz-title">Chapter Quiz</h2>
+def extract_tokens(xhtml: str) -> List[str]:
+    parser = TextExtractor()
+    parser.feed(xhtml)
+    parser.close()
+    return parser.get_tokens()
 
-<div class="quiz-question-block">
-<p class="quiz-question"><strong>{quiz_questions[0]}</strong></p>
-<ul class="quiz-options">
-<li class="quiz-option"><span class="opt-label">A)</span> Focus on technical precision and speed</li>
-<li class="quiz-option"><span class="opt-label">B)</span> Emphasize client consultation and communication</li>
-<li class="quiz-option"><span class="opt-label">C)</span> Prioritize the most expensive products and tools</li>
-<li class="quiz-option"><span class="opt-label">D)</span> Follow traditional methods without adaptation</li>
-</ul>
-</div>
 
-<div class="quiz-question-block">
-<p class="quiz-question"><strong>{quiz_questions[1] if len(quiz_questions) > 1 else "2. Which approach demonstrates professional excellence?"}</strong></p>
-<ul class="quiz-options">
-<li class="quiz-option"><span class="opt-label">A)</span> Continuing education and skill development</li>
-<li class="quiz-option"><span class="opt-label">B)</span> Working in isolation without feedback</li>
-<li class="quiz-option"><span class="opt-label">C)</span> Focusing only on popular trends</li>
-<li class="quiz-option"><span class="opt-label">D)</span> Avoiding challenging or diverse clientele</li>
-</ul>
-</div>
+def insert_attribute(tag: str, attribute: str, value: str) -> str:
+    ending = "/>" if tag.rstrip().endswith("/>") else ">"
+    core = tag.rstrip().removesuffix(ending)
+    return f"{core} {attribute}=\"{value}\"{ending}"
 
-<div class="quiz-question-block">
-<p class="quiz-question"><strong>{quiz_questions[2] if len(quiz_questions) > 2 else "3. What is essential for building a successful hairstyling practice?"}</strong></p>
-<ul class="quiz-options">
-<li class="quiz-option"><span class="opt-label">A)</span> Client relationships and trust-building</li>
-<li class="quiz-option"><span class="opt-label">B)</span> Working as quickly as possible</li>
-<li class="quiz-option"><span class="opt-label">C)</span> Using identical techniques for all clients</li>
-<li class="quiz-option"><span class="opt-label">D)</span> Avoiding feedback or self-reflection</li>
-</ul>
-</div>
 
-<div class="quiz-question-block">
-<p class="quiz-question"><strong>{quiz_questions[3] if len(quiz_questions) > 3 else "4. How does this chapter contribute to professional growth?"}</strong></p>
-<ul class="quiz-options">
-<li class="quiz-option"><span class="opt-label">A)</span> Provides actionable steps for development</li>
-<li class="quiz-option"><span class="opt-label">B)</span> Guarantees immediate financial success</li>
-<li class="quiz-option"><span class="opt-label">C)</span> Replaces the need for formal training</li>
-<li class="quiz-option"><span class="opt-label">D)</span> Focuses only on theoretical knowledge</li>
-</ul>
-</div>
-</section>'''
+def add_classes(tag: str, classes: Iterable[str]) -> str:
+    class_pattern = re.compile(r'class="([^"]*)"', re.IGNORECASE)
+    match = class_pattern.search(tag)
+    if match:
+        existing = match.group(1).split()
+    else:
+        existing = []
+    updated = list(existing)
+    for cls in classes:
+        if cls not in updated:
+            updated.append(cls)
+    updated_classes = " ".join(updated)
+    if match:
+        return class_pattern.sub(f'class="{updated_classes}"', tag, count=1)
+    return insert_attribute(tag, "class", updated_classes)
 
-        return new_quiz
 
-    return re.sub(quiz_pattern, replace_quiz, content, flags=re.DOTALL)
+def set_attribute(tag: str, attribute: str, value: str) -> str:
+    pattern = re.compile(rf'\s{attribute}="[^"]*"', re.IGNORECASE)
+    if pattern.search(tag):
+        return pattern.sub(f' {attribute}="{value}"', tag, count=1)
+    return insert_attribute(tag, attribute, value)
 
-def fix_worksheet_section(content):
-    """Ensure worksheet fits on one page after quiz"""
-    # Pattern to find worksheet section
-    worksheet_pattern = r'(<section class="worksheet[^"]*"[^>]*>.*?</section>)'
 
-    def replace_worksheet(match):
-        worksheet_section = match.group(1)
+def add_page_break_styles(content: str) -> str:
+    if STYLE_BLOCK.strip() in content:
+        return content
+    return content.replace("</head>", f"{STYLE_BLOCK}</head>")
 
-        # Create standardized worksheet that fits on one page
-        new_worksheet = '''<section class="worksheet avoid-break page-break-before" role="region" aria-labelledby="ws-title">
-<h2 id="ws-title" class="worksheet-title">Chapter Worksheet</h2>
-<div class="worksheet-content">
-<p><strong>Reflection Questions:</strong></p>
-<ol>
-<li><strong>What is the most important concept you learned from this chapter?</strong></li>
-<p>_____________________________________________________________________</p>
-<p>_____________________________________________________________________</p>
-<p>_____________________________________________________________________</p>
 
-<li><strong>How will you apply this knowledge in your professional practice?</strong></li>
-<p>_____________________________________________________________________</p>
-<p>_____________________________________________________________________</p>
-<p>_____________________________________________________________________</p>
+def ensure_section_attributes(content: str, target_class: str, classes: Iterable[str], attributes: Dict[str, str]) -> str:
+    pattern = re.compile(r'(<section[^>]*class="[^"]*\b' + re.escape(target_class) + r'\b[^"]*"[^>]*>)', re.IGNORECASE)
 
-<li><strong>What specific action will you take this week to implement these ideas?</strong></li>
-<p>_____________________________________________________________________</p>
-<p>_____________________________________________________________________</p>
-<p>_____________________________________________________________________</p>
+    def replacer(match: re.Match[str]) -> str:
+        tag = match.group(1)
+        tag = add_classes(tag, classes)
+        for attr, value in attributes.items():
+            tag = set_attribute(tag, attr, value)
+        return tag
 
-<li><strong>How does this chapter's content connect to your professional goals?</strong></li>
-<p>_____________________________________________________________________</p>
-<p>_____________________________________________________________________</p>
-<p>_____________________________________________________________________</p>
-</ol>
-</div>
-</section>'''
+    return pattern.sub(replacer, content)
 
-        return new_worksheet
 
-    return re.sub(worksheet_pattern, replace_worksheet, content, flags=re.DOTALL)
+def add_page_break_after_endnotes(content: str) -> str:
+    return content.replace('class="endnotes"', 'class="endnotes page-break-after"')
 
-def add_page_break_after_endnotes(content):
-    """Add page break after endnotes section"""
-    # Find endnotes section and add page break class
-    endnotes_pattern = r'(<aside class="endnotes"[^>]*>.*?</aside>)'
 
-    def replace_endnotes(match):
-        endnotes_section = match.group(1)
-        # Add page-break-after class
-        modified_section = endnotes_section.replace('class="endnotes"', 'class="endnotes page-break-after"')
-        return modified_section
+def update_quote_image(content: str, image_file: str, current_file: Path) -> str:
+    section_pattern = re.compile(r'(<section[^>]*class="[^"]*\bquote-page\b[^"]*"[^>]*>.*?</section>)', re.IGNORECASE | re.DOTALL)
+    img_pattern = re.compile(r'(<img[^>]*>)', re.IGNORECASE)
 
-    return re.sub(endnotes_pattern, replace_endnotes, content, flags=re.DOTALL)
+    def section_replacer(match: re.Match[str]) -> str:
+        section_html = match.group(1)
 
-def add_quote_image_page(content, image_file):
-    """Add centered quote image as final page"""
-    # Remove existing closing section with image
-    content = re.sub(r'<section class="closing"[^>]*>.*?</section>', '', content, flags=re.DOTALL)
+        def img_replacer(img_match: re.Match[str]) -> str:
+            img_tag = img_match.group(1)
+            updated_tag = set_attribute(img_tag, "src", f"../images/{image_file}")
+            if re.search(r'alt="[^"]*"', updated_tag, re.IGNORECASE):
+                return updated_tag
+            return insert_attribute(updated_tag, "alt", "Chapter quote artwork")
 
-    # Add new quote page before closing tags
-    quote_page = f'''
-<section class="quote-page">
-<figure>
-<img src="../images/{image_file}" alt="Inspirational quote for this chapter" />
-</figure>
-</section>'''
+        updated_section, img_count = img_pattern.subn(img_replacer, section_html, count=1)
+        if img_count == 0:
+            print(f"⚠️  No image found inside quote page for {current_file.name}; skipping image update.")
+            return section_html
+        return updated_section
 
-    # Insert before closing main/body tags
-    content = content.replace('</main>', f'{quote_page}</main>')
+    updated_content, replacements = section_pattern.subn(lambda m: section_replacer(m), content, count=1)
+    if replacements == 0:
+        print(f"⚠️  Quote page not found in {current_file.name}; no changes applied to closing art.")
+    return updated_content
 
-    return content
 
-def fix_chapter_file(filepath, image_file):
-    """Fix a single chapter file"""
-    print(f"Fixing {filepath}...")
+def fix_chapter_file(filepath: Path, image_file: str) -> None:
+    print(f"Processing {filepath}…")
+    original_content = filepath.read_text(encoding="utf-8")
+    updated_content = original_content
 
-    with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
+    if "</head>" in updated_content:
+        updated_content = add_page_break_styles(updated_content)
 
-    # Apply all fixes
-    content = add_page_break_styles(content)
-    content = add_page_break_after_endnotes(content)
-    content = fix_quiz_section(content)
-    content = fix_worksheet_section(content)
-    content = add_quote_image_page(content, image_file)
+    updated_content = add_page_break_after_endnotes(updated_content)
+    updated_content = ensure_section_attributes(
+        updated_content,
+        "quiz-container",
+        ["chap-quiz", "avoid-break", "page-break-before"],
+        {"role": "region", "aria-labelledby": "quiz-title"},
+    )
+    updated_content = ensure_section_attributes(
+        updated_content,
+        "worksheet",
+        ["avoid-break", "page-break-before"],
+        {"role": "region", "aria-labelledby": "ws-title"},
+    )
+    updated_content = update_quote_image(updated_content, image_file, filepath)
 
-    # Write back to file
-    with open(filepath, 'w', encoding='utf-8') as f:
-        f.write(content)
+    original_tokens = extract_tokens(original_content)
+    updated_tokens = extract_tokens(updated_content)
 
-    print(f"✅ Fixed {filepath}")
+    if original_tokens != updated_tokens:
+        print(f"❌  Text drift detected in {filepath.name}; reverting changes.")
+        return
 
-def main():
-    """Fix all chapter files"""
+    if updated_content != original_content:
+        filepath.write_text(updated_content, encoding="utf-8")
+        print(f"✅  Updated structural markup for {filepath.name}")
+    else:
+        print(f"ℹ️  No structural changes required for {filepath.name}")
+
+
+def main() -> None:
     output_dir = Path("output")
-
     for chapter_file, image_file in CHAPTERS:
         filepath = output_dir / chapter_file
         if filepath.exists():
             fix_chapter_file(filepath, image_file)
         else:
             print(f"⚠️  File not found: {filepath}")
+    print("🎉  Chapter alignment complete.")
 
-    print("🎉 All chapter files have been fixed!")
 
 if __name__ == "__main__":
     main()
