@@ -1,0 +1,371 @@
+{
+  "site_name": "Curls & Contemplation",
+  "site_tagline": "A Stylist's Interactive Journey Journal by Michael David Warren Jr.",
+  "base_url": "https://curlsandcontemplation.com",
+  "last_updated": "2025-10-14",
+  "routes": [
+    {
+      "path": "/",
+      "name": "Homepage",
+      "purpose": "Primary landing page introducing the book, author, and value proposition. Converts visitors to pre-order customers and community members through social proof, benefits, and clear CTAs.",
+      "cta": [
+        "Pre-Order Your Copy",
+        "Join the Curl Collective",
+        "Read Sample Chapter",
+        "Take the Quiz"
+      ],
+      "seo_target": "curls and contemplation book, hairstylist career guide, conscious hairstyling, freelance stylist guide, location-independent hairstyling",
+      "priority": 1.0
+    },
+    {
+      "path": "/book",
+      "name": "Book Details",
+      "purpose": "Comprehensive book overview with complete table of contents, sample chapter preview, competitive differentiators, pre-order bonuses, and detailed FAQ. Primary conversion page for book sales.",
+      "cta": [
+        "Pre-Order Now",
+        "Read Sample Chapter",
+        "View All Bonuses",
+        "See Table of Contents"
+      ],
+      "seo_target": "Curls & Contemplation book details, hairstylist journey journal, interactive beauty industry guide, textured hair styling book, Michael David Warren Jr book",
+      "priority": 0.9
+    },
+    {
+      "path": "/author",
+      "name": "About Michael David Warren Jr.",
+      "purpose": "Establish author credibility through comprehensive biography (short, medium, long), global experience, mentorship lineage, mission statement, and press kit. Build trust and authenticity with personal story.",
+      "cta": [
+        "Read the Book",
+        "Download Press Kit",
+        "Connect on Instagram",
+        "Book Michael for Speaking"
+      ],
+      "seo_target": "Michael David Warren Jr, international hairstylist, conscious hairstyling expert, Arrojo Cosmetology School, freelance hairstylist author, beauty industry thought leader",
+      "priority": 0.8
+    },
+    {
+      "path": "/community",
+      "name": "The Curl Collective - Community Hub",
+      "purpose": "Introduce the membership community with detailed benefits (5 sections), testimonials, how-it-works process, and multiple platform connections. Convert readers to engaged community members.",
+      "cta": [
+        "Join the Collective",
+        "Join Discord Now",
+        "Browse Member Benefits",
+        "Watch Community Tour"
+      ],
+      "seo_target": "hairstylist community, Curl Collective, beauty professional network, freelance stylist support group, textured hair education community",
+      "priority": 0.85
+    },
+    {
+      "path": "/community/join",
+      "name": "Join The Curl Collective",
+      "purpose": "Membership signup page with tier selection (Free, Pro, VIP), pricing comparison, benefits breakdown, and account creation. Primary conversion funnel for recurring community revenue.",
+      "cta": [
+        "Start Free Trial",
+        "Choose Your Tier",
+        "See What's Inside",
+        "View FAQs"
+      ],
+      "seo_target": "join hairstylist community, beauty professional membership, freelance stylist network membership, Curl Collective signup",
+      "priority": 0.75
+    },
+    {
+      "path": "/community/login",
+      "name": "Member Login Portal",
+      "purpose": "Authentication portal for existing Curl Collective members to access exclusive content, community forums, member resources, and account settings.",
+      "cta": [
+        "Login to Your Account",
+        "Reset Password",
+        "Not a Member? Join Now"
+      ],
+      "seo_target": "Curl Collective login, member portal access, community member login",
+      "priority": 0.3
+    },
+    {
+      "path": "/blog",
+      "name": "Blog Hub",
+      "purpose": "Content marketing hub featuring 10+ articles on hairstyling techniques, business strategies, wellness, industry trends, and career development. Drives organic traffic and establishes thought leadership authority.",
+      "cta": [
+        "Subscribe to Newsletter",
+        "Read Latest Post",
+        "Browse by Category",
+        "Join The Community"
+      ],
+      "seo_target": "hairstylist business tips, freelance stylist advice, textured hair techniques, beauty industry trends, hairstyling career development",
+      "priority": 0.8
+    },
+    {
+      "path": "/blog/how-to-price-hair-services",
+      "name": "Blog Post: Pricing Guide",
+      "purpose": "High-value SEO content addressing common pain point of pricing services. Provides framework, calculator, and communication scripts with lead magnet download.",
+      "cta": [
+        "Download Pricing Template",
+        "Pre-Order the Book",
+        "Join Community"
+      ],
+      "seo_target": "how to price hair services, hairstylist pricing strategy, salon pricing guide, values-aligned pricing, freelance stylist rates",
+      "priority": 0.6
+    },
+    {
+      "path": "/blog/freelance-hairstylist-income",
+      "name": "Blog Post: Sustainable Income",
+      "purpose": "Address financial sustainability concerns for freelancers with income planning worksheet, revenue diversification strategies, and case studies.",
+      "cta": [
+        "Download Income Planning Worksheet",
+        "Pre-Order the Book"
+      ],
+      "seo_target": "freelance hairstylist income, sustainable hairstylist business, multiple revenue streams, location-independent stylist income",
+      "priority": 0.6
+    },
+    {
+      "path": "/blog/stylist-self-care-rituals",
+      "name": "Blog Post: Self-Care Rituals",
+      "purpose": "Target wellness-focused creatives with burnout prevention content, self-care plan templates, and boundary-setting strategies.",
+      "cta": [
+        "Download Self-Care Plan Template",
+        "Pre-Order the Book"
+      ],
+      "seo_target": "hairstylist burnout prevention, stylist self-care, wellness for hairstylists, preventing beauty industry burnout",
+      "priority": 0.6
+    },
+    {
+      "path": "/blog/building-signature-style",
+      "name": "Blog Post: Signature Style",
+      "purpose": "Creative inspiration and differentiation strategies with inspiration database template and cross-disciplinary exploration ideas.",
+      "cta": [
+        "Download Inspiration Database Template",
+        "Pre-Order the Book"
+      ],
+      "seo_target": "hairstylist signature style, creative hairstyling, brand differentiation, stylist brand identity",
+      "priority": 0.5
+    },
+    {
+      "path": "/blog/instagram-marketing-for-stylists",
+      "name": "Blog Post: Instagram Marketing",
+      "purpose": "Digital marketing guidance for tech-hesitant stylists with content calendar template and skill-level rated strategies (Digital Newcomer to Enthusiast).",
+      "cta": [
+        "Download Content Calendar Template",
+        "Pre-Order the Book"
+      ],
+      "seo_target": "instagram marketing for hairstylists, social media for stylists, hairstylist instagram tips, beauty industry digital marketing",
+      "priority": 0.6
+    },
+    {
+      "path": "/blog/eco-conscious-stylist-products",
+      "name": "Blog Post: Eco-Conscious Products",
+      "purpose": "Sustainability-focused content attracting values-aligned clients with product recommendations and salon waste reduction strategies.",
+      "cta": [
+        "Download Sustainability Action Plan",
+        "Pre-Order the Book"
+      ],
+      "seo_target": "eco-friendly hair products, sustainable salon practices, green hairstyling, ethical beauty products",
+      "priority": 0.5
+    },
+    {
+      "path": "/blog/handling-difficult-clients",
+      "name": "Blog Post: Client Relationships",
+      "purpose": "Client relationship management and boundary-setting with communication scripts and client archetype framework introduction.",
+      "cta": [
+        "Download Client Communication Scripts",
+        "Pre-Order the Book"
+      ],
+      "seo_target": "handling difficult salon clients, client boundaries, professional communication, hairstylist client management",
+      "priority": 0.5
+    },
+    {
+      "path": "/blog/multiple-revenue-streams",
+      "name": "Blog Post: Revenue Diversification",
+      "purpose": "Business diversification strategies covering digital products, workshops, retail, and passive income opportunities with planning worksheet.",
+      "cta": [
+        "Download Revenue Planning Worksheet",
+        "Pre-Order the Book"
+      ],
+      "seo_target": "hairstylist revenue streams, passive income for stylists, diversify salon income, digital products for hairstylists",
+      "priority": 0.6
+    },
+    {
+      "path": "/blog/salon-employee-to-business-owner",
+      "name": "Blog Post: Career Transition",
+      "purpose": "Transition guidance for aspiring entrepreneurs covering business setup, financial planning, and launch timeline with checklist download.",
+      "cta": [
+        "Download Business Launch Checklist",
+        "Pre-Order the Book"
+      ],
+      "seo_target": "salon employee to business owner, start freelance hairstyling, independent stylist guide, hairstylist entrepreneur",
+      "priority": 0.6
+    },
+    {
+      "path": "/blog/ai-and-future-of-hairstyling",
+      "name": "Blog Post: AI & Industry Future",
+      "purpose": "Tech-forward content addressing industry anxieties about AI with balanced perspective on AI as creative partner, practical applications, and human skills emphasis.",
+      "cta": [
+        "Pre-Order the Book",
+        "Join Discussion in Community"
+      ],
+      "seo_target": "ai in beauty industry, future of hairstyling, technology for hairstylists, AI virtual try-on tools",
+      "priority": 0.5
+    },
+    {
+      "path": "/quiz",
+      "name": "Stylist Success Type Quiz",
+      "purpose": "Interactive lead generation quiz identifying entrepreneurial style (Creative Visionary, Strategic Builder, Wellness Advocate, etc.) with personalized book recommendations and custom roadmap download.",
+      "cta": [
+        "Take the Quiz",
+        "Get Your Results",
+        "Download Custom Roadmap",
+        "Pre-Order the Book"
+      ],
+      "seo_target": "hairstylist success quiz, freelance stylist personality, business style assessment, hairstylist career quiz",
+      "priority": 0.7
+    },
+    {
+      "path": "/pre-order",
+      "name": "Pre-Order Checkout",
+      "purpose": "Primary sales page for book pre-orders with format selection, bonus stack reminder ($381 value), order bumps (signed bookplate), and secure payment processing. Main revenue conversion point.",
+      "cta": [
+        "Complete Your Order",
+        "Add Signed Bookplate",
+        "Secure Checkout",
+        "Apply Discount Code"
+      ],
+      "seo_target": "pre-order Curls & Contemplation, buy hairstylist journey journal, order conscious hairstyling book, Michael David Warren Jr book",
+      "priority": 0.95
+    },
+    {
+      "path": "/checkout",
+      "name": "Secure Checkout",
+      "purpose": "Secure checkout page with payment processing (Stripe, PayPal, Apple Pay), order summary, shipping details collection, and optional upsells. Optimized for conversion completion with trust badges.",
+      "cta": [
+        "Complete Purchase",
+        "Add Community Membership",
+        "Apply Discount Code",
+        "100% Secure Checkout"
+      ],
+      "seo_target": "buy Curls & Contemplation book, secure book checkout",
+      "priority": 0.5
+    },
+    {
+      "path": "/thank-you",
+      "name": "Order Confirmation",
+      "purpose": "Post-purchase confirmation with order details, next steps timeline, welcome email notification, bonus access instructions, community invitation, and social sharing prompts. Maximize customer lifetime value.",
+      "cta": [
+        "Join the Community",
+        "Share Your Purchase",
+        "Access Bonus Content",
+        "Follow on Social"
+      ],
+      "seo_target": "Curls & Contemplation order confirmation",
+      "priority": 0.2
+    },
+    {
+      "path": "/privacy",
+      "name": "Privacy Policy",
+      "purpose": "Legal compliance document outlining data collection practices, usage policies, third-party integrations (Stripe, PayPal, ConvertKit), user rights (access, deletion, opt-out), and GDPR compliance. Builds trust and meets regulatory requirements.",
+      "cta": [
+        "Contact Privacy Team",
+        "Return to Homepage"
+      ],
+      "seo_target": "Curls & Contemplation privacy policy, data protection, GDPR compliance",
+      "priority": 0.1
+    },
+    {
+      "path": "/terms",
+      "name": "Terms of Service",
+      "purpose": "Legal terms governing website use, book purchase conditions, digital product licensing, community membership rules, intellectual property rights, and disclaimers. Protects business and sets user expectations.",
+      "cta": [
+        "Contact Support",
+        "Return to Homepage"
+      ],
+      "seo_target": "Curls & Contemplation terms of service, user agreement",
+      "priority": 0.1
+    },
+    {
+      "path": "/refund-policy",
+      "name": "30-Day Money-Back Guarantee",
+      "purpose": "Clear refund and return guidelines for book purchases and memberships with 30-day guarantee details, refund request process, conditions, and timeline. Reduces purchase friction and customer service inquiries.",
+      "cta": [
+        "Request Refund",
+        "Contact Support",
+        "View FAQs",
+        "Shop with Confidence"
+      ],
+      "seo_target": "Curls & Contemplation refund policy, book return policy, 30-day guarantee",
+      "priority": 0.15
+    },
+    {
+      "path": "/accessibility",
+      "name": "Accessibility Statement",
+      "purpose": "Commitment to digital accessibility with WCAG 2.1 AA compliance standards, accessibility features implemented (alt text, keyboard navigation, color contrast), accommodation request process, and ongoing improvement transparency.",
+      "cta": [
+        "Report Accessibility Issue",
+        "Contact Accessibility Team",
+        "Return to Homepage"
+      ],
+      "seo_target": "website accessibility statement, WCAG 2.1 compliance, accessible beauty website",
+      "priority": 0.1
+    }
+  ],
+  "seo_metadata": {
+    "site_description": "Master conscious hairstyling, build your freelance empire, and honor hair's cultural power with interactive journals, biblical wisdom, and AI strategies. Transform from salon-dependent to location-independent.",
+    "site_keywords": "conscious hairstyling, freelance stylist guide, textured hair mastery, location-independent hairstyling, beauty business strategies, hairstylist career development, cultural hair competency, interactive journey journal, Michael David Warren Jr, Arrojo Cosmetology School",
+    "og_image": "/images/og-curls-and-contemplation.jpg",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_handle": "@UnconventionalS",
+    "primary_keywords": [
+      "Curls & Contemplation",
+      "conscious hairstyling",
+      "freelance stylist guide",
+      "textured hair mastery",
+      "location-independent hairstyling",
+      "beauty business strategies",
+      "hairstylist career development",
+      "cultural hair competency",
+      "interactive journey journal",
+      "Michael David Warren Jr",
+      "hairstylist burnout prevention",
+      "values-aligned pricing"
+    ],
+    "site_language": "en-US",
+    "site_locale": "en_US"
+  },
+  "conversion_funnels": {
+    "primary_book_funnel": [
+      "/",
+      "/book",
+      "/pre-order",
+      "/checkout",
+      "/thank-you"
+    ],
+    "community_funnel": [
+      "/",
+      "/community",
+      "/community/join",
+      "/thank-you"
+    ],
+    "content_to_conversion": [
+      "/blog/*",
+      "/book",
+      "/pre-order"
+    ],
+    "quiz_funnel": [
+      "/quiz",
+      "/book",
+      "/pre-order"
+    ]
+  },
+  "notes": {
+    "priority_scale": "0.0 (lowest) to 1.0 (highest) - indicates relative importance for SEO crawling and development priority",
+    "cta_usage": "Primary CTAs listed in order of conversion priority for each page",
+    "future_routes": [
+      "/workshops",
+      "/speaking",
+      "/press",
+      "/testimonials",
+      "/resources",
+      "/wholesale"
+    ],
+    "blog_expansion": "10 core posts listed; additional posts to be added quarterly based on keyword research and reader questions",
+    "community_platform": "Primary hub is Discord; secondary connections via Instagram, Facebook, Unconventional Stylist website"
+  }
+}
