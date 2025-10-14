@@ -1,0 +1,189 @@
+{
+  "book_info": {
+    "title": "Curls & Contemplation",
+    "subtitle": "A Stylist's Interactive Journey Journal",
+    "full_title": "Unveiling Your Creative Odyssey: A Christian Journey Through Hairstyling Excellence",
+    "author": "Michael David Warren Jr.",
+    "publisher": "Terragon Labs Publishing",
+    "publication_date": "2025-05-27",
+    "isbn": "TBD",
+    "format": ["EPUB", "Print", "PDF"],
+    "page_count": "350+ pages",
+    "language": "en-US"
+  },
+  "classification": {
+    "primary_category": "Beauty & Fashion > Hairstyling",
+    "secondary_categories": [
+      "Business & Economics > Entrepreneurship > Small Business",
+      "Self-Help > Personal Transformation",
+      "Religion > Christian Living > Professional Life",
+      "Self-Help > Creativity",
+      "Business & Economics > Careers > General"
+    ],
+    "bisac_codes": [
+      "SEL027000 - SELF-HELP / Personal Transformation",
+      "BUS025000 - BUSINESS & ECONOMICS / Entrepreneurship",
+      "HEA024000 - HEALTH & FITNESS / Beauty & Grooming",
+      "REL012070 - RELIGION / Christian Living / Professional Growth",
+      "CRA000000 - CRAFTS & HOBBIES / Fashion"
+    ],
+    "keywords_primary": [
+      "hairstyling business",
+      "salon entrepreneurship",
+      "freelance hairstylist",
+      "beauty industry career",
+      "hairstylist self-help"
+    ],
+    "keywords_secondary": [
+      "conscious hairstyling",
+      "Christian hairstylist",
+      "sustainable beauty business",
+      "wellness for stylists",
+      "hairstylist burnout prevention",
+      "pricing strategies for stylists",
+      "salon marketing",
+      "creative entrepreneurship"
+    ]
+  },
+  "comparable_titles": [
+    {
+      "title": "Behind the Chair: Stories from a Life in Beauty",
+      "similarity": "Memoir + business advice for hairstylists"
+    },
+    {
+      "title": "Profit First for Salons",
+      "similarity": "Financial strategies for beauty professionals"
+    },
+    {
+      "title": "The Business of Beauty",
+      "similarity": "Entrepreneurship guide for beauty industry"
+    },
+    {
+      "title": "Atomic Habits",
+      "similarity": "Transformation through systems and mindset shifts"
+    },
+    {
+      "title": "The Purpose Driven Life",
+      "similarity": "Christian values integrated with professional calling"
+    }
+  },
+  "marketing_copy": {
+    "hook": "Transform your hairstyling passion into a purpose-driven, profitable business—without losing your soul.",
+    "meta_description": "Master the art and business of hairstyling with this interactive guide blending Christian values, creative excellence, and entrepreneurial strategy for stylists.",
+    "elevator_pitch": "Curls & Contemplation is the first comprehensive guide that treats hairstyling as both sacred calling and serious business—combining 16 transformative chapters with interactive quizzes, journals, and worksheets to help stylists build careers of purpose, profit, and peace.",
+    "tagline": "The Hairstylist's Path to Purposeful Success",
+    "value_proposition_short": "Build a thriving hairstyling career aligned with your values, creative vision, and financial goals.",
+    "value_proposition_long": "Whether you're behind the chair, running a salon, or building your brand, Curls & Contemplation provides the strategies, mindset shifts, and practical tools you need to create lasting success on your own terms. Blend artistic mastery with financial wisdom, cultivate sustainable wellness practices, and build a business that reflects your deepest values."
+  },
+  "seo_metadata": {
+    "og_title": "Curls & Contemplation: Your Path to Purposeful Hairstyling Success",
+    "og_description": "16 transformative chapters + interactive tools for building a thriving, values-aligned hairstyling career. Pre-order bonuses worth $236.",
+    "og_type": "book",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Transform Your Hairstyling Career with Purpose & Profit",
+    "twitter_description": "The definitive guide for hairstylists ready to build careers of artistry, entrepreneurship, and authentic success."
+  },
+  "target_audience": {
+    "primary_demographic": "Women and men aged 22-50 in hairstyling profession",
+    "experience_levels": [
+      "Aspiring stylists (beauty school/new grads)",
+      "Working stylists (3-10 years experience)",
+      "Experienced stylists (10+ years)",
+      "Salon owners and managers"
+    ],
+    "psychographic_profile": [
+      "Values-driven professionals",
+      "Creatively ambitious",
+      "Seeking work-life balance",
+      "Interested in sustainable/ethical business",
+      "Faith-oriented (Christian or open to spiritual integration)",
+      "Entrepreneurially minded",
+      "Community-oriented"
+    ],
+    "pain_points": [
+      "Inconsistent income",
+      "Creative burnout",
+      "Physical exhaustion",
+      "Lack of business training",
+      "Pricing confusion",
+      "Client retention challenges",
+      "Imposter syndrome",
+      "Work-life imbalance",
+      "Unclear career direction",
+      "Professional isolation"
+    ],
+    "aspirations": [
+      "Financial freedom",
+      "Creative recognition",
+      "Purpose-driven work",
+      "Sustainable lifestyle",
+      "Industry leadership",
+      "Teaching/mentoring others",
+      "Multiple revenue streams",
+      "Location independence",
+      "Legacy business"
+    ]
+  },
+  "unique_selling_points": [
+    "Only hairstyling book integrating Christian values with business strategy",
+    "Interactive format with 22+ worksheets, quizzes, and journals",
+    "Addresses full career lifecycle (student to legacy builder)",
+    "Covers emerging topics (AI, sustainability, diversity)",
+    "Written by freelance stylist with global experience",
+    "Includes mental health and wellness (not just business tactics)",
+    "Community component (Curls & Contemplation Collective)",
+    "Applicable to all hair types and cultural contexts",
+    "Blend of inspirational and tactical content",
+    "Beautiful design with artistic elements"
+  ],
+  "content_structure": {
+    "parts": 4,
+    "chapters": 16,
+    "interactive_elements": 30,
+    "word_count": "85,000+ words",
+    "components": [
+      "16 comprehensive chapters",
+      "4 self-assessment quizzes",
+      "7 types of journaling prompts",
+      "22+ worksheets and tools",
+      "Progressive affirmation odyssey",
+      "Biblical wisdom integration",
+      "Industry case studies",
+      "Practical exercises",
+      "Reflection questions",
+      "Action plans"
+    ]
+  },
+  "pricing_strategy": {
+    "pre_order_price": "$19.99",
+    "launch_price": "$24.99",
+    "retail_price": "$29.99",
+    "digital_price": "$14.99",
+    "pre_order_bonuses": [
+      "Free Curl Collective membership (value: $97/year)",
+      "Exclusive pricing calculator template (value: $29)",
+      "Client retention workbook (value: $39)",
+      "Self-care rituals guide (value: $19)",
+      "Early access to online course (value: $197)",
+      "TOTAL BONUS VALUE: $381"
+    ]
+  },
+  "social_channels": {
+    "website": "https://www.unconventionalstylist.com",
+    "author_website": "https://www.michaeldavidhair.com",
+    "instagram": "@curlscontemplation",
+    "author_instagram": "@michaeldavidhair",
+    "tiktok": "@curlscontemplation",
+    "pinterest": "@curlscontemplation",
+    "discord": "https://discord.gg/4C8jDu78",
+    "newsletter": "https://www.michaeldavidhair.com/newsletter"
+  },
+  "launch_plan": {
+    "pre_order_phase": "90 days before release",
+    "pre_order_goal": "500+ pre-orders",
+    "launch_date": "2025-05-27",
+    "community_goal": "1,000 members in 6 months",
+    "email_list_goal": "2,500+ subscribers",
+    "seo_goal": "Page 1 rankings for 10+ keywords by month 6"
+  }
+}
