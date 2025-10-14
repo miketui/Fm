@@ -12,7 +12,7 @@ def convert_xhtml_to_pdf():
     """Convert all XHTML files in output/OEBPS/text/ to PDF"""
 
     # Setup paths
-    base_dir = Path("/root/repo")
+    base_dir = Path("/workspace/Fm")
     input_dir = base_dir / "output" / "OEBPS" / "text"
     output_dir = base_dir / "pdf"
 

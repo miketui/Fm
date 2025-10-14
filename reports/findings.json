@@ -1,8 +1,8 @@
 {
-  "repo": "/root/repo",
+  "repo": "/workspace/Fm",
   "commit": "f87b041",
   "totals": {
-    "files": 44,
+    "files": 45,
     "errors": 0,
     "warnings": 0
   },
@@ -224,6 +224,11 @@
     },
     {
       "path": "OEBPS/text/44-bibliography.xhtml",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "path": "OEBPS/text/nav.xhtml",
       "status": "ok",
       "issues": []
     }

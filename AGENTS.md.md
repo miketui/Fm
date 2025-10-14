@@ -1,13 +1,13 @@
 # AGENTS.md - EPUB ACISS Design Implementation
 
 ## MISSION STATEMENT
-You are an EPUB specialist agent tasked with implementing the ACISS design system across 44 XHTML files for "Unveiling Your Creative Odyssey" while maintaining **100% CONTENT FIDELITY**. Every single word must be preserved exactly as written in the original files.
+You are an EPUB specialist agent tasked with implementing the ACISS design system across 45 XHTML files for "Unveiling Your Creative Odyssey" (44 content chapters plus `nav.xhtml`) while maintaining **100% CONTENT FIDELITY**. Every single word must be preserved exactly as written in the original files.
 
 ## PROJECT OVERVIEW
 - **Book Title**: Unveiling Your Creative Odyssey
-- **Total Files**: 44 XHTML files
-- **Input Directory**: `input/OEBPS/text/`
-- **Output Directory**: `output/OEBPS/text/`
+- **Total Files**: 45 XHTML files (including `nav.xhtml`)
+- **Input Directory**: `/workspace/Fm/OEBPS/text/`
+- **Output Directory**: `/workspace/Fm/output/OEBPS/text/`
 - **Design System**: ACISS with teal color scheme (#4ECDC4)
 
 ## CRITICAL RULES - NEVER VIOLATE
@@ -285,7 +285,7 @@ When ready to process all files, use this approach:
 ## FINAL VALIDATION
 
 Before completing project:
-- [ ] All 44 files processed successfully
+- [ ] All 45 files processed successfully
 - [ ] Every file validates as XHTML 1.1
 - [ ] Content accuracy verified at 100%
 - [ ] ACISS design applied consistently

@@ -25,18 +25,19 @@
 
 #### Step 2: Backup Original Files
 ```bash
-cp -r input/ backups/original-$(date +%Y%m%d-%H%M%S)/
+cp -r /workspace/Fm/OEBPS/text \
+      "/workspace/Fm/backups/original-$(date +%Y%m%d-%H%M%S)/"
 ```
 
 #### Step 3: Add Brushstroke Image
-1. Save the generated SVG brushstroke as `input/OEBPS/images/brushstroke.svg`
+1. Save the generated SVG brushstroke as `/workspace/Fm/OEBPS/images/brushstroke.svg`
 2. Update any existing brushstroke references in CSS
 
 ### Phase 2: File Analysis and Preparation
 
 #### Step 4: Analyze Current Structure
 ```bash
-find input/OEBPS/text/ -name "*.xhtml" | sort > file-list.txt
+find /workspace/Fm/OEBPS/text -name "*.xhtml" | sort > file-list.txt
 ```
 
 Expected structure:
@@ -65,8 +66,8 @@ For each file type, document:
 3. **Initial Codex Commands**:
    ```
    @agents Read the AGENTS.md file and understand the mission
-   @agents Analyze the input/OEBPS/text/ directory structure
-   @agents Create a processing plan for all 44 files
+   @agents Analyze the /workspace/Fm/OEBPS/text directory structure
+   @agents Create a processing plan for all 45 files (including nav.xhtml)
    ```
 
 #### Step 7: Process Files in Order
@@ -153,7 +154,7 @@ For each file type, document:
    - Validate CSS syntax
 
 2. **Images Missing**:
-   - Confirm `brushstroke.svg` in `output/OEBPS/images/`
+   - Confirm `brushstroke.svg` in `/workspace/Fm/output/OEBPS/images/`
    - Check image paths in XHTML: `../images/brushstroke.svg`
    - Validate image file format
 
@@ -172,7 +173,7 @@ For each file type, document:
 #### Step 11: Final Quality Assurance
 
 **Complete Checklist**:
-- [ ] All 44 files processed successfully
+- [ ] All 45 files processed successfully
 - [ ] 100% content fidelity maintained
 - [ ] ACISS design implemented consistently
 - [ ] All CSS classes applied correctly
@@ -287,13 +288,13 @@ Verify all required classes are used exactly as specified.
 
 #### If Content is Lost or Modified
 1. Stop all processing immediately
-2. Restore from backup: `cp -r backups/original-*/ input/`
+2. Restore from backup: `rsync -av "/workspace/Fm/backups/original-*/" /workspace/Fm/OEBPS/text/`
 3. Re-run Codex with stricter content preservation instructions
 4. Verify word-for-word accuracy before proceeding
 
 #### If EPUB Won't Open on Devices
 1. Run full validation: `./tools/validate.sh`
-2. Check mimetype file: `cat output/mimetype`
+2. Check mimetype file: `cat /workspace/Fm/output/mimetype`
 3. Verify package.opf structure
 4. Test with EPUBCheck: `java -jar tools/epubcheck/epubcheck.jar book.epub`
 

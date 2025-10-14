@@ -225,7 +225,7 @@ This plan implements comprehensive layout validation for all 45 XHTML files in t
 
 ### Directory Structure
 ```
-/root/repo/
+/workspace/Fm/
 ├── scripts/
 │   ├── validators/
 │   │   ├── BaseLayoutValidator.js
