@@ -1,0 +1,65 @@
+EPUBCHECK VALIDATION REPORT
+============================
+
+Book: Curls & Contemplation: A Stylist's Interactive Journey Journal
+File: /root/repo/dist/curls-and-contemplation-updated.epub
+Checker Version: 5.1.0
+Check Date: September 13, 2025
+Elapsed Time: 9.684 seconds
+
+VALIDATION RESULTS
+------------------
+✅ Fatal Errors: 0
+✅ Errors: 0
+✅ Warnings: 0
+✅ Usage Issues: 0
+
+PUBLICATION METADATA
+--------------------
+Publisher: MD Warren
+Title: Curls & Contemplation: A Stylist's Interactive Journey Journal
+Creator: MD Warren
+Date: 2025-08-30T12:00:00Z
+Subject: Beauty, Business, Personal Development, Hairstyling
+Identifier: urn:uuid:9fa5e2ef-5fd8-4f5b-9077-0b9e856cda3d
+Language: en-US
+EPUB Version: 3.3
+
+CONTENT DETAILS
+---------------
+Number of Spine Items: 44
+Character Count: 665,253
+Rendition Layout: Reflowable
+Scripted: No
+Fixed Format: No
+Backward Compatible: No
+Audio: No
+Video: No
+Encryption: No
+Signatures: No
+
+EMBEDDED FONTS
+--------------
+- Libre Baskerville, 400
+- Libre Baskerville, italic, 400
+- Libre Baskerville, 700
+- Cinzel Decorative, 400
+- Montserrat, 400
+- Montserrat, 700
+
+VALIDATION SUMMARY
+------------------
+✅ PASSED - The EPUB file is valid according to EPUB 3.3 specification
+✅ No errors or warnings detected
+✅ All resources properly referenced
+✅ Metadata compliant
+✅ File structure valid
+✅ Accessibility features present
+
+RECOMMENDATION
+--------------
+This EPUB is production-ready and meets all IDPF/W3C EPUB 3.3 standards.
+No fixes required before distribution.
+
+Source: /root/repo/epubcheck-report.json
+Generated: October 14, 2025
