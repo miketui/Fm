@@ -198,6 +198,36 @@
   letter-spacing: -0.025em;
 }
 
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--color-tertiary);
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 32rem;
+}
+
+.author {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 4rem;
+}
+
+.publisher-info {
+  color: var(--color-tertiary);
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 0.25rem;
+}
+
 .frontmatter-divider {
   width: 8rem;
   height: 1px;
@@ -268,6 +298,35 @@
   font-size: 0.875rem;
   text-align: center;
   margin: 1rem 0;
+}
+
+.rights-text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-secondary);
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.isbn-info {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.isbn-label {
+  font-weight: 600;
+  color: #334155;
+}
+
+.publisher-label {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* Table of Contents */
