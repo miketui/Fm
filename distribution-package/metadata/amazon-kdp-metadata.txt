@@ -1,0 +1,305 @@
+AMAZON KINDLE DIRECT PUBLISHING (KDP) METADATA
+==============================================
+
+📖 BOOK DETAILS
+===============
+
+TITLE
+-----
+Curls & Contemplation: A Stylist's Interactive Journey Journal
+
+SUBTITLE
+--------
+A Professional Guide to Creative Mastery, Business Growth, and Self-Reflection for Hairstylists
+
+SERIES (optional)
+-----------------
+Series Title: Curls & Contemplation Professional Development Series
+Volume Number: 1
+
+EDITION (optional)
+------------------
+First Edition
+
+AUTHOR
+------
+Primary Author: Michael David
+Contributors: (none)
+
+DESCRIPTION
+-----------
+[Use HTML formatting for Amazon description]
+
+<b>Transform Your Hairstyling Career with the Ultimate Professional Development Guide</b>
+
+An interactive journey of creative mastery, business growth, and self-reflection for stylists, blending artistry, entrepreneurship and personal development. This comprehensive guide combines practical business acumen with creative inspiration, featuring worksheets, self-assessments and professional development tools.
+
+<b>What's Inside:</b>
+
+<b>Part I: Foundations of Creative Hairstyling</b>
+• Unveil Your Creative Odyssey
+• Refine Your Creative Toolkit
+• Reignite Your Creative Fire
+
+<b>Part II: Building Your Professional Practice</b>
+• Master Networking Strategies
+• Cultivate Mentorship Excellence
+• Build Business Fundamentals
+• Embrace Wellness and Self-Care
+• Advance Through Continuing Education
+
+<b>Part III: Advanced Business Strategies</b>
+• Step Into Leadership
+• Craft Enduring Legacies
+• Implement Digital Marketing Strategies
+• Build Financial Wisdom
+• Embrace Ethics and Sustainability
+
+<b>Part IV: Future-Focused Growth</b>
+• Understand AI's Impact on Beauty
+• Cultivate Resilience and Well-Being
+• Celebrate Diversity in Hairstyling
+
+<b>Interactive Features Include:</b>
+✓ Self-Assessment Quizzes with Answer Keys
+✓ Professional Development Worksheets
+✓ SMART Goal Planning Templates
+✓ Vision Board Journaling Pages
+✓ Manifesting Journal Prompts
+✓ Self-Care Tracking Tools
+✓ Creative Expression and Doodle Pages
+✓ Professional Growth Affirmations
+
+<b>Perfect For:</b>
+• Freelance hairstylists building their brand
+• Salon professionals seeking career advancement
+• Beauty school graduates entering the industry
+• Salon owners and managers
+• Beauty entrepreneurs
+• Anyone passionate about the beauty industry
+
+With 16 comprehensive chapters, interactive tools, and real-world strategies, this book empowers you to build a sustainable, fulfilling career while maintaining your creative spark and personal well-being.
+
+<b>300+ pages of transformative content designed to help you succeed in the competitive beauty industry.</b>
+
+
+LANGUAGE
+--------
+English
+
+PUBLICATION RIGHTS
+------------------
+I own the copyright and hold all rights to publish this book
+
+CATEGORIES (Select 2 from BISAC)
+---------------------------------
+Primary: Business & Money > Small Business & Entrepreneurship > Entrepreneurship
+Secondary: Self-Help > Personal Transformation > Success
+
+BROWSE CATEGORIES (Up to 10)
+----------------------------
+1. Business & Money > Skills > Business Writing
+2. Business & Money > Small Business & Entrepreneurship
+3. Self-Help > Motivational & Inspirational
+4. Education & Reference > Schools & Teaching > Counseling
+5. Arts & Photography > Fashion > Style & Clothing
+6. Health, Fitness & Dieting > Beauty, Grooming, & Style > Style & Beauty
+7. Business & Money > Marketing & Sales > Marketing
+8. Self-Help > Personal Transformation
+9. Business & Money > Skills > Running Meetings & Presentations
+10. Education & Reference > Job Hunting & Careers
+
+KEYWORDS (7 maximum - critical for Amazon SEO)
+----------------------------------------------
+1. hairstyling business guide
+2. beauty industry entrepreneurship
+3. salon management professional development
+4. freelance hairstylist career
+5. beauty entrepreneur workbook
+6. hairstylist success strategies
+7. creative business development
+
+ADULT CONTENT
+-------------
+☐ No
+
+AGE AND GRADE RANGE
+-------------------
+18 and over
+
+📸 BOOK COVER
+=============
+Cover Type: Upload a cover you already have
+Requirements:
+- Minimum 1000 pixels on shortest side
+- Ideal: 2560 x 1600 pixels (1.6:1 ratio)
+- Maximum: 10,000 pixels on longest side
+- File format: JPEG or TIFF (recommended)
+- File size: Under 50 MB
+- Color space: RGB (not CMYK)
+
+📄 MANUSCRIPT
+=============
+Format: EPUB (.epub)
+Source File: curls-and-contemplation.epub (1.89 MB)
+
+⚠️ IMPORTANT: Convert EPUB to KF8/MOBI using Kindle Create or Kindle Previewer before uploading
+
+Conversion Notes:
+- EPUB validates perfectly (0 errors)
+- Expected clean conversion
+- Test on Kindle Previewer before publishing
+- Verify interactive elements (links, TOC) work correctly
+- Check formatting on multiple Kindle devices
+
+📚 EBOOK PRICING
+================
+Enroll in KDP Select: [Your choice]
+- 70% royalty option available for $2.99-$9.99
+- 35% royalty for other prices
+
+Territories: Worldwide rights - all territories
+
+Suggested Pricing:
+- US: $9.99 (70% royalty)
+- UK: £7.99
+- EUR: €8.99
+- CAD: $12.99
+- AUS: $13.99
+
+💰 ROYALTY OPTIONS
+===================
+70% Royalty Option (Recommended)
+- Price: $2.99 to $9.99
+- Delivery costs: ~$0.06 for 1.89 MB file
+- Estimated royalty: ~$6.50 at $9.99 price
+
+35% Royalty Option
+- Any price
+- No delivery cost deduction
+- Lower overall royalty
+
+🎯 KDP SELECT
+=============
+Consider enrolling in KDP Select for:
+- Higher royalty rate (70%) in additional territories
+- Promotional tools (Free Book Promotion, Countdown Deals)
+- Kindle Unlimited (KU) and Kindle Owners' Lending Library inclusion
+- Bonus royalties from KU page reads
+
+Note: KDP Select requires 90-day exclusivity (cannot sell on other platforms)
+
+📅 PUBLISHING OPTIONS
+=====================
+Pre-order: [Your choice]
+Publication Date: [Select date or publish immediately]
+
+🔍 SEARCH KEYWORDS STRATEGY
+===========================
+Amazon uses 7 keyword fields. Maximize discoverability:
+
+Field 1: hairstylist professional development guide
+Field 2: beauty salon business entrepreneur workbook
+Field 3: freelance hairstyling career success
+Field 4: creative business strategies beauty industry
+Field 5: salon owner management leadership training
+Field 6: hairstylist self help motivational journal
+Field 7: beauty professional continuing education
+
+💡 MARKETING TIPS FOR AMAZON
+============================
+1. Amazon Author Central Profile
+   - Create comprehensive author bio
+   - Add author photo
+   - Link to social media and website
+
+2. A+ Content (Brand Registry)
+   - Enhanced product descriptions
+   - Additional images and formatting
+   - Higher conversion rates
+
+3. Book Launch Strategy
+   - Request reviews from ARC readers
+   - Use KDP Select promotional days strategically
+   - Leverage Kindle Countdown Deals
+
+4. Optimize Book Description
+   - Use HTML formatting (bold, lists)
+   - Lead with benefit statements
+   - Include clear call-to-action
+
+5. Competitive Analysis
+   - Research similar titles' pricing
+   - Study successful descriptions
+   - Monitor category rankings
+
+📊 EXPECTED FILE DETAILS
+========================
+Source File: EPUB (1.89 MB)
+Converted File: KF8/MOBI (estimated ~2.5 MB)
+Delivery Cost: ~$0.06 (at 70% royalty)
+Page Count: ~300 pages
+ASIN: (Assigned upon publication)
+
+✅ PRE-PUBLICATION CHECKLIST
+============================
+☐ EPUB converted to KF8 using Kindle Create/Previewer
+☐ Tested on Kindle Previewer (multiple device types)
+☐ Table of Contents verified and clickable
+☐ Images display correctly
+☐ Interior links functional
+☐ Cover image meets specifications (1000px minimum)
+☐ Metadata complete (title, subtitle, description)
+☐ Categories selected (2 BISAC)
+☐ Keywords optimized (7 fields)
+☐ Pricing strategy determined
+☐ KDP Select decision made
+☐ Author Central profile created
+☐ Book description formatted with HTML
+☐ Tax information completed in KDP account
+
+🎨 COVER DESIGN NOTES
+=====================
+Cover File: cover.svg (available in assets folder)
+Note: Convert SVG to high-resolution JPEG or TIFF
+Recommended Resolution: 2560 x 1600 pixels
+Ensure text is readable at thumbnail size
+
+👤 AUTHOR BIO (For Author Central)
+==================================
+Michael David is a beauty industry professional and educator dedicated to empowering hairstylists through comprehensive professional development. With extensive experience in creative artistry and business management, Michael combines practical wisdom with inspirational guidance to help beauty professionals thrive in the competitive salon industry.
+
+When not writing, Michael can be found mentoring emerging stylists, exploring the latest beauty industry trends, and advocating for accessibility and diversity in professional beauty education.
+
+🔗 AUTHOR LINKS (For Author Central)
+====================================
+Website: (To be added)
+Blog: (To be added)
+Twitter/X: (To be added)
+Instagram: (To be added)
+Facebook: (To be added)
+LinkedIn: (To be added)
+
+📧 SUPPORT CONTACT
+==================
+For questions about the book content or errata:
+(Author contact information to be added)
+
+⚖️ COPYRIGHT & LEGAL
+====================
+Copyright: © 2025 Michael David
+All rights reserved.
+
+No part of this book may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, or by any information storage and retrieval system, without permission in writing from the author.
+
+ISBN: (To be assigned)
+Library of Congress Control Number: (Optional, to be obtained)
+
+🌟 LAUNCH SUPPORT
+=================
+Consider coordinating launch with:
+- Beauty industry influencer partnerships
+- Salon and beauty school promotions
+- Professional hairstylist associations
+- Continuing education providers
+- Beauty industry publications and blogs
