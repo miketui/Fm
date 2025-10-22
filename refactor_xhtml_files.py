@@ -133,7 +133,7 @@ class XHTMLRefactor:
         content = re.sub(r'\s+style="[^"]*"', '', content)
         return content
 
-    def normalize_head(self, content: str, title: str) -> str:
+    def normalize_head(self, content: str, title: str, lang: str = "en") -> str:
         """Normalize the <head> section to match template standards"""
         # Extract existing head content
         head_match = re.search(r'<head[^>]*>(.*?)</head>', content, re.DOTALL)
@@ -152,6 +152,40 @@ class XHTMLRefactor:
         
         # Replace head section
         content = re.sub(r'<head[^>]*>.*?</head>', new_head, content, flags=re.DOTALL)
+        return content
+
+    def normalize_html_tag(self, content: str, lang: str = "en") -> str:
+        """Normalize the <html> tag to include proper namespaces and lang attributes"""
+        # Standard XHTML/EPUB html tag
+        new_html_tag = f'<html xmlns="{XHTML_NS}" xmlns:epub="{EPUB_NS}" lang="{lang}" xml:lang="{lang}">'
+        
+        # Replace html tag
+        content = re.sub(r'<html[^>]*>', new_html_tag, content)
+        return content
+
+    def normalize_body_class(self, content: str, file_type: str) -> str:
+        """Normalize body class based on file type"""
+        # Define correct body classes per type
+        class_map = {
+            'frontmatter': 'frontmatter-page',
+            'part': 'part-page',
+            'chapter': 'chapter-page',
+            'backmatter': 'backmatter-page'
+        }
+        
+        correct_class = class_map.get(file_type, 'page')
+        
+        # Replace body tag with correct class
+        content = re.sub(r'<body[^>]*>', f'<body class="{correct_class}">', content)
+        
+        # Remove wrapper divs that are not needed (like <div class="single-page ...">)
+        # Keep the actual content but remove unnecessary wrapper divs
+        if file_type in ['frontmatter', 'backmatter']:
+            # Remove opening wrapper divs after body
+            content = re.sub(r'(<body[^>]*>)\s*<div[^>]*class="[^"]*(?:single-page|backmatter-page)[^"]*"[^>]*>', r'\1', content)
+            # Remove closing wrapper divs before </body>
+            content = re.sub(r'</div>\s*</body>', '</body>', content)
+        
         return content
 
     def refactor_file(self, filename: str, file_type: str) -> bool:
@@ -179,8 +213,14 @@ class XHTMLRefactor:
             # Remove inline styles
             cleaned_content = self.remove_inline_styles(original_content)
             
+            # Normalize HTML tag
+            cleaned_content = self.normalize_html_tag(cleaned_content)
+            
             # Normalize head section
             cleaned_content = self.normalize_head(cleaned_content, title)
+            
+            # Normalize body class and structure
+            cleaned_content = self.normalize_body_class(cleaned_content, file_type)
             
             # Verify word count preservation
             new_word_count = self.count_words(cleaned_content)
@@ -206,6 +246,8 @@ class XHTMLRefactor:
                 
         except Exception as e:
             print(f"✗ Error processing {filename}: {e}")
+            import traceback
+            traceback.print_exc()
             # Restore from backup on error
             backup_file = self.backup_dir / filename
             if backup_file.exists():
