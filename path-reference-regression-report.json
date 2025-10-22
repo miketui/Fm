@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-27T20:08:51.796Z",
+  "timestamp": "2025-10-22T15:43:48.576Z",
   "summary": {
     "totalPaths": 83,
     "brokenLinks": 0,
@@ -393,14 +393,14 @@
       ],
       "OEBPS/text/28-Conclusion.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -413,14 +413,14 @@
       ],
       "OEBPS/text/43-DoodlePage.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -453,14 +453,14 @@
       ],
       "OEBPS/text/35-CurlsContempCollective.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -525,14 +525,14 @@
       ],
       "OEBPS/text/36-JournalingStart.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -577,14 +577,14 @@
       ],
       "OEBPS/text/30-SelfAssessment.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -661,14 +661,14 @@
       ],
       "OEBPS/text/29QuizKey.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -701,14 +701,14 @@
       ],
       "OEBPS/text/42-VisionJournal.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -753,14 +753,14 @@
       ],
       "OEBPS/text/37-ManifestingJournal.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -805,8 +805,20 @@
       ],
       "OEBPS/text/nav.xhtml": [
         {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
           "path": "../styles/style.css",
           "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -1161,14 +1173,14 @@
       ],
       "OEBPS/text/33-Acknowledgments.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -1181,14 +1193,14 @@
       ],
       "OEBPS/text/39-professional-development.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -1265,14 +1277,14 @@
       ],
       "OEBPS/text/38-journal-page.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -1317,14 +1329,14 @@
       ],
       "OEBPS/text/40-SMARTGoals.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -1337,14 +1349,14 @@
       ],
       "OEBPS/text/41-self-care-journal.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -1493,14 +1505,14 @@
       ],
       "OEBPS/text/44-bibliography.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -1513,14 +1525,14 @@
       ],
       "OEBPS/text/32-continued-learning-commitment.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -1533,14 +1545,14 @@
       ],
       "OEBPS/text/34-AbouttheAuthor.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
@@ -1625,14 +1637,14 @@
       ],
       "OEBPS/text/31-affirmations-close.xhtml": [
         {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
           "type": "stylesheet",
           "exists": true
         },
         {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
           "type": "stylesheet",
           "exists": true
         },
