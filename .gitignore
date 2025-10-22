@@ -6,3 +6,6 @@ node_modules/
 /reports/temp/
 .DS_Store
 current-validation-output.txt
+
+# Refactoring backups
+backups/xhtml_refactor_*/
