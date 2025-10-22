@@ -133,3 +133,668 @@
   classes: .quote-marks-icon, .ruled-paper-bg, .toc-divider-img, .quiz-checkbox,
   .chapter-frame or by referencing the variables directly with CSS variables.
 */
+
+/* ====================================================================
+   ACISS LAYOUT SYSTEM - Page Wrappers & Global Conventions
+   ==================================================================== */
+
+/* Page wrapper classes for different section types */
+.frontmatter-page,
+.part-page,
+.chapter-page,
+.backmatter-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: clamp(1rem, 3vw, 2rem);
+  box-sizing: border-box;
+}
+
+.frontmatter-page,
+.backmatter-page {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Page break utilities */
+.page-break {
+  page-break-after: always;
+  break-after: page;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.page-break-before {
+  page-break-before: always;
+  break-before: page;
+}
+
+.page-break-after {
+  page-break-after: always;
+  break-after: page;
+}
+
+.avoid-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Responsive utilities */
+.mobile-hidden {
+  display: inline;
+}
+
+.print-only {
+  display: none;
+}
+
+/* ====================================================================
+   FRONTMATTER STYLES
+   ==================================================================== */
+
+.frontmatter-shell,
+.single-page {
+  min-height: 100vh;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  overflow: hidden;
+}
+
+/* Title Page */
+.title-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.frontmatter-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.frontmatter-divider {
+  width: 8rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, currentColor, transparent);
+  margin: 2rem 0;
+}
+
+/* Copyright Page */
+.copyright-page {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  line-height: 1.5;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* Table of Contents */
+.toc-page {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  line-height: 1.4;
+}
+
+.toc-page ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc-page li {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Dedication Page */
+.dedication-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+}
+
+/* Preface Page */
+.preface-page {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.preface-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Assessment and Worksheet (Frontmatter) */
+.worksheet,
+.assessment,
+.affirmation-sheet {
+  max-height: 90vh;
+  padding: clamp(1rem, 3vw, 2rem);
+  overflow: visible;
+}
+
+/* ====================================================================
+   PART DIVIDER PAGES
+   ==================================================================== */
+
+.part-page {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+}
+
+.part-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: clamp(2rem, 5vw, 4rem);
+  page-break-inside: avoid;
+}
+
+.part-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.part-subtitle {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #64748b;
+}
+
+.decorative-line {
+  width: 12rem;
+  height: 2.5rem;
+  background-image: var(--toc-divider-svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 1.5rem 0;
+}
+
+/* ====================================================================
+   CHAPTER STYLES
+   ==================================================================== */
+
+/* Section 1: Chapter Title Page */
+.chap-title {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.chapter-number-figure {
+  position: relative;
+  width: clamp(8rem, 20vw, 12rem);
+  height: clamp(8rem, 20vw, 12rem);
+  margin-bottom: 2rem;
+}
+
+.chapter-number-brush {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.chapter-number-roman {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.title-bar {
+  width: 8rem;
+  height: 2px;
+  background: currentColor;
+  margin-bottom: 1.5rem;
+  opacity: 0.6;
+}
+
+.title-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title-line {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.bible-quote-container {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.bible-quote-text {
+  font-style: italic;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.bible-quote-reference {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #64748b;
+  font-style: normal;
+}
+
+.introduction-heading {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+}
+
+.introduction-paragraph {
+  max-width: 45rem;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.7;
+  text-align: left;
+}
+
+.dropcap-first-letter p:first-child::first-letter {
+  font-size: 3em;
+  line-height: 0.9;
+  float: left;
+  margin-right: 0.1em;
+  font-weight: bold;
+}
+
+/* Section 2: Chapter Body */
+.chap-body {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.content-area {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.7;
+}
+
+.content-area h2 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.content-area h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.content-area blockquote {
+  margin: 1.5rem 2rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #cbd5e1;
+  font-style: italic;
+}
+
+/* Section 3: Endnotes */
+.endnotes {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.endnotes-title {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.endnotes ol {
+  font-size: clamp(0.85rem, 2vw, 0.9rem);
+  line-height: 1.5;
+  padding-left: 2rem;
+}
+
+.endnotes li {
+  margin-bottom: 0.75rem;
+}
+
+/* Section 4: Quiz */
+.quiz-container {
+  max-height: 90vh;
+  padding: clamp(1rem, 3vw, 2rem);
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.chap-quiz h2,
+.quiz-title {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.quiz-questions {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: question-counter;
+}
+
+.quiz-question-block {
+  margin-bottom: 1.5rem;
+}
+
+.quiz-question {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.quiz-options {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.quiz-option {
+  margin: 0.5rem 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+}
+
+.opt-label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+/* Section 5: Worksheet */
+.worksheet {
+  max-height: 90vh;
+  padding: clamp(1rem, 3vw, 2rem);
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.worksheet-title {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.activity-section {
+  margin: 1.5rem 0;
+}
+
+.writing-area {
+  min-height: 10rem;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* Section 6: Closing Image/Quote */
+.closing,
+.image-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.closing figure,
+.image-quote figure {
+  margin: 0;
+  max-width: 80%;
+}
+
+.closing img,
+.image-quote img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+/* ====================================================================
+   BACKMATTER STYLES
+   ==================================================================== */
+
+/* General backmatter containers */
+.backmatter-card,
+.reference-page {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+/* Conclusion */
+.conclusion {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.7;
+}
+
+/* Acknowledgments */
+.acknowledgments {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.6;
+}
+
+/* Author Bio */
+.author-bio {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Bibliography */
+.bibliography ol,
+.bibliography ul {
+  font-size: clamp(0.85rem, 2vw, 0.9rem);
+  line-height: 1.6;
+  padding-left: 2rem;
+}
+
+/* Quiz Key */
+.quiz-key {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.answer-reference {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+}
+
+/* Affirmations, Commitment, Collective Info */
+.affirmations,
+.commitment,
+.collective-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  padding: clamp(2rem, 4vw, 3rem);
+}
+
+/* Journal Pages */
+.journal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.journal-entry {
+  margin-bottom: 1.5rem;
+}
+
+.journal-prompt {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+}
+
+/* Backmatter Worksheets */
+.backmatter-worksheet {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.form-field {
+  margin: 1rem 0;
+}
+
+.doodle-area {
+  min-height: 20rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Navigation */
+.nav,
+.toc-nav,
+.navigation-list {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.navigation-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation-list li {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+.navigation-list li li {
+  padding-left: 2rem;
+}
+
+/* ====================================================================
+   RESPONSIVE BREAKPOINTS
+   ==================================================================== */
+
+/* Mobile: ≤768px */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .frontmatter-page,
+  .part-page,
+  .chapter-page,
+  .backmatter-page {
+    padding: 1rem;
+  }
+  
+  .title-line {
+    font-size: 1.8rem;
+  }
+  
+  .part-title {
+    font-size: 2rem;
+  }
+  
+  .journal {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet: 769px–1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .journal {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop: ≥1025px */
+@media (min-width: 1025px) {
+  .journal {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .frontmatter-page,
+  .part-page,
+  .chapter-page,
+  .backmatter-page {
+    padding: 2rem;
+  }
+}
+
+/* ====================================================================
+   PRINT STYLES OVERRIDE (can be extended in print.css)
+   ==================================================================== */
+
+@media print {
+  .print-only {
+    display: block;
+  }
+  
+  .mobile-hidden {
+    display: inline;
+  }
+  
+  .page-break-before {
+    page-break-before: always;
+  }
+  
+  .page-break-after {
+    page-break-after: always;
+  }
+  
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+}
