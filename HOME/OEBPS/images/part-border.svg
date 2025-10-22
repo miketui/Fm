@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <defs>
+    <pattern id="borderPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="2" fill="#d4af37" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="300" height="8" y="46" fill="url(#borderPattern)"/>
+  <rect width="8" height="100" x="146" fill="url(#borderPattern)"/>
+</svg>
