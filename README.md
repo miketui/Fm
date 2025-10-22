@@ -6,6 +6,7 @@ Publication‑ready EPUB with automated XHTML formatting, full validation, click
 
 ## Quick Start
 
+### Option A: Use npm Build System
 - Requirements: Node.js 18+, npm
 - Install: `npm install`
 - One‑command build: `npm run build:epub`
@@ -19,8 +20,31 @@ This will:
 - Compile a distributable EPUB at `dist/curls-and-contemplation.epub`
 - Validate the final file with `epubcheck`
 
+### Option B: Use HOME Directory (Simple Python Build)
+- Requirements: Python 3.6+, Java (for EPUBCheck)
+- No installation needed
+- Three-step process:
+
+```bash
+# 1. Verify structure
+python3 verify_home_structure.py
+
+# 2. Build EPUB
+python3 build_home_epub.py
+
+# 3. Validate
+java -jar epubcheck/epubcheck.jar dist/home-curls-and-contemplation.epub
+```
+
+**HOME Directory:**
+- Complete EPUB structure in `/HOME/` directory
+- 89 files ready for compilation (45 XHTML, 3 CSS, 6 fonts, 31 images)
+- No dependencies or build tools required
+- See [HOME_WORKFLOW_GUIDE.md](HOME_WORKFLOW_GUIDE.md) for details
+
 ## Project Structure
 
+### Standard EPUB Structure (OEBPS)
 ```
 ├── META-INF/
 │   └── container.xml
@@ -34,6 +58,24 @@ This will:
 │   └── fonts/*
 └── mimetype
 ```
+
+### HOME Directory (Production-Ready)
+```
+├── HOME/                      # ⭐ Complete EPUB ready for compilation
+│   ├── mimetype
+│   ├── META-INF/
+│   │   └── container.xml
+│   └── OEBPS/
+│       ├── content.opf
+│       ├── text/              # 45 XHTML files
+│       ├── styles/            # 3 CSS files
+│       ├── fonts/             # 6 WOFF2 fonts
+│       └── images/            # 31 images
+├── build_home_epub.py         # Build script for HOME
+└── verify_home_structure.py   # Validation script
+```
+
+See [HOME/README.md](HOME/README.md) and [HOME_WORKFLOW_GUIDE.md](HOME_WORKFLOW_GUIDE.md) for HOME directory usage.
 
 ## Commands
 
