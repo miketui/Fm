@@ -7,5 +7,10 @@ node_modules/
 .DS_Store
 current-validation-output.txt
 
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
 # Refactoring backups
 backups/xhtml_refactor_*/

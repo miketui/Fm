@@ -6,6 +6,17 @@ Publication‑ready EPUB with automated XHTML formatting, full validation, click
 
 ## Quick Start
 
+### Live XHTML Preview (New! 🎉)
+Preview any XHTML file in real-time with full styling:
+
+```bash
+npm run preview
+```
+
+Then open http://localhost:8000/xhtml-preview.html in your browser. Select any file from the dropdown to see it rendered with proper CSS. Perfect for iterative design and content editing!
+
+See [XHTML_PREVIEW_GUIDE.md](XHTML_PREVIEW_GUIDE.md) for complete documentation.
+
 ### Option A: Use npm Build System
 - Requirements: Node.js 18+, npm
 - Install: `npm install`
@@ -79,6 +90,11 @@ See [HOME/README.md](HOME/README.md) and [HOME_WORKFLOW_GUIDE.md](HOME_WORKFLOW_
 
 ## Commands
 
+### Development & Preview
+- `npm run preview` – Start live XHTML preview server (see files with styling in real-time)
+- `npm run preview:title` – Quick start preview with Title Page (macOS)
+
+### Build & Validation
 - `npm run build:epub` – Full validation → clickable TOC check → compilation → epubcheck
 - `npm run build:full` – Above + multi‑format validation + optimization preview
 - `npm run validate` – Package in temp and run epubcheck (+ XHTML sanity checks)

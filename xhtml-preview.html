@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHTML Preview - Curls & Contemplation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .header h1 {
+            font-size: 1.5rem;
+            color: #1797a6;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .file-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .file-selector label {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .file-selector select {
+            padding: 8px 15px;
+            border: 2px solid #1797a6;
+            border-radius: 6px;
+            font-size: 14px;
+            background: white;
+            color: #333;
+            cursor: pointer;
+            min-width: 300px;
+            transition: all 0.3s ease;
+        }
+        
+        .file-selector select:hover {
+            border-color: #137a87;
+        }
+        
+        .file-selector select:focus {
+            outline: none;
+            border-color: #137a87;
+            box-shadow: 0 0 0 3px rgba(23, 151, 166, 0.2);
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .btn-primary {
+            background: #1797a6;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #137a87;
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary {
+            background: #f0f9ff;
+            color: #1797a6;
+            border: 2px solid #1797a6;
+        }
+        
+        .btn-secondary:hover {
+            background: #1797a6;
+            color: white;
+        }
+        
+        .preview-container {
+            height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            background: white;
+        }
+        
+        .preview-frame {
+            flex: 1;
+            border: none;
+            width: 100%;
+            height: 100%;
+            background: white;
+        }
+        
+        .loading {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            z-index: 1000;
+        }
+        
+        .loading.active {
+            display: block;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #1797a6;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading p {
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .info-badge {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .controls {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .file-selector {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .file-selector select {
+                width: 100%;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <span>📖</span>
+            <span>XHTML Preview</span>
+        </h1>
+        <div class="controls">
+            <div class="file-selector">
+                <label for="file-select">File:</label>
+                <select id="file-select">
+                    <option value="">-- Select an XHTML file --</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" id="reload-btn" title="Reload current file">
+                🔄 Reload
+            </button>
+            <button class="btn btn-secondary" id="open-new-btn" title="Open in new tab">
+                🔗 Open Direct
+            </button>
+        </div>
+    </div>
+    
+    <div class="preview-container">
+        <iframe id="preview-frame" class="preview-frame" title="XHTML Preview"></iframe>
+    </div>
+    
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <p>Loading XHTML file...</p>
+    </div>
+    
+    <script>
+        // XHTML files to preview
+        const xhtmlFiles = [
+            // Frontmatter
+            { path: 'OEBPS/text/1-TitlePage.xhtml', label: '📄 1 - Title Page' },
+            { path: 'OEBPS/text/2-Copyright.xhtml', label: '📄 2 - Copyright' },
+            { path: 'OEBPS/text/3-TableOfContents.xhtml', label: '📄 3 - Table of Contents' },
+            { path: 'OEBPS/text/4-Dedication.xhtml', label: '📄 4 - Dedication' },
+            { path: 'OEBPS/text/5-SelfAssessment.xhtml', label: '📄 5 - Self Assessment 1' },
+            { path: 'OEBPS/text/6-affirmation-odyssey.xhtml', label: '📄 6 - Affirmation Odyssey' },
+            { path: 'OEBPS/text/7-Preface.xhtml', label: '📄 7 - Preface' },
+            
+            // Part Dividers
+            { path: 'OEBPS/text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml', label: '📑 Part I - Foundations of Creative Hairstyling' },
+            { path: 'OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml', label: '📑 Part II - Building Your Professional Practice' },
+            { path: 'OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml', label: '📑 Part III - Advanced Business Strategies' },
+            { path: 'OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml', label: '📑 Part IV - Future-Focused Growth' },
+            
+            // Chapters
+            { path: 'OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml', label: '📖 Chapter I - Unveiling Your Creative Odyssey' },
+            { path: 'OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml', label: '📖 Chapter II - Refining Your Creative Toolkit' },
+            { path: 'OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml', label: '📖 Chapter III - Reigniting Your Creative Fire' },
+            { path: 'OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml', label: '📖 Chapter IV - The Art of Networking' },
+            { path: 'OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml', label: '📖 Chapter V - Cultivating Excellence Through Mentorship' },
+            { path: 'OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml', label: '📖 Chapter VI - Mastering the Business' },
+            { path: 'OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml', label: '📖 Chapter VII - Embracing Wellness and Self-Care' },
+            { path: 'OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml', label: '📖 Chapter VIII - Advancing Skills' },
+            { path: 'OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml', label: '📖 Chapter IX - Stepping into Leadership' },
+            { path: 'OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml', label: '📖 Chapter X - Crafting Enduring Legacies' },
+            { path: 'OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml', label: '📖 Chapter XI - Advanced Digital Strategies' },
+            { path: 'OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml', label: '📖 Chapter XII - Financial Wisdom' },
+            { path: 'OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml', label: '📖 Chapter XIII - Ethics and Sustainability' },
+            { path: 'OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml', label: '📖 Chapter XIV - Impact of AI' },
+            { path: 'OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml', label: '📖 Chapter XV - Cultivating Resilience' },
+            { path: 'OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml', label: '📖 Chapter XVI - Tresses and Textures' },
+            
+            // Backmatter
+            { path: 'OEBPS/text/28-Conclusion.xhtml', label: '📄 28 - Conclusion' },
+            { path: 'OEBPS/text/29QuizKey.xhtml', label: '📄 29 - Quiz Key' },
+            { path: 'OEBPS/text/30-SelfAssessment.xhtml', label: '📄 30 - Self Assessment 2' },
+            { path: 'OEBPS/text/31-affirmations-close.xhtml', label: '📄 31 - Affirmations Close' },
+            { path: 'OEBPS/text/32-continued-learning-commitment.xhtml', label: '📄 32 - Continued Learning' },
+            { path: 'OEBPS/text/33-Acknowledgments.xhtml', label: '📄 33 - Acknowledgments' },
+            { path: 'OEBPS/text/34-AbouttheAuthor.xhtml', label: '📄 34 - About the Author' },
+            { path: 'OEBPS/text/35-CurlsContempCollective.xhtml', label: '📄 35 - Curls Contemp Collective' },
+            { path: 'OEBPS/text/36-JournalingStart.xhtml', label: '📄 36 - Journaling Start' },
+            { path: 'OEBPS/text/37-ManifestingJournal.xhtml', label: '📄 37 - Manifesting Journal' },
+            { path: 'OEBPS/text/38-journal-page.xhtml', label: '📄 38 - Journal Page' },
+            { path: 'OEBPS/text/39-professional-development.xhtml', label: '📄 39 - Professional Development' },
+            { path: 'OEBPS/text/40-SMARTGoals.xhtml', label: '📄 40 - SMART Goals' },
+            { path: 'OEBPS/text/41-self-care-journal.xhtml', label: '📄 41 - Self-Care Journal' },
+            { path: 'OEBPS/text/42-VisionJournal.xhtml', label: '📄 42 - Vision Journal' },
+            { path: 'OEBPS/text/43-DoodlePage.xhtml', label: '📄 43 - Doodle Page' },
+            { path: 'OEBPS/text/44-bibliography.xhtml', label: '📄 44 - Bibliography' },
+            { path: 'OEBPS/text/nav.xhtml', label: '🗺️ Navigation (nav.xhtml)' },
+        ];
+        
+        const fileSelect = document.getElementById('file-select');
+        const previewFrame = document.getElementById('preview-frame');
+        const reloadBtn = document.getElementById('reload-btn');
+        const openNewBtn = document.getElementById('open-new-btn');
+        const loading = document.getElementById('loading');
+        
+        // Populate file selector
+        xhtmlFiles.forEach(file => {
+            const option = document.createElement('option');
+            option.value = file.path;
+            option.textContent = file.label;
+            fileSelect.appendChild(option);
+        });
+        
+        // Get file from URL parameter or default to Title Page
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialFile = urlParams.get('file') || 'OEBPS/text/1-TitlePage.xhtml';
+        
+        // Set initial selection
+        if (initialFile) {
+            fileSelect.value = initialFile;
+            loadFile(initialFile);
+        }
+        
+        // Event listeners
+        fileSelect.addEventListener('change', (e) => {
+            const file = e.target.value;
+            if (file) {
+                loadFile(file);
+                updateURL(file);
+            }
+        });
+        
+        reloadBtn.addEventListener('click', () => {
+            const file = fileSelect.value;
+            if (file) {
+                loadFile(file, true);
+            }
+        });
+        
+        openNewBtn.addEventListener('click', () => {
+            const file = fileSelect.value;
+            if (file) {
+                window.open(file, '_blank');
+            }
+        });
+        
+        function loadFile(filePath, forceReload = false) {
+            loading.classList.add('active');
+            
+            // Add timestamp to force reload if needed
+            const url = forceReload ? `${filePath}?t=${Date.now()}` : filePath;
+            
+            previewFrame.src = url;
+            
+            previewFrame.onload = () => {
+                loading.classList.remove('active');
+            };
+            
+            previewFrame.onerror = () => {
+                loading.classList.remove('active');
+                alert('Error loading file. Make sure the preview server is running.');
+            };
+        }
+        
+        function updateURL(filePath) {
+            const newURL = `${window.location.pathname}?file=${encodeURIComponent(filePath)}`;
+            window.history.pushState({ file: filePath }, '', newURL);
+        }
+        
+        // Handle browser back/forward
+        window.addEventListener('popstate', (e) => {
+            if (e.state && e.state.file) {
+                fileSelect.value = e.state.file;
+                loadFile(e.state.file);
+            }
+        });
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Ctrl/Cmd + R to reload
+            if ((e.ctrlKey || e.metaKey) && e.key === 'r') {
+                e.preventDefault();
+                reloadBtn.click();
+            }
+            
+            // Ctrl/Cmd + O to open in new tab
+            if ((e.ctrlKey || e.metaKey) && e.key === 'o') {
+                e.preventDefault();
+                openNewBtn.click();
+            }
+        });
+    </script>
+</body>
+</html>
