@@ -35,7 +35,7 @@
     "canvas:serve": "python3 -m http.server 8000",
     "canvas:view": "open canvas-viewer.html",
     "preview": "python3 preview-server.py",
-    "preview:title": "python3 preview-server.py & sleep 2 && open http://localhost:8000/xhtml-preview.html?file=OEBPS/text/1-TitlePage.xhtml",
+    "preview:open": "echo 'Server started! Open http://localhost:8000/xhtml-preview.html in your browser'",
     "test:tdd": "jest --config jest.config.tdd.js",
     "test:tdd:watch": "jest --config jest.config.tdd.js --watch",
     "test:tdd:coverage": "jest --config jest.config.tdd.js --coverage",
