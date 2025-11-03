@@ -1,22 +1,21 @@
-# Master Chapter Template - Phase 2
-## Complete XHTML Chapter Template with Image Assets
+# Master Chapter Template - Phase 2 (Updated)
+## Complete XHTML Chapter Template with Enhanced Design & Image Assets
 
 ### Overview
-This master chapter template provides a comprehensive, production-ready structure for all chapters in "The Artisan's Path." It includes all 7 sections with proper image asset integration and professional styling.
+This master chapter template provides a comprehensive, production-ready structure for all chapters in "The Artisan's Path." It features an **enhanced circular brushstroke design** based on the mockup, with proper page breaks and streamlined content flow.
 
 ---
 
 ## Template Structure
 
-The template follows a **7-section architecture**:
+The template follows a **6-section architecture** with proper page breaks:
 
-1. **Chapter Title Page** - Roman numeral with brushstroke background
-2. **Chapter Body Content** - Main educational content
-3. **Endnotes** - Citations and references
-4. **Chapter Quiz** - Knowledge assessment
-5. **Chapter Worksheet** - Practical exercises
-6. **Chapter Summary** - Key takeaways
-7. **Reflection Journal** - Personal growth prompts
+1. **Chapter Title Page** - Circular teal brushstroke with centered Roman numeral, vertical bar title layout
+2. **Chapter Body Content** - Main educational content (NEW PAGE after title)
+3. **Endnotes** - Citations and references (NEW PAGE after body)
+4. **Chapter Quiz** - 4 multiple choice questions (NEW PAGE after endnotes)
+5. **Chapter Worksheet** - Practical exercises (NEW PAGE after quiz)
+6. **Chapter Closing Quote** - Centered inspirational quote image (NEW PAGE after worksheet)
 
 ---
 
@@ -115,42 +114,53 @@ Match endnote IDs with in-text references:
 
 ## Key Visual Elements
 
-### 1. **Roman Numeral with Brushstroke Background**
+### 1. **Circular Teal Brushstroke with Roman Numeral (Enhanced Design)**
 ```html
-<figure class="chapter-number-figure" aria-hidden="true">
-  <img class="chapter-number-brush" src="../images/brushstroke.svg" alt="" role="presentation"/>
-  <figcaption class="chapter-number-roman accent-teal">I</figcaption>
-</figure>
+<div class="chapter-number-section">
+  <div class="brushstroke-circle">
+    <img class="brushstroke-bg" src="../images/brushstroke.svg" alt="" role="presentation"/>
+    <div class="roman-numeral-overlay accent-teal">I</div>
+  </div>
+</div>
 ```
-**Purpose:** Creates a centered, visually striking chapter number with brushstroke SVG as background
+**Purpose:** Creates a circular teal gradient background (inspired by mockup) with centered white Roman numeral. The brushstroke.svg provides texture/visual interest.
 
-### 2. **Chapter Title Stack**
+### 2. **Chapter Title with Vertical Bar (Updated Layout)**
 ```html
-<div class="title-stack">
-  <div class="title-bar accent-gold"></div>
+<div class="title-section">
+  <div class="vertical-bar"></div>
   <h1 class="title-lines accent-teal">
-    <span class="title-line">Line One</span>
-    <span class="title-line">Line Two</span>
+    <span class="title-line">UNVEILING</span>
+    <span class="title-line">YOUR</span>
+    <span class="title-line">CREATIVE</span>
+    <span class="title-line">ODYSSEY</span>
   </h1>
 </div>
 ```
-**Purpose:** Multi-line title with gold accent bar
+**Purpose:** Multi-line uppercase title in teal with vertical black bar on left (matches mockup design)
 
-### 3. **Quote with Decorative Marks**
+### 3. **Bible Quote Box with Rounded Teal Border (Enhanced)**
 ```html
-<figure class="bible-quote-container">
-  <img src="../images/quote-marks.svg" alt="" class="quote-decoration-start"/>
-  <blockquote class="bible-quote-text">"Quote text..."</blockquote>
-  <img src="../images/quote-marks.svg" alt="" class="quote-decoration-end"/>
-  <figcaption class="bible-quote-reference accent-gold">— Citation</figcaption>
-</figure>
+<div class="bible-quote-box">
+  <blockquote class="quote-text">
+    "For we are God's handiwork, created in Christ Jesus to do good works..."
+  </blockquote>
+  <div class="quote-reference">— EPHESIANS 2:10</div>
+</div>
 ```
+**Purpose:** Clean, elegant quote box with rounded teal border and subtle background (matches mockup)
 
-### 4. **Drop Cap Introduction**
+### 4. **Chapter Introduction with Teal Underline Heading**
 ```html
-<p><span class="drop-cap accent-teal">F</span>irst paragraph text...</p>
+<div class="introduction-section">
+  <h2 class="section-heading accent-teal">CHAPTER INTRODUCTION</h2>
+
+  <p class="drop-cap-paragraph">
+    <span class="drop-cap accent-teal">P</span>icture celebrity stylist...
+  </p>
+</div>
 ```
-**Purpose:** Professional drop cap styling for chapter opening
+**Purpose:** "CHAPTER INTRODUCTION" heading with teal underline border, followed by drop cap paragraph (matches mockup)
 
 ### 5. **Section Dividers**
 ```html
@@ -172,22 +182,48 @@ Match endnote IDs with in-text references:
 </div>
 ```
 
-### 7. **Quiz Questions**
+### 7. **Quiz Questions (4 Questions Only)**
 ```html
-<div class="quiz-option">
-  <img src="../images/quiz-checkbox-unchecked.svg" alt="Unchecked" class="checkbox-icon"/>
-  <span>A) Option text</span>
+<div class="quiz-question">
+  <div class="question-header">
+    <span class="question-number">1.</span>
+    <p class="question-text">What is the main concept...</p>
+  </div>
+  <div class="quiz-options">
+    <div class="quiz-option">
+      <img src="../images/quiz-checkbox-unchecked.svg" alt="Unchecked" class="checkbox-icon"/>
+      <span class="option-label">A)</span>
+      <span class="option-text">First option</span>
+    </div>
+    <!-- Repeat for B, C, D -->
+  </div>
 </div>
 ```
+**Note:** Template includes exactly 4 multiple choice questions per chapter.
 
 ### 8. **Worksheet Writing Areas**
 ```html
 <div class="writing-area">
-  <div class="ruled-lines">
-    <img src="../images/ruled-paper.svg" alt="" class="ruled-paper-bg"/>
+  <div class="ruled-lines" style="background-image: url('../images/ruled-paper.svg'); background-repeat: repeat-y; min-height: 150px;">
+    <!-- Ruled paper background for writing -->
   </div>
 </div>
 ```
+
+### 9. **Chapter Closing Quote Image (NEW)**
+```html
+<section class="chapter-closing-quote">
+  <div class="closing-quote-container">
+    <figure class="closing-quote-figure">
+      <img src="../images/chapter-i-quote.jpeg" alt="Chapter closing inspirational quote" class="closing-quote-image"/>
+    </figure>
+    <div class="closing-ornament">
+      <img src="../images/crown-ornament.svg" alt="" aria-hidden="true"/>
+    </div>
+  </div>
+</section>
+```
+**Purpose:** Full-page centered quote image at the end of each chapter with decorative crown ornament
 
 ---
 
@@ -226,21 +262,43 @@ The template includes proper ARIA labels and semantic HTML:
 
 ---
 
+## Page Break Structure (IMPORTANT!)
+
+The template includes **5 strategic page breaks** for proper pagination:
+
+1. **After Title Page** → Chapter Body Content starts on new page
+2. **After Body Content** → Endnotes start on new page
+3. **After Endnotes** → Quiz starts on new page (4 questions)
+4. **After Quiz** → Worksheet starts on new page
+5. **After Worksheet** → Closing Quote Image on new page
+
+```html
+<div class="page-break" epub:type="pagebreak"></div>
+```
+
+This ensures clean separation between sections for both digital and print formats.
+
+---
+
 ## Quality Checklist
 
 Before finalizing a chapter, verify:
 
 - [ ] Roman numeral matches chapter number
-- [ ] Chapter quote image exists and is linked correctly
+- [ ] Circular brushstroke background displays correctly
+- [ ] Vertical bar appears on left of title
+- [ ] Bible quote box has rounded teal border
+- [ ] "CHAPTER INTRODUCTION" heading has teal underline
+- [ ] Chapter quote image exists and is linked correctly (both title page and closing)
 - [ ] All image paths use `../images/` prefix
-- [ ] Drop cap letter is correct
+- [ ] Drop cap letter is correct and teal colored
 - [ ] All endnote IDs match in-text references
-- [ ] Quiz has 5-10 questions with 4 options each
-- [ ] Worksheet has 3-5 exercises
-- [ ] Summary has 5-7 key takeaways
-- [ ] All sections have decorative dividers
-- [ ] Page breaks are properly placed
-- [ ] File is valid XHTML (validate with xmllint)
+- [ ] Quiz has exactly 4 multiple choice questions with 4 options each
+- [ ] Worksheet has 3-4 exercises with ruled paper backgrounds
+- [ ] **5 page breaks are properly placed** (after title, body, endnotes, quiz, worksheet)
+- [ ] Closing quote image is centered on final page
+- [ ] All sections have decorative dividers where appropriate
+- [ ] File is valid XHTML
 
 ---
 
@@ -291,6 +349,38 @@ For questions or issues with the template:
 
 ---
 
-**Template Version:** 2.0
+## Summary of Changes (Phase 2 Update)
+
+### Enhanced Visual Design
+- ✅ Circular teal brushstroke background for Roman numeral (centered)
+- ✅ Vertical black bar on left of chapter title
+- ✅ Rounded teal border for Bible quote box
+- ✅ "CHAPTER INTRODUCTION" heading with teal underline
+
+### Structural Improvements
+- ✅ Reduced from 7 sections to 6 sections (removed separate Summary and Journal)
+- ✅ Added 5 strategic page breaks for clean pagination
+- ✅ Quiz reduced to exactly 4 multiple choice questions
+- ✅ Added dedicated Chapter Closing Quote Image page
+
+### Page Flow
+```
+Page 1: Chapter Title Page (circular brushstroke, title, quote, introduction)
+  ↓ PAGE BREAK
+Page 2+: Chapter Body Content (anecdotes, sections, case studies, action steps)
+  ↓ PAGE BREAK
+Page X: Endnotes
+  ↓ PAGE BREAK
+Page X+1: Quiz (4 questions)
+  ↓ PAGE BREAK
+Page X+2: Worksheet (3-4 exercises)
+  ↓ PAGE BREAK
+Page X+3: Closing Quote Image (centered, with crown ornament)
+```
+
+---
+
+**Template Version:** 2.1 (Enhanced Design)
 **Last Updated:** 2025-11-03
 **Status:** Production Ready ✅
+**Based On:** Chapter Title Page Mockup Design
