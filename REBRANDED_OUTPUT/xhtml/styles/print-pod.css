@@ -1,0 +1,531 @@
+/**
+ * 6x9" PRINT-ON-DEMAND STYLESHEET
+ * The Artisan's Path: Professional Hairstyling Excellence
+ *
+ * Optimized for high-quality print-on-demand output
+ * Page size: 6" × 9" (standard POD trim size)
+ * Designed for professional binding with proper gutter margins
+ */
+
+/* ============================================================
+   PAGE SETUP - 6x9" Print-on-Demand
+   ============================================================ */
+
+@page {
+  size: 6in 9in;
+  margin-top: 0.5in;
+  margin-bottom: 0.5in;
+  margin-inside: 0.75in;   /* Gutter margin for binding */
+  margin-outside: 0.625in;
+
+  @top-center {
+    content: string(chapter-title);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 9pt;
+    font-style: italic;
+    color: #555;
+  }
+
+  @bottom-center {
+    content: counter(page);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 10pt;
+  }
+}
+
+/* First page of chapter - no header */
+@page :first {
+  @top-center {
+    content: none;
+  }
+}
+
+/* Left (verso) pages */
+@page :left {
+  margin-left: 0.625in;
+  margin-right: 0.75in;
+
+  @bottom-left {
+    content: counter(page);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 10pt;
+  }
+
+  @bottom-center {
+    content: none;
+  }
+}
+
+/* Right (recto) pages */
+@page :right {
+  margin-left: 0.75in;
+  margin-right: 0.625in;
+
+  @bottom-right {
+    content: counter(page);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 10pt;
+  }
+
+  @bottom-center {
+    content: none;
+  }
+}
+
+/* ============================================================
+   FONT EMBEDDING
+   ============================================================ */
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('../fonts/librebaskerville-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('../fonts/librebaskerville-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('../fonts/librebaskerville-italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  src: url('../fonts/CinzelDecorative.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ============================================================
+   BASE TYPOGRAPHY
+   ============================================================ */
+
+body {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 10.5pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  text-align: justify;
+  hyphens: auto;
+  widows: 2;
+  orphans: 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  color: #00796B;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  widows: 3;
+  orphans: 3;
+}
+
+h1 {
+  font-size: 20pt;
+  margin-top: 0.5in;
+  margin-bottom: 0.25in;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-size: 14pt;
+  margin-top: 0.3in;
+  margin-bottom: 0.15in;
+}
+
+h3 {
+  font-size: 12pt;
+  margin-top: 0.2in;
+  margin-bottom: 0.1in;
+}
+
+p {
+  margin-bottom: 0.12in;
+  text-indent: 0.2in;
+}
+
+p:first-of-type,
+p:first-child {
+  text-indent: 0;
+}
+
+/* ============================================================
+   CHAPTER TITLE PAGES
+   ============================================================ */
+
+.chap-title {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 0.5in;
+}
+
+.chapter-number-figure {
+  margin: 0.3in auto;
+  page-break-inside: avoid;
+}
+
+.chapter-number-roman {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 48pt;
+  color: #00796B;
+  display: block;
+  margin: 0.2in 0;
+}
+
+.title-lines {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  margin: 0.2in 0;
+}
+
+.title-line {
+  display: block;
+}
+
+.bible-quote-container {
+  max-width: 4in;
+  margin: 0.3in auto;
+  padding: 0.15in;
+  border-top: 1pt solid #D4AF37;
+  border-bottom: 1pt solid #D4AF37;
+  page-break-inside: avoid;
+}
+
+.bible-quote-text {
+  font-style: italic;
+  font-size: 10pt;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+}
+
+.bible-quote-reference {
+  font-size: 9pt;
+  text-align: right;
+  color: #666;
+  margin-top: 0.1in;
+}
+
+.introduction-heading {
+  font-size: 14pt;
+  margin-top: 0.3in;
+  margin-bottom: 0.1in;
+}
+
+.dropcap-first-letter p:first-child::first-letter,
+.dropcap-paragraph::first-letter {
+  font-size: 36pt;
+  font-weight: bold;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.05in;
+  margin-top: 0.05in;
+  color: #00796B;
+}
+
+/* ============================================================
+   CHAPTER BODY CONTENT
+   ============================================================ */
+
+.chap-body {
+  margin-top: 0.2in;
+}
+
+.content-area {
+  max-width: 100%;
+}
+
+blockquote {
+  margin: 0.2in 0.3in;
+  padding-left: 0.15in;
+  border-left: 2pt solid #D4AF37;
+  font-style: italic;
+  font-size: 10pt;
+  page-break-inside: avoid;
+}
+
+/* ============================================================
+   LISTS
+   ============================================================ */
+
+ul, ol {
+  margin: 0.1in 0 0.1in 0.25in;
+  padding-left: 0.2in;
+}
+
+li {
+  margin-bottom: 0.05in;
+  page-break-inside: avoid;
+}
+
+/* ============================================================
+   ENDNOTES
+   ============================================================ */
+
+.endnotes {
+  page-break-before: always;
+  margin-top: 0.3in;
+}
+
+.endnotes-title {
+  font-size: 14pt;
+  border-bottom: 1pt solid #00796B;
+  padding-bottom: 0.05in;
+  margin-bottom: 0.15in;
+}
+
+.endnotes ol {
+  font-size: 9pt;
+  line-height: 1.4;
+}
+
+.endnotes li {
+  margin-bottom: 0.08in;
+  text-align: left;
+  text-indent: 0;
+}
+
+/* ============================================================
+   QUIZ SECTION
+   ============================================================ */
+
+.quiz-container {
+  page-break-before: always;
+  margin-top: 0.3in;
+}
+
+.quiz-title {
+  font-size: 16pt;
+  text-align: center;
+  margin-bottom: 0.2in;
+  color: #00796B;
+}
+
+.quiz-question-block {
+  margin-bottom: 0.15in;
+  page-break-inside: avoid;
+}
+
+.quiz-question {
+  font-weight: bold;
+  margin-bottom: 0.08in;
+}
+
+.quiz-options {
+  list-style: none;
+  margin-left: 0.2in;
+  padding-left: 0;
+}
+
+.quiz-option {
+  margin-bottom: 0.06in;
+  text-indent: 0;
+}
+
+.opt-label {
+  font-weight: bold;
+  margin-right: 0.05in;
+}
+
+/* ============================================================
+   WORKSHEET SECTION
+   ============================================================ */
+
+.worksheet {
+  page-break-before: always;
+  margin-top: 0.3in;
+}
+
+.worksheet-title {
+  font-size: 16pt;
+  text-align: center;
+  margin-bottom: 0.2in;
+  color: #00796B;
+}
+
+.activity-section ol {
+  counter-reset: prompt-counter;
+}
+
+.activity-section li {
+  page-break-inside: avoid;
+  margin-bottom: 0.2in;
+}
+
+.activity-section li p {
+  text-indent: 0;
+}
+
+.writing-area {
+  min-height: 0.8in;
+  border: 1pt solid #ccc;
+  margin-top: 0.05in;
+  padding: 0.1in;
+}
+
+/* ============================================================
+   IMAGES
+   ============================================================ */
+
+.image-quote,
+.closing {
+  page-break-before: always;
+  text-align: center;
+  margin: 0.3in auto;
+}
+
+.image-quote img,
+.closing img {
+  max-width: 4.5in;
+  max-height: 6in;
+  page-break-inside: avoid;
+}
+
+figure {
+  margin: 0.15in 0;
+  page-break-inside: avoid;
+}
+
+figcaption {
+  font-size: 9pt;
+  font-style: italic;
+  text-align: center;
+  color: #666;
+  margin-top: 0.05in;
+}
+
+/* ============================================================
+   BACKMATTER
+   ============================================================ */
+
+.backmatter-page {
+  page-break-before: always;
+}
+
+.backmatter-card {
+  margin-top: 0.2in;
+}
+
+.section-heading {
+  font-size: 16pt;
+  color: #00796B;
+  text-align: center;
+  margin-bottom: 0.15in;
+}
+
+.signature-section {
+  margin-top: 0.3in;
+  text-align: right;
+}
+
+.signature-name {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 14pt;
+  color: #1a1a1a;
+}
+
+/* ============================================================
+   PART DIVIDER PAGES
+   ============================================================ */
+
+.part-page {
+  page-break-before: always;
+  page-break-after: always;
+  text-align: center;
+  padding-top: 2in;
+}
+
+.part-number {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 24pt;
+  color: #00796B;
+  margin-bottom: 0.2in;
+}
+
+.part-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 0.3in;
+}
+
+/* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+
+.page-break {
+  page-break-before: always;
+}
+
+.page-break-before {
+  page-break-before: always;
+}
+
+.avoid-break {
+  page-break-inside: avoid;
+}
+
+.decorative-line {
+  width: 2in;
+  height: 1pt;
+  background-color: #D4AF37;
+  margin: 0.15in auto;
+  border: none;
+}
+
+/* ============================================================
+   PRINT OPTIMIZATIONS
+   ============================================================ */
+
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+a[href^="http"]::after {
+  content: " (" attr(href) ")";
+  font-size: 8pt;
+  color: #666;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* Hide elements not needed in print */
+nav[epub\:type="toc"] {
+  display: none;
+}
