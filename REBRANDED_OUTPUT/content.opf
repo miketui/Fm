@@ -37,6 +37,7 @@
     <item id="font-libre-reg" href="fonts/librebaskerville-regular.woff2" media-type="font/woff2"/>
 
     <!-- Images -->
+    <item id="cover-image" href="images/cover.png" media-type="image/png" properties="cover-image"/>
     <item id="img-author" href="images/Michael.jpeg" media-type="image/jpeg"/>
     <item id="img-brush" href="images/brushstroke.svg" media-type="image/svg+xml"/>
     <item id="img-frame" href="images/chapter-frame.svg" media-type="image/svg+xml"/>
