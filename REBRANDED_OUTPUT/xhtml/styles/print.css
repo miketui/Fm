@@ -12,6 +12,23 @@
    ============================================================ */
 
 
+/* First page of chapter - no header */
+
+/* Left (verso) pages */
+
+/* Right (recto) pages */
+
+/* ============================================================
+   FONT EMBEDDING
+   ============================================================ */
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('../../fonts/librebaskerville-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Libre Baskerville';
   src: url('../../fonts/librebaskerville-bold.woff2') format('woff2');

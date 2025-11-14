@@ -19,3 +19,9 @@ backups/xhtml_refactor_*/
 venv/
 env/
 .venv/
+
+# Compiled EPUB files
+*.epub
+epubcheck-report*.txt
+epubcheck-report*.json
+REBRANDED_OUTPUT/epubcheck-report*.txt
