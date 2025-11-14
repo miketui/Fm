@@ -1,0 +1,87 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/session_start_epub_qa.sh"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/pre_publication_check.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "WARNING: You are about to edit a file. If this is an XHTML or CSS file in REBRANDED_OUTPUT/, verify this edit is safe and documented. Read-only files should only be edited with explicit user approval."
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "WARNING: You are about to write a file. If this is in REBRANDED_OUTPUT/, ensure you have explicit approval. Critical publication files (content.opf, mimetype, META-INF/) should never be overwritten."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash*python*visual_review*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/post_bash_epub_qa.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Write*REBRANDED_OUTPUT*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/validate_xhtml_change.sh"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/subagent_completion_log.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/hooks/epub_next_step.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Before ending session: (1) Verify all modified files are saved, (2) Check if tests pass (pytest tests/), (3) Review git status for uncommitted changes, (4) Confirm publication readiness checklist updated if needed."
+          }
+        ]
+      }
+    ]
+  }
+}
