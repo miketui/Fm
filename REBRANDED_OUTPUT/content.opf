@@ -6,7 +6,7 @@
     <dc:title>The Artisan's Path: A Comprehensive Guide to Professional Hairstyling Excellence</dc:title>
     <dc:creator id="creator">Michael David Warren Jr.</dc:creator>
     <dc:language>en</dc:language>
-    <dc:identifier id="book-id">urn:uuid:artisans-path-2025</dc:identifier>
+    <dc:identifier id="book-id">urn:uuid:0d5f754f-20c8-4b21-a43b-acc861e034ed</dc:identifier>
     <dc:publisher>Terragon Labs</dc:publisher>
     <dc:date>2025-11-03</dc:date>
     <dc:rights>Copyright © 2025 Michael David Warren Jr. All rights reserved.</dc:rights>
@@ -78,7 +78,6 @@
     <item id="title" href="xhtml/1-TitlePage.xhtml" media-type="application/xhtml+xml"/>
     <item id="copyright" href="xhtml/2-Copyright.xhtml" media-type="application/xhtml+xml"/>
     <item id="toc" href="xhtml/3-TableOfContents.xhtml" media-type="application/xhtml+xml"/>
-    <item id="affirm-odyssey" href="xhtml/6-affirmation-odyssey.xhtml" media-type="application/xhtml+xml"/>
     <item id="dedication" href="xhtml/4-Dedication.xhtml" media-type="application/xhtml+xml"/>
     <item id="selfassess" href="xhtml/5-SelfAssessment.xhtml" media-type="application/xhtml+xml"/>
     <item id="affirm" href="xhtml/6-AffirmationOdyssey.xhtml" media-type="application/xhtml+xml"/>
