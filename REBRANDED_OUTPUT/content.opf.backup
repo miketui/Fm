@@ -27,10 +27,6 @@
 
     <!-- Stylesheets -->
     <item id="css-main" href="xhtml/styles/style.css" media-type="text/css"/>
-    <item id="css-fonts" href="xhtml/styles/fonts.css" media-type="text/css"/>
-    <item id="css-print" href="xhtml/styles/print.css" media-type="text/css"/>
-    <item id="css-print-pod" href="xhtml/styles/print-pod.css" media-type="text/css"/>
-    <item id="css-artisan" href="styles/artisan-path-style.css" media-type="text/css"/>
 
     <!-- Fonts -->
     <item id="font-cinzel" href="fonts/CinzelDecorative.woff2" media-type="font/woff2"/>
@@ -78,7 +74,6 @@
     <item id="title" href="xhtml/1-TitlePage.xhtml" media-type="application/xhtml+xml"/>
     <item id="copyright" href="xhtml/2-Copyright.xhtml" media-type="application/xhtml+xml"/>
     <item id="toc" href="xhtml/3-TableOfContents.xhtml" media-type="application/xhtml+xml"/>
-    <item id="affirm-odyssey" href="xhtml/6-affirmation-odyssey.xhtml" media-type="application/xhtml+xml"/>
     <item id="dedication" href="xhtml/4-Dedication.xhtml" media-type="application/xhtml+xml"/>
     <item id="selfassess" href="xhtml/5-SelfAssessment.xhtml" media-type="application/xhtml+xml"/>
     <item id="affirm" href="xhtml/6-AffirmationOdyssey.xhtml" media-type="application/xhtml+xml"/>
