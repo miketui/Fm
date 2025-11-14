@@ -14,3 +14,8 @@ __pycache__/
 
 # Refactoring backups
 backups/xhtml_refactor_*/
+
+# Python virtual environment
+venv/
+env/
+.venv/
