@@ -27,6 +27,8 @@
 
     <!-- Stylesheets -->
     <item id="css-main" href="xhtml/styles/style.css" media-type="text/css"/>
+    <item id="css-fonts" href="xhtml/styles/fonts.css" media-type="text/css"/>
+    <item id="css-print" href="xhtml/styles/print.css" media-type="text/css"/>
 
     <!-- Fonts -->
     <item id="font-cinzel" href="fonts/CinzelDecorative.woff2" media-type="font/woff2"/>
