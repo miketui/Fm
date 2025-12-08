@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-03T19:02:37.681Z",
+  "timestamp": "2025-11-14T04:29:46.690Z",
   "summary": {
     "totalPaths": 83,
     "brokenLinks": 0,
@@ -11,6 +11,22 @@
       "OEBPS/styles/fonts.css",
       "OEBPS/styles/style.css",
       "OEBPS/styles/print.css",
+      "OEBPS/images/brushstroke.svg",
+      "OEBPS/images/chapter-ii-quote.jpeg",
+      "OEBPS/images/chapter-iii-quote.jpeg",
+      "OEBPS/images/chapter-iv-quote.jpeg",
+      "OEBPS/images/chapter-v-quote.jpeg",
+      "OEBPS/images/chapter-vi-quote.jpeg",
+      "OEBPS/images/chapter-vii-quote.jpeg",
+      "OEBPS/images/chapter-viii-quote.jpeg",
+      "OEBPS/images/chapter-ix-quote.jpeg",
+      "OEBPS/images/chapter-x-quote.jpeg",
+      "OEBPS/images/chapter-xi-quote.jpeg",
+      "OEBPS/images/chapter-xii-quote.jpeg",
+      "OEBPS/images/chapter-xiii-quote.jpeg",
+      "OEBPS/images/chapter-xiv-quote.jpeg",
+      "OEBPS/images/chapter-xv-quote.jpeg",
+      "OEBPS/images/chapter-xvi-quote.jpeg",
       "OEBPS/text/1-TitlePage.xhtml",
       "OEBPS/text/2-Copyright.xhtml",
       "OEBPS/text/3-TableOfContents.xhtml",
@@ -54,24 +70,8 @@
       "OEBPS/text/41-self-care-journal.xhtml",
       "OEBPS/text/42-VisionJournal.xhtml",
       "OEBPS/text/43-DoodlePage.xhtml",
-      "OEBPS/images/brushstroke.svg",
-      "OEBPS/images/chapter-xv-quote.jpeg",
-      "OEBPS/images/chapter-xvi-quote.jpeg",
       "OEBPS/images/chapter-i-quote.jpeg",
-      "OEBPS/images/chapter-ix-quote.jpeg",
-      "OEBPS/images/chapter-x-quote.jpeg",
-      "OEBPS/images/chapter-viii-quote.jpeg",
       "OEBPS/text/44-bibliography.xhtml",
-      "OEBPS/images/chapter-iii-quote.jpeg",
-      "OEBPS/images/chapter-xii-quote.jpeg",
-      "OEBPS/images/chapter-vi-quote.jpeg",
-      "OEBPS/images/chapter-xiii-quote.jpeg",
-      "OEBPS/images/chapter-xiv-quote.jpeg",
-      "OEBPS/images/chapter-ii-quote.jpeg",
-      "OEBPS/images/chapter-iv-quote.jpeg",
-      "OEBPS/images/chapter-vii-quote.jpeg",
-      "OEBPS/images/chapter-v-quote.jpeg",
-      "OEBPS/images/chapter-xi-quote.jpeg",
       "OEBPS/text/nav.xhtml",
       "OEBPS/fonts/Montserrat-Regular.woff2",
       "OEBPS/fonts/Montserrat-Bold.woff2",
@@ -93,6 +93,626 @@
       "OEBPS/images/ruled-paper.svg"
     ],
     "references": {
+      "OEBPS/text/1-TitlePage.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-ii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-ii-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-iii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-iii-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-iv-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-iv-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-v-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-v-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-vi-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-vi-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-vii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-vii-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-viii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-viii-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-ix-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-ix-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/2-Copyright.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-x-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-x-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-xi-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xi-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-xii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xii-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-xiii-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xiii-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-xiv-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xiv-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-xv-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xv-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml": [
+        {
+          "path": "../images/brushstroke.svg",
+          "resolvedPath": "OEBPS/images/brushstroke.svg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../images/chapter-xvi-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-xvi-quote.jpeg",
+          "type": "image",
+          "exists": true
+        },
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/28-Conclusion.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/29QuizKey.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
       "OEBPS/text/3-TableOfContents.xhtml": [
         {
           "path": "../styles/fonts.css",
@@ -371,7 +991,7 @@
           "exists": true
         }
       ],
-      "OEBPS/text/6-affirmation-odyssey.xhtml": [
+      "OEBPS/text/30-SelfAssessment.xhtml": [
         {
           "path": "../styles/fonts.css",
           "resolvedPath": "OEBPS/styles/fonts.css",
@@ -391,7 +1011,7 @@
           "exists": true
         }
       ],
-      "OEBPS/text/28-Conclusion.xhtml": [
+      "OEBPS/text/31-affirmations-close.xhtml": [
         {
           "path": "../styles/fonts.css",
           "resolvedPath": "OEBPS/styles/fonts.css",
@@ -411,7 +1031,7 @@
           "exists": true
         }
       ],
-      "OEBPS/text/43-DoodlePage.xhtml": [
+      "OEBPS/text/32-continued-learning-commitment.xhtml": [
         {
           "path": "../styles/fonts.css",
           "resolvedPath": "OEBPS/styles/fonts.css",
@@ -431,7 +1051,27 @@
           "exists": true
         }
       ],
-      "OEBPS/text/1-TitlePage.xhtml": [
+      "OEBPS/text/33-Acknowledgments.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/34-AbouttheAuthor.xhtml": [
         {
           "path": "../styles/fonts.css",
           "resolvedPath": "OEBPS/styles/fonts.css",
@@ -471,267 +1111,7 @@
           "exists": true
         }
       ],
-      "OEBPS/text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-xv-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-xv-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
       "OEBPS/text/36-JournalingStart.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-xvi-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-xvi-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/30-SelfAssessment.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-i-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-i-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-ix-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-ix-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/29QuizKey.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/24-Part-IV-Future-Focused-Growth.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/42-VisionJournal.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/20-chapter-x-crafting-enduring-legacies.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-x-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-x-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
         {
           "path": "../styles/fonts.css",
           "resolvedPath": "OEBPS/styles/fonts.css",
@@ -771,7 +1151,247 @@
           "exists": true
         }
       ],
-      "OEBPS/text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml": [
+      "OEBPS/text/38-journal-page.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/39-professional-development.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/4-Dedication.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/40-SMARTGoals.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/41-self-care-journal.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/42-VisionJournal.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/43-DoodlePage.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/44-bibliography.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/5-SelfAssessment.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/6-affirmation-odyssey.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/7-Preface.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml": [
+        {
+          "path": "../styles/fonts.css",
+          "resolvedPath": "OEBPS/styles/fonts.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/style.css",
+          "resolvedPath": "OEBPS/styles/style.css",
+          "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "../styles/print.css",
+          "resolvedPath": "OEBPS/styles/print.css",
+          "type": "stylesheet",
+          "exists": true
+        }
+      ],
+      "OEBPS/text/9-chapter-i-unveiling-your-creative-odyssey.xhtml": [
         {
           "path": "../images/brushstroke.svg",
           "resolvedPath": "OEBPS/images/brushstroke.svg",
@@ -779,8 +1399,8 @@
           "exists": true
         },
         {
-          "path": "../images/chapter-viii-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-viii-quote.jpeg",
+          "path": "../images/chapter-i-quote.jpeg",
+          "resolvedPath": "OEBPS/images/chapter-i-quote.jpeg",
           "type": "image",
           "exists": true
         },
@@ -1084,626 +1704,6 @@
           "path": "44-bibliography.xhtml",
           "resolvedPath": "OEBPS/text/44-bibliography.xhtml",
           "type": "internal_link",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/11-chapter-iii-reigniting-your-creative-fire.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-iii-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-iii-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-xii-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-xii-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/4-Dedication.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/33-Acknowledgments.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/39-professional-development.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-vi-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-vi-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-xiii-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-xiii-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/38-journal-page.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-xiv-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-xiv-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/40-SMARTGoals.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/41-self-care-journal.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/12-Part-II-Building-Your-Professional-Practice.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/10-chapter-ii-refining-your-creative-toolkit.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-ii-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-ii-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-iv-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-iv-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-vii-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-vii-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/44-bibliography.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/32-continued-learning-commitment.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/34-AbouttheAuthor.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-v-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-v-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/5-SelfAssessment.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/2-Copyright.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/31-affirmations-close.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml": [
-        {
-          "path": "../images/brushstroke.svg",
-          "resolvedPath": "OEBPS/images/brushstroke.svg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../images/chapter-xi-quote.jpeg",
-          "resolvedPath": "OEBPS/images/chapter-xi-quote.jpeg",
-          "type": "image",
-          "exists": true
-        },
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
-          "exists": true
-        }
-      ],
-      "OEBPS/text/7-Preface.xhtml": [
-        {
-          "path": "../styles/fonts.css",
-          "resolvedPath": "OEBPS/styles/fonts.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/style.css",
-          "resolvedPath": "OEBPS/styles/style.css",
-          "type": "stylesheet",
-          "exists": true
-        },
-        {
-          "path": "../styles/print.css",
-          "resolvedPath": "OEBPS/styles/print.css",
-          "type": "stylesheet",
           "exists": true
         }
       ],
@@ -2213,22 +2213,22 @@
   "comparison": {
     "newPaths": [
       "OEBPS/images/brushstroke.svg",
+      "OEBPS/images/chapter-ii-quote.jpeg",
+      "OEBPS/images/chapter-iii-quote.jpeg",
+      "OEBPS/images/chapter-iv-quote.jpeg",
+      "OEBPS/images/chapter-v-quote.jpeg",
+      "OEBPS/images/chapter-vi-quote.jpeg",
+      "OEBPS/images/chapter-vii-quote.jpeg",
+      "OEBPS/images/chapter-viii-quote.jpeg",
+      "OEBPS/images/chapter-ix-quote.jpeg",
+      "OEBPS/images/chapter-x-quote.jpeg",
+      "OEBPS/images/chapter-xi-quote.jpeg",
+      "OEBPS/images/chapter-xii-quote.jpeg",
+      "OEBPS/images/chapter-xiii-quote.jpeg",
+      "OEBPS/images/chapter-xiv-quote.jpeg",
       "OEBPS/images/chapter-xv-quote.jpeg",
       "OEBPS/images/chapter-xvi-quote.jpeg",
       "OEBPS/images/chapter-i-quote.jpeg",
-      "OEBPS/images/chapter-ix-quote.jpeg",
-      "OEBPS/images/chapter-x-quote.jpeg",
-      "OEBPS/images/chapter-viii-quote.jpeg",
-      "OEBPS/images/chapter-iii-quote.jpeg",
-      "OEBPS/images/chapter-xii-quote.jpeg",
-      "OEBPS/images/chapter-vi-quote.jpeg",
-      "OEBPS/images/chapter-xiii-quote.jpeg",
-      "OEBPS/images/chapter-xiv-quote.jpeg",
-      "OEBPS/images/chapter-ii-quote.jpeg",
-      "OEBPS/images/chapter-iv-quote.jpeg",
-      "OEBPS/images/chapter-vii-quote.jpeg",
-      "OEBPS/images/chapter-v-quote.jpeg",
-      "OEBPS/images/chapter-xi-quote.jpeg",
       "OEBPS/images/decorative-line.svg",
       "OEBPS/images/endnote-marker.png",
       "OEBPS/images/toc-divider.svg",

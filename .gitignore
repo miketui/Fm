@@ -14,3 +14,14 @@ __pycache__/
 
 # Refactoring backups
 backups/xhtml_refactor_*/
+
+# Python virtual environment
+venv/
+env/
+.venv/
+
+# Compiled EPUB files
+*.epub
+epubcheck-report*.txt
+epubcheck-report*.json
+REBRANDED_OUTPUT/epubcheck-report*.txt
