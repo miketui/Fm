@@ -40,8 +40,8 @@ Unveiling Your Creative Odyssey - Reflection & Planning
 McKinsey & Company
 
 <!-- After (VALID) -->
-Unveiling Your Creative Odyssey - Reflection & Planning
-McKinsey & Company
+Unveiling Your Creative Odyssey - Reflection &amp; Planning
+McKinsey &amp; Company
 ```
 
 **Impact:** EPUB can now be parsed by all EPUB readers without fatal errors.
