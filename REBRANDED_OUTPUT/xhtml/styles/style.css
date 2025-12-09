@@ -1,6 +1,6 @@
 /*
-  style.css — Enhanced stylesheet for Curls & Contemplation EPUB
-  Hybrid Branding: Teal Primary (Curls & Contemplation) + Gold Accent (The Artisan's Path)
+  style.css — Enhanced stylesheet for The Artisan's Path
+  Professional Hairstyling Excellence Guide
 
   This stylesheet implements a comprehensive design system with:
   - CSS custom properties for consistent branding
@@ -9,7 +9,7 @@
   - Accessibility-focused design patterns
   - Print-optimized rules
 
-  Version: 2.0 - Hybrid Brand System
+  Version: 2.0 - Professional Brand System
   Last Updated: 2025-11-02
 */
 
@@ -20,14 +20,14 @@
    ==================================================================== */
 
 :root {
-  /* PRIMARY BRAND COLORS - Teal (Curls & Contemplation) */
+  /* PRIMARY BRAND COLORS - Teal */
   --clr-teal-primary: #2B9999;
   --clr-teal-light: #3DB3B3;
   --clr-teal-dark: #1F7272;
   --clr-teal-muted: rgba(43, 153, 153, 0.15);
   --clr-teal-transparent: rgba(43, 153, 153, 0.06);
 
-  /* ACCENT BRAND COLORS - Gold (The Artisan's Path) */
+  /* ACCENT BRAND COLORS - Gold */
   --clr-gold-accent: #C9A961;
   --clr-gold-light: #D4B976;
   --clr-gold-dark: #B08F4A;
