@@ -19,3 +19,15 @@ backups/xhtml_refactor_*/
 venv/
 env/
 .venv/
+
+# Compiled EPUB files
+*.epub
+
+# EPUBCheck generated reports (anywhere in the repository)
+**/epubcheck-report*.txt
+**/epubcheck-report*.json
+**/epubcheck-output*.txt
+**/epubcheck-output*.json
+**/epubcheck-final*.txt
+**/epubcheck-final*.json
+**/EPUBCHECK_LOG.txt
