@@ -79,42 +79,42 @@
 @font-face {
   font-family: 'Libre Baskerville';
   src: url('../../fonts/librebaskerville-regular.woff2') format('woff2');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Libre Baskerville';
   src: url('../../fonts/librebaskerville-bold.woff2') format('woff2');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Libre Baskerville';
   src: url('../../fonts/librebaskerville-italic.woff2') format('woff2');
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Montserrat';
   src: url('../../fonts/Montserrat-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
   src: url('../../fonts/Montserrat-Bold.woff2') format('woff2');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cinzel Decorative';
   src: url('../../fonts/CinzelDecorative.woff2') format('woff2');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -135,7 +135,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #00796B;
   page-break-after: avoid;
   page-break-inside: avoid;
@@ -199,7 +199,7 @@ p:first-child {
 .title-lines {
   font-family: 'Montserrat', sans-serif;
   font-size: 18pt;
-  font-weight: bold;
+  font-weight: 700;
   color: #1a1a1a;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -244,7 +244,7 @@ p:first-child {
 .dropcap-first-letter p:first-child::first-letter,
 .dropcap-paragraph::first-letter {
   font-size: 36pt;
-  font-weight: bold;
+  font-weight: 700;
   float: left;
   line-height: 0.8;
   margin-right: 0.05in;
@@ -336,7 +336,7 @@ li {
 }
 
 .quiz-question {
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0.08in;
 }
 
@@ -352,7 +352,7 @@ li {
 }
 
 .opt-label {
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 0.05in;
 }
 
@@ -474,7 +474,7 @@ figcaption {
 .part-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 20pt;
-  font-weight: bold;
+  font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 0.3in;
 }
