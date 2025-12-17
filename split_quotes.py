@@ -2,8 +2,10 @@ import os
 import re
 from pathlib import Path
 
-BASE_DIR = Path('/root/repo/REBRANDED-output/xhtml')
-IMAGE_DIR = Path('/root/repo/REBRANDED-output/images')
+# Use relative paths from script location
+SCRIPT_DIR = Path(__file__).parent
+BASE_DIR = SCRIPT_DIR / 'REBRANDED-output' / 'xhtml'
+IMAGE_DIR = SCRIPT_DIR / 'REBRANDED-output' / 'images'
 
 QUOTE_TEMPLATE = '''<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
