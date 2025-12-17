@@ -81,7 +81,7 @@ def analyze_and_fix(xhtml_dir: Path):
         
         # It seems safer to identify the "Quote Image" section(s) specifically by content (e.g. img src="...-quote.jpeg")
         
-        quote_img_pattern = re.compile(r'<section[^>]*class="[^"].*quote[^"].*"[^>]*>.*?<img[^>]*src="[^"].*-quote.jpeg"[^>]*>.*?</figure>\s*</section>', re.DOTALL | re.IGNORECASE)
+        quote_img_pattern = re.compile(r'<section[^>]*class="[^"]*quote[^"]*"[^>]*>.*?<img[^>]*src="[^"]*-quote\.jpeg"[^>]*>.*?</figure>\s*</section>', re.DOTALL | re.IGNORECASE)
         
         matches = list(quote_img_pattern.finditer(content))
         
@@ -124,7 +124,7 @@ def analyze_and_fix(xhtml_dir: Path):
             if 'quote-page page-break-before' not in new_quote_section:
                 # Replace class="..." with class="quote-page page-break-before"
                 # Or simplistic replacement
-                new_quote_section = re.sub(r'class="[^"].*quote[^"].*"', 'class="quote-page page-break-before"', new_quote_section)
+                new_quote_section = re.sub(r'class="[^"]*quote[^"]*"', 'class="quote-page page-break-before"', new_quote_section, flags=re.IGNORECASE)
                 if 'role="complementary"' not in new_quote_section:
                      new_quote_section = new_quote_section.replace('<section', '<section role="complementary"')
                 log_msgs.append("Fixed section class.")
