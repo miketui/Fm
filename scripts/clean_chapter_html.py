@@ -47,17 +47,7 @@ def clean_chapter_html(filepath: Path, dry_run: bool = False) -> dict:
 
         original = content
 
-        # Pattern 1: Fix malformed closing tags before quote-page section
-        # Matches patterns like: </ol></section></div></section><section class="quote-page">
-        pattern1 = re.compile(
-            r'(</(?:ol|div|section|aside)>)+\s*(<section class="quote-page">)',
-            re.MULTILINE
-        )
-
-        # We want to keep proper closing structure, just clean up stray tags
-        # The correct structure should be: </section></main> at the very end
-
-        # Pattern 2: Fix stray closing tags right before quote-page
+        # Fix stray closing tags right before quote-page
         # Find the quote-page section and what's immediately before it
         match = re.search(r'((?:</\w+>)+)\s*(<section class="quote-page">)', content)
         if match:
@@ -72,7 +62,7 @@ def clean_chapter_html(filepath: Path, dry_run: bool = False) -> dict:
                     content
                 )
 
-        # Pattern 3: Ensure proper closing at end of file
+        # Pattern 2: Ensure proper closing at end of file
         # Should end with: </section></main></body></html>
         end_pattern = re.compile(r'</section>\s*</main>\s*</body>\s*</html>\s*$')
         if not end_pattern.search(content):
@@ -83,7 +73,7 @@ def clean_chapter_html(filepath: Path, dry_run: bool = False) -> dict:
                 content
             )
 
-        # Pattern 4: Clean up SECTION 6 comments that have stray closings after them
+        # Pattern 3: Clean up SECTION 6 comments that have stray closings after them
         content = re.sub(
             r'(<!-- SECTION 6: (?:IMAGE QUOTE|CLOSING IMAGE/QUOTE)[^>]*-->)\s*\n\s*((?:</\w+>)+)\s*\n',
             r'\1\n\n',
