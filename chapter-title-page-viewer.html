@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter Title Page - Visual Canvas</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+      background: linear-gradient(to bottom, #f8f6f3 0%, #ebe7e0 100%);
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .page-header h1 {
+      font-family: 'Cinzel Decorative', Georgia, serif;
+      font-size: 2rem;
+      color: #2B9999;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .canvas-container {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+    }
+
+    #root {
+      min-height: 90vh;
+    }
+
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh;
+      font-size: 1.5rem;
+      color: #2B9999;
+    }
+
+    .error {
+      padding: 2rem;
+      background: #fee;
+      border: 2px solid #c00;
+      border-radius: 8px;
+      margin: 2rem;
+      color: #800;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>Chapter Title Page Visual Canvas</h1>
+      <p>React Component Visualization - The Artisan's Path</p>
+    </div>
+    
+    <div class="canvas-container">
+      <div id="root">
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- React and ReactDOM from CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  
+  <!-- Babel Standalone for JSX transformation -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <!-- ChapterTitlePage Component -->
+  <script type="text/babel">
+    const { useState } = React;
+
+    /**
+     * ChapterTitlePage Component
+     * 
+     * A React visual canvas component that displays the chapter title page
+     * matching the EPUB structure from "The Artisan's Path" book.
+     */
+    function ChapterTitlePage() {
+      const [imageError, setImageError] = useState(false);
+
+      return (
+        <section
+          className="chap-title"
+          style={{
+            minHeight: '90vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '3rem 1.5rem',
+            textAlign: 'center',
+            backgroundColor: '#FFFFFF',
+          }}
+        >
+          {/* Chapter Number Emblem */}
+          <div
+            className="chapter-number-figure"
+            style={{
+              position: 'relative',
+              width: 'clamp(200px, 40vw, 280px)',
+              height: 'clamp(200px, 40vw, 280px)',
+              margin: '0 auto 2rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            {/* Fallback teal circle background */}
+            <div
+              style={{
+                position: 'absolute',
+                width: '280px',
+                height: '280px',
+                background: 'radial-gradient(circle, #3DB3B3 0%, #2B9999 70%, #1F7272 100%)',
+                borderRadius: '50%',
+                boxShadow: '0 8px 16px rgba(43, 153, 153, 0.3)',
+                display: imageError ? 'block' : 'none',
+              }}
+            />
+            {!imageError && (
+              <img
+                src="/assets/brush-teal.png"
+                alt=""
+                className="chapter-number-brush"
+                style={{
+                  position: 'absolute',
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain',
+                  opacity: 0.9,
+                }}
+                onError={() => setImageError(true)}
+              />
+            )}
+            <span
+              className="chapter-number-roman"
+              style={{
+                position: 'relative',
+                zIndex: 1,
+                fontFamily: "'Cinzel Decorative', Georgia, 'Times New Roman', serif",
+                fontSize: 'clamp(4rem, 10vw, 6rem)',
+                fontWeight: 400,
+                color: '#FFFFFF',
+                textShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+              }}
+            >
+              X
+            </span>
+          </div>
+
+          {/* Title Stack */}
+          <div
+            className="title-stack"
+            style={{
+              marginBottom: '3rem',
+              maxWidth: '800px',
+            }}
+          >
+            <div
+              className="title-bar"
+              style={{
+                height: '4px',
+                width: '60px',
+                margin: '0 auto 1.5rem',
+                background: 'linear-gradient(90deg, #C9A961, transparent 60%)',
+                borderRadius: '9999px',
+              }}
+              aria-hidden="true"
+            />
+            <div
+              className="title-lines"
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.75rem',
+              }}
+            >
+              <span
+                className="title-line"
+                style={{
+                  fontFamily: "'Cinzel Decorative', Georgia, 'Times New Roman', serif",
+                  fontSize: 'clamp(2rem, 5vw, 3rem)',
+                  fontWeight: 400,
+                  color: '#2B9999',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  lineHeight: 1.25,
+                }}
+              >
+                CRAFTING
+              </span>
+              <span
+                className="title-line"
+                style={{
+                  fontFamily: "'Cinzel Decorative', Georgia, 'Times New Roman', serif",
+                  fontSize: 'clamp(2rem, 5vw, 3rem)',
+                  fontWeight: 400,
+                  color: '#2B9999',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  lineHeight: 1.25,
+                }}
+              >
+                ENDURING LEGACIES
+              </span>
+            </div>
+          </div>
+
+          {/* Scripture Quote */}
+          <div
+            className="bible-quote-container"
+            style={{
+              maxWidth: '600px',
+              margin: '0 auto 3rem',
+              padding: '1.75rem 2rem',
+              paddingLeft: '2.5rem',
+              background: '#F5F3EF',
+              borderRadius: '1rem',
+              boxShadow: '0 4px 6px rgba(15, 22, 22, 0.1)',
+              position: 'relative',
+              borderLeft: '4px solid #C9A961',
+            }}
+          >
+            <p
+              className="bible-quote-text"
+              style={{
+                fontFamily: "'Libre Baskerville', Georgia, 'Times New Roman', serif",
+                fontSize: 'clamp(1.05rem, 1.1vw, 1.2rem)',
+                fontStyle: 'italic',
+                lineHeight: 1.8,
+                color: '#2B2B2B',
+                marginBottom: '1rem',
+                textAlign: 'center',
+              }}
+            >
+              "But the fruit of the Spirit is love, joy, peace…"
+            </p>
+            <span
+              className="bible-quote-reference"
+              style={{
+                fontFamily: "'Montserrat', Arial, 'Helvetica Neue', sans-serif",
+                fontSize: 'clamp(0.94rem, 0.9vw, 1.05rem)',
+                color: '#C9A961',
+                fontWeight: 600,
+                textAlign: 'right',
+                display: 'block',
+                fontStyle: 'italic',
+              }}
+            >
+              — Galatians 5:22–23
+            </span>
+          </div>
+
+          {/* Introduction */}
+          <h2
+            className="introduction-heading"
+            style={{
+              fontFamily: "'Cinzel Decorative', Georgia, 'Times New Roman', serif",
+              fontSize: 'clamp(1.8rem, 2.8vw, 2.25rem)',
+              color: '#2B9999',
+              textAlign: 'center',
+              margin: '3rem 0 1.75rem',
+            }}
+          >
+            Introduction
+          </h2>
+
+          <div
+            className="introduction-paragraph dropcap-first-letter"
+            style={{
+              maxWidth: '65ch',
+              margin: '0 auto',
+              textAlign: 'left',
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "'Libre Baskerville', Georgia, 'Times New Roman', serif",
+                fontSize: 'clamp(1.05rem, 1.1vw, 1.2rem)',
+                lineHeight: 1.6,
+                color: '#0F1616',
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: "'Cinzel Decorative', Georgia, 'Times New Roman', serif",
+                  fontSize: 'clamp(3rem, 6vw, 4rem)',
+                  fontWeight: 700,
+                  lineHeight: 0.8,
+                  float: 'left',
+                  margin: '0.1em 0.1em 0 0',
+                  color: '#2B9999',
+                }}
+              >
+                C
+              </span>
+              onsider the impact of your work not just today, but as a legacy…
+            </p>
+          </div>
+        </section>
+      );
+    }
+
+    // Render the component
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<ChapterTitlePage />);
+  </script>
+</body>
+</html>
