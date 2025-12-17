@@ -5,6 +5,7 @@ Removes duplicate content and properly formats chapters according to EPUB 3.2 sp
 """
 
 import re
+import shutil
 from pathlib import Path
 from typing import Tuple, Optional
 
@@ -199,15 +200,22 @@ def main():
         cleaned_content, had_issues = process_chapter_file(chapter_path, roman)
 
         if had_issues:
-            # Backup original
+            # Create backup copy before modifying original
             backup_path = chapter_path.with_suffix('.xhtml.bak')
-            chapter_path.rename(backup_path)
-            print(f"   ✓ Backed up original to {backup_path.name}")
-
-            # Write cleaned content
-            chapter_path.write_text(cleaned_content, encoding='utf-8')
-            print(f"   ✓ Removed image quotes and duplicates")
-            modified_chapters.append(chapter_file)
+            try:
+                shutil.copy2(chapter_path, backup_path)
+                print(f"   ✓ Backed up original to {backup_path.name}")
+                
+                # Write cleaned content (original file preserved if this fails)
+                chapter_path.write_text(cleaned_content, encoding='utf-8')
+                print(f"   ✓ Removed image quotes and duplicates")
+                modified_chapters.append(chapter_file)
+            except Exception as e:
+                print(f"   ❌ Error processing {chapter_file}: {e}")
+                # Original file is preserved since we used copy instead of rename
+                if backup_path.exists():
+                    backup_path.unlink()  # Clean up partial backup if needed
+                continue
         else:
             print(f"   ℹ️  No issues found (already clean)")
 
