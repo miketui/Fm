@@ -330,7 +330,25 @@
 <li class="quiz-option"><span class="opt-label">D)</span> Focuses only on theoretical knowledge</li>
 </ul>
       </div>
-      
+      <aside class="endnotes page-break-after" role="complementary">
+  <ol>
+<li>Gavazzoni Dias, M.F. “Hair Cosmetics: An Overview.” <em>International Journal of Trichology</em> 7, no. 1 (2015): 2-15.</li>
+<li>Jenkins, A. and M. Jones. “Biophysical Characterization of Natural Hair Texture.” <em>Journal of Cosmetic Science</em> 70, no. 4 (2019): 195-206.</li>
+<li>Walker, Andre. <em>Andre Talks Hair</em>. Simon &amp; Schuster, 1997.</li>
+<li>Massey, Lorraine. <em>Curly Girl: The Handbook</em>. Workman Publishing, 2001.</li>
+<li>Byrd, Ayana and Lori Tharps. <em>Hair Story: Untangling the Roots of Black Hair in America</em>. St. Martin’s Press, 2014.</li>
+<li>Thompson, Cheryl. “Black Women, Beauty, and Hair as a Matter of Being.” <em>Women’s Studies</em> 38, no. 8 (2009): 831-856.</li>
+<li>Twine, Nancy. “Redefining Beauty Standards in the Natural Hair Care Industry.” <em>Journal of Business Ethics</em> 148, no. 4 (2018): 769-781.</li>
+<li>King, Shannon. “Building Trust Through Texture Competency.” <em>Modern Salon</em>, June 2021, 44-47.</li>
+<li>François, Vernon. “Embracing Texture: A Holistic Approach to Hair Consultation.” <em>The Colorist</em>, April 2020, 28-32.</li>
+<li>Ouidad. “The Carve &amp; Slice Method: Technical Guide.” Ouidad Professional, 2018.</li>
+<li>Christo, Fifth Avenue. “Product Application Protocols for Textured Hair.” Curlisto Education Series, 2019.</li>
+<li>Shapiro, Megan. “Salon Spotlight: How Tomahawk Salon Became a Texture Haven.” <em>Salon Today</em>, March 2022, 52-54.</li>
+<li>Inuti, Lala. “Authentic Inclusivity in Salon Marketing.” <em>Beauty Business Journal</em>, February 2021, 17-23.</li>
+<li>Da Costa, Diane. “Texture Education: Beyond the Technical.” <em>Texture Press</em>, 2020.</li>
+<li>Carr, Jackie. “Building a Curl-Centric Business in Unexpected Markets.” <em>Salon Business Strategies</em>, October 2023, 34-38.</li>
+</ol>
+</aside>
 
 <!-- PAGE BREAK -->
 <div class="page-break"></div>
@@ -414,7 +432,11 @@
 
     </section>
     <div class="page-break"></div>
-    
+    <section class="closing image-quote page-break-before" role="region" aria-label="Inspirational closing">
+      <figure>
+        <img src="../images/chapter-xvi-quote.jpeg" alt="Inspirational quote: Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle."/>
+      </figure>
+    </section>
   </main>
 </body>
 </html>

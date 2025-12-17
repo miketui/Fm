@@ -303,7 +303,18 @@
 <li class="quiz-option"><span class="opt-label">D)</span> Focuses only on theoretical knowledge</li>
 </ul>
       </div>
-      
+      <aside class="endnotes page-break-after" role="complementary">
+  <ol>
+<li>American Psychological Association, “Building Resilience: How to Bounce Back,” 2019, accessed March 8, 2025, <a href="https://www.apa.org/topics/resilience">https://www.apa.org/topics/resilience</a>.</li>
+<li>Hairstylist Insider, “Johnny Wright: From Celebrity Cuts to Innovative Resilience,” August 15, 2019, accessed March 8, 2025, <a href="https://www.hairstylistinsider.com/johnny-wright">https://www.hairstylistinsider.com/johnny-wright</a>.</li>
+<li>Modern Salon, “Tabatha Takes Over: How Self-Care Powers High-Profile Stylists,” November 20, 2015, accessed March 8, 2025, <a href="https://www.modernsalon.com/tabatha-takes-over-self-care">https://www.modernsalon.com/tabatha-takes-over-self-care</a>.</li>
+<li>Dweck, Carol S., <em>Mindset: The New Psychology of Success</em> (New York: Random House, 2006).</li>
+<li>Doran, George T., “There’s a S.M.A.R.T. Way to Write Management’s Goals and Objectives,” <em>Management Review</em> 70, no. 11 (1981): 35–36.</li>
+<li>Umberson, Debra, and Jennifer K. Montez, “Social Relationships and Health: A Flashpoint for Health Policy,” <em>Journal of Health and Social Behavior</em> 51, suppl. (2010): S54–S66, <a href="https://doi.org/10.1177/0022146510383501">https://doi.org/10.1177/0022146510383501</a>.</li>
+<li>U.S. Occupational Safety and Health Administration, “Ergonomics for Hairdressers,” 2021, accessed March 8, 2025, <a href="https://www.osha.gov/ergonomics/hairdressers">https://www.osha.gov/ergonomics/hairdressers</a>.</li>
+<li>U.S. Financial Literacy and Education Commission, “Financial Literacy and the Importance of an Emergency Fund,” 2016, accessed March 8, 2025, <a href="https://home.treasury.gov/policy-issues/financial-markets-financial-institutions-and-fiscal-service">https://home.treasury.gov/policy-issues/financial-markets-financial-institutions-and-fiscal-service</a>.</li>
+</ol>
+</aside>
 
 <!-- PAGE BREAK -->
 <div class="page-break"></div>
@@ -387,7 +398,11 @@
 
     </section>
     <div class="page-break"></div>
-    
+    <section class="closing image-quote page-break-before" role="region" aria-label="Inspirational closing">
+      <figure>
+        <img src="../images/chapter-xv-quote.jpeg" alt="Inspirational quote: Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle."/>
+      </figure>
+    </section>
   </main>
 </body>
 </html>
