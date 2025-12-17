@@ -8,7 +8,6 @@ Fixes issues from BeautifulSoup processing by:
 """
 
 import re
-import os
 import sys
 from pathlib import Path
 
