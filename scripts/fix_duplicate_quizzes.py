@@ -151,7 +151,7 @@ def main():
 
         if cleaned_content != original_content:
             # Create backup of original
-            backup_path = filepath.with_suffix('.xhtml.bak2')
+            backup_path = filepath.with_suffix('.xhtml.bak')
             backup_path.write_text(original_content, encoding='utf-8')
 
             # Write cleaned version
