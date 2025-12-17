@@ -28,32 +28,6 @@ CHAPTERS = [
 ]
 
 
-def find_section_boundaries(lines, start_pattern, end_tag):
-    """
-    Find all occurrences of a section type and return their line ranges.
-    Returns list of (start_line, end_line) tuples.
-    """
-    sections = []
-    i = 0
-    while i < len(lines):
-        if start_pattern in lines[i]:
-            start = i
-            # Find the closing tag
-            depth = 1
-            i += 1
-            while i < len(lines) and depth > 0:
-                if '<section' in lines[i] or '<aside' in lines[i]:
-                    depth += 1
-                if end_tag in lines[i]:
-                    depth -= 1
-                    if depth == 0:
-                        sections.append((start, i))
-                        break
-                i += 1
-        i += 1
-    return sections
-
-
 def remove_duplicate_sections(content):
     """Remove duplicate quiz and worksheet sections, keeping only the first."""
 
