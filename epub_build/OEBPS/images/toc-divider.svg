@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Table of contents divider for section breaks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 40" fill="currentColor" stroke="currentColor">
+  <g fill="none" stroke-width="2" stroke-linecap="round">
+    <line x1="10" y1="20" x2="260" y2="20"/>
+    <line x1="380" y1="20" x2="630" y2="20"/>
+  </g>
+  <circle cx="320" cy="20" r="3"/>
+  <path d="M320 7l10 13-10 13-10-13z" fill="none"/>
+</svg>

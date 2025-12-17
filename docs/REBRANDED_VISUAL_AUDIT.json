@@ -1,0 +1,447 @@
+{
+  "files": [
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/1-TitlePage.xhtml",
+      "basename": "1-TitlePage",
+      "spine_id": "title",
+      "selection_reason": "OPF spine item #1",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/2-Copyright.xhtml",
+      "basename": "2-Copyright",
+      "spine_id": "copyright",
+      "selection_reason": "OPF spine item #2",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/3-TableOfContents.xhtml",
+      "basename": "3-TableOfContents",
+      "spine_id": "toc",
+      "selection_reason": "OPF spine item #3",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/4-Dedication.xhtml",
+      "basename": "4-Dedication",
+      "spine_id": "dedication",
+      "selection_reason": "OPF spine item #4",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/5-SelfAssessment.xhtml",
+      "basename": "5-SelfAssessment",
+      "spine_id": "selfassess",
+      "selection_reason": "OPF spine item #5",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/6-AffirmationOdyssey.xhtml",
+      "basename": "6-AffirmationOdyssey",
+      "spine_id": "affirm",
+      "selection_reason": "OPF spine item #6",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/7-Preface.xhtml",
+      "basename": "7-Preface",
+      "spine_id": "preface",
+      "selection_reason": "OPF spine item #7",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml",
+      "basename": "8-Part-I-Foundations-of-Creative-Hairstyling",
+      "spine_id": "part1",
+      "selection_reason": "OPF spine item #8",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/9-chapter-i-unveiling-your-creative-odyssey.xhtml",
+      "basename": "9-chapter-i-unveiling-your-creative-odyssey",
+      "spine_id": "ch1",
+      "selection_reason": "OPF spine item #9",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/10-chapter-ii-refining-your-creative-toolkit.xhtml",
+      "basename": "10-chapter-ii-refining-your-creative-toolkit",
+      "spine_id": "ch2",
+      "selection_reason": "OPF spine item #10",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/11-chapter-iii-reigniting-your-creative-fire.xhtml",
+      "basename": "11-chapter-iii-reigniting-your-creative-fire",
+      "spine_id": "ch3",
+      "selection_reason": "OPF spine item #11",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/12-Part-II-Building-Your-Professional-Practice.xhtml",
+      "basename": "12-Part-II-Building-Your-Professional-Practice",
+      "spine_id": "part2",
+      "selection_reason": "OPF spine item #12",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml",
+      "basename": "13-chapter-iv-the-art-of-networking-in-freelance-hairstyling",
+      "spine_id": "ch4",
+      "selection_reason": "OPF spine item #13",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml",
+      "basename": "14-chapter-v-cultivating-creative-excellence-through-mentorship",
+      "spine_id": "ch5",
+      "selection_reason": "OPF spine item #14",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml",
+      "basename": "15-chapter-vi-mastering-the-business-of-hairstyling",
+      "spine_id": "ch6",
+      "selection_reason": "OPF spine item #15",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/16-chapter-vii-embracing-wellness-and-self-care.xhtml",
+      "basename": "16-chapter-vii-embracing-wellness-and-self-care",
+      "spine_id": "ch7",
+      "selection_reason": "OPF spine item #16",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/17-chapter-viii-advancing-skills-through-continuous-education.xhtml",
+      "basename": "17-chapter-viii-advancing-skills-through-continuous-education",
+      "spine_id": "ch8",
+      "selection_reason": "OPF spine item #17",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/18-Part-III-Advanced-Business-Strategies.xhtml",
+      "basename": "18-Part-III-Advanced-Business-Strategies",
+      "spine_id": "part3",
+      "selection_reason": "OPF spine item #18",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/19-chapter-ix-stepping-into-leadership.xhtml",
+      "basename": "19-chapter-ix-stepping-into-leadership",
+      "spine_id": "ch9",
+      "selection_reason": "OPF spine item #19",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/20-chapter-x-crafting-enduring-legacies.xhtml",
+      "basename": "20-chapter-x-crafting-enduring-legacies",
+      "spine_id": "ch10",
+      "selection_reason": "OPF spine item #20",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml",
+      "basename": "21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists",
+      "spine_id": "ch11",
+      "selection_reason": "OPF spine item #21",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml",
+      "basename": "22-chapter-xii-financial-wisdom-building-sustainable-ventures",
+      "spine_id": "ch12",
+      "selection_reason": "OPF spine item #22",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml",
+      "basename": "23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling",
+      "spine_id": "ch13",
+      "selection_reason": "OPF spine item #23",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/24-Part-IV-Future-Focused-Growth.xhtml",
+      "basename": "24-Part-IV-Future-Focused-Growth",
+      "spine_id": "part4",
+      "selection_reason": "OPF spine item #24",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml",
+      "basename": "25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry",
+      "spine_id": "ch14",
+      "selection_reason": "OPF spine item #25",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml",
+      "basename": "26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling",
+      "spine_id": "ch15",
+      "selection_reason": "OPF spine item #26",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml",
+      "basename": "27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling",
+      "spine_id": "ch16",
+      "selection_reason": "OPF spine item #27",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/28-Conclusion.xhtml",
+      "basename": "28-Conclusion",
+      "spine_id": "conclusion",
+      "selection_reason": "OPF spine item #28",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/29-QuizKey.xhtml",
+      "basename": "29-QuizKey",
+      "spine_id": "quizkey",
+      "selection_reason": "OPF spine item #29",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/30-SelfAssessment.xhtml",
+      "basename": "30-SelfAssessment",
+      "spine_id": "selfassess2",
+      "selection_reason": "OPF spine item #30",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/31-affirmations-close.xhtml",
+      "basename": "31-affirmations-close",
+      "spine_id": "affirm2",
+      "selection_reason": "OPF spine item #31",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/32-continued-learning-commitment.xhtml",
+      "basename": "32-continued-learning-commitment",
+      "spine_id": "learning",
+      "selection_reason": "OPF spine item #32",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/33-Acknowledgments.xhtml",
+      "basename": "33-Acknowledgments",
+      "spine_id": "ack",
+      "selection_reason": "OPF spine item #33",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/34-AbouttheAuthor.xhtml",
+      "basename": "34-AbouttheAuthor",
+      "spine_id": "about",
+      "selection_reason": "OPF spine item #34",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/35-CurlsContempCollective.xhtml",
+      "basename": "35-CurlsContempCollective",
+      "spine_id": "collective",
+      "selection_reason": "OPF spine item #35",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/36-JournalingStart.xhtml",
+      "basename": "36-JournalingStart",
+      "spine_id": "journal1",
+      "selection_reason": "OPF spine item #36",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/37-ManifestingJournal.xhtml",
+      "basename": "37-ManifestingJournal",
+      "spine_id": "journal2",
+      "selection_reason": "OPF spine item #37",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/38-journal-page.xhtml",
+      "basename": "38-journal-page",
+      "spine_id": "journal3",
+      "selection_reason": "OPF spine item #38",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/39-professional-development.xhtml",
+      "basename": "39-professional-development",
+      "spine_id": "profdev",
+      "selection_reason": "OPF spine item #39",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/40-SMARTGoals.xhtml",
+      "basename": "40-SMARTGoals",
+      "spine_id": "smart",
+      "selection_reason": "OPF spine item #40",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/41-self-care-journal.xhtml",
+      "basename": "41-self-care-journal",
+      "spine_id": "selfcare",
+      "selection_reason": "OPF spine item #41",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/42-VisionJournal.xhtml",
+      "basename": "42-VisionJournal",
+      "spine_id": "vision",
+      "selection_reason": "OPF spine item #42",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/43-DoodlePage.xhtml",
+      "basename": "43-DoodlePage",
+      "spine_id": "doodle",
+      "selection_reason": "OPF spine item #43",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    },
+    {
+      "file": "REBRANDED_OUTPUT/xhtml/44-bibliography.xhtml",
+      "basename": "44-bibliography",
+      "spine_id": "biblio",
+      "selection_reason": "OPF spine item #44",
+      "issues": [],
+      "computed_style_samples": {},
+      "screenshots": [],
+      "pdf_check": {}
+    }
+  ],
+  "total": 44,
+  "selection_strategy": "OPF spine parsing",
+  "selection_ambiguities": []
+}

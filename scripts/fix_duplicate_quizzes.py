@@ -7,10 +7,9 @@ More aggressive approach using line-by-line parsing.
 import os
 from pathlib import Path
 
-# Use relative path from script location or environment variable
-SCRIPT_DIR = Path(__file__).parent.resolve()
-REPO_ROOT = os.environ.get('REPO_ROOT', SCRIPT_DIR.parent)
-XHTML_DIR = Path(REPO_ROOT) / "REBRANDED_OUTPUT" / "xhtml"
+# Allow configuration via environment variable or default to relative path
+DEFAULT_XHTML_DIR = Path(__file__).parent.parent / "REBRANDED_OUTPUT" / "xhtml"
+XHTML_DIR = Path(os.environ.get("XHTML_DIR", str(DEFAULT_XHTML_DIR)))
 
 CHAPTERS = [
     "10-chapter-ii-refining-your-creative-toolkit.xhtml",
@@ -177,7 +176,7 @@ def main():
         print(f"   After:  quiz sections={quiz_after}, worksheet sections={worksheet_after}")
 
         if cleaned_content != original_content:
-            # Backup original
+            # Create backup of original
             backup_path = filepath.with_suffix('.xhtml.bak2')
             backup_path.write_text(original_content, encoding='utf-8')
 

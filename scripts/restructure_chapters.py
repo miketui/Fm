@@ -29,10 +29,9 @@ CHAPTERS = [
     ("27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml", "XVI", "chapter-xvi-quote.jpeg", "Tresses and Textures Embracing Diversity in Hairstyling"),
 ]
 
-# Use relative path from script location or environment variable
-SCRIPT_DIR = Path(__file__).parent.resolve()
-REPO_ROOT = os.environ.get('REPO_ROOT', SCRIPT_DIR.parent)
-XHTML_DIR = Path(REPO_ROOT) / "REBRANDED_OUTPUT" / "xhtml"
+# Allow configuration via environment variable or default to relative path
+DEFAULT_XHTML_DIR = Path(__file__).parent.parent / "REBRANDED_OUTPUT" / "xhtml"
+XHTML_DIR = Path(os.environ.get("XHTML_DIR", str(DEFAULT_XHTML_DIR)))
 
 
 def create_standalone_quote_file(
@@ -155,10 +154,10 @@ def clean_trailing_content(content: str) -> str:
     return content[:main_close + 7] + '\n</body>\n</html>\n'
 
 
-def process_chapter_file(filepath: Path, roman_numeral: str) -> Tuple[str, bool]:
+def process_chapter_file(filepath: Path, roman_numeral: str) -> Tuple[str, str, bool]:
     """
     Process a chapter file to remove image quotes and duplicates.
-    Returns (cleaned_content, had_issues).
+    Returns (cleaned_content, original_content, had_issues).
     """
 
     content = filepath.read_text(encoding='utf-8')
@@ -176,7 +175,7 @@ def process_chapter_file(filepath: Path, roman_numeral: str) -> Tuple[str, bool]
     # Check if any changes were made
     had_issues = (content != original_content)
 
-    return content, had_issues
+    return content, original_content, had_issues
 
 
 def main():
@@ -200,12 +199,11 @@ def main():
         print(f"Processing Chapter {roman}: {chapter_file}")
 
         # Process chapter file
-        cleaned_content, had_issues = process_chapter_file(chapter_path, roman)
+        cleaned_content, original_content, had_issues = process_chapter_file(chapter_path, roman)
 
         if had_issues:
-            # Backup original content first
+            # Create backup copy first (safer than rename)
             backup_path = chapter_path.with_suffix('.xhtml.bak')
-            original_content = chapter_path.read_text(encoding='utf-8')
             backup_path.write_text(original_content, encoding='utf-8')
             print(f"   ✓ Backed up original to {backup_path.name}")
 
