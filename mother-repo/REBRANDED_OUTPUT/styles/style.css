@@ -1,0 +1,878 @@
+/*
+  style.css — Main stylesheet for Curls &amp; Contemplation EPUB
+  This file imports the core fonts and embedded icons. The remainder of the
+  layout, typographic and responsive rules should be merged from the
+  authoritative CSS provided by the author. To keep this repository concise
+  and focused on demonstrating SVG integration, those rules are omitted here.
+*/
+
+@import url('fonts.css');
+
+/* ---------------------------------------------------------------------- */
+/* Embedded SVG icon definitions                                            */
+/* The following definitions were previously in a separate svg-icons.css.  */
+/* They are inlined here so that a single stylesheet contains all the      */
+/* necessary variables and utility classes. You can remove the original    */
+/* svg-icons.css from your package and update the manifest accordingly.   */
+/*
+  svg-icons.css — Embedded SVG icons for "Curls & Contemplation: A Stylist's Interactive Journey Journal"
+  This section defines reusable CSS variables and utility classes for the inline
+  vector artwork used throughout the EPUB. Embedding these assets as data URIs
+  reduces external requests and ensures complete portability of the package. You
+  can reference these variables anywhere via `var(--quote-marks-svg)` etc., or
+  apply the provided utility classes directly to HTML elements.
+  The icons inherit their colour from the element’s `color` property when used
+  through masking (where supported). When applied as background images, the
+  intrinsic colour from the SVG is used.
+*/
+
+/*
+  ============================
+  Root-level SVG variables
+  ============================
+  Each variable contains a complete data URI for its respective artwork. The
+  encoded SVGs are minified and percent‑escaped to satisfy EPUB CSS parsers.
+*/
+:root {
+  /* Quotation marks icon. Use as a decorative glyph or to decorate pull‑quotes. */
+  --quote-marks-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2024%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M14.2%203.5c-4.5%200-8.2%203.7-8.2%208.2%200%203.9%202.6%206.9%206.2%207.7-.5-1.7-.5-3.3.2-4.8%201.1-2.3%203.5-3.8%206.2-3.8%201.7%200%203.2-.3%204.4-1.2%201.1-.8%201.8-2%201.8-3.6%200-1.7-.7-3-1.9-3.9-1.2-.9-2.9-1.4-4.7-1.4z%22%2F%3E%3Cpath%20d%3D%22M33.8%203.5c-4.5%200-8.2%203.7-8.2%208.2%200%203.9%202.6%206.9%206.2%207.7-.5-1.7-.5-3.3.2-4.8%201.1-2.3%203.5-3.8%206.2-3.8%201.7%200%203.2-.3%204.4-1.2%201.1-.8%201.8-2%201.8-3.6%200-1.7-.7-3-1.9-3.9-1.2-.9-2.9-1.4-4.7-1.4z%22%2F%3E%3C%2Fsvg%3E");
+
+  /* Ruled paper background. Designed to tile vertically; adjust background-size
+     on the `.ruled-paper-bg` class to control line spacing. */
+  --ruled-paper-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20800%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221%22%20fill%3D%22none%22%3E%3Cline%20x1%3D%2280%22%20y1%3D%220%22%20x2%3D%2280%22%20y2%3D%22800%22%20stroke-opacity%3D%22.35%22%20stroke-width%3D%222%22%2F%3E%3Cg%20stroke-opacity%3D%22.25%22%3E%3Cline%20x1%3D%220%22%20y1%3D%2260%22%20x2%3D%22600%22%20y2%3D%2260%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22100%22%20x2%3D%22600%22%20y2%3D%22100%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22140%22%20x2%3D%22600%22%20y2%3D%22140%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22180%22%20x2%3D%22600%22%20y2%3D%22180%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22220%22%20x2%3D%22600%22%20y2%3D%22220%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22260%22%20x2%3D%22600%22%20y2%3D%22260%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%22600%22%20y2%3D%22300%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22340%22%20x2%3D%22600%22%20y2%3D%22340%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22380%22%20x2%3D%22600%22%20y2%3D%22380%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22420%22%20x2%3D%22600%22%20y2%3D%22420%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22460%22%20x2%3D%22600%22%20y2%3D%22460%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22500%22%20x2%3D%22600%22%20y2%3D%22500%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22540%22%20x2%3D%22600%22%20y2%3D%22540%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22580%22%20x2%3D%22600%22%20y2%3D%22580%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%22600%22%20y2%3D%22620%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22660%22%20x2%3D%22600%22%20y2%3D%22660%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22700%22%20x2%3D%22600%22%20y2%3D%22700%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22740%22%20x2%3D%22600%22%20y2%3D%22740%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+
+  /* Table of contents divider. A horizontal ornament for separating sections. */
+  --toc-divider-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%2040%22%20fill%3D%22currentColor%22%20stroke%3D%22currentColor%22%3E%3Cg%20fill%3D%22none%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%3Cline%20x1%3D%2210%22%20y1%3D%2220%22%20x2%3D%22260%22%20y2%3D%2220%22%2F%3E%3Cline%20x1%3D%22380%22%20y1%3D%2220%22%20x2%3D%22630%22%20y2%3D%2220%22%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%2220%22%20r%3D%223%22%2F%3E%3Cpath%20d%3D%22M320%207l10%2013-10%2013-10-13z%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E");
+
+  /* Quiz checkboxes. Two variants: unchecked and checked. */
+  --checkbox-unchecked-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2218%22%20height%3D%2218%22%20rx%3D%223%22%20ry%3D%223%22%2F%3E%3C%2Fsvg%3E");
+
+  --checkbox-checked-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2218%22%20height%3D%2218%22%20rx%3D%223%22%20ry%3D%223%22%2F%3E%3Cpath%20d%3D%22M7%2012.5l3.5%203.5L17%208.5%22%2F%3E%3C%2Fsvg%3E");
+
+  /* Chapter frame. Use as a decorative border for chapter title pages. */
+  --chapter-frame-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%201000%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%3E%3Crect%20x%3D%2230%22%20y%3D%2230%22%20width%3D%22740%22%20height%3D%22940%22%20rx%3D%228%22%20ry%3D%228%22%20stroke-width%3D%222%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%2252%22%20width%3D%22696%22%20height%3D%22896%22%20rx%3D%226%22%20ry%3D%226%22%20stroke-width%3D%221.5%22%20opacity%3D%22.85%22%2F%3E%3Cg%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M90%20110h40%22%2F%3E%3Cpath%20d%3D%22M110%2090v40%22%2F%3E%3Cpath%20d%3D%22M710%20110h-40%22%2F%3E%3Cpath%20d%3D%22M690%2090v40%22%2F%3E%3Cpath%20d%3D%22M90%20890h40%22%2F%3E%3Cpath%20d%3D%22M110%20910v-40%22%2F%3E%3Cpath%20d%3D%22M710%20890h-40%22%2F%3E%3Cpath%20d%3D%22M690%20910v-40%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+/*
+  ============================
+  Utility classes
+  ============================
+  These classes provide convenient wrappers for the embedded artwork. Apply
+  `quote-marks-icon` to inline elements to insert quote glyphs, `ruled-paper-bg`
+  to blocks that need lined backgrounds, and so on. The quiz checkbox classes
+  can be toggled by adding or removing the `.checked` class.
+*/
+
+/* Quote marks glyph */
+.quote-marks-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: var(--quote-marks-svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Ruled paper background. Sets vertical line spacing to 1.5rem by default. */
+.ruled-paper-bg {
+  background-image: var(--ruled-paper-svg);
+  background-repeat: repeat-y;
+  background-size: 100% 1.5rem;
+  /* Provide a subtle light background by default; override as needed. */
+  background-color: var(--background-worksheet, #fafafa);
+}
+
+/* Table of contents divider. Use as a block-level separator. */
+.toc-divider-img {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  background-image: var(--toc-divider-svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+/* Quiz checkbox. The colour of the box and tick is derived from the element’s
+   `color` property when the reading system supports masking. Otherwise, the
+   embedded SVG provides a crisp outline. */
+.quiz-checkbox {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: var(--checkbox-unchecked-svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.quiz-checkbox.checked {
+  background-image: var(--checkbox-checked-svg);
+}
+
+/* Chapter frame. Intended for framing chapter title pages or callouts. Apply
+   this class to a block-level container. The frame will scale with the
+   container’s width while preserving its aspect ratio. */
+.chapter-frame {
+  background-image: var(--chapter-frame-svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 2rem;
+}
+
+/*
+  This space reserved for additional style definitions.
+  
+  You can add custom styles here such as:
+  - Custom color variables in :root
+  - Additional component styles
+  - Theme variations
+  
+  The embedded icons defined in svg-icons.css can be applied via the utility
+  classes: .quote-marks-icon, .ruled-paper-bg, .toc-divider-img, .quiz-checkbox,
+  .chapter-frame or by referencing the variables directly with CSS variables.
+*/
+
+/* ====================================================================
+   ACISS LAYOUT SYSTEM - Page Wrappers & Global Conventions
+   ==================================================================== */
+
+/* Page wrapper classes for different section types */
+.frontmatter-page,
+.part-page,
+.chapter-page,
+.backmatter-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: clamp(1rem, 3vw, 2rem);
+  box-sizing: border-box;
+}
+
+.frontmatter-page,
+.backmatter-page {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Page break utilities */
+.page-break {
+  page-break-after: always;
+  break-after: page;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.page-break-before {
+  page-break-before: always;
+  break-before: page;
+}
+
+.page-break-after {
+  page-break-after: always;
+  break-after: page;
+}
+
+.avoid-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Responsive utilities */
+.mobile-hidden {
+  display: inline;
+}
+
+.print-only {
+  display: none;
+}
+
+/* ====================================================================
+   FRONTMATTER STYLES
+   ==================================================================== */
+
+.frontmatter-shell,
+.single-page {
+  min-height: 100vh;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  overflow: hidden;
+}
+
+/* Title Page */
+.title-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.frontmatter-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.frontmatter-divider {
+  width: 8rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, currentColor, transparent);
+  margin: 2rem 0;
+}
+
+/* Copyright Page */
+.copyright-page {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  line-height: 1.5;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* Table of Contents */
+.toc-page {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  line-height: 1.4;
+}
+
+.toc-page ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc-page li {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Dedication Page */
+.dedication-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+}
+
+/* Preface Page */
+.preface-page {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.preface-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Assessment and Worksheet (Frontmatter) */
+.worksheet,
+.assessment,
+.affirmation-sheet {
+  max-height: 90vh;
+  padding: clamp(1rem, 3vw, 2rem);
+  overflow: visible;
+}
+
+/* ====================================================================
+   PART DIVIDER PAGES
+   ==================================================================== */
+
+.part-page {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+}
+
+.part-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: clamp(2rem, 5vw, 4rem);
+  page-break-inside: avoid;
+}
+
+.part-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.part-subtitle {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #64748b;
+}
+
+.decorative-line {
+  width: 12rem;
+  height: 2.5rem;
+  background-image: var(--toc-divider-svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 1.5rem 0;
+}
+
+/* ====================================================================
+   CHAPTER STYLES
+   ==================================================================== */
+
+/* Section 1: Chapter Title Page */
+.chap-title {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.chapter-number-figure {
+  position: relative;
+  width: clamp(8rem, 20vw, 12rem);
+  height: clamp(8rem, 20vw, 12rem);
+  margin-bottom: 2rem;
+}
+
+.chapter-number-brush {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.chapter-number-roman {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.title-bar {
+  width: 8rem;
+  height: 2px;
+  background: currentColor;
+  margin-bottom: 1.5rem;
+  opacity: 0.6;
+}
+
+.title-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title-line {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.bible-quote-container {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.bible-quote-text {
+  font-style: italic;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.bible-quote-reference {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #64748b;
+  font-style: normal;
+}
+
+.introduction-heading {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+}
+
+.introduction-paragraph {
+  max-width: 45rem;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.7;
+  text-align: left;
+}
+
+.dropcap-first-letter p:first-child::first-letter {
+  font-size: 3em;
+  line-height: 0.9;
+  float: left;
+  margin-right: 0.1em;
+  font-weight: bold;
+}
+
+/* Section 2: Chapter Body */
+.chap-body {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.content-area {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.7;
+}
+
+.content-area h2 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.content-area h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.content-area blockquote {
+  margin: 1.5rem 2rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #cbd5e1;
+  font-style: italic;
+}
+
+/* Section 3: Endnotes */
+.endnotes {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.endnotes-title {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.endnotes ol {
+  font-size: clamp(0.85rem, 2vw, 0.9rem);
+  line-height: 1.5;
+  padding-left: 2rem;
+}
+
+.endnotes li {
+  margin-bottom: 0.75rem;
+}
+
+/* Section 4: Quiz */
+.quiz-container,
+.chap-quiz {
+  padding: clamp(1rem, 3vw, 2rem);
+  max-width: 50rem;
+  margin: 0 auto;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.chap-quiz h2,
+.quiz-title {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--accent-teal, #00796B);
+}
+
+.quiz-instructions {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.mcq-list {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: question-counter;
+}
+
+.mcq-item {
+  margin-bottom: 2rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.question-text {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+}
+
+.mcq-options {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.option {
+  margin: 0.5rem 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+  padding-left: 0.5rem;
+}
+
+.quiz-question-block {
+  margin-bottom: 1.5rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.quiz-question {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+}
+
+.quiz-options {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.quiz-option {
+  margin: 0.5rem 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+}
+
+.opt-label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+  color: var(--accent-gold, #C68400);
+}
+
+/* Section 5: Worksheet */
+.worksheet {
+  max-height: none;
+  padding: clamp(1rem, 3vw, 2rem);
+  max-width: 50rem;
+  margin: 0 auto;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.worksheet-title {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--accent-teal, #00796B);
+}
+
+.worksheet-content {
+  padding: 1rem 0;
+}
+
+.prompt-container {
+  margin: 2rem 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.prompt-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--accent-teal, #00796B);
+  line-height: 1.4;
+}
+
+.prompt-number {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: var(--accent-gold, #C68400);
+}
+
+.response-area.lined {
+  min-height: 4rem;
+  margin-top: 0.5rem;
+}
+
+.response-area.lined .line {
+  height: 1.5rem;
+  border-bottom: 1px solid #cbd5e1;
+  margin-bottom: 0.25rem;
+}
+
+.activity-section {
+  margin: 1.5rem 0;
+}
+
+.writing-area {
+  min-height: 10rem;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* Section 6: Closing Image/Quote */
+.closing,
+.image-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.closing figure,
+.image-quote figure {
+  margin: 0;
+  max-width: 80%;
+}
+
+.closing img,
+.image-quote img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+/* ====================================================================
+   BACKMATTER STYLES
+   ==================================================================== */
+
+/* General backmatter containers */
+.backmatter-card,
+.reference-page {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+/* Conclusion */
+.conclusion {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.7;
+}
+
+/* Acknowledgments */
+.acknowledgments {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.6;
+}
+
+/* Author Bio */
+.author-bio {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Bibliography */
+.bibliography ol,
+.bibliography ul {
+  font-size: clamp(0.85rem, 2vw, 0.9rem);
+  line-height: 1.6;
+  padding-left: 2rem;
+}
+
+/* Quiz Key */
+.quiz-key {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.answer-reference {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+}
+
+/* Affirmations, Commitment, Collective Info */
+.affirmations,
+.commitment,
+.collective-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  padding: clamp(2rem, 4vw, 3rem);
+}
+
+/* Journal Pages */
+.journal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.journal-entry {
+  margin-bottom: 1.5rem;
+}
+
+.journal-prompt {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+}
+
+/* Backmatter Worksheets */
+.backmatter-worksheet {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.form-field {
+  margin: 1rem 0;
+}
+
+.doodle-area {
+  min-height: 20rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Navigation */
+.nav,
+.toc-nav,
+.navigation-list {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.navigation-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation-list li {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+.navigation-list li li {
+  padding-left: 2rem;
+}
+
+/* ====================================================================
+   RESPONSIVE BREAKPOINTS
+   ==================================================================== */
+
+/* Mobile: ≤768px */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .frontmatter-page,
+  .part-page,
+  .chapter-page,
+  .backmatter-page {
+    padding: 1rem;
+  }
+  
+  .title-line {
+    font-size: 1.8rem;
+  }
+  
+  .part-title {
+    font-size: 2rem;
+  }
+  
+  .journal {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet: 769px–1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .journal {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop: ≥1025px */
+@media (min-width: 1025px) {
+  .journal {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .frontmatter-page,
+  .part-page,
+  .chapter-page,
+  .backmatter-page {
+    padding: 2rem;
+  }
+}
+
+/* ====================================================================
+   PRINT STYLES OVERRIDE (can be extended in print.css)
+   ==================================================================== */
+
+@media print {
+  .print-only {
+    display: block;
+  }
+  
+  .mobile-hidden {
+    display: inline;
+  }
+  
+  .page-break-before {
+    page-break-before: always;
+  }
+  
+  .page-break-after {
+    page-break-after: always;
+  }
+  
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+}
