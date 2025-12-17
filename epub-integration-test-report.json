@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-17T09:53:54.828Z",
+  "timestamp": "2025-12-17T17:11:38.562Z",
   "summary": {
     "totalTests": 7,
     "passed": 7,
@@ -14,17 +14,17 @@
         "requiredFiles": "all present",
         "mimetype": "correct"
       },
-      "timestamp": "2025-12-17T09:53:54.760Z"
+      "timestamp": "2025-12-17T17:11:38.531Z"
     },
     {
       "name": "OPF Manifest Completeness",
       "status": "passed",
       "result": {
-        "manifestItems": 83,
-        "spineItems": 44,
+        "manifestItems": 99,
+        "spineItems": 60,
         "allFilesExist": true
       },
-      "timestamp": "2025-12-17T09:53:54.762Z"
+      "timestamp": "2025-12-17T17:11:38.532Z"
     },
     {
       "name": "Navigation Document Validation",
@@ -32,17 +32,17 @@
       "result": {
         "navigationDocument": "found and valid"
       },
-      "timestamp": "2025-12-17T09:53:54.762Z"
+      "timestamp": "2025-12-17T17:11:38.532Z"
     },
     {
       "name": "XHTML Validity",
       "status": "passed",
       "result": {
-        "xhtmlFiles": 45,
+        "xhtmlFiles": 61,
         "allValid": true,
         "validator": "fallback"
       },
-      "timestamp": "2025-12-17T09:53:54.784Z"
+      "timestamp": "2025-12-17T17:11:38.543Z"
     },
     {
       "name": "CSS and Asset Loading",
@@ -52,7 +52,7 @@
         "images": 0,
         "fonts": 0
       },
-      "timestamp": "2025-12-17T09:53:54.805Z"
+      "timestamp": "2025-12-17T17:11:38.552Z"
     },
     {
       "name": "Accessibility Features",
@@ -62,19 +62,19 @@
         "missingA11yFeatures": [],
         "imageAltTextCoverage": 100
       },
-      "timestamp": "2025-12-17T09:53:54.814Z"
+      "timestamp": "2025-12-17T17:11:38.555Z"
     },
     {
       "name": "Performance Metrics",
       "status": "passed",
       "result": {
-        "totalSize": "2.52 MB",
-        "totalSizeBytes": 2639497,
-        "fileCount": 86,
-        "averageFileSize": "30 KB",
-        "validationTime": "12ms"
+        "totalSize": "2.58 MB",
+        "totalSizeBytes": 2701916,
+        "fileCount": 102,
+        "averageFileSize": "26 KB",
+        "validationTime": "6ms"
       },
-      "timestamp": "2025-12-17T09:53:54.827Z"
+      "timestamp": "2025-12-17T17:11:38.562Z"
     }
   ],
   "errors": []
