@@ -1,6 +1,6 @@
 # EPUB Reader Integration Test Report
 
-Generated: 2025-12-08T17:43:19.680Z
+Generated: 2025-12-17T09:53:54.828Z
 
 ## Summary
 
@@ -52,7 +52,7 @@ Generated: 2025-12-08T17:43:19.680Z
 {
   "xhtmlFiles": 45,
   "allValid": true,
-  "validator": "xmllint"
+  "validator": "fallback"
 }
 ```
 
@@ -90,7 +90,7 @@ Generated: 2025-12-08T17:43:19.680Z
   "totalSizeBytes": 2639497,
   "fileCount": 86,
   "averageFileSize": "30 KB",
-  "validationTime": "14ms"
+  "validationTime": "12ms"
 }
 ```
 
