@@ -1,9 +1,20 @@
+#!/usr/bin/env python3
+"""Analyze and fix duplicate or incorrect quote sections in XHTML chapters.
+
+This script detects and fixes:
+- Duplicate quote image sections (keeps only the first)
+- Missing or incorrect CSS classes for quote sections
+- Missing page breaks before quote sections
+"""
+
+import argparse
 import os
 import re
+import sys
 from pathlib import Path
 
-# Configuration
-XHTML_DIR = Path('REBRANDED_OUTPUT/xhtml')
+# Default configuration
+DEFAULT_XHTML_DIR = 'REBRANDED_OUTPUT/xhtml'
 CHAPTER_FILES = [
     '9-chapter-i-unveiling-your-creative-odyssey.xhtml',
     '10-chapter-ii-refining-your-creative-toolkit.xhtml',
@@ -23,10 +34,21 @@ CHAPTER_FILES = [
     '27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml'
 ]
 
-def analyze_and_fix():
-    print("Analyzing and fixing chapters...")
+
+def analyze_and_fix(xhtml_dir: Path):
+    """Analyze and fix quote sections in chapter XHTML files.
+    
+    Args:
+        xhtml_dir: Path to directory containing XHTML chapter files
+    """
+    print(f"Analyzing and fixing chapters in {xhtml_dir}...")
+    
+    if not xhtml_dir.exists():
+        print(f"❌ Directory not found: {xhtml_dir}")
+        sys.exit(1)
+    
     for filename in CHAPTER_FILES:
-        filepath = XHTML_DIR / filename
+        filepath = xhtml_dir / filename
         if not filepath.exists():
             print(f"❌ File not found: {filename}")
             continue
@@ -131,5 +153,36 @@ def analyze_and_fix():
         else:
             print(f"👍 {filename} is already correct.")
 
+def main():
+    """Main entry point with argument parsing."""
+    parser = argparse.ArgumentParser(
+        description='Analyze and fix duplicate or incorrect quote sections in XHTML chapters',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Use default directory (REBRANDED_OUTPUT/xhtml)
+  python3 analyze_and_fix_quotes.py
+  
+  # Specify custom directory
+  python3 analyze_and_fix_quotes.py --xhtml-dir /path/to/xhtml
+  
+  # Use alternate directory structure
+  python3 analyze_and_fix_quotes.py --xhtml-dir OEBPS/text
+        """
+    )
+    
+    parser.add_argument(
+        '--xhtml-dir',
+        type=str,
+        default=DEFAULT_XHTML_DIR,
+        help=f'Path to XHTML directory (default: {DEFAULT_XHTML_DIR})'
+    )
+    
+    args = parser.parse_args()
+    xhtml_dir = Path(args.xhtml_dir)
+    
+    analyze_and_fix(xhtml_dir)
+
+
 if __name__ == '__main__':
-    analyze_and_fix()
+    main()
