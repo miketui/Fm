@@ -61,7 +61,7 @@ def clean_chapter_html(filepath: Path, dry_run: bool = False) -> dict:
                     content
                 )
 
-        # Pattern 3: Ensure proper closing at end of file
+        # Pattern 2: Ensure proper closing at end of file
         # Should end with: </section></main></body></html>
         end_pattern = re.compile(r'</section>\s*</main>\s*</body>\s*</html>\s*$')
         if not end_pattern.search(content):
@@ -72,7 +72,7 @@ def clean_chapter_html(filepath: Path, dry_run: bool = False) -> dict:
                 content
             )
 
-        # Pattern 4: Clean up SECTION 6 comments that have stray closings after them
+        # Pattern 3: Clean up SECTION 6 comments that have stray closings after them
         content = re.sub(
             r'(<!-- SECTION 6: (?:IMAGE QUOTE|CLOSING IMAGE/QUOTE)[^>]*-->)\s*\n\s*((?:</\w+>)+)\s*\n',
             r'\1\n\n',
