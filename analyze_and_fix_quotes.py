@@ -158,7 +158,7 @@ def main():
     parser = argparse.ArgumentParser(
         description='Analyze and fix duplicate or incorrect quote sections in XHTML chapters',
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
+        epilog="""\
 Examples:
   # Use default directory (REBRANDED_OUTPUT/xhtml)
   python3 analyze_and_fix_quotes.py
@@ -168,12 +168,11 @@ Examples:
   
   # Use alternate directory structure
   python3 analyze_and_fix_quotes.py --xhtml-dir OEBPS/text
-        """
+"""
     )
     
     parser.add_argument(
         '--xhtml-dir',
-        type=str,
         default=DEFAULT_XHTML_DIR,
         help=f'Path to XHTML directory (default: {DEFAULT_XHTML_DIR})'
     )
