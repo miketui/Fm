@@ -1,0 +1,1013 @@
+/*
+  style.css — Enhanced stylesheet for Curls & Contemplation EPUB
+  Hybrid Branding: Teal Primary (Curls & Contemplation) + Gold Accent (The Artisan's Path)
+
+  This stylesheet implements a comprehensive design system with:
+  - CSS custom properties for consistent branding
+  - Responsive typography with fluid scaling
+  - Modern utility classes for layout and styling
+  - Accessibility-focused design patterns
+  - Print-optimized rules
+
+  Version: 2.0 - Hybrid Brand System
+  Last Updated: 2025-11-02
+*/
+
+@import url('fonts.css');
+
+/* ====================================================================
+   CSS CUSTOM PROPERTIES - BRAND TOKENS
+   ==================================================================== */
+
+:root {
+  /* PRIMARY BRAND COLORS - Teal (Curls & Contemplation) */
+  --clr-teal-primary: #2B9999;
+  --clr-teal-light: #3DB3B3;
+  --clr-teal-dark: #1F7272;
+  --clr-teal-muted: rgba(43, 153, 153, 0.15);
+  --clr-teal-transparent: rgba(43, 153, 153, 0.06);
+
+  /* ACCENT BRAND COLORS - Gold (The Artisan's Path) */
+  --clr-gold-accent: #C9A961;
+  --clr-gold-light: #D4B976;
+  --clr-gold-dark: #B08F4A;
+  --clr-gold-muted: rgba(201, 169, 97, 0.2);
+  --clr-gold-transparent: rgba(201, 169, 97, 0.08);
+
+  /* NEUTRAL COLORS */
+  --clr-ink: #0F1616;
+  --clr-ink-medium: #2B2B2B;
+  --clr-paper: #F7F9F9;
+  --clr-cream: #F5F3EF;
+  --clr-muted: #9AA7A7;
+  --clr-muted-light: #666666;
+  --clr-white: #FFFFFF;
+  --clr-black: #000000;
+
+  /* SEMANTIC COLORS */
+  --clr-text-primary: var(--clr-ink);
+  --clr-text-secondary: var(--clr-muted);
+  --clr-text-accent: var(--clr-teal-primary);
+  --clr-bg-primary: var(--clr-white);
+  --clr-bg-secondary: var(--clr-cream);
+  --clr-bg-accent: var(--clr-paper);
+
+  /* TYPOGRAPHY SCALE - Fluid responsive sizing */
+  --fs-300: clamp(0.94rem, 0.9vw, 1.05rem);
+  --fs-400: clamp(1.05rem, 1.1vw, 1.2rem);
+  --fs-500: clamp(1.25rem, 1.6vw, 1.5rem);
+  --fs-600: clamp(1.5rem, 2.2vw, 1.875rem);
+  --fs-700: clamp(1.8rem, 2.8vw, 2.25rem);
+  --fs-800: clamp(2.25rem, 3.5vw, 3rem);
+  --fs-900: clamp(3rem, 5vw, 4rem);
+
+  /* LINE HEIGHTS */
+  --lh-tight: 1.25;
+  --lh-snug: 1.4;
+  --lh-body: 1.6;
+  --lh-loose: 1.8;
+
+  /* FONT FAMILIES */
+  --font-display: 'Cinzel Decorative', Georgia, 'Times New Roman', serif;
+  --font-body: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  --font-meta: 'Montserrat', Arial, 'Helvetica Neue', sans-serif;
+
+  /* SPACING SCALE */
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 1.75rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 5rem;
+
+  /* BORDER RADIUS */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* SHADOWS */
+  --shadow-sm: 0 1px 2px rgba(15, 22, 22, 0.1);
+  --shadow-md: 0 4px 6px rgba(15, 22, 22, 0.1);
+  --shadow-lg: 0 10px 15px rgba(15, 22, 22, 0.15);
+  --shadow-xl: 0 20px 25px rgba(15, 22, 22, 0.2);
+
+  /* GRADIENTS */
+  --rule-gold: linear-gradient(90deg, var(--clr-gold-accent), transparent 60%);
+  --rule-teal: linear-gradient(90deg, var(--clr-teal-primary), transparent 60%);
+  --bg-grad-teal: linear-gradient(180deg, #FDFDFD 0%, rgba(43,153,153,0.06) 100%);
+  --bg-grad-gold: linear-gradient(180deg, #FDFDFD 0%, rgba(201,169,97,0.08) 100%);
+  --bg-grad-modern: linear-gradient(135deg, rgba(43,153,153,0.05) 0%, rgba(201,169,97,0.05) 100%);
+  --bg-teal-header: linear-gradient(135deg, var(--clr-teal-primary) 0%, var(--clr-teal-light) 100%);
+  --bg-gold-header: linear-gradient(135deg, var(--clr-gold-dark) 0%, var(--clr-gold-accent) 100%);
+
+  /* EMBEDDED SVG ICONS (from original) */
+  --quote-marks-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2024%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M14.2%203.5c-4.5%200-8.2%203.7-8.2%208.2%200%203.9%202.6%206.9%206.2%207.7-.5-1.7-.5-3.3.2-4.8%201.1-2.3%203.5-3.8%206.2-3.8%201.7%200%203.2-.3%204.4-1.2%201.1-.8%201.8-2%201.8-3.6%200-1.7-.7-3-1.9-3.9-1.2-.9-2.9-1.4-4.7-1.4z%22%2F%3E%3Cpath%20d%3D%22M33.8%203.5c-4.5%200-8.2%203.7-8.2%208.2%200%203.9%202.6%206.9%206.2%207.7-.5-1.7-.5-3.3.2-4.8%201.1-2.3%203.5-3.8%206.2-3.8%201.7%200%203.2-.3%204.4-1.2%201.1-.8%201.8-2%201.8-3.6%200-1.7-.7-3-1.9-3.9-1.2-.9-2.9-1.4-4.7-1.4z%22%2F%3E%3C%2Fsvg%3E");
+  --ruled-paper-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20800%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221%22%20fill%3D%22none%22%3E%3Cline%20x1%3D%2280%22%20y1%3D%220%22%20x2%3D%2280%22%20y2%3D%22800%22%20stroke-opacity%3D%22.35%22%20stroke-width%3D%222%22%2F%3E%3Cg%20stroke-opacity%3D%22.25%22%3E%3Cline%20x1%3D%220%22%20y1%3D%2260%22%20x2%3D%22600%22%20y2%3D%2260%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22100%22%20x2%3D%22600%22%20y2%3D%22100%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22140%22%20x2%3D%22600%22%20y2%3D%22140%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22180%22%20x2%3D%22600%22%20y2%3D%22180%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22220%22%20x2%3D%22600%22%20y2%3D%22220%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22260%22%20x2%3D%22600%22%20y2%3D%22260%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%22600%22%20y2%3D%22300%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22340%22%20x2%3D%22600%22%20y2%3D%22340%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22380%22%20x2%3D%22600%22%20y2%3D%22380%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22420%22%20x2%3D%22600%22%20y2%3D%22420%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22460%22%20x2%3D%22600%22%20y2%3D%22460%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22500%22%20x2%3D%22600%22%20y2%3D%22500%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22540%22%20x2%3D%22600%22%20y2%3D%22540%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22580%22%20x2%3D%22600%22%20y2%3D%22580%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%22600%22%20y2%3D%22620%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22660%22%20x2%3D%22600%22%20y2%3D%22660%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22700%22%20x2%3D%22600%22%20y2%3D%22700%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22740%22%20x2%3D%22600%22%20y2%3D%22740%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --toc-divider-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%2040%22%20fill%3D%22currentColor%22%20stroke%3D%22currentColor%22%3E%3Cg%20fill%3D%22none%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%3Cline%20x1%3D%2210%22%20y1%3D%2220%22%20x2%3D%22260%22%20y2%3D%2220%22%2F%3E%3Cline%20x1%3D%22380%22%20y1%3D%2220%22%20x2%3D%22630%22%20y2%3D%2220%22%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%2220%22%20r%3D%223%22%2F%3E%3Cpath%20d%3D%22M320%207l10%2013-10%2013-10-13z%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E");
+  --checkbox-unchecked-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2218%22%20height%3D%2218%22%20rx%3D%223%22%20ry%3D%223%22%2F%3E%3C%2Fsvg%3E");
+  --checkbox-checked-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2218%22%20height%3D%2218%22%20rx%3D%223%22%20ry%3D%223%22%2F%3E%3Cpath%20d%3D%22M7%2012.5l3.5%203.5L17%208.5%22%2F%3E%3C%2Fsvg%3E");
+  --chapter-frame-svg: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%201000%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%3E%3Crect%20x%3D%2230%22%20y%3D%2230%22%20width%3D%22740%22%20height%3D%22940%22%20rx%3D%228%22%20ry%3D%228%22%20stroke-width%3D%222%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%2252%22%20width%3D%22696%22%20height%3D%22896%22%20rx%3D%226%22%20ry%3D%226%22%20stroke-width%3D%221.5%22%20opacity%3D%22.85%22%2F%3E%3Cg%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M90%20110h40%22%2F%3E%3Cpath%20d%3D%22M110%2090v40%22%2F%3E%3Cpath%20d%3D%22M710%20110h-40%22%2F%3E%3Cpath%20d%3D%22M690%2090v40%22%2F%3E%3Cpath%20d%3D%22M90%20890h40%22%2F%3E%3Cpath%20d%3D%22M110%20910v-40%22%2F%3E%3Cpath%20d%3D%22M710%20890h-40%22%2F%3E%3Cpath%20d%3D%22M690%20910v-40%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+/* ====================================================================
+   BASE STYLES
+   ==================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-400);
+  line-height: var(--lh-body);
+  color: var(--clr-text-primary);
+  background-color: var(--clr-bg-primary);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ====================================================================
+   TYPOGRAPHY
+   ==================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: var(--lh-tight);
+  margin-bottom: var(--space-3);
+  color: var(--clr-ink);
+}
+
+h1 { font-size: var(--fs-900); margin-bottom: var(--space-6); }
+h2 { font-size: var(--fs-700); margin-bottom: var(--space-5); }
+h3 { font-size: var(--fs-600); margin-bottom: var(--space-4); }
+h4 { font-size: var(--fs-500); margin-bottom: var(--space-3); }
+h5 { font-size: var(--fs-400); margin-bottom: var(--space-3); }
+h6 { font-size: var(--fs-400); margin-bottom: var(--space-2); }
+
+p {
+  margin-bottom: var(--space-4);
+  orphans: 3;
+  widows: 3;
+}
+
+a {
+  color: var(--clr-teal-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--clr-teal-dark);
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--clr-teal-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+em, i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: var(--space-6) var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  border-left: 4px solid var(--clr-gold-accent);
+  font-style: italic;
+  color: var(--clr-muted-light);
+  background-color: var(--clr-cream);
+  border-radius: var(--radius-md);
+}
+
+sup {
+  font-size: 0.75em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+/* ====================================================================
+   UTILITY CLASSES
+   ==================================================================== */
+
+/* Color Utilities */
+.accent-teal { color: var(--clr-teal-primary); }
+.accent-gold { color: var(--clr-gold-accent); }
+.accent-muted { color: var(--clr-muted); }
+.text-white { color: var(--clr-white); }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Background Utilities */
+.bg-grad-modern { background: var(--bg-grad-modern); }
+.bg-grad-teal { background: var(--bg-grad-teal); }
+.bg-grad-gold { background: var(--bg-grad-gold); }
+.bg-teal-header { background: var(--bg-teal-header); }
+.bg-cream { background-color: var(--clr-cream); }
+
+/* Spacing Utilities */
+.flow > * + * { margin-top: var(--space-4); }
+.stack-sm > * + * { margin-top: var(--space-2); }
+.stack-md > * + * { margin-top: var(--space-4); }
+.stack-lg > * + * { margin-top: var(--space-6); }
+
+/* Layout Utilities */
+.max-w-prose { max-width: 65ch; margin-inline: auto; }
+.container { max-width: 1200px; margin-inline: auto; padding-inline: var(--space-4); }
+
+/* Shadow Utilities */
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+
+/* Border Utilities */
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded-md { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+
+/* SVG Icon Utilities (from original) */
+.quote-marks-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: var(--quote-marks-svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ruled-paper-bg {
+  background-image: var(--ruled-paper-svg);
+  background-repeat: repeat-y;
+  background-size: 100% 1.5rem;
+  background-color: var(--clr-cream);
+}
+
+.toc-divider-img {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  background-image: var(--toc-divider-svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+.quiz-checkbox {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: var(--checkbox-unchecked-svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  color: var(--clr-teal-primary);
+}
+
+.quiz-checkbox.checked {
+  background-image: var(--checkbox-checked-svg);
+}
+
+.chapter-frame {
+  background-image: var(--chapter-frame-svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: var(--space-6);
+}
+
+/* ====================================================================
+   PAGE BREAK CONTROL
+   ==================================================================== */
+
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+.page-break-after {
+  page-break-after: always;
+  break-after: page;
+}
+
+.avoid-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.page {
+  page-break-before: always;
+  break-before: page;
+}
+
+/* ====================================================================
+   CHAPTER TITLE PAGE
+   ==================================================================== */
+
+.chap-title {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+}
+
+.chapter-number-figure {
+  position: relative;
+  width: clamp(200px, 40vw, 280px);
+  height: clamp(200px, 40vw, 280px);
+  margin: 0 auto var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapter-number-brush {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.chapter-number-roman {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 10vw, 6rem);
+  font-weight: 400;
+  color: var(--clr-white);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-stack {
+  margin-bottom: var(--space-8);
+  max-width: 800px;
+}
+
+.title-bar {
+  height: 4px;
+  width: 60px;
+  margin: 0 auto var(--space-4);
+  background: var(--rule-gold);
+  border-radius: var(--radius-full);
+}
+
+.title-lines {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.title-line {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  color: var(--clr-teal-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: var(--lh-tight);
+}
+
+.bible-quote-container {
+  max-width: 600px;
+  margin: 0 auto var(--space-8);
+  padding: var(--space-5) var(--space-6);
+  padding-left: var(--space-7);
+  background: var(--clr-cream);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  border-left: 4px solid var(--clr-gold-accent);
+}
+
+.bible-quote-text {
+  font-family: var(--font-body);
+  font-size: var(--fs-400);
+  font-style: italic;
+  line-height: var(--lh-loose);
+  color: var(--clr-ink-medium);
+  margin-bottom: var(--space-3);
+  text-align: center;
+}
+
+.bible-quote-reference {
+  font-family: var(--font-meta);
+  font-size: var(--fs-300);
+  color: var(--clr-gold-accent);
+  font-weight: 600;
+  text-align: right;
+  display: block;
+  font-style: italic;
+}
+
+.introduction-heading {
+  font-family: var(--font-display);
+  font-size: var(--fs-700);
+  color: var(--clr-teal-primary);
+  text-align: center;
+  margin: var(--space-8) 0 var(--space-5);
+}
+
+.introduction-paragraph {
+  max-width: 65ch;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.dropcap-first-letter p:first-child::first-letter,
+.drop-cap {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 0.8;
+  float: left;
+  margin: 0.1em 0.1em 0 0;
+  color: var(--clr-teal-primary);
+}
+
+/* ====================================================================
+   CHAPTER BODY CONTENT
+   ==================================================================== */
+
+.chap-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}
+
+.content-area h2 {
+  color: var(--clr-teal-primary);
+  margin-top: var(--space-8);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--clr-gold-muted);
+}
+
+.content-area h3 {
+  color: var(--clr-teal-dark);
+  margin-top: var(--space-6);
+}
+
+.content-area h4 {
+  color: var(--clr-ink-medium);
+  margin-top: var(--space-5);
+}
+
+/* ====================================================================
+   ENDNOTES SECTION
+   ==================================================================== */
+
+.endnotes {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+}
+
+.endnotes h2 {
+  font-size: var(--fs-700);
+  color: var(--clr-teal-primary);
+  text-align: center;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-3);
+  border-bottom: 2px solid var(--clr-gold-accent);
+}
+
+.notes-list {
+  list-style: none;
+  counter-reset: endnote-counter;
+  padding-left: 0;
+}
+
+.note-item {
+  counter-increment: endnote-counter;
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-5);
+  position: relative;
+  font-size: var(--fs-300);
+  line-height: var(--lh-body);
+}
+
+.note-item::before {
+  content: counter(endnote-counter) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: var(--clr-teal-primary);
+}
+
+.backlink {
+  display: inline-block;
+  margin-left: var(--space-2);
+  color: var(--clr-gold-accent);
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.backlink:hover {
+  color: var(--clr-gold-dark);
+}
+
+/* ====================================================================
+   QUIZ SECTION (SINGLE PAGE)
+   ==================================================================== */
+
+.quiz {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+  min-height: 90vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 3px solid var(--clr-teal-primary);
+}
+
+.quiz-header h2 {
+  font-size: var(--fs-700);
+  color: var(--clr-teal-primary);
+  margin-bottom: var(--space-3);
+}
+
+.quiz-instructions {
+  font-size: var(--fs-400);
+  color: var(--clr-muted-light);
+  line-height: var(--lh-body);
+}
+
+.mcq-list {
+  list-style: decimal;
+  padding-left: var(--space-6);
+  flex-grow: 1;
+}
+
+.mcq-item {
+  margin-bottom: var(--space-5);
+  page-break-inside: avoid;
+}
+
+.question-text {
+  font-size: var(--fs-400);
+  font-weight: 600;
+  color: var(--clr-ink);
+  margin-bottom: var(--space-3);
+  line-height: var(--lh-snug);
+}
+
+.mcq-options {
+  list-style: upper-alpha;
+  padding-left: var(--space-5);
+  margin-top: var(--space-2);
+}
+
+.option {
+  margin-bottom: var(--space-2);
+  padding-left: var(--space-2);
+  line-height: var(--lh-body);
+  color: var(--clr-ink-medium);
+}
+
+.quiz-footer {
+  margin-top: auto;
+  padding-top: var(--space-4);
+  text-align: center;
+}
+
+.quiz-footer hr {
+  border: none;
+  height: 2px;
+  background: var(--rule-gold);
+  margin-bottom: var(--space-3);
+}
+
+.print-instruction {
+  font-size: var(--fs-300);
+  font-style: italic;
+}
+
+/* ====================================================================
+   WORKSHEET SECTION (SINGLE PAGE)
+   ==================================================================== */
+
+.worksheet {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+  min-height: 90vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.worksheet-header {
+  text-align: center;
+  padding: var(--space-5) var(--space-4);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  margin-bottom: var(--space-6);
+}
+
+.worksheet-header h2 {
+  font-size: var(--fs-700);
+  color: var(--clr-teal-primary);
+  margin-bottom: var(--space-2);
+}
+
+.worksheet-subtitle {
+  font-size: var(--fs-400);
+  font-style: italic;
+}
+
+.worksheet-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.prompt-container {
+  page-break-inside: avoid;
+}
+
+.prompt-label {
+  display: block;
+  font-size: var(--fs-400);
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+  color: var(--clr-ink);
+}
+
+.prompt-number {
+  color: var(--clr-teal-primary);
+  font-weight: 700;
+  margin-right: var(--space-2);
+}
+
+.response-area {
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.response-area.lined {
+  gap: var(--space-5);
+}
+
+.line {
+  border-bottom: 1px solid var(--clr-muted);
+  min-height: 1.5rem;
+}
+
+.worksheet-footer {
+  margin-top: auto;
+  padding-top: var(--space-4);
+  text-align: center;
+}
+
+.worksheet-footer hr {
+  border: none;
+  height: 2px;
+  background: var(--rule-gold);
+  margin-bottom: var(--space-3);
+}
+
+/* ====================================================================
+   IMAGE QUOTE PAGE (CENTERED ON BLANK PAGE)
+   ==================================================================== */
+
+.image-quote {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  background-color: var(--clr-white);
+  page-break-before: always;
+  page-break-after: always;
+}
+
+.quote-figure {
+  max-width: 90%;
+  max-height: 90vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-figure img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-md);
+}
+
+/* ====================================================================
+   BACKMATTER - MODERN STYLING
+   ==================================================================== */
+
+/* Backmatter Prose Pages */
+.backmatter-prose {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+  min-height: 100vh;
+}
+
+.prose-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.prose-header h1 {
+  font-size: var(--fs-800);
+  margin-bottom: var(--space-4);
+}
+
+.prose-header hr {
+  border: none;
+  height: 3px;
+  background: var(--rule-gold);
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.prose-content {
+  font-size: var(--fs-400);
+  line-height: var(--lh-body);
+}
+
+/* Backmatter Lists */
+.backmatter-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+}
+
+.list-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.list-header h1 {
+  font-size: var(--fs-800);
+  margin-bottom: var(--space-4);
+}
+
+.list-header hr {
+  border: none;
+  height: 3px;
+  background: var(--rule-gold);
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Backmatter Worksheets */
+.backmatter-worksheet {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+  min-height: 100vh;
+}
+
+.backmatter-worksheet .worksheet-header {
+  background: var(--bg-teal-header);
+  color: var(--clr-white);
+  padding: var(--space-6) var(--space-4);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-6);
+  box-shadow: var(--shadow-md);
+}
+
+.backmatter-worksheet .worksheet-header h1 {
+  color: var(--clr-white);
+  margin-bottom: var(--space-3);
+}
+
+.backmatter-worksheet .worksheet-subtitle {
+  color: var(--clr-gold-light);
+}
+
+/* Backmatter Grid Worksheets */
+.backmatter-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}
+
+.grid-header {
+  text-align: center;
+  padding: var(--space-6);
+  margin-bottom: var(--space-8);
+  border-radius: var(--radius-lg);
+}
+
+.grid-header h1 {
+  font-size: var(--fs-800);
+  margin-bottom: var(--space-3);
+}
+
+.grid-subtitle {
+  font-size: var(--fs-500);
+  font-style: italic;
+}
+
+.grid-content {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.three-col {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Backmatter Free-form */
+.backmatter-freeform {
+  min-height: 100vh;
+  padding: var(--space-6) var(--space-4);
+}
+
+.freeform-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.freeform-header h1 {
+  font-size: var(--fs-800);
+  margin-bottom: var(--space-3);
+}
+
+.freeform-prompt {
+  font-size: var(--fs-400);
+  font-style: italic;
+}
+
+.freeform-canvas {
+  min-height: 70vh;
+  border: 2px dashed var(--clr-muted);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+}
+
+/* Print Button for Worksheets */
+.print-btn {
+  display: inline-block;
+  padding: var(--space-3) var(--space-6);
+  background: var(--bg-gold-header);
+  color: var(--clr-white);
+  border: none;
+  border-radius: var(--radius-full);
+  font-family: var(--font-meta);
+  font-size: var(--fs-400);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.print-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ====================================================================
+   ACCESSIBILITY
+   ==================================================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--clr-teal-primary);
+  outline-offset: 2px;
+}
+
+/* ====================================================================
+   RESPONSIVE DESIGN
+   ==================================================================== */
+
+@media screen and (max-width: 768px) {
+  .chap-title {
+    padding: var(--space-6) var(--space-3);
+  }
+
+  .title-line {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  .bible-quote-container {
+    padding: var(--space-4);
+  }
+
+  .mcq-options {
+    padding-left: var(--space-4);
+  }
+
+  .grid-content.three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .chap-body,
+  .endnotes,
+  .quiz,
+  .worksheet {
+    max-width: 900px;
+  }
+}
+
+/* ====================================================================
+   PRINT MEDIA QUERIES
+   ==================================================================== */
+
+@media print {
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+
+  .quiz,
+  .worksheet,
+  .image-quote {
+    page-break-before: always;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .quiz {
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  .worksheet {
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  .print-btn {
+    display: none;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl {
+    box-shadow: none;
+  }
+}
