@@ -103,6 +103,24 @@
     <item id="ch15" href="xhtml/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
     <item id="ch16" href="xhtml/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
 
+    <!-- Chapter Quote Pages -->
+    <item id="ch1-quote" href="xhtml/9a-chapter-i-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch2-quote" href="xhtml/10a-chapter-ii-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch3-quote" href="xhtml/11a-chapter-iii-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch4-quote" href="xhtml/13a-chapter-iv-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch5-quote" href="xhtml/14a-chapter-v-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch6-quote" href="xhtml/15a-chapter-vi-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch7-quote" href="xhtml/16a-chapter-vii-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch8-quote" href="xhtml/17a-chapter-viii-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch9-quote" href="xhtml/19a-chapter-ix-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch10-quote" href="xhtml/20a-chapter-x-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch11-quote" href="xhtml/21a-chapter-xi-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch12-quote" href="xhtml/22a-chapter-xii-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch13-quote" href="xhtml/23a-chapter-xiii-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch14-quote" href="xhtml/25a-chapter-xiv-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch15-quote" href="xhtml/26a-chapter-xv-quote.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch16-quote" href="xhtml/27a-chapter-xvi-quote.xhtml" media-type="application/xhtml+xml"/>
+
     <!-- Backmatter -->
     <item id="conclusion" href="xhtml/28-Conclusion.xhtml" media-type="application/xhtml+xml"/>
     <item id="quizkey" href="xhtml/29-QuizKey.xhtml" media-type="application/xhtml+xml"/>
@@ -136,27 +154,43 @@
 
     <itemref idref="part1"/>
     <itemref idref="ch1"/>
+    <itemref idref="ch1-quote"/>
     <itemref idref="ch2"/>
+    <itemref idref="ch2-quote"/>
     <itemref idref="ch3"/>
+    <itemref idref="ch3-quote"/>
 
     <itemref idref="part2"/>
     <itemref idref="ch4"/>
+    <itemref idref="ch4-quote"/>
     <itemref idref="ch5"/>
+    <itemref idref="ch5-quote"/>
     <itemref idref="ch6"/>
+    <itemref idref="ch6-quote"/>
     <itemref idref="ch7"/>
+    <itemref idref="ch7-quote"/>
     <itemref idref="ch8"/>
+    <itemref idref="ch8-quote"/>
 
     <itemref idref="part3"/>
     <itemref idref="ch9"/>
+    <itemref idref="ch9-quote"/>
     <itemref idref="ch10"/>
+    <itemref idref="ch10-quote"/>
     <itemref idref="ch11"/>
+    <itemref idref="ch11-quote"/>
     <itemref idref="ch12"/>
+    <itemref idref="ch12-quote"/>
     <itemref idref="ch13"/>
+    <itemref idref="ch13-quote"/>
 
     <itemref idref="part4"/>
     <itemref idref="ch14"/>
+    <itemref idref="ch14-quote"/>
     <itemref idref="ch15"/>
+    <itemref idref="ch15-quote"/>
     <itemref idref="ch16"/>
+    <itemref idref="ch16-quote"/>
 
     <itemref idref="conclusion"/>
     <itemref idref="quizkey"/>
