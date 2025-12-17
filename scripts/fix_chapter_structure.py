@@ -16,12 +16,9 @@ Restructures chapter XHTML files to follow the correct format:
 Removes duplicate sections and ensures proper closing image quote.
 """
 
-import re
-import os
 import sys
 from pathlib import Path
 from bs4 import BeautifulSoup
-import copy
 
 # Chapter mapping for roman numerals to image filenames
 CHAPTER_MAP = {
