@@ -34,6 +34,7 @@
     "canvas:generate": "node generate-canvas-visualization.js",
     "canvas:serve": "python3 -m http.server 8000",
     "canvas:view": "open canvas-viewer.html",
+    "canvas:chapter-title": "python3 -m http.server 8000 & sleep 2 && open http://localhost:8000/chapter-title-page-canvas.html",
     "preview": "python3 preview-server.py",
     "preview:open": "echo 'Server started! Open http://localhost:8000/xhtml-preview.html in your browser'",
     "test:tdd": "jest --config jest.config.tdd.js",

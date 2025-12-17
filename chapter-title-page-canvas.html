@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter Title Page - Visual Canvas</title>
+  
+  <!-- Google Fonts loaded inline for demo -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+      background: linear-gradient(to bottom, #f8f6f3 0%, #ebe7e0 100%);
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .page-header h1 {
+      font-family: 'Cinzel Decorative', Georgia, serif;
+      font-size: 2rem;
+      color: #2B9999;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .page-header .info-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #F5F3EF;
+      border-left: 4px solid #C9A961;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      text-align: left;
+      margin-top: 1rem;
+    }
+
+    .canvas-container {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+    }
+
+    /* Chapter Title Page Styles */
+    .chap-title {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      background-color: #FFFFFF;
+    }
+
+    .chapter-number-figure {
+      position: relative;
+      width: clamp(200px, 40vw, 280px);
+      height: clamp(200px, 40vw, 280px);
+      margin: 0 auto 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .chapter-number-brush {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0.9;
+    }
+
+    .chapter-number-brush-fallback {
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, #3DB3B3 0%, #2B9999 70%, #1F7272 100%);
+      border-radius: 50%;
+      box-shadow: 0 8px 16px rgba(43, 153, 153, 0.3);
+    }
+
+    .chapter-number-roman {
+      position: relative;
+      z-index: 1;
+      font-family: 'Cinzel Decorative', Georgia, 'Times New Roman', serif;
+      font-size: clamp(4rem, 10vw, 6rem);
+      font-weight: 400;
+      color: #FFFFFF;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .title-stack {
+      margin-bottom: 3rem;
+      max-width: 800px;
+    }
+
+    .title-bar {
+      height: 4px;
+      width: 60px;
+      margin: 0 auto 1.5rem;
+      background: linear-gradient(90deg, #C9A961, transparent 60%);
+      border-radius: 9999px;
+    }
+
+    .title-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .title-line {
+      font-family: 'Cinzel Decorative', Georgia, 'Times New Roman', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      color: #2B9999;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      line-height: 1.25;
+    }
+
+    .bible-quote-container {
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      padding: 1.75rem 2rem;
+      padding-left: 2.5rem;
+      background: #F5F3EF;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(15, 22, 22, 0.1);
+      position: relative;
+      border-left: 4px solid #C9A961;
+    }
+
+    .bible-quote-text {
+      font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.05rem, 1.1vw, 1.2rem);
+      font-style: italic;
+      line-height: 1.8;
+      color: #2B2B2B;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .bible-quote-reference {
+      font-family: 'Montserrat', Arial, 'Helvetica Neue', sans-serif;
+      font-size: clamp(0.94rem, 0.9vw, 1.05rem);
+      color: #C9A961;
+      font-weight: 600;
+      text-align: right;
+      display: block;
+      font-style: italic;
+    }
+
+    .introduction-heading {
+      font-family: 'Cinzel Decorative', Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.8rem, 2.8vw, 2.25rem);
+      color: #2B9999;
+      text-align: center;
+      margin: 3rem 0 1.75rem;
+    }
+
+    .introduction-paragraph {
+      max-width: 65ch;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .introduction-paragraph p {
+      font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.05rem, 1.1vw, 1.2rem);
+      line-height: 1.6;
+      color: #0F1616;
+    }
+
+    .drop-cap {
+      font-family: 'Cinzel Decorative', Georgia, 'Times New Roman', serif;
+      font-size: clamp(3rem, 6vw, 4rem);
+      font-weight: 700;
+      line-height: 0.8;
+      float: left;
+      margin: 0.1em 0.1em 0 0;
+      color: #2B9999;
+    }
+
+    .code-reference {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f5f5f5;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.875rem;
+      overflow-x: auto;
+    }
+
+    .code-reference pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>Chapter Title Page Visual Canvas</h1>
+      <p>React Component Visualization - The Artisan's Path</p>
+      <div class="info-badge">
+        <strong>Export Function:</strong> ChapterTitlePage() - Ready for React Integration
+      </div>
+    </div>
+    
+    <div class="canvas-container">
+      <section class="chap-title">
+        
+        <!-- Chapter Number Emblem -->
+        <div class="chapter-number-figure">
+          <div class="chapter-number-brush-fallback"></div>
+          <span class="chapter-number-roman">X</span>
+        </div>
+
+        <!-- Title Stack -->
+        <div class="title-stack">
+          <div class="title-bar"></div>
+          <div class="title-lines">
+            <span class="title-line">CRAFTING</span>
+            <span class="title-line">ENDURING LEGACIES</span>
+          </div>
+        </div>
+
+        <!-- Scripture Quote -->
+        <div class="bible-quote-container">
+          <p class="bible-quote-text">
+            "But the fruit of the Spirit is love, joy, peace…"
+          </p>
+          <span class="bible-quote-reference">
+            — Galatians 5:22–23
+          </span>
+        </div>
+
+        <!-- Introduction -->
+        <h2 class="introduction-heading">Introduction</h2>
+
+        <div class="introduction-paragraph">
+          <p>
+            <span class="drop-cap">C</span>onsider the impact of your work not just today, but as a legacy…
+          </p>
+        </div>
+
+      </section>
+    </div>
+
+    <div class="code-reference">
+      <h3 style="margin-bottom: 1rem; font-size: 1rem; color: #2B9999;">React Component Code:</h3>
+      <pre>export function ChapterTitlePage() {
+  return (
+    &lt;section className="chap-title"&gt;
+      &lt;div className="chapter-number-figure"&gt;
+        &lt;img src="/assets/brush-teal.png" alt="" /&gt;
+        &lt;span className="chapter-number-roman"&gt;X&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div className="title-stack"&gt;
+        &lt;div className="title-bar" /&gt;
+        &lt;div className="title-lines"&gt;
+          &lt;span className="title-line"&gt;CRAFTING&lt;/span&gt;
+          &lt;span className="title-line"&gt;ENDURING LEGACIES&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div className="bible-quote-container"&gt;
+        &lt;p className="bible-quote-text"&gt;
+          "But the fruit of the Spirit is love, joy, peace…"
+        &lt;/p&gt;
+        &lt;span className="bible-quote-reference"&gt;
+          — Galatians 5:22–23
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;h2 className="introduction-heading"&gt;Introduction&lt;/h2&gt;
+      &lt;div className="introduction-paragraph dropcap-first-letter"&gt;
+        &lt;p&gt;Consider the impact of your work not just today, but as a legacy…&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  );
+}</pre>
+    </div>
+  </div>
+</body>
+</html>
