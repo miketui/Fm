@@ -7,7 +7,7 @@ Verifies all 16 chapters follow the standard design pattern
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List
 
 # ANSI color codes
 GREEN = '\033[92m'
@@ -48,7 +48,7 @@ EXPECTED_PATTERN = {
     "introduction-paragraph": "Opening paragraph with drop cap",
 }
 
-def check_chapter_structure(filepath: Path) -> Dict[str, any]:
+def check_chapter_structure(filepath: Path) -> Dict[str, Any]:
     """Check if chapter has all required structural elements"""
 
     with open(filepath, 'r', encoding='utf-8') as f:
