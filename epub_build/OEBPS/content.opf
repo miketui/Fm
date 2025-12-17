@@ -23,6 +23,11 @@
   <manifest>
 
     <!-- Navigation -->
+    <item id="nav" href="xhtml/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+
+    <!-- Stylesheets -->
+    <item id="css-fonts" href="xhtml/styles/fonts.css" media-type="text/css"/>
+    <item id="css-main" href="xhtml/styles/style.css" media-type="text/css"/>
     <item id="css-artisan" href="styles/artisan-path-style.css" media-type="text/css"/>
 
     <!-- Fonts -->
@@ -68,6 +73,56 @@
     <item id="img-toc" href="images/toc-divider.svg" media-type="image/svg+xml"/>
 
     <!-- Frontmatter -->
+    <item id="title" href="xhtml/1-TitlePage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="copyright" href="xhtml/2-Copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item id="toc" href="xhtml/3-TableOfContents.xhtml" media-type="application/xhtml+xml"/>
+    <item id="dedication" href="xhtml/4-Dedication.xhtml" media-type="application/xhtml+xml"/>
+    <item id="selfassess" href="xhtml/5-SelfAssessment.xhtml" media-type="application/xhtml+xml"/>
+    <item id="affirm" href="xhtml/6-AffirmationOdyssey.xhtml" media-type="application/xhtml+xml"/>
+    <item id="preface" href="xhtml/7-Preface.xhtml" media-type="application/xhtml+xml"/>
+
+    <!-- Part Pages -->
+    <item id="part1" href="xhtml/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="part2" href="xhtml/12-Part-II-Building-Your-Professional-Practice.xhtml" media-type="application/xhtml+xml"/>
+    <item id="part3" href="xhtml/18-Part-III-Advanced-Business-Strategies.xhtml" media-type="application/xhtml+xml"/>
+    <item id="part4" href="xhtml/24-Part-IV-Future-Focused-Growth.xhtml" media-type="application/xhtml+xml"/>
+
+    <!-- Chapters -->
+    <item id="ch1" href="xhtml/9-chapter-i-unveiling-your-creative-odyssey.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch2" href="xhtml/10-chapter-ii-refining-your-creative-toolkit.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch3" href="xhtml/11-chapter-iii-reigniting-your-creative-fire.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch4" href="xhtml/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch5" href="xhtml/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch6" href="xhtml/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch7" href="xhtml/16-chapter-vii-embracing-wellness-and-self-care.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch8" href="xhtml/17-chapter-viii-advancing-skills-through-continuous-education.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch9" href="xhtml/19-chapter-ix-stepping-into-leadership.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch10" href="xhtml/20-chapter-x-crafting-enduring-legacies.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch11" href="xhtml/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch12" href="xhtml/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch13" href="xhtml/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch14" href="xhtml/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch15" href="xhtml/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch16" href="xhtml/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+
+    <!-- Backmatter -->
+    <item id="conclusion" href="xhtml/28-Conclusion.xhtml" media-type="application/xhtml+xml"/>
+    <item id="quizkey" href="xhtml/29-QuizKey.xhtml" media-type="application/xhtml+xml"/>
+    <item id="selfassess2" href="xhtml/30-SelfAssessment.xhtml" media-type="application/xhtml+xml"/>
+    <item id="affirm2" href="xhtml/31-affirmations-close.xhtml" media-type="application/xhtml+xml"/>
+    <item id="learning" href="xhtml/32-continued-learning-commitment.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ack" href="xhtml/33-Acknowledgments.xhtml" media-type="application/xhtml+xml"/>
+    <item id="about" href="xhtml/34-AbouttheAuthor.xhtml" media-type="application/xhtml+xml"/>
+    <item id="collective" href="xhtml/35-CurlsContempCollective.xhtml" media-type="application/xhtml+xml"/>
+    <item id="journal1" href="xhtml/36-JournalingStart.xhtml" media-type="application/xhtml+xml"/>
+    <item id="journal2" href="xhtml/37-ManifestingJournal.xhtml" media-type="application/xhtml+xml"/>
+    <item id="journal3" href="xhtml/38-journal-page.xhtml" media-type="application/xhtml+xml"/>
+    <item id="profdev" href="xhtml/39-professional-development.xhtml" media-type="application/xhtml+xml"/>
+    <item id="smart" href="xhtml/40-SMARTGoals.xhtml" media-type="application/xhtml+xml"/>
+    <item id="selfcare" href="xhtml/41-self-care-journal.xhtml" media-type="application/xhtml+xml"/>
+    <item id="vision" href="xhtml/42-VisionJournal.xhtml" media-type="application/xhtml+xml"/>
+    <item id="doodle" href="xhtml/43-DoodlePage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="biblio" href="xhtml/44-bibliography.xhtml" media-type="application/xhtml+xml"/>
 
   </manifest>
 
