@@ -7,7 +7,7 @@ Verifies all 16 chapters follow the standard design pattern
 import re
 import sys
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Dict, List, Tuple
 
 # ANSI color codes
 GREEN = '\033[92m'
@@ -48,7 +48,7 @@ EXPECTED_PATTERN = {
     "introduction-paragraph": "Opening paragraph with drop cap",
 }
 
-def check_chapter_structure(filepath: Path) -> Dict[str, Any]:
+def check_chapter_structure(filepath: Path) -> Dict[str, any]:
     """Check if chapter has all required structural elements"""
 
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -99,7 +99,7 @@ def check_chapter_structure(filepath: Path) -> Dict[str, Any]:
     return results
 
 
-def generate_report(audit_results: List[Dict]) -> int:
+def generate_report(audit_results: List[Dict]) -> None:
     """Generate formatted audit report"""
 
     print(f"\n{'='*80}")
@@ -149,10 +149,7 @@ def generate_report(audit_results: List[Dict]) -> int:
 
     for css_class, description in EXPECTED_PATTERN.items():
         found_in = sum(1 for r in audit_results if css_class in r["found_classes"])
-        if len(audit_results) == 0:
-            coverage = 0
-        else:
-            coverage = (found_in / len(audit_results)) * 100
+        coverage = (found_in / len(audit_results)) * 100
 
         if coverage == 100:
             status = f"{GREEN}100%{RESET}"
@@ -180,7 +177,7 @@ def generate_report(audit_results: List[Dict]) -> int:
         return 2
 
 
-def main() -> int:
+def main():
     """Main audit execution"""
 
     root_dir = Path(__file__).resolve().parent.parent / "REBRANDED_OUTPUT" / "xhtml"
