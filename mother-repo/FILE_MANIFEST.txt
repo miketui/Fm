@@ -1,0 +1,167 @@
+MOTHER REPOSITORY - FILE MANIFEST
+==================================
+
+Generated: December 17, 2024
+Location: /home/runner/work/Fm/Fm/mother-repo
+Total Size: 183 MB
+Total Files: 517
+
+ROOT LEVEL FILES
+================
+
+Documentation:
+--------------
+README.md (5.9K)
+  └─ Main repository documentation with overview and quick start
+
+QUICK_START.md (4.3K)
+  └─ Fast-track setup guide (start here!)
+
+SETUP_INSTRUCTIONS.md (5.6K)
+  └─ Detailed GitHub repository setup instructions
+
+CONTENTS.md (7.2K)
+  └─ Complete directory reference and file inventory
+
+TRANSFER_COMPLETE.md (7.2K)
+  └─ Transfer verification report and checklist
+
+LICENSE (1.1K)
+  └─ Copyright notice for Michael David Warren Jr.
+
+.gitignore (821 bytes)
+  └─ Git ignore rules for clean repository
+
+Scripts:
+--------
+setup-repository.sh (5.9K, executable)
+  └─ Automated GitHub repository setup script
+
+verify-integrity.sh (5.1K, executable)
+  └─ Repository integrity verification script
+
+MAIN DIRECTORIES
+================
+
+REBRANDED_OUTPUT/
+  Size: 172 MB
+  Files: 304
+  Purpose: Production-ready EPUB 3.2 package
+  
+  Key Contents:
+  • content.opf - EPUB package manifest
+  • mimetype - EPUB identifier
+  • META-INF/container.xml - EPUB container specification
+  • xhtml/ - 46 XHTML files (45 content + nav.xhtml)
+  • xhtml/styles/ - CSS stylesheets (3 files)
+  • fonts/ - 6 WOFF2 embedded fonts
+  • images/ - 31 optimized images
+  • pdf-pod/ - 44 print-ready PDFs (6×9" format)
+  • The-Artisans-Path.epub - Pre-built EPUB (~85 MB)
+  • Complete documentation and build scripts
+
+OEBPS/
+  Size: 11 MB
+  Files: 208
+  Purpose: Alternative EPUB structure
+  
+  Key Contents:
+  • content.opf - Alternative package manifest
+  • text/ - XHTML content files
+  • styles/ - CSS stylesheets
+  • fonts/ - Embedded fonts
+  • images/ - Image assets
+  • ebook/ - eBook-specific directory structure
+
+BOOK INFORMATION
+================
+
+Title: The Artisan's Path
+Subtitle: A Comprehensive Guide to Professional Hairstyling Excellence
+Author: Michael David Warren Jr.
+Publisher: Terragon Labs
+Format: EPUB 3.2 + Print PDFs (6×9")
+
+Content Structure:
+• 16 Chapters (organized in 4 Parts)
+• 7 Frontmatter files
+• 17 Backmatter files
+• 64 quiz questions (4 per chapter)
+• 64 worksheet prompts (4 per chapter)
+• Complete answer key
+
+Technical Specifications:
+• EPUB 3.2 compliant
+• WCAG 2.2 AA accessibility
+• Hybrid teal/gold branding
+• Professional typography
+• Optimized assets
+
+FILE COUNTS BY TYPE
+===================
+
+XHTML files: 46 (in REBRANDED_OUTPUT/xhtml/)
+PDF files: 44 (in REBRANDED_OUTPUT/pdf-pod/)
+Image files: 31 (in REBRANDED_OUTPUT/images/)
+Font files: 6 (in REBRANDED_OUTPUT/fonts/)
+CSS files: 3 (in REBRANDED_OUTPUT/xhtml/styles/)
+Documentation files: 8 (at root level)
+Script files: 2 (at root level)
+
+Plus all alternative files in OEBPS/ directory
+
+DIRECTORY SIZES
+===============
+
+REBRANDED_OUTPUT/xhtml/: ~45 XHTML files + 3 CSS
+REBRANDED_OUTPUT/images/: ~6.2 MB (31 images)
+REBRANDED_OUTPUT/fonts/: 374 KB (6 fonts)
+REBRANDED_OUTPUT/pdf-pod/: ~2 MB (44 PDFs)
+REBRANDED_OUTPUT/The-Artisans-Path.epub: ~85 MB
+
+OEBPS/text/: XHTML content
+OEBPS/images/: Image assets
+OEBPS/fonts/: Font files
+OEBPS/styles/: CSS files
+
+VERIFICATION STATUS
+===================
+
+✅ All files transferred from source
+✅ Directory structure preserved
+✅ File counts verified
+✅ Sizes verified (183 MB total)
+✅ Scripts tested and working
+✅ Documentation complete
+✅ Ready for GitHub upload
+
+LARGE FILE NOTICE
+=================
+
+The repository contains one large file:
+  REBRANDED_OUTPUT/The-Artisans-Path.epub (~85 MB)
+
+This is within GitHub's 100 MB limit but will show a warning
+as it exceeds the 50 MB recommendation.
+
+Options:
+1. Push as-is (will work, warning shown)
+2. Use Git LFS (recommended for large files)
+3. Remove from tracking (keep as release asset)
+
+The setup-repository.sh script offers all three options.
+
+NEXT STEPS
+==========
+
+1. Read QUICK_START.md for fast-track setup
+2. Run ./verify-integrity.sh to verify files
+3. Run ./setup-repository.sh to push to GitHub
+   OR follow manual steps in SETUP_INSTRUCTIONS.md
+
+For detailed information about any file or directory,
+refer to CONTENTS.md or the specific README files in
+each directory.
+
+==================================
+End of File Manifest
