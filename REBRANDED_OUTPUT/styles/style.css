@@ -498,11 +498,13 @@
 }
 
 /* Section 4: Quiz */
-.quiz-container {
-  max-height: 90vh;
+.quiz-container,
+.chap-quiz {
   padding: clamp(1rem, 3vw, 2rem);
   max-width: 50rem;
   margin: 0 auto;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .chap-quiz h2,
@@ -511,22 +513,59 @@
   margin-bottom: 1.5rem;
   font-weight: 600;
   text-align: center;
+  color: var(--accent-teal, #00796B);
 }
 
-.quiz-questions {
+.quiz-instructions {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.mcq-list {
   list-style: none;
   padding-left: 0;
   counter-reset: question-counter;
 }
 
+.mcq-item {
+  margin-bottom: 2rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.question-text {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+}
+
+.mcq-options {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.option {
+  margin: 0.5rem 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+  padding-left: 0.5rem;
+}
+
 .quiz-question-block {
   margin-bottom: 1.5rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .quiz-question {
   font-size: clamp(0.95rem, 2vw, 1.05rem);
   font-weight: 600;
   margin-bottom: 0.75rem;
+  color: #1a1a1a;
 }
 
 .quiz-options {
@@ -543,14 +582,17 @@
 .opt-label {
   font-weight: 600;
   margin-right: 0.5rem;
+  color: var(--accent-gold, #C68400);
 }
 
 /* Section 5: Worksheet */
 .worksheet {
-  max-height: 90vh;
+  max-height: none;
   padding: clamp(1rem, 3vw, 2rem);
   max-width: 50rem;
   margin: 0 auto;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .worksheet-title {
@@ -558,6 +600,42 @@
   margin-bottom: 1.5rem;
   font-weight: 600;
   text-align: center;
+  color: var(--accent-teal, #00796B);
+}
+
+.worksheet-content {
+  padding: 1rem 0;
+}
+
+.prompt-container {
+  margin: 2rem 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.prompt-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--accent-teal, #00796B);
+  line-height: 1.4;
+}
+
+.prompt-number {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: var(--accent-gold, #C68400);
+}
+
+.response-area.lined {
+  min-height: 4rem;
+  margin-top: 0.5rem;
+}
+
+.response-area.lined .line {
+  height: 1.5rem;
+  border-bottom: 1px solid #cbd5e1;
+  margin-bottom: 0.25rem;
 }
 
 .activity-section {
