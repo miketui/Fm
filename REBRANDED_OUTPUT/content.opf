@@ -27,12 +27,7 @@
 
     <!-- Stylesheets -->
     <item id="css-fonts" href="xhtml/styles/fonts.css" media-type="text/css"/>
-<<<<<<< HEAD
     <item id="css-main" href="xhtml/styles/style.css" media-type="text/css"/>
-    <item id="css-print" href="xhtml/styles/print.css" media-type="text/css"/>
-    <item id="css-print-pod" href="xhtml/styles/print-pod.css" media-type="text/css"/>
-=======
->>>>>>> b4fd550 (Fix EPUB: Standardize chapter quote pages and optimize digital publishing)
     <item id="css-artisan" href="styles/artisan-path-style.css" media-type="text/css"/>
 
     <!-- Fonts -->
