@@ -97,15 +97,9 @@ def fix_duplicate_ids(xhtml_path):
             new_id = f"{dup_id}-{i}"
             print(f"      Renaming to: {new_id}")
             elem['id'] = new_id
-
-            # Update any references to this ID
-            refs = soup.find_all(href=f"#{dup_id}")
-            if refs:
-                print(f"      Updating {len(refs)} reference(s)")
-                for ref in refs:
-                    # Only update if this is referring to the renamed element
-                    ref['href'] = f"#{new_id}"
-
+            # Note: References to this ID are not automatically updated as we cannot
+            # reliably determine which references should point to which duplicate element.
+            # This requires manual review or more sophisticated contextual analysis.
             modified = True
 
     if modified:
