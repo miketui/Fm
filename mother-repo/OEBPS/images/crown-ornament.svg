@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="60" height="40">
+  <defs>
+    <linearGradient id="crownGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+  </defs>
+  <polygon points="30,5 22,20 10,15 18,30 42,30 50,15 38,20" fill="url(#crownGradient)" stroke="#b8860b" stroke-width="1"/>
+  <circle cx="30" cy="8" r="2" fill="#ff6b6b"/>
+  <circle cx="20" cy="12" r="1.5" fill="#4ecdc4"/>
+  <circle cx="40" cy="12" r="1.5" fill="#4ecdc4"/>
+</svg>
