@@ -99,7 +99,7 @@ def check_chapter_structure(filepath: Path) -> Dict[str, Any]:
     return results
 
 
-def generate_report(audit_results: List[Dict]) -> None:
+def generate_report(audit_results: List[Dict]) -> int:
     """Generate formatted audit report"""
 
     print(f"\n{'='*80}")
@@ -149,7 +149,10 @@ def generate_report(audit_results: List[Dict]) -> None:
 
     for css_class, description in EXPECTED_PATTERN.items():
         found_in = sum(1 for r in audit_results if css_class in r["found_classes"])
-        coverage = (found_in / len(audit_results)) * 100
+        if len(audit_results) == 0:
+            coverage = 0
+        else:
+            coverage = (found_in / len(audit_results)) * 100
 
         if coverage == 100:
             status = f"{GREEN}100%{RESET}"
@@ -177,7 +180,7 @@ def generate_report(audit_results: List[Dict]) -> None:
         return 2
 
 
-def main():
+def main() -> int:
     """Main audit execution"""
 
     root_dir = Path(__file__).resolve().parent.parent / "REBRANDED_OUTPUT" / "xhtml"
