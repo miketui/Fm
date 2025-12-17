@@ -46,10 +46,7 @@ def clean_chapter_html(filepath: Path, dry_run: bool = False) -> dict:
 
         original = content
 
-        # We want to keep proper closing structure, just clean up stray tags
-        # The correct structure should be: </section></main> at the very end
-
-        # Pattern: Fix stray closing tags right before quote-page
+        # Fix stray closing tags right before quote-page
         # Find the quote-page section and what's immediately before it
         match = re.search(r'((?:</\w+>)+)\s*(<section class="quote-page">)', content)
         if match:
