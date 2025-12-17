@@ -210,7 +210,7 @@ def main():
                 chapter_path.write_text(cleaned_content, encoding='utf-8')
                 print(f"   ✓ Removed image quotes and duplicates")
                 modified_chapters.append(chapter_file)
-            except Exception as e:
+            except (IOError, OSError, UnicodeError) as e:
                 print(f"   ❌ Error processing {chapter_file}: {e}")
                 # Original file is preserved since we used copy instead of rename
                 if backup_path.exists():
