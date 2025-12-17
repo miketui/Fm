@@ -1,177 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="BookId">
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="book-id" xml:lang="en">
+
+  <!-- METADATA -->
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:identifier id="BookId">urn:uuid:9fa5e2ef-5fd8-4f5b-9077-0b9e856cda3d</dc:identifier>
-    <dc:title>Curls &amp; Contemplation</dc:title>
+    <dc:title>The Artisan's Path: A Comprehensive Guide to Professional Hairstyling Excellence</dc:title>
+    <dc:creator id="creator">Michael David Warren Jr.</dc:creator>
     <dc:language>en</dc:language>
-    <meta property="dcterms:modified">2025-12-17T02:23:43Z</meta>
+    <dc:identifier id="book-id">urn:uuid:0d5f754f-20c8-4b21-a43b-acc861e034ed</dc:identifier>
+    <dc:publisher>Terragon Labs</dc:publisher>
+    <dc:date>2025-11-03</dc:date>
+    <dc:rights>Copyright © 2025 Michael David Warren Jr. All rights reserved.</dc:rights>
+    <dc:description>A transformative guide for professional hairstylists combining technical excellence, business acumen, and personal development. Featuring 16 comprehensive chapters, chapter-specific quizzes and worksheets, and practical guidance for building a thriving freelance hairstyling career.</dc:description>
+    <dc:subject>Hairstyling</dc:subject>
+    <dc:subject>Beauty Industry</dc:subject>
+    <dc:subject>Professional Development</dc:subject>
+    <dc:subject>Freelance Business</dc:subject>
+    <dc:subject>Career Development</dc:subject>
+    <meta property="dcterms:modified">2025-11-03T00:00:00Z</meta>
   </metadata>
+
+  <!-- MANIFEST -->
   <manifest>
-    <item id="styles_artisan-path-style" href="styles/artisan-path-style.css" media-type="text/css"/>
-<item id="styles_fonts" href="styles/fonts.css" media-type="text/css"/>
-<item id="styles_print-pod" href="styles/print-pod.css" media-type="text/css"/>
-<item id="styles_print" href="styles/print.css" media-type="text/css"/>
-<item id="styles_style" href="styles/style.css" media-type="text/css"/>
-<item id="images_Michael" href="images/Michael.jpeg" media-type="image/jpeg"/>
-<item id="images_brushstroke" href="images/brushstroke.svg" media-type="image/svg+xml"/>
-<item id="images_chapter-frame" href="images/chapter-frame.svg" media-type="image/svg+xml"/>
-<item id="images_chapter-i-quote" href="images/chapter-i-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-ii-quote" href="images/chapter-ii-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-iii-quote" href="images/chapter-iii-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-iv-quote" href="images/chapter-iv-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-ix-quote" href="images/chapter-ix-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-v-quote" href="images/chapter-v-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-vi-quote" href="images/chapter-vi-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-vii-quote" href="images/chapter-vii-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-viii-quote" href="images/chapter-viii-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-x-quote" href="images/chapter-x-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-xi-quote" href="images/chapter-xi-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-xii-quote" href="images/chapter-xii-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-xiii-quote" href="images/chapter-xiii-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-xiv-quote" href="images/chapter-xiv-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-xv-quote" href="images/chapter-xv-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_chapter-xvi-quote" href="images/chapter-xvi-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_conclusion-quote" href="images/conclusion-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_endnote-marker" href="images/endnote-marker.png" media-type="image/png"/>
-<item id="images_preface-quote" href="images/preface-quote.jpeg" media-type="image/jpeg"/>
-<item id="images_quiz-checkbox-checked" href="images/quiz-checkbox-checked.svg" media-type="image/svg+xml"/>
-<item id="images_quiz-checkbox-unchecked" href="images/quiz-checkbox-unchecked.svg" media-type="image/svg+xml"/>
-<item id="images_quote-marks" href="images/quote-marks.svg" media-type="image/svg+xml"/>
-<item id="images_ruled-paper" href="images/ruled-paper.svg" media-type="image/svg+xml"/>
-<item id="images_toc-divider" href="images/toc-divider.svg" media-type="image/svg+xml"/>
-<item id="fonts_CinzelDecorative" href="fonts/CinzelDecorative.woff2" media-type="font/woff2"/>
-<item id="fonts_Montserrat-Bold" href="fonts/Montserrat-Bold.woff2" media-type="font/woff2"/>
-<item id="fonts_Montserrat-Regular" href="fonts/Montserrat-Regular.woff2" media-type="font/woff2"/>
-<item id="fonts_librebaskerville-bold" href="fonts/librebaskerville-bold.woff2" media-type="font/woff2"/>
-<item id="fonts_librebaskerville-italic" href="fonts/librebaskerville-italic.woff2" media-type="font/woff2"/>
-<item id="fonts_librebaskerville-regular" href="fonts/librebaskerville-regular.woff2" media-type="font/woff2"/>
-<item id="text_1_1-TitlePage" href="text/1-TitlePage.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_2_2-Copyright" href="text/2-Copyright.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_3_3-TableOfContents" href="text/3-TableOfContents.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_4_4-Dedication" href="text/4-Dedication.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_5_5-SelfAssessment" href="text/5-SelfAssessment.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_6_6-affirmation-odyssey" href="text/6-affirmation-odyssey.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_7_7-Preface" href="text/7-Preface.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_7_7-Preface_quote" href="text/7-Preface-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_8_8-Part-I-Foundations-of-Creative-Hairstyling" href="text/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_9_9-chapter-i-unveiling-your-creative-odyssey" href="text/9-chapter-i-unveiling-your-creative-odyssey.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_9_9-chapter-i-unveiling-your-creative-odyssey_quote" href="text/9-chapter-i-unveiling-your-creative-odyssey-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_10_10-chapter-ii-refining-your-creative-toolkit" href="text/10-chapter-ii-refining-your-creative-toolkit.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_10_10-chapter-ii-refining-your-creative-toolkit_quote" href="text/10-chapter-ii-refining-your-creative-toolkit-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_11_11-chapter-iii-reigniting-your-creative-fire" href="text/11-chapter-iii-reigniting-your-creative-fire.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_11_11-chapter-iii-reigniting-your-creative-fire_quote" href="text/11-chapter-iii-reigniting-your-creative-fire-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_12_12-Part-II-Building-Your-Professional-Practice" href="text/12-Part-II-Building-Your-Professional-Practice.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_13_13-chapter-iv-the-art-of-networking-in-freelance-hairstyling" href="text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_13_13-chapter-iv-the-art-of-networking-in-freelance-hairstyling_quote" href="text/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_14_14-chapter-v-cultivating-creative-excellence-through-mentorship" href="text/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_14_14-chapter-v-cultivating-creative-excellence-through-mentorship_quote" href="text/14-chapter-v-cultivating-creative-excellence-through-mentorship-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_15_15-chapter-vi-mastering-the-business-of-hairstyling" href="text/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_15_15-chapter-vi-mastering-the-business-of-hairstyling_quote" href="text/15-chapter-vi-mastering-the-business-of-hairstyling-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_16_16-chapter-vii-embracing-wellness-and-self-care" href="text/16-chapter-vii-embracing-wellness-and-self-care.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_16_16-chapter-vii-embracing-wellness-and-self-care_quote" href="text/16-chapter-vii-embracing-wellness-and-self-care-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_17_17-chapter-viii-advancing-skills-through-continuous-education" href="text/17-chapter-viii-advancing-skills-through-continuous-education.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_17_17-chapter-viii-advancing-skills-through-continuous-education_quote" href="text/17-chapter-viii-advancing-skills-through-continuous-education-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_18_18-Part-III-Advanced-Business-Strategies" href="text/18-Part-III-Advanced-Business-Strategies.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_19_19-chapter-ix-stepping-into-leadership" href="text/19-chapter-ix-stepping-into-leadership.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_19_19-chapter-ix-stepping-into-leadership_quote" href="text/19-chapter-ix-stepping-into-leadership-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_20_20-chapter-x-crafting-enduring-legacies" href="text/20-chapter-x-crafting-enduring-legacies.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_20_20-chapter-x-crafting-enduring-legacies_quote" href="text/20-chapter-x-crafting-enduring-legacies-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_21_21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists" href="text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_21_21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists_quote" href="text/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_22_22-chapter-xii-financial-wisdom-building-sustainable-ventures" href="text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_22_22-chapter-xii-financial-wisdom-building-sustainable-ventures_quote" href="text/22-chapter-xii-financial-wisdom-building-sustainable-ventures-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_23_23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling" href="text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_23_23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling_quote" href="text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_24_24-Part-IV-Future-Focused-Growth" href="text/24-Part-IV-Future-Focused-Growth.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_25_25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry" href="text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_25_25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry_quote" href="text/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_26_26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling" href="text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_26_26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling_quote" href="text/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_27_27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling" href="text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_27_27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling_quote" href="text/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_28_28-Conclusion" href="text/28-Conclusion.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_28_28-Conclusion_quote" href="text/28-Conclusion-quote.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_29_29QuizKey" href="text/29QuizKey.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_30_30-SelfAssessment" href="text/30-SelfAssessment.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_31_31-affirmations-close" href="text/31-affirmations-close.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_32_32-continued-learning-commitment" href="text/32-continued-learning-commitment.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_33_33-Acknowledgments" href="text/33-Acknowledgments.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_34_34-AbouttheAuthor" href="text/34-AbouttheAuthor.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_35_35-CurlsContempCollective" href="text/35-CurlsContempCollective.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_36_36-JournalingStart" href="text/36-JournalingStart.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_37_37-ManifestingJournal" href="text/37-ManifestingJournal.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_38_38-journal-page" href="text/38-journal-page.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_39_39-professional-development" href="text/39-professional-development.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_40_40-SMARTGoals" href="text/40-SMARTGoals.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_41_41-self-care-journal" href="text/41-self-care-journal.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_42_42-VisionJournal" href="text/42-VisionJournal.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_43_43-DoodlePage" href="text/43-DoodlePage.xhtml" media-type="application/xhtml+xml"/>
-<item id="text_44_44-bibliography" href="text/44-bibliography.xhtml" media-type="application/xhtml+xml"/>
-<item id="nav" href="text/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+
+    <!-- Navigation -->
+    <item id="nav" href="xhtml/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+
+    <!-- Stylesheets -->
+    <item id="css-fonts" href="xhtml/styles/fonts.css" media-type="text/css"/>
+    <item id="css-main" href="xhtml/styles/style.css" media-type="text/css"/>
+    <item id="css-artisan" href="styles/artisan-path-style.css" media-type="text/css"/>
+
+    <!-- Fonts -->
+    <item id="font-cinzel" href="fonts/CinzelDecorative.woff2" media-type="font/woff2"/>
+    <item id="font-mont-bold" href="fonts/Montserrat-Bold.woff2" media-type="font/woff2"/>
+    <item id="font-mont-reg" href="fonts/Montserrat-Regular.woff2" media-type="font/woff2"/>
+    <item id="font-libre-bold" href="fonts/librebaskerville-bold.woff2" media-type="font/woff2"/>
+    <item id="font-libre-italic" href="fonts/librebaskerville-italic.woff2" media-type="font/woff2"/>
+    <item id="font-libre-reg" href="fonts/librebaskerville-regular.woff2" media-type="font/woff2"/>
+
+    <!-- Images -->
+    <item id="cover-image" href="images/cover.png" media-type="image/png" properties="cover-image"/>
+    <item id="img-author" href="images/Michael.jpeg" media-type="image/jpeg"/>
+    <item id="img-brush" href="images/brushstroke.svg" media-type="image/svg+xml"/>
+    <item id="img-frame" href="images/chapter-frame.svg" media-type="image/svg+xml"/>
+    <item id="img-ch1" href="images/chapter-i-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch2" href="images/chapter-ii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch3" href="images/chapter-iii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch4" href="images/chapter-iv-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch5" href="images/chapter-v-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch6" href="images/chapter-vi-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch7" href="images/chapter-vii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch8" href="images/chapter-viii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch9" href="images/chapter-ix-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch10" href="images/chapter-x-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch11" href="images/chapter-xi-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch12" href="images/chapter-xii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch13" href="images/chapter-xiii-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch14" href="images/chapter-xiv-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch15" href="images/chapter-xv-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-ch16" href="images/chapter-xvi-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-conclusion" href="images/conclusion-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-crown" href="images/crown-ornament.svg" media-type="image/svg+xml"/>
+    <item id="img-decoline" href="images/decorative-line.svg" media-type="image/svg+xml"/>
+    <item id="img-endnote" href="images/endnote-marker.png" media-type="image/png"/>
+    <item id="img-partborder" href="images/part-border.svg" media-type="image/svg+xml"/>
+    <item id="img-preface" href="images/preface-quote.jpeg" media-type="image/jpeg"/>
+    <item id="img-quiz-checked" href="images/quiz-checkbox-checked.svg" media-type="image/svg+xml"/>
+    <item id="img-quiz-unchecked" href="images/quiz-checkbox-unchecked.svg" media-type="image/svg+xml"/>
+    <item id="img-quiz" href="images/quiz-checkbox.svg" media-type="image/svg+xml"/>
+    <item id="img-quotes" href="images/quote-marks.svg" media-type="image/svg+xml"/>
+    <item id="img-ruled" href="images/ruled-paper.svg" media-type="image/svg+xml"/>
+    <item id="img-toc" href="images/toc-divider.svg" media-type="image/svg+xml"/>
+
+    <!-- Frontmatter -->
+    <item id="title" href="xhtml/1-TitlePage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="copyright" href="xhtml/2-Copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item id="toc" href="xhtml/3-TableOfContents.xhtml" media-type="application/xhtml+xml"/>
+    <item id="dedication" href="xhtml/4-Dedication.xhtml" media-type="application/xhtml+xml"/>
+    <item id="selfassess" href="xhtml/5-SelfAssessment.xhtml" media-type="application/xhtml+xml"/>
+    <item id="affirm" href="xhtml/6-AffirmationOdyssey.xhtml" media-type="application/xhtml+xml"/>
+    <item id="preface" href="xhtml/7-Preface.xhtml" media-type="application/xhtml+xml"/>
+
+    <!-- Part Pages -->
+    <item id="part1" href="xhtml/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="part2" href="xhtml/12-Part-II-Building-Your-Professional-Practice.xhtml" media-type="application/xhtml+xml"/>
+    <item id="part3" href="xhtml/18-Part-III-Advanced-Business-Strategies.xhtml" media-type="application/xhtml+xml"/>
+    <item id="part4" href="xhtml/24-Part-IV-Future-Focused-Growth.xhtml" media-type="application/xhtml+xml"/>
+
+    <!-- Chapters -->
+    <item id="ch1" href="xhtml/9-chapter-i-unveiling-your-creative-odyssey.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch2" href="xhtml/10-chapter-ii-refining-your-creative-toolkit.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch3" href="xhtml/11-chapter-iii-reigniting-your-creative-fire.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch4" href="xhtml/13-chapter-iv-the-art-of-networking-in-freelance-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch5" href="xhtml/14-chapter-v-cultivating-creative-excellence-through-mentorship.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch6" href="xhtml/15-chapter-vi-mastering-the-business-of-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch7" href="xhtml/16-chapter-vii-embracing-wellness-and-self-care.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch8" href="xhtml/17-chapter-viii-advancing-skills-through-continuous-education.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch9" href="xhtml/19-chapter-ix-stepping-into-leadership.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch10" href="xhtml/20-chapter-x-crafting-enduring-legacies.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch11" href="xhtml/21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch12" href="xhtml/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch13" href="xhtml/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch14" href="xhtml/25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch15" href="xhtml/26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch16" href="xhtml/27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml" media-type="application/xhtml+xml"/>
+
+    <!-- Backmatter -->
+    <item id="conclusion" href="xhtml/28-Conclusion.xhtml" media-type="application/xhtml+xml"/>
+    <item id="quizkey" href="xhtml/29-QuizKey.xhtml" media-type="application/xhtml+xml"/>
+    <item id="selfassess2" href="xhtml/30-SelfAssessment.xhtml" media-type="application/xhtml+xml"/>
+    <item id="affirm2" href="xhtml/31-affirmations-close.xhtml" media-type="application/xhtml+xml"/>
+    <item id="learning" href="xhtml/32-continued-learning-commitment.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ack" href="xhtml/33-Acknowledgments.xhtml" media-type="application/xhtml+xml"/>
+    <item id="about" href="xhtml/34-AbouttheAuthor.xhtml" media-type="application/xhtml+xml"/>
+    <item id="collective" href="xhtml/35-CurlsContempCollective.xhtml" media-type="application/xhtml+xml"/>
+    <item id="journal1" href="xhtml/36-JournalingStart.xhtml" media-type="application/xhtml+xml"/>
+    <item id="journal2" href="xhtml/37-ManifestingJournal.xhtml" media-type="application/xhtml+xml"/>
+    <item id="journal3" href="xhtml/38-journal-page.xhtml" media-type="application/xhtml+xml"/>
+    <item id="profdev" href="xhtml/39-professional-development.xhtml" media-type="application/xhtml+xml"/>
+    <item id="smart" href="xhtml/40-SMARTGoals.xhtml" media-type="application/xhtml+xml"/>
+    <item id="selfcare" href="xhtml/41-self-care-journal.xhtml" media-type="application/xhtml+xml"/>
+    <item id="vision" href="xhtml/42-VisionJournal.xhtml" media-type="application/xhtml+xml"/>
+    <item id="doodle" href="xhtml/43-DoodlePage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="biblio" href="xhtml/44-bibliography.xhtml" media-type="application/xhtml+xml"/>
+
   </manifest>
+
+  <!-- SPINE -->
   <spine>
-    <itemref idref="text_1_1-TitlePage"/>
-<itemref idref="text_2_2-Copyright"/>
-<itemref idref="text_3_3-TableOfContents"/>
-<itemref idref="text_4_4-Dedication"/>
-<itemref idref="text_5_5-SelfAssessment"/>
-<itemref idref="text_6_6-affirmation-odyssey"/>
-<itemref idref="text_7_7-Preface"/>
-<itemref idref="text_7_7-Preface_quote"/>
-<itemref idref="text_8_8-Part-I-Foundations-of-Creative-Hairstyling"/>
-<itemref idref="text_9_9-chapter-i-unveiling-your-creative-odyssey"/>
-<itemref idref="text_9_9-chapter-i-unveiling-your-creative-odyssey_quote"/>
-<itemref idref="text_10_10-chapter-ii-refining-your-creative-toolkit"/>
-<itemref idref="text_10_10-chapter-ii-refining-your-creative-toolkit_quote"/>
-<itemref idref="text_11_11-chapter-iii-reigniting-your-creative-fire"/>
-<itemref idref="text_11_11-chapter-iii-reigniting-your-creative-fire_quote"/>
-<itemref idref="text_12_12-Part-II-Building-Your-Professional-Practice"/>
-<itemref idref="text_13_13-chapter-iv-the-art-of-networking-in-freelance-hairstyling"/>
-<itemref idref="text_13_13-chapter-iv-the-art-of-networking-in-freelance-hairstyling_quote"/>
-<itemref idref="text_14_14-chapter-v-cultivating-creative-excellence-through-mentorship"/>
-<itemref idref="text_14_14-chapter-v-cultivating-creative-excellence-through-mentorship_quote"/>
-<itemref idref="text_15_15-chapter-vi-mastering-the-business-of-hairstyling"/>
-<itemref idref="text_15_15-chapter-vi-mastering-the-business-of-hairstyling_quote"/>
-<itemref idref="text_16_16-chapter-vii-embracing-wellness-and-self-care"/>
-<itemref idref="text_16_16-chapter-vii-embracing-wellness-and-self-care_quote"/>
-<itemref idref="text_17_17-chapter-viii-advancing-skills-through-continuous-education"/>
-<itemref idref="text_17_17-chapter-viii-advancing-skills-through-continuous-education_quote"/>
-<itemref idref="text_18_18-Part-III-Advanced-Business-Strategies"/>
-<itemref idref="text_19_19-chapter-ix-stepping-into-leadership"/>
-<itemref idref="text_19_19-chapter-ix-stepping-into-leadership_quote"/>
-<itemref idref="text_20_20-chapter-x-crafting-enduring-legacies"/>
-<itemref idref="text_20_20-chapter-x-crafting-enduring-legacies_quote"/>
-<itemref idref="text_21_21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists"/>
-<itemref idref="text_21_21-chapter-xi-advanced-digital-strategies-for-freelance-hairstylists_quote"/>
-<itemref idref="text_22_22-chapter-xii-financial-wisdom-building-sustainable-ventures"/>
-<itemref idref="text_22_22-chapter-xii-financial-wisdom-building-sustainable-ventures_quote"/>
-<itemref idref="text_23_23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling"/>
-<itemref idref="text_23_23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling_quote"/>
-<itemref idref="text_24_24-Part-IV-Future-Focused-Growth"/>
-<itemref idref="text_25_25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry"/>
-<itemref idref="text_25_25-chapter-xiv-the-impact-of-ai-on-the-beauty-industry_quote"/>
-<itemref idref="text_26_26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling"/>
-<itemref idref="text_26_26-chapter-xv-cultivating-resilience-and-well-being-in-hairstyling_quote"/>
-<itemref idref="text_27_27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling"/>
-<itemref idref="text_27_27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling_quote"/>
-<itemref idref="text_28_28-Conclusion"/>
-<itemref idref="text_28_28-Conclusion_quote"/>
-<itemref idref="text_29_29QuizKey"/>
-<itemref idref="text_30_30-SelfAssessment"/>
-<itemref idref="text_31_31-affirmations-close"/>
-<itemref idref="text_32_32-continued-learning-commitment"/>
-<itemref idref="text_33_33-Acknowledgments"/>
-<itemref idref="text_34_34-AbouttheAuthor"/>
-<itemref idref="text_35_35-CurlsContempCollective"/>
-<itemref idref="text_36_36-JournalingStart"/>
-<itemref idref="text_37_37-ManifestingJournal"/>
-<itemref idref="text_38_38-journal-page"/>
-<itemref idref="text_39_39-professional-development"/>
-<itemref idref="text_40_40-SMARTGoals"/>
-<itemref idref="text_41_41-self-care-journal"/>
-<itemref idref="text_42_42-VisionJournal"/>
-<itemref idref="text_43_43-DoodlePage"/>
-<itemref idref="text_44_44-bibliography"/>
-<itemref idref="nav"/>
+    <itemref idref="title"/>
+    <itemref idref="copyright"/>
+    <itemref idref="toc"/>
+    <itemref idref="dedication"/>
+    <itemref idref="selfassess"/>
+    <itemref idref="affirm"/>
+    <itemref idref="preface"/>
+
+    <itemref idref="part1"/>
+    <itemref idref="ch1"/>
+    <itemref idref="ch2"/>
+    <itemref idref="ch3"/>
+
+    <itemref idref="part2"/>
+    <itemref idref="ch4"/>
+    <itemref idref="ch5"/>
+    <itemref idref="ch6"/>
+    <itemref idref="ch7"/>
+    <itemref idref="ch8"/>
+
+    <itemref idref="part3"/>
+    <itemref idref="ch9"/>
+    <itemref idref="ch10"/>
+    <itemref idref="ch11"/>
+    <itemref idref="ch12"/>
+    <itemref idref="ch13"/>
+
+    <itemref idref="part4"/>
+    <itemref idref="ch14"/>
+    <itemref idref="ch15"/>
+    <itemref idref="ch16"/>
+
+    <itemref idref="conclusion"/>
+    <itemref idref="quizkey"/>
+    <itemref idref="selfassess2"/>
+    <itemref idref="affirm2"/>
+    <itemref idref="learning"/>
+    <itemref idref="ack"/>
+    <itemref idref="about"/>
+    <itemref idref="collective"/>
+    <itemref idref="journal1"/>
+    <itemref idref="journal2"/>
+    <itemref idref="journal3"/>
+    <itemref idref="profdev"/>
+    <itemref idref="smart"/>
+    <itemref idref="selfcare"/>
+    <itemref idref="vision"/>
+    <itemref idref="doodle"/>
+    <itemref idref="biblio"/>
   </spine>
+
 </package>

@@ -7,9 +7,10 @@ from pathlib import Path
 from datetime import datetime
 
 # Configuration
-SOURCE_BASE = Path('/root/repo/REBRANDED-output')
-BUILD_DIR = Path('/root/repo/epub_build')
-DIST_DIR = Path('/root/repo/dist')
+ROOT_DIR = Path(__file__).resolve().parent
+SOURCE_BASE = ROOT_DIR / 'REBRANDED-output'
+BUILD_DIR = ROOT_DIR / 'epub_build'
+DIST_DIR = ROOT_DIR / 'dist'
 OUTPUT_FILENAME = 'curls-and-contemplation-rebranded.epub'
 
 # Mappings (Source -> Destination relative to OEBPS)
