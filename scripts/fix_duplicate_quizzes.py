@@ -7,7 +7,7 @@ More aggressive approach using line-by-line parsing.
 import os
 from pathlib import Path
 
-# Allow configuration via environment variable or default to relative path
+# Allow configuration via environment variable or default to path relative to script location
 DEFAULT_XHTML_DIR = Path(__file__).parent.parent / "REBRANDED_OUTPUT" / "xhtml"
 XHTML_DIR = Path(os.environ.get("XHTML_DIR", str(DEFAULT_XHTML_DIR)))
 

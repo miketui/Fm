@@ -29,7 +29,7 @@ CHAPTERS = [
     ("27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml", "XVI", "chapter-xvi-quote.jpeg", "Tresses and Textures Embracing Diversity in Hairstyling"),
 ]
 
-# Allow configuration via environment variable or default to relative path
+# Allow configuration via environment variable or default to path relative to script location
 DEFAULT_XHTML_DIR = Path(__file__).parent.parent / "REBRANDED_OUTPUT" / "xhtml"
 XHTML_DIR = Path(os.environ.get("XHTML_DIR", str(DEFAULT_XHTML_DIR)))
 
