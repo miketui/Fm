@@ -6,7 +6,6 @@ Removes duplicate content and properly formats chapters according to EPUB 3.2 sp
 
 import os
 import re
-import shutil
 from pathlib import Path
 from typing import Tuple
 
