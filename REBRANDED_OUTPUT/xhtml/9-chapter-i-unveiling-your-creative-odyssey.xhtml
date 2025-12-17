@@ -1,62 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Chapter I – Unveiling Your Creative Odyssey</title>
-<link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
-<link rel="stylesheet" type="text/css" href="styles/style.css"/>
-<link rel="stylesheet" type="text/css" href="styles/print.css" media="print"/>
-</head>
-<body class="chapter">
-<main role="main" epub:type="bodymatter chapter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter I – Unveiling Your Creative Odyssey</title>
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/print.css" media="print" />
+  
+    <style>
+    .page-break-before {
+        page-break-before: always;
+        break-before: page;
+    }
+    .page-break-after {
+        page-break-after: always;
+        break-after: page;
+    }
+    .avoid-break {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    .quiz-container {
+        max-height: 90vh;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+    .worksheet {
+        max-height: 90vh;
+        padding: 20px;
+        margin-top: 0;
+    }
+    .quote-page {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        page-break-before: always;
+        break-before: page;
+    }
+    .quote-page img {
+        max-width: 80%;
+        max-height: 70vh;
+        object-fit: contain;
+    }
+    </style>
+    </head>
+  <body class="chapter-page">
+    <main role="main" epub:type="bodymatter chapter">
+    <section class="chap-title" role="region">
+      <figure class="chapter-number-figure" role="group" aria-label="Chapter number I">
+        <img class="chapter-number-brush" src="../images/brushstroke.svg" alt="Decorative teal brushstroke background" />
+        <figcaption class="chapter-number-roman">I</figcaption>
+      </figure>
 
-<!-- SECTION 1: CHAPTER TITLE PAGE -->
-<section class="chap-title page" role="doc-chapter" aria-labelledby="chapter-i-title" epub:type="chapter">
-
-  <!-- Roman numeral with brushstroke background -->
-  <figure class="chapter-number-figure" aria-hidden="true">
-    <img class="chapter-number-brush" src="../images/brushstroke.svg" alt="" role="presentation"/>
-    <figcaption class="chapter-number-roman accent-teal">I</figcaption>
-  </figure>
-
-  <!-- Multi-line chapter title -->
-  <div class="title-stack">
-    <div class="title-bar accent-gold"></div>
-    <h1 id="chapter-i-title" class="title-lines accent-teal">
-      <span class="title-line">Unveiling</span>
-      <span class="title-line">Your</span>
-      <span class="title-line">Creative</span>
-      <span class="title-line">Odyssey</span>
-    </h1>
-  </div>
-
-  <!-- Bible quote -->
-  <figure class="bible-quote-container">
-    <blockquote class="bible-quote-text">
-      "For we are God's handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do."
-    </blockquote>
-    <figcaption class="bible-quote-reference accent-gold">— Ephesians 2:10</figcaption>
-  </figure>
-
-  <!-- Introduction with drop cap -->
-  <h2 class="introduction-heading accent-teal">Introduction</h2>
-  <div class="introduction-paragraph">
-    <p><span class="drop-cap accent-teal">P</span>icture celebrity stylist Ursula Stephen, who transformed Rihanna's look early in her career, catapulting both the singer's and her own careers to new heights.<sup id="fnref-1"><a href="#fn-1">1</a></sup> With each cut, Ursula shaped not only her client's confidence but also a bold public identity, proving that hairstyling is more than aesthetics—it's a powerful tool for self-expression and cultural influence.</p>
-    <p>In a society where hair can symbolize power, rebellion, and individuality, stylists like Stephen—and pioneers such as Madam C.J. Walker<sup id="fnref-2"><a href="#fn-2">2</a></sup>—showcase how hairstyling holds the power to not only transform appearances but also to reshape societal expectations. This chapter embarks on a journey to explore the profound impact of conscious hairstyling. We'll delve into its ability to redefine lives, one cut, color, and conversation at a time. Prepare to challenge conventional beauty standards as we examine the multifaceted roles of hairstylists as artists, confidants, and agents of change. From understanding the psychological effects of hairstyling on self-esteem to tracing its cultural significance throughout history, we'll establish the groundwork for a paradigm shift in how we perceive and practice our craft.</p>
-    <p>But this exploration isn't purely theoretical—it serves as a call to action, an invitation to infuse your artistry with purpose, passion, and profound awareness. Through compelling stories, expert insights, and practical strategies, you'll acquire the tools to enhance your skills, forge meaningful connections with clients, and leverage the transformative power of conscious hairstyling. So, dear hairstylist, as you embark on this creative odyssey, remember: your hands wield the brush strokes of self-expression, your heart imbues colors of compassion, and your mind holds the power to shape perceptions. Let every snip, every style, and every interaction be intentional.</p>
-    <p>In the realm of conscious hairstyling, transformation begins the moment your client takes a seat in your chair. Are you ready to unlock the true potential of your craft and become a force for positive change in the world? Let's begin.</p>
-  </div>
-</section>
+      <div class="title-stack">
+        <div class="title-bar"></div>
+        <div class="title-lines">
+          <div class="title-line">Unveiling</div>
+          <div class="title-line">Your</div>
+          <div class="title-line">Creative</div>
+          <div class="title-line">Odyssey</div>
+        </div>
+      </div>
+      <figure class="bible-quote-container image-quote" role="group" aria-labelledby="bq-text bq-ref">
+        <blockquote class="bible-quote-text" id="bq-text">
+          &quot;For we are God&#x27;s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.&quot;
+        </blockquote>
+        <figcaption class="bible-quote-reference" id="bq-ref">— Ephesians 2:10</figcaption>
+      </figure>
+      <h2 class="introduction-heading">Introduction</h2>
+      <div class="introduction-paragraph dropcap-first-letter">
+        <p><strong>P</strong>icture celebrity stylist Ursula Stephen, who transformed Rihanna's look early in her career, catapulting both the singer's and her own careers to new heights.<sup id="fnref-1"><a href="#fn-1">1</a></sup> With each cut, Ursula shaped not only her client's confidence but also a bold public identity, proving that hairstyling is more than aesthetics—it's a powerful tool for self-expression and cultural influence.</p>
+<p>In a society where hair can symbolize power, rebellion, and individuality, stylists like Stephen—and pioneers such as Madam C.J. Walker<sup id="fnref-2"><a href="#fn-2">2</a></sup>—showcase how hairstyling holds the power to not only transform appearances but also to reshape societal expectations. This chapter embarks on a journey to explore the profound impact of conscious hairstyling. We'll delve into its ability to redefine lives, one cut, color, and conversation at a time. Prepare to challenge conventional beauty standards as we examine the multifaceted roles of hairstylists as artists, confidants, and agents of change. From understanding the psychological effects of hairstyling on self-esteem to tracing its cultural significance throughout history, we'll establish the groundwork for a paradigm shift in how we perceive and practice our craft.</p>
+<p>But this exploration isn't purely theoretical—it serves as a call to action, an invitation to infuse your artistry with purpose, passion, and profound awareness. Through compelling stories, expert insights, and practical strategies, you'll acquire the tools to enhance your skills, forge meaningful connections with clients, and leverage the transformative power of conscious hairstyling. So, dear hairstylist, as you embark on this creative odyssey, remember: your hands wield the brush strokes of self-expression, your heart imbues colors of compassion, and your mind holds the power to shape perceptions. Let every snip, every style, and every interaction be intentional.</p>
+<p>In the realm of conscious hairstyling, transformation begins the moment your client takes a seat in your chair. Are you ready to unlock the true potential of your craft and become a force for positive change in the world? Let's begin.</p>
+      </div>
+    </section>
 
 <!-- PAGE BREAK -->
 <div class="page-break"></div>
 
-<!-- SECTION 2: CHAPTER BODY CONTENT -->
-<section class="chap-body" role="main">
-  <div class="content-area flow">
-
+<!-- PAGES 2-4: BODY CONTENT -->
+<section class="chap-body" role="region">
+      <div class="content-area">
 <h2>Personal Anecdote: A Personal Discovery</h2>
 <p>I remember the morning I drove to a client's home—a small apartment she hadn't left in weeks. As a freelance stylist, I'd taken this house call thinking it would be a simple blowout for someone too busy to visit the salon. When she opened the door, I immediately saw how wrong I was. Her depression had anchored her to the couch, and her hair—unwashed and neglected for so long—had become painfully tangled. "I'm sorry," she whispered, embarrassed. "My daughter's wedding is tomorrow, and I just—I can't show up like this."</p>
 <p>As I gently worked through her hair at her kitchen table, using warm water and infinite patience, we talked. With each knot I loosened, she seemed to release something heavier. By the time I finished styling her silver waves, the woman in the mirror barely resembled the one who had answered the door. She touched her reflection, eyes shining. "I forgot she was still in there," she said softly. Driving home afterward, I cried—finally understanding that my hands weren't just creating hairstyles; they were helping rebuild bridges between people and their forgotten selves. This wasn't just a job. It was sacred work.<sup id="fnref-3"><a href="#fn-3">3</a></sup></p>
@@ -441,27 +471,9 @@
 <!-- PAGE BREAK -->
 <div class="page-break"></div>
 
-<!-- SECTION 4: QUIZ (SINGLE PAGE, CHAPTER-SPECIFIC) -->
-<section class="quiz page avoid-break" role="region" aria-labelledby="quiz-i">
-
-  <div class="quiz-header">
-    <h2 id="quiz-i" class="accent-teal">Chapter I Quiz</h2>
-    <p class="quiz-instructions">
-      Select the best answer for each question.
-      <span class="accent-gold">Answers on separate key page.</span>
-    </p>
-  </div>
-
-  <ol class="mcq-list" type="1">
-    <li class="mcq-item">
-      <p class="question-text">According to the chapter, what is the primary foundation of embarking on your creative odyssey as a hairstylist?</p>
-      <ol class="mcq-options" type="A">
-        <li class="option">Purchasing the most expensive tools and products available</li>
-        <li class="option">Clarifying your vision, purpose, and building confidence through skill development</li>
-        <li class="option">Immediately opening your own salon</li>
-        <li class="option">Focusing exclusively on trending hairstyles</li>
-      </ol>
-    </li>
+<!-- PAGE 6: QUIZ & WORKSHEET -->
+<section class="quiz-container chap-quiz avoid-break page-break-before" role="region" aria-labelledby="quiz-title">
+<h2 id="quiz-title" class="quiz-title">Chapter Quiz</h2>
 
     <li class="mcq-item">
       <p class="question-text">In the case study of Sarah's Portfolio Transformation, what was the key factor that elevated her professional opportunities?</p>
