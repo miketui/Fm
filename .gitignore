@@ -2,6 +2,7 @@ _external/
 node_modules/
 *.log
 *.tmp
+*.bak
 /tmp/
 /reports/temp/
 .DS_Store
