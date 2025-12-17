@@ -16,7 +16,6 @@ Restructures chapter XHTML files to follow the correct format:
 Removes duplicate sections and ensures proper closing image quote.
 """
 
-import re
 import os
 import sys
 from pathlib import Path
