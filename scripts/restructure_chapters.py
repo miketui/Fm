@@ -4,9 +4,10 @@ Restructure chapter XHTML files to extract image quotes into standalone files.
 Removes duplicate content and properly formats chapters according to EPUB 3.2 spec.
 """
 
+import os
 import re
 from pathlib import Path
-from typing import Tuple, Optional
+from typing import Tuple
 
 # Map of chapter files to their Roman numerals and image filenames
 CHAPTERS = [
@@ -28,7 +29,9 @@ CHAPTERS = [
     ("27-chapter-xvi-tresses-and-textures-embracing-diversity-in-hairstyling.xhtml", "XVI", "chapter-xvi-quote.jpeg", "Tresses and Textures Embracing Diversity in Hairstyling"),
 ]
 
-XHTML_DIR = Path("/root/repo/REBRANDED_OUTPUT/xhtml")
+# Allow configuration via environment variable or default to relative path
+DEFAULT_XHTML_DIR = Path(__file__).parent.parent / "REBRANDED_OUTPUT" / "xhtml"
+XHTML_DIR = Path(os.environ.get("XHTML_DIR", DEFAULT_XHTML_DIR))
 
 
 def create_standalone_quote_file(
@@ -199,9 +202,9 @@ def main():
         cleaned_content, had_issues = process_chapter_file(chapter_path, roman)
 
         if had_issues:
-            # Backup original
+            # Create backup copy first (safer than rename)
             backup_path = chapter_path.with_suffix('.xhtml.bak')
-            chapter_path.rename(backup_path)
+            backup_path.write_text(chapter_path.read_text(encoding='utf-8'), encoding='utf-8')
             print(f"   ✓ Backed up original to {backup_path.name}")
 
             # Write cleaned content
