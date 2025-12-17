@@ -31,7 +31,7 @@ CHAPTERS = [
 
 # Allow configuration via environment variable or default to relative path
 DEFAULT_XHTML_DIR = Path(__file__).parent.parent / "REBRANDED_OUTPUT" / "xhtml"
-XHTML_DIR = Path(os.environ.get("XHTML_DIR", DEFAULT_XHTML_DIR))
+XHTML_DIR = Path(os.environ.get("XHTML_DIR", str(DEFAULT_XHTML_DIR)))
 
 
 def create_standalone_quote_file(
@@ -154,10 +154,10 @@ def clean_trailing_content(content: str) -> str:
     return content[:main_close + 7] + '\n</body>\n</html>\n'
 
 
-def process_chapter_file(filepath: Path, roman_numeral: str) -> Tuple[str, bool]:
+def process_chapter_file(filepath: Path, roman_numeral: str) -> Tuple[str, str, bool]:
     """
     Process a chapter file to remove image quotes and duplicates.
-    Returns (cleaned_content, had_issues).
+    Returns (cleaned_content, original_content, had_issues).
     """
 
     content = filepath.read_text(encoding='utf-8')
@@ -175,7 +175,7 @@ def process_chapter_file(filepath: Path, roman_numeral: str) -> Tuple[str, bool]
     # Check if any changes were made
     had_issues = (content != original_content)
 
-    return content, had_issues
+    return content, original_content, had_issues
 
 
 def main():
@@ -199,12 +199,12 @@ def main():
         print(f"Processing Chapter {roman}: {chapter_file}")
 
         # Process chapter file
-        cleaned_content, had_issues = process_chapter_file(chapter_path, roman)
+        cleaned_content, original_content, had_issues = process_chapter_file(chapter_path, roman)
 
         if had_issues:
             # Create backup copy first (safer than rename)
             backup_path = chapter_path.with_suffix('.xhtml.bak')
-            backup_path.write_text(chapter_path.read_text(encoding='utf-8'), encoding='utf-8')
+            backup_path.write_text(original_content, encoding='utf-8')
             print(f"   ✓ Backed up original to {backup_path.name}")
 
             # Write cleaned content

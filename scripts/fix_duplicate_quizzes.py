@@ -9,7 +9,7 @@ from pathlib import Path
 
 # Allow configuration via environment variable or default to relative path
 DEFAULT_XHTML_DIR = Path(__file__).parent.parent / "REBRANDED_OUTPUT" / "xhtml"
-XHTML_DIR = Path(os.environ.get("XHTML_DIR", DEFAULT_XHTML_DIR))
+XHTML_DIR = Path(os.environ.get("XHTML_DIR", str(DEFAULT_XHTML_DIR)))
 
 CHAPTERS = [
     "10-chapter-ii-refining-your-creative-toolkit.xhtml",
