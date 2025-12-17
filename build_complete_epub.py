@@ -114,13 +114,10 @@ def generate_opf():
 
     # Add XHTML to manifest and build spine
     # Special handling for nav.xhtml
-    nav_found = False
-    
     for filename in main_files:
         if filename == 'nav.xhtml':
             item_id = 'nav'
             props = ' properties="nav"'
-            nav_found = True
         else:
             item_id = f"text_{get_file_number(filename)}_{filename.split('.')[0]}"
             item_id = re.sub(r'[^a-zA-Z0-9_-]', '_', item_id)
