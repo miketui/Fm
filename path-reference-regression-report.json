@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-17T17:11:38.764Z",
+  "timestamp": "2025-12-17T17:22:18.778Z",
   "summary": {
     "totalPaths": 99,
     "brokenLinks": 0,
@@ -60,34 +60,34 @@
       "OEBPS/images/chapter-iv-quote.jpeg",
       "OEBPS/images/chapter-vi-quote.jpeg",
       "OEBPS/images/brushstroke.svg",
+      "OEBPS/text/26a-chapter-xv-quote.xhtml",
       "OEBPS/images/chapter-xvi-quote.jpeg",
+      "OEBPS/text/27a-chapter-xvi-quote.xhtml",
       "OEBPS/images/chapter-v-quote.jpeg",
+      "OEBPS/text/9a-chapter-i-quote.xhtml",
+      "OEBPS/text/19a-chapter-ix-quote.xhtml",
+      "OEBPS/text/20a-chapter-x-quote.xhtml",
+      "OEBPS/text/17a-chapter-viii-quote.xhtml",
       "OEBPS/text/44-bibliography.xhtml",
+      "OEBPS/text/11a-chapter-iii-quote.xhtml",
+      "OEBPS/text/22a-chapter-xii-quote.xhtml",
+      "OEBPS/text/15a-chapter-vi-quote.xhtml",
+      "OEBPS/text/23a-chapter-xiii-quote.xhtml",
       "OEBPS/images/chapter-vii-quote.jpeg",
       "OEBPS/images/chapter-ii-quote.jpeg",
+      "OEBPS/text/25a-chapter-xiv-quote.xhtml",
       "OEBPS/images/chapter-x-quote.jpeg",
       "OEBPS/images/chapter-viii-quote.jpeg",
       "OEBPS/images/chapter-ix-quote.jpeg",
+      "OEBPS/text/10a-chapter-ii-quote.xhtml",
       "OEBPS/images/chapter-xi-quote.jpeg",
+      "OEBPS/text/13a-chapter-iv-quote.xhtml",
+      "OEBPS/text/16a-chapter-vii-quote.xhtml",
       "OEBPS/images/chapter-iii-quote.jpeg",
       "OEBPS/images/chapter-xii-quote.jpeg",
-      "OEBPS/images/chapter-xv-quote.jpeg",
-      "OEBPS/text/9a-chapter-i-quote.xhtml",
-      "OEBPS/text/10a-chapter-ii-quote.xhtml",
-      "OEBPS/text/11a-chapter-iii-quote.xhtml",
-      "OEBPS/text/13a-chapter-iv-quote.xhtml",
       "OEBPS/text/14a-chapter-v-quote.xhtml",
-      "OEBPS/text/15a-chapter-vi-quote.xhtml",
-      "OEBPS/text/16a-chapter-vii-quote.xhtml",
-      "OEBPS/text/17a-chapter-viii-quote.xhtml",
-      "OEBPS/text/19a-chapter-ix-quote.xhtml",
-      "OEBPS/text/20a-chapter-x-quote.xhtml",
+      "OEBPS/images/chapter-xv-quote.jpeg",
       "OEBPS/text/21a-chapter-xi-quote.xhtml",
-      "OEBPS/text/22a-chapter-xii-quote.xhtml",
-      "OEBPS/text/23a-chapter-xiii-quote.xhtml",
-      "OEBPS/text/25a-chapter-xiv-quote.xhtml",
-      "OEBPS/text/26a-chapter-xv-quote.xhtml",
-      "OEBPS/text/27a-chapter-xvi-quote.xhtml",
       "OEBPS/text/nav.xhtml",
       "OEBPS/fonts/Montserrat-Regular.woff2",
       "OEBPS/fonts/Montserrat-Bold.woff2",
@@ -641,6 +641,12 @@
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
+        },
+        {
+          "path": "26a-chapter-xv-quote.xhtml",
+          "resolvedPath": "OEBPS/text/26a-chapter-xv-quote.xhtml",
+          "type": "internal_link",
+          "exists": true
         }
       ],
       "OEBPS/text/18-Part-III-Advanced-Business-Strategies.xhtml": [
@@ -733,6 +739,12 @@
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
+        },
+        {
+          "path": "27a-chapter-xvi-quote.xhtml",
+          "resolvedPath": "OEBPS/text/27a-chapter-xvi-quote.xhtml",
+          "type": "internal_link",
+          "exists": true
         }
       ],
       "OEBPS/text/14a-chapter-v-quote.xhtml": [
@@ -805,6 +817,12 @@
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
+        },
+        {
+          "path": "9a-chapter-i-quote.xhtml",
+          "resolvedPath": "OEBPS/text/9a-chapter-i-quote.xhtml",
+          "type": "internal_link",
+          "exists": true
         }
       ],
       "OEBPS/text/19-chapter-ix-stepping-into-leadership.xhtml": [
@@ -830,6 +848,12 @@
           "path": "../styles/print.css",
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "19a-chapter-ix-quote.xhtml",
+          "resolvedPath": "OEBPS/text/19a-chapter-ix-quote.xhtml",
+          "type": "internal_link",
           "exists": true
         }
       ],
@@ -917,6 +941,12 @@
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
+        },
+        {
+          "path": "20a-chapter-x-quote.xhtml",
+          "resolvedPath": "OEBPS/text/20a-chapter-x-quote.xhtml",
+          "type": "internal_link",
+          "exists": true
         }
       ],
       "OEBPS/text/37-ManifestingJournal.xhtml": [
@@ -962,6 +992,12 @@
           "path": "../styles/print.css",
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "17a-chapter-viii-quote.xhtml",
+          "resolvedPath": "OEBPS/text/17a-chapter-viii-quote.xhtml",
+          "type": "internal_link",
           "exists": true
         }
       ],
@@ -1273,6 +1309,12 @@
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
+        },
+        {
+          "path": "11a-chapter-iii-quote.xhtml",
+          "resolvedPath": "OEBPS/text/11a-chapter-iii-quote.xhtml",
+          "type": "internal_link",
+          "exists": true
         }
       ],
       "OEBPS/text/22-chapter-xii-financial-wisdom-building-sustainable-ventures.xhtml": [
@@ -1298,6 +1340,12 @@
           "path": "../styles/print.css",
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "22a-chapter-xii-quote.xhtml",
+          "resolvedPath": "OEBPS/text/22a-chapter-xii-quote.xhtml",
+          "type": "internal_link",
           "exists": true
         }
       ],
@@ -1385,6 +1433,12 @@
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
+        },
+        {
+          "path": "15a-chapter-vi-quote.xhtml",
+          "resolvedPath": "OEBPS/text/15a-chapter-vi-quote.xhtml",
+          "type": "internal_link",
+          "exists": true
         }
       ],
       "OEBPS/text/23-chapter-xiii-embracing-ethics-and-sustainability-in-hairstyling.xhtml": [
@@ -1410,6 +1464,12 @@
           "path": "../styles/print.css",
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "23a-chapter-xiii-quote.xhtml",
+          "resolvedPath": "OEBPS/text/23a-chapter-xiii-quote.xhtml",
+          "type": "internal_link",
           "exists": true
         }
       ],
@@ -1508,6 +1568,12 @@
           "path": "../styles/print.css",
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "25a-chapter-xiv-quote.xhtml",
+          "resolvedPath": "OEBPS/text/25a-chapter-xiv-quote.xhtml",
+          "type": "internal_link",
           "exists": true
         }
       ],
@@ -1693,6 +1759,12 @@
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
+        },
+        {
+          "path": "10a-chapter-ii-quote.xhtml",
+          "resolvedPath": "OEBPS/text/10a-chapter-ii-quote.xhtml",
+          "type": "internal_link",
+          "exists": true
         }
       ],
       "OEBPS/text/21a-chapter-xi-quote.xhtml": [
@@ -1745,6 +1817,12 @@
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
+        },
+        {
+          "path": "13a-chapter-iv-quote.xhtml",
+          "resolvedPath": "OEBPS/text/13a-chapter-iv-quote.xhtml",
+          "type": "internal_link",
+          "exists": true
         }
       ],
       "OEBPS/text/16-chapter-vii-embracing-wellness-and-self-care.xhtml": [
@@ -1770,6 +1848,12 @@
           "path": "../styles/print.css",
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "16a-chapter-vii-quote.xhtml",
+          "resolvedPath": "OEBPS/text/16a-chapter-vii-quote.xhtml",
+          "type": "internal_link",
           "exists": true
         }
       ],
@@ -1909,6 +1993,12 @@
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
           "exists": true
+        },
+        {
+          "path": "14a-chapter-v-quote.xhtml",
+          "resolvedPath": "OEBPS/text/14a-chapter-v-quote.xhtml",
+          "type": "internal_link",
+          "exists": true
         }
       ],
       "OEBPS/text/5-SelfAssessment.xhtml": [
@@ -2020,6 +2110,12 @@
           "path": "../styles/print.css",
           "resolvedPath": "OEBPS/styles/print.css",
           "type": "stylesheet",
+          "exists": true
+        },
+        {
+          "path": "21a-chapter-xi-quote.xhtml",
+          "resolvedPath": "OEBPS/text/21a-chapter-xi-quote.xhtml",
+          "type": "internal_link",
           "exists": true
         }
       ],
@@ -2650,33 +2746,33 @@
       "OEBPS/images/chapter-iv-quote.jpeg",
       "OEBPS/images/chapter-vi-quote.jpeg",
       "OEBPS/images/brushstroke.svg",
+      "OEBPS/text/26a-chapter-xv-quote.xhtml",
       "OEBPS/images/chapter-xvi-quote.jpeg",
+      "OEBPS/text/27a-chapter-xvi-quote.xhtml",
       "OEBPS/images/chapter-v-quote.jpeg",
+      "OEBPS/text/9a-chapter-i-quote.xhtml",
+      "OEBPS/text/19a-chapter-ix-quote.xhtml",
+      "OEBPS/text/20a-chapter-x-quote.xhtml",
+      "OEBPS/text/17a-chapter-viii-quote.xhtml",
+      "OEBPS/text/11a-chapter-iii-quote.xhtml",
+      "OEBPS/text/22a-chapter-xii-quote.xhtml",
+      "OEBPS/text/15a-chapter-vi-quote.xhtml",
+      "OEBPS/text/23a-chapter-xiii-quote.xhtml",
       "OEBPS/images/chapter-vii-quote.jpeg",
       "OEBPS/images/chapter-ii-quote.jpeg",
+      "OEBPS/text/25a-chapter-xiv-quote.xhtml",
       "OEBPS/images/chapter-x-quote.jpeg",
       "OEBPS/images/chapter-viii-quote.jpeg",
       "OEBPS/images/chapter-ix-quote.jpeg",
+      "OEBPS/text/10a-chapter-ii-quote.xhtml",
       "OEBPS/images/chapter-xi-quote.jpeg",
+      "OEBPS/text/13a-chapter-iv-quote.xhtml",
+      "OEBPS/text/16a-chapter-vii-quote.xhtml",
       "OEBPS/images/chapter-iii-quote.jpeg",
       "OEBPS/images/chapter-xii-quote.jpeg",
-      "OEBPS/images/chapter-xv-quote.jpeg",
-      "OEBPS/text/9a-chapter-i-quote.xhtml",
-      "OEBPS/text/10a-chapter-ii-quote.xhtml",
-      "OEBPS/text/11a-chapter-iii-quote.xhtml",
-      "OEBPS/text/13a-chapter-iv-quote.xhtml",
       "OEBPS/text/14a-chapter-v-quote.xhtml",
-      "OEBPS/text/15a-chapter-vi-quote.xhtml",
-      "OEBPS/text/16a-chapter-vii-quote.xhtml",
-      "OEBPS/text/17a-chapter-viii-quote.xhtml",
-      "OEBPS/text/19a-chapter-ix-quote.xhtml",
-      "OEBPS/text/20a-chapter-x-quote.xhtml",
+      "OEBPS/images/chapter-xv-quote.jpeg",
       "OEBPS/text/21a-chapter-xi-quote.xhtml",
-      "OEBPS/text/22a-chapter-xii-quote.xhtml",
-      "OEBPS/text/23a-chapter-xiii-quote.xhtml",
-      "OEBPS/text/25a-chapter-xiv-quote.xhtml",
-      "OEBPS/text/26a-chapter-xv-quote.xhtml",
-      "OEBPS/text/27a-chapter-xvi-quote.xhtml",
       "OEBPS/images/decorative-line.svg",
       "OEBPS/images/endnote-marker.png",
       "OEBPS/images/toc-divider.svg",
