@@ -146,7 +146,9 @@ def fix_opf_css_references(opf_path):
 
 
 def main():
-    repo_root = Path('/root/repo')
+    # Use dynamic path resolution instead of hardcoded path
+    script_dir = Path(__file__).parent
+    repo_root = script_dir.parent
     xhtml_dir = repo_root / 'REBRANDED_OUTPUT' / 'xhtml'
     opf_path = repo_root / 'REBRANDED_OUTPUT' / 'content.opf'
 
