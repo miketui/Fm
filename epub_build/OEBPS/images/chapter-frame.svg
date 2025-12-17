@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decorative double border frame for chapter title pages. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none" stroke="currentColor">
+  <rect x="30" y="30" width="740" height="940" rx="8" ry="8" stroke-width="2"/>
+  <rect x="52" y="52" width="696" height="896" rx="6" ry="6" stroke-width="1.5" opacity=".85"/>
+  <g stroke-width="3" stroke-linecap="round">
+    <path d="M90 110h40"/>
+    <path d="M110 90v40"/>
+    <path d="M710 110h-40"/>
+    <path d="M690 90v40"/>
+    <path d="M90 890h40"/>
+    <path d="M110 910v-40"/>
+    <path d="M710 890h-40"/>
+    <path d="M690 910v-40"/>
+  </g>
+</svg>

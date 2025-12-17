@@ -20,9 +20,6 @@ venv/
 env/
 .venv/
 
-# Compiled EPUB files
-*.epub
-
 # EPUBCheck generated reports (anywhere in the repository)
 **/epubcheck-report*.txt
 **/epubcheck-report*.json

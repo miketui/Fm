@@ -1,0 +1,617 @@
+/*
+  artisan-path-style.css — Rebranded Stylesheet for "The Artisan's Path"
+  Brand Colors & Typography by Curls Contemporary Collective
+*/
+
+
+/* ====================================================================
+   BRAND COLOR PALETTE - The Artisan's Path
+   ==================================================================== */
+:root {
+  /* Primary Colors */
+  --primary-gold: #c9a961;
+  --primary-dark: #2c1810;
+  --primary-medium: #5a4a3a;
+
+  /* Background Colors */
+  --bg-light: #faf8f5;
+  --bg-warm: #f5f0e8;
+  --bg-accent: #e0d5c7;
+  --bg-white: #ffffff;
+
+  /* Text Colors */
+  --text-primary: #2c1810;
+  --text-secondary: #5a4a3a;
+  --text-muted: rgba(44, 24, 16, 0.75);
+
+  /* Accent & Decorative */
+  --accent-gold: #c9a961;
+  --divider-color: rgba(201, 169, 97, 0.3);
+
+  /* Typography */
+  --font-display: 'Cinzel Decorative', serif;
+  --font-body: 'Libre Baskerville', Georgia, serif;
+}
+
+/* ====================================================================
+   GLOBAL STYLES
+   ==================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--bg-light);
+  line-height: 1.7;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* ====================================================================
+   PAGE STRUCTURE
+   ==================================================================== */
+.frontmatter-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f8f6f3 0%, #ebe7e0 100%);
+}
+
+.frontmatter-shell {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  background: var(--bg-white);
+  min-height: 75vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+/* ====================================================================
+   TITLE PAGE STYLES
+   ==================================================================== */
+.title-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 75vh;
+}
+
+.frontmatter-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: var(--primary-dark);
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1.15rem, 3vw, 1.35rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0 0 2rem;
+  color: var(--primary-medium);
+  opacity: 0.85;
+}
+
+.frontmatter-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--accent-gold), transparent);
+  margin: 1.5rem auto;
+}
+
+.author {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+  opacity: 0.8;
+  margin: 2rem 0 0;
+}
+
+.publisher-info {
+  font-size: 0.95rem;
+  color: var(--primary-medium);
+  opacity: 0.7;
+  margin: 0.5rem 0;
+}
+
+/* ====================================================================
+   COPYRIGHT PAGE STYLES
+   ==================================================================== */
+.copyright-page {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.copyright-page .elegant-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--accent-gold), transparent);
+  margin: 0 auto 2rem;
+}
+
+.copyright-notice,
+.rights-text,
+.isbn-info,
+.publisher-label {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.isbn-label {
+  font-weight: 600;
+}
+
+.decorative-line {
+  width: 100%;
+  max-width: 200px;
+  height: 1px;
+  background: var(--bg-accent);
+  margin: 1.5rem auto;
+}
+
+.section-separator {
+  width: 40px;
+  height: 2px;
+  background: var(--accent-gold);
+  margin: 2rem auto 0;
+}
+
+/* ====================================================================
+   TABLE OF CONTENTS STYLES
+   ==================================================================== */
+.toc-page {
+  padding: 1rem 0;
+}
+
+.contents-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-dark);
+}
+
+.toc-container {
+  margin: 2rem 0;
+}
+
+.toc-section {
+  margin-bottom: 2rem;
+}
+
+.part-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent-gold);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-body);
+}
+
+.toc-entry {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding-left: 0;
+}
+
+.toc-entry.chapter-entry {
+  padding-left: 1rem;
+}
+
+.entry-title a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.entry-title a:hover {
+  color: var(--accent-gold);
+}
+
+.section-divider {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.divider-line {
+  width: 60%;
+  height: 1px;
+  background: var(--divider-color);
+  margin: 0.5rem auto;
+}
+
+/* ====================================================================
+   DEDICATION PAGE STYLES
+   ==================================================================== */
+.dedication-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.dedication-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--primary-dark);
+  letter-spacing: 1px;
+}
+
+.dedication-container {
+  max-width: 38rem;
+}
+
+.dedication-opening {
+  margin: 2rem 0;
+}
+
+.dedication-verse {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: var(--text-primary);
+}
+
+.dedication-content {
+  text-align: left;
+}
+
+.dedication-section {
+  margin: 1.5rem 0;
+}
+
+.dedication-paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.dedication-section em {
+  color: var(--accent-gold);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.special-thanks .dedication-paragraph {
+  background: var(--bg-light);
+  padding: 1.5rem;
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 4px;
+}
+
+.dedication-closing {
+  margin-top: 2.5rem;
+}
+
+.dedication-final {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent-gold);
+  letter-spacing: 0.5px;
+}
+
+/* ====================================================================
+   SELF-ASSESSMENT WORKSHEET STYLES
+   ==================================================================== */
+.worksheet {
+  padding: 1.5rem 0;
+}
+
+.assessment-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 0 0 0.5rem;
+  color: var(--primary-dark);
+}
+
+.introduction {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  text-align: center;
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-gold);
+}
+
+.columns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.question-container {
+  margin-bottom: 1.5rem;
+}
+
+.question-number {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: var(--accent-gold);
+  color: var(--bg-white);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.question-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.bold-text {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.answer-space {
+  min-height: 4rem;
+  border-bottom: 2px solid var(--bg-accent);
+  margin-top: 0.5rem;
+}
+
+/* ====================================================================
+   AFFIRMATION ODYSSEY STYLES
+   ==================================================================== */
+.affirmation-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 0 0 0.5rem;
+  color: var(--primary-dark);
+}
+
+.affirmation-subtitle {
+  font-size: 0.95rem;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.75;
+  margin: 0 0 1.5rem;
+}
+
+.section {
+  margin: 2rem 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: var(--divider-color);
+}
+
+.section-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: var(--accent-gold);
+}
+
+.affirmation-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.affirmation-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.line-number {
+  width: 2rem;
+  height: 2rem;
+  background: var(--accent-gold);
+  color: var(--bg-white);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.line-container {
+  flex: 1;
+  border-bottom: 2px solid var(--bg-accent);
+  min-height: 2.5rem;
+}
+
+.inspiration-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.inspiration-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: var(--bg-white);
+  border-left: 3px solid var(--accent-gold);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.inspiration-bullet {
+  color: var(--accent-gold);
+  font-weight: 600;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.inspiration-text {
+  font-style: italic;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.closing-text {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* ====================================================================
+   PREFACE PAGE STYLES
+   ==================================================================== */
+.preface-page {
+  padding: 1rem 0;
+}
+
+.preface-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+  color: var(--primary-dark);
+}
+
+.elegant-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--accent-gold), transparent);
+  margin: 0 auto 2.5rem;
+}
+
+.introduction-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2rem 0 1.5rem;
+  color: var(--primary-dark);
+}
+
+.preface-content {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.preface-paragraph {
+  margin: 0 0 1.25rem;
+  line-height: 1.8;
+}
+
+.preface-paragraph.first-paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.preface-paragraph.compact {
+  margin-bottom: 1rem;
+}
+
+.drop-cap {
+  float: left;
+  font-size: 3.5em;
+  line-height: 0.9;
+  margin-right: 0.1em;
+  font-weight: bold;
+  color: var(--accent-gold);
+  font-family: var(--font-display);
+}
+
+.italic-text {
+  font-style: italic;
+  color: var(--primary-medium);
+}
+
+.signature-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--bg-accent);
+}
+
+.signature-line {
+  width: 150px;
+  height: 1px;
+  background: var(--accent-gold);
+  margin: 0 0 1rem 0;
+}
+
+.signature-text {
+  font-style: italic;
+  margin: 0.5rem 0;
+  opacity: 0.85;
+}
+
+.author-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin: 1rem 0 0;
+  color: var(--primary-dark);
+}
+
+/* ====================================================================
+   RESPONSIVE DESIGN
+   ==================================================================== */
+@media (max-width: 768px) {
+  .frontmatter-shell {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .columns-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .frontmatter-title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+  }
+}
+
+@media print {
+  .frontmatter-page {
+    background: white;
+  }
+
+  .frontmatter-shell {
+    box-shadow: none;
+  }
+}
