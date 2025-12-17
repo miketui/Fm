@@ -149,23 +149,35 @@ class EPUBBuilder:
                 print("    Added: content.opf")
 
                 # Step 4: Add all other files (XHTML, CSS, images, fonts)
-                exclude_patterns = {"mimetype", "META-INF", "content.opf", "pdf-pod",
-                                   "templates", "react-components", "styles",
-                                   "*.md", "*.MD", "README*", "*TEMPLATE*"}
+                # Directories to completely exclude from EPUB (at any level)
+                exclude_dirs = {
+                    "pdf-pod", "templates", "react-components", "scripts",
+                    "dist", ".claude", ".git", "__pycache__"
+                }
+                # Root-level directories to exclude (not subdirs like xhtml/styles)
+                exclude_root_dirs = {"styles"}
+                # File patterns to exclude
+                exclude_extensions = {".md", ".MD", ".backup", ".bak", ".sh", ".py"}
+                exclude_patterns = {"README", "TEMPLATE", "AUTOMATION", "SUMMARY", "GUIDE"}
 
                 file_count = 0
                 for file_path in sorted(self.source_dir.rglob("*")):
                     if file_path.is_file():
                         arcname = file_path.relative_to(self.source_dir)
+                        arcname_str = str(arcname)
+                        arcname_parts = arcname_str.split("/")
 
-                        # Skip excluded files
-                        if any(part in str(arcname) for part in ["pdf-pod", "templates", "react-components"]):
+                        # Skip files in excluded directories
+                        if any(part in exclude_dirs for part in arcname_parts):
                             continue
-                        if any(str(arcname).endswith(ext) for ext in [".md", ".MD"]):
+                        # Skip root-level excluded directories (e.g., "styles" but not "xhtml/styles")
+                        if len(arcname_parts) >= 1 and arcname_parts[0] in exclude_root_dirs:
                             continue
-                        if any(pattern in str(arcname) for pattern in ["README", "TEMPLATE"]):
+                        # Skip files with excluded extensions
+                        if any(arcname_str.endswith(ext) for ext in exclude_extensions):
                             continue
-                        if str(arcname) in exclude_patterns:
+                        # Skip files matching excluded patterns
+                        if any(pattern in arcname_str for pattern in exclude_patterns):
                             continue
 
                         # Skip already added files
