@@ -8,7 +8,6 @@ Fixes issues from BeautifulSoup processing by:
 """
 
 import re
-import os
 import sys
 from pathlib import Path
 
@@ -47,17 +46,10 @@ def clean_chapter_html(filepath: Path, dry_run: bool = False) -> dict:
 
         original = content
 
-        # Pattern 1: Fix malformed closing tags before quote-page section
-        # Matches patterns like: </ol></section></div></section><section class="quote-page">
-        pattern1 = re.compile(
-            r'(</(?:ol|div|section|aside)>)+\s*(<section class="quote-page">)',
-            re.MULTILINE
-        )
-
         # We want to keep proper closing structure, just clean up stray tags
         # The correct structure should be: </section></main> at the very end
 
-        # Pattern 2: Fix stray closing tags right before quote-page
+        # Pattern: Fix stray closing tags right before quote-page
         # Find the quote-page section and what's immediately before it
         match = re.search(r'((?:</\w+>)+)\s*(<section class="quote-page">)', content)
         if match:
