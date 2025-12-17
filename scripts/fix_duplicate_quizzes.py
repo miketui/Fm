@@ -4,10 +4,13 @@ Fix duplicate quiz and worksheet sections in chapter files.
 More aggressive approach using line-by-line parsing.
 """
 
+import os
 from pathlib import Path
-import re
 
-XHTML_DIR = Path("/root/repo/REBRANDED_OUTPUT/xhtml")
+# Use relative path from script location or environment variable
+SCRIPT_DIR = Path(__file__).parent.resolve()
+REPO_ROOT = os.environ.get('REPO_ROOT', SCRIPT_DIR.parent)
+XHTML_DIR = Path(REPO_ROOT) / "REBRANDED_OUTPUT" / "xhtml"
 
 CHAPTERS = [
     "10-chapter-ii-refining-your-creative-toolkit.xhtml",
@@ -176,7 +179,6 @@ def main():
         if cleaned_content != original_content:
             # Backup original
             backup_path = filepath.with_suffix('.xhtml.bak2')
-            filepath.write_text(original_content, encoding='utf-8')
             backup_path.write_text(original_content, encoding='utf-8')
 
             # Write cleaned version
